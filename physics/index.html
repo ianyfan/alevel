@@ -1,0 +1,2545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="/alevel/style.css" rel="stylesheet">
+    <script src="/alevel/script.js" async></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
+        MathJax.Hub.Config({
+            extensions: ["[Contrib]/siunitx/siunitx.js"],
+        });
+    </script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
+  </head>
+  <body>
+    <nav class="physics">
+      <ul>
+        <li><a href="/alevel/electronics">Electronics</a></li>
+        <li><a href="/alevel/physics">Physics</a></li>
+      </ul>
+      <ol id="electronics">
+        <li><a href="#0">0 Prerequisites</a></li>
+        <li>
+          <a href="#1">1 Simple Systems</a>
+          <ol>
+            <li>
+              <a href="#1.1">1.1 Simple Digital Systems</a>
+              <ol>
+                <li><a href="#1.1.1">1.1.1 Switches in series with resistors can be used to convert information into digital signals</a></li>
+                <li><a href="#1.1.2">1.1.2 Digital signals can be processed by logic gates</a></li>
+                <li><a href="#1.1.3">1.1.3 A logic gate's output signal can be used to switch off a variety of devices on and off via a driver</a></li>
+                <li><a href="#1.1.4">1.1.4 Standard symbols are used to draw circuit diagrams</a></li>
+                <li><a href="#1.1.5">1.1.5 The flow of information through a system can be shown with block diagrams</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.2">1.2 Digital from Analogue</a>
+              <ol>
+                <li><a href="#1.2.1">1.2.1 The resistance of some components depends on their environment; they can be used as sensors</a></li>
+                <li><a href="#1.2.2">1.2.2 Op-amps can convert the analogue signal from a sensor into a digital signal for a logic system</a></li>
+                <li><a href="#1.2.3">1.2.3 Capacitors can delay the change of a signal</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.3">1.3 Pulses</a>
+              <ol>
+                <li><a href="#1.3.1">1.3.1 A monostable uses an RC network to generate a single pulse</a></li>
+                <li><a href="#1.3.2">1.3.2 A relaxation oscillator uses a Schmitt trigger NOT gate to produce a continuous train of pulses</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.4">1.4 Logic Systems</a>
+              <ol>
+                <li><a href="#1.4.1">1.4.1 Combinations of logic gates can process signals in many different ways</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#2">2 Signal Processors</a>
+          <ol>
+            <li>
+              <a href="#2.1">2.1 Storing Signals</a>
+              <ol>
+                <li><a href="#2.1.1">2.1.1 Arrays of logic gates can be used to store information</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.2">2.2 Negative Feedback</a>
+              <ol>
+                <li><a href="#2.2.1">2.2.1 Negative feedback allows op-amps to process audio signals</a></li>
+                <li><a href="#2.2.2">2.2.2 Resistors can be used to make op-amps into non-inverting, inverting and summing amplifiers</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.3">2.3 Counting pulses</a>
+              <ol>
+                <li><a href="#2.3.1">2.3.1 Arrays of D flip-flops can count pulses</a></li>
+                <li><a href="#2.3.2">2.3.2 Binary counters are at the heart of systems that produce sequences of digital signals</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.4">2.4 Amplifying Audio</a>
+              <ol>
+                <li><a href="#2.4.1">2.4.1 An audio amplifier allows signals from a microphone to be heard from a loudspeaker</a></li>
+                <li><a href="#2.4.2">2.4.2 Capacitors can be used as filters</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.5">2.5 Microcontrollers</a>
+              <ol>
+                <li><a href="#2.5.1">2.5.1 The behaviour of a microcontroller is fixed by the program fed into it</a></li>
+                <li><a href="#2.5.2">2.5.2 A small set of microcontroller instructions allows a wide range of behaviours</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#4">4 Electronic Control Systems</a>
+          <ol>
+            <li>
+              <a href="#4.1">4.1 MOSFET Circuits</a>
+              <ol>
+                <li><a href="#4.1.1">4.1.1 MOSFETs are used to make a wide range of useful circuits</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.2">4.2 Digital Processing</a>
+              <ol>
+                <li><a href="#4.2.1">4.2.1 Memory stores information as binary words</a></li>
+                <li><a href="#4.2.2">4.2.2 Some types of memory can retain information in the absence of a power supply</a></li>
+                <li><a href="#4.2.3">4.2.3 Digital information can be processed with registers and logic gates</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.3">4.3 Servo Control</a>
+              <ol>
+                <li><a href="#4.3.1">4.3.1 Simple control systems use negative feedback</a></li>
+                <li><a href="#4.3.2">4.3.2 Proportional control systems allow accurate control of a transducer</a></li>
+                <li><a href="#4.3.3">4.3.3 Many power supplies use negative feedback to control the voltage at their output</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.4">4.4 Microcontroller Systems</a>
+              <ol>
+                <li><a href="#4.4.1">4.4.1 A microcontroller system contains a number of blocks connected by buses</a></li>
+                <li><a href="#4.4.2">4.4.2 The behaviour of a microcontroller depends on the program in its memory</a></li>
+                <li><a href="#4.4.3">4.4.3 Programs can be made from subroutines</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#5">5 Communication Systems</a>
+          <ol>
+            <li>
+              <a href="#5.1">5.1 Video Displays</a>
+              <ol>
+                <li><a href="#5.1.1">5.1.1 Rapidly changing digital signals are used to display moving pictures on screens</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.2">5.2 Modulating Carriers</a>
+              <ol>
+                <li><a href="#5.2.1">5.2.1 The amplitude of a high-frequency carrier can be modulated to carry information about a signal</a></li>
+                <li><a href="#5.2.2">5.2.2 The frequency of a high-frequency carrier can be modulated to carry information about a signal</a></li>
+                <li><a href="#5.2.3">5.2.3 Pulse width modulation uses a digital signal to carry analogue information</a></li>
+                <li><a href="#5.2.4">5.2.4 Modulated carriers pick up noise and interference in transmission</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.3">5.3 Frequency Division Multiplexing</a>
+              <ol>
+                <li><a href="#5.3.1">5.3.1 Many modulated carriers can be sent down a link by allocating each one to a different channel</a></li>
+                <li><a href="#5.3.2">5.3.2 Radio transmissions use FDM</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.4">5.4 Time Division Multiplexing</a>
+              <ol>
+                <li><a href="#5.4.1">5.4.1 Telephone systems use time division multiplexing to make efficient use of links</a></li>
+                <li><a href="#5.4.2">5.4.2 Computers exchange information along cables using time-division multiplexing</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <ol id="physics">
+        <li>
+          <a href="#1">1 Particles, Quantum Phenomena and Electricity</a>
+          <ol>
+            <li>
+              <a href="#1.1">1.1 Particles and Radiation</a>
+              <ol>
+                <li><a href="#1.1.1">1.1.1 Constituents of the atom</a></li>
+                <li><a href="#1.1.2">1.1.2 Stable and unstable nuclei</a></li>
+                <li><a href="#1.1.3">1.1.3 Particles, antiparticles and photons</a></li>
+                <li><a href="#1.1.4">1.1.4 Particle interactions</a></li>
+                <li><a href="#1.1.5">1.1.5 Classification of particles</a></li>
+                <li><a href="#1.1.6">1.1.6 Quarks and antiquarks</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.2">1.2 Electromagnetic Radiation and Quantum Phenomena</a>
+              <ol>
+                <li><a href="#1.2.1">1.2.1 The photoelectric effect</a></li>
+                <li><a href="#1.2.2">1.2.2 Collisions of electrons with atoms</a></li>
+                <li><a href="#1.2.3">1.2.3 Energy levels and photon emission</a></li>
+                <li><a href="#1.2.4">1.2.4 Wave-particle duality</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.3">1.3 Current Electricity</a>
+              <ol>
+                <li><a href="#1.3.1">1.3.1 Charge, current and potential difference</a></li>
+                <li><a href="#1.3.2">1.3.2 Current/voltage characteristics</a></li>
+                <li><a href="#1.3.3">1.3.3 Resistivity</a></li>
+                <li><a href="#1.3.4">1.3.4 Circuits</a></li>
+                <li><a href="#1.3.5">1.3.5 Potential divider</a></li>
+                <li><a href="#1.3.6">1.3.6 Electromotive force and internal resistance</a></li>
+                <li><a href="#1.3.7">1.3.7 Alternating currents</a></li>
+                <li><a href="#1.3.8">1.3.8 Oscilloscope</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#2">2 Mechanics, Materials and Waves</a>
+          <ol>
+            <li>
+              <a href="#2.1">2.1 Mechanics</a>
+              <ol>
+                <li><a href="#2.1.1">2.1.1 Scalars and vectors</a></li>
+                <li><a href="#2.1.2">2.1.2 Moments</a></li>
+                <li><a href="#2.1.3">2.1.3 Motion along a straight line</a></li>
+                <li><a href="#2.1.4">2.1.4 Projectile motion</a></li>
+                <li><a href="#2.1.5">2.1.5 Newton's laws of motion</a></li>
+                <li><a href="#2.1.6">2.1.6 Work, energy and power</a></li>
+                <li><a href="#2.1.7">2.1.7 Conservation of energy</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.2">2.2 Materials</a>
+              <ol>
+                <li><a href="#2.2.1">2.2.1 Bulk properties of solids</a></li>
+                <li><a href="#2.2.2">2.2.2 The Young modulus</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.3">2.3 Waves</a>
+              <ol>
+                <li><a href="#2.3.1">2.3.1 Progressive Waves</a></li>
+                <li><a href="#2.3.2">2.3.2 Longitudinal and transverse waves</a></li>
+                <li><a href="#2.3.3">2.3.3 Refraction at a plane surface</a></li>
+                <li><a href="#2.3.4">2.3.4 Superposition of waves, stationary waves</a></li>
+                <li><a href="#2.3.5">2.3.5 Interference</a></li>
+                <li><a href="#2.3.6">2.3.6 Diffraction</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#4">4 Fields and Further Mechanics</a>
+          <ol>
+            <li>
+              <a href="#4.1">4.1 Further Mechanics</a>
+              <ol>
+                <li><a href="#4.1.1">4.1.1 Momentum concepts</a></li>
+                <li><a href="#4.1.2">4.1.2 Circular motion</a></li>
+                <li><a href="#4.1.3">4.1.3 Simple harmonic motion</a></li>
+                <li><a href="#4.1.4">4.1.4 Simple harmonic systems</a></li>
+                <li><a href="#4.1.5">4.1.5 Forced vibrations and resonance</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.2">4.2 Gravitation</a>
+              <ol>
+                <li><a href="#4.2.1">4.2.1 Newton's law</a></li>
+                <li><a href="#4.2.2">4.2.2 Gravitational field strength</a></li>
+                <li><a href="#4.2.3">4.2.3 Gravitational potential</a></li>
+                <li><a href="#4.2.4">4.2.4 Orbits of planets and satellites</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.3">4.3 Electric Fields</a>
+              <ol>
+                <li><a href="#4.3.1">4.3.1 Coulomb's law</a></li>
+                <li><a href="#4.3.2">4.3.2 Electric field strength</a></li>
+                <li><a href="#4.3.3">4.3.3 Electric potential</a></li>
+                <li><a href="#4.3.4">4.3.4 Comparison of electric and gravitational fields</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.4">4.4 Capacitance</a>
+              <ol>
+                <li><a href="#4.4.1">4.4.1 Capacitance</a></li>
+                <li><a href="#4.4.2">4.4.2 Energy stored by a capacitor</a></li>
+                <li><a href="#4.4.3">4.4.3 Capacitor discharge</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.5">4.5 Magnetic Fields</a>
+              <ol>
+                <li><a href="#4.5.1">4.5.1 Magnetic flux density</a></li>
+                <li><a href="#4.5.2">4.5.2 Moving charges in a magnetic field</a></li>
+                <li><a href="#4.5.3">4.5.3 Magnetic flux and flux linkage</a></li>
+                <li><a href="#4.5.4">4.5.4 Electromagnetic induction</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#5">5 Nuclear and Thermal Physics</a>
+          <ol>
+            <li>
+              <a href="#5.1">5.1 Radioactivity</a>
+              <ol>
+                <li><a href="#5.1.1">5.1.1 Evidence for the nucleus</a></li>
+                <li><a href="#5.1.2">5.1.2 ɑ, β and ɣ radiation</a></li>
+                <li><a href="#5.1.3">5.1.3 Radioactive decay</a></li>
+                <li><a href="#5.1.4">5.1.4 Nuclear instability</a></li>
+                <li><a href="#5.1.5">5.1.5 Nuclear radius</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.2">5.2 Nuclear Energy</a>
+              <ol>
+                <li><a href="#5.2.1">5.2.1 Mass and energy</a></li>
+                <li><a href="#5.2.2">5.2.2 Induced fission</a></li>
+                <li><a href="#5.2.3">5.2.3 Safety aspects</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.3">5.3 Thermal Physics</a>
+              <ol>
+                <li><a href="#5.3.1">5.3.1 Thermal energy</a></li>
+                <li><a href="#5.3.2">5.3.2 Ideal gases</a></li>
+                <li><a href="#5.3.3">5.3.3 Molecular kinetic theory model</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </nav>
+    <section>
+      <h1 id="1">1 Particles, Quantum Phenomena and Electricity</h1>
+      <h2 id="1.1">1.1 Particles and Radiation</h2>
+      <h3 id="1.1.1">1.1.1 Constituents of the atom</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Proton, neutron, electron</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Their charge and mass in SI units and relative units<br>
+Specific charge of nuclei and of ions<br>
+Atomic mass is not required</p>
+            </td>
+            <td><table>
+<thead>
+<tr>
+<th align="center">Particle</th>
+<th align="center">Charge / \(\si{\coulomb}\)</th>
+<th align="center">Relative charge</th>
+<th align="center">Mass / \(\si{\kilogram}\)</th>
+<th align="center">Relative mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Proton</td>
+<td align="center">\(e = 1.60\cdot 10^{-19}\)</td>
+<td align="center">1</td>
+<td align="center">\(m_p = 1.67(3)\cdot 10^{-27}\)</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Neutron</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">\(m_n = 1.67(5)\cdot 10^{-27}\)</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">Electron</td>
+<td align="center">\(-e = -1.60\cdot 10^{-19}\)</td>
+<td align="center">-1</td>
+<td align="center">\(m_e = 9.11\cdot 10^{-31}\)</td>
+<td align="center">\(\frac{1}{1836}\)</td>
+</tr>
+</tbody>
+</table>
+<p>The specific charge of a particle is its charge divided by mass</p></td>
+          <tr>
+            <td>
+<p>Proton number \(Z\), nucleon number \(A\), nuclide notation, isotopes</p>
+            </td>
+            <td><p>The proton number is the number of protons in an atom<br>
+The nucleon number is the number of protons &amp; neutrons in an atom<br>
+The nuclide notation is: \(^A_ZX\)<br>
+Isotopes of an element are atoms that have a different number of neutrons</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.2">1.1.2 Stable and unstable nuclei</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The strong nuclear force, its role in keeping the nucleus stable; short-range attraction to about \(\SI{3}{\femto\metre}\), very-short range repulsion below about \(\SI{0.5}{\femto\metre}\)</p>
+            </td>
+            <td><p>The strong nuclear force acts between protons &amp; neutrons<br>
+It is repulsive at distances less than about \(\SI{0.7}{\femto\metre}\) to keep the hadrons separate<br>
+It is attractive at distances between about \(\SI{0.7}{\femto\metre}\) and \(\SI{3}{\femto\metre}\) to keep atom nuclei stable</p></td>
+          <tr>
+            <td>
+<p>Equations for alpha decay and \(\beta^-\) decay including the antineutrino</p>
+            </td>
+            <td><p>Equation for alpha decay: \(^A_ZX \rightarrow ^{A-4}_{Z-2}Y + ^4_2\alpha\)<br>
+Equation for \(\beta^-\) decay: \(^A_ZX \rightarrow ^{\phantom{Z+}A}_{Z+1}Y + ^{\phantom{-}0}_{-1}\beta + \overline\nu\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.3">1.1.3 Particles, antiparticles and photons</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Candidates should know that for every type of particle, there is a corresponding antiparticle<br>
+They should know that the positron, the antiproton, the antineutron and the antineutrino are the antiparticles of the electron, the proton, the neutron and the neutrino, respectively</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Comparison of particle and antiparticle masses, charge and rest energy in \(\si{\mega\electronvolt}\)</p>
+            </td>
+            <td><p>Mass is the same<br>
+Charge is opposite<br>
+Rest energy is the same</p></td>
+          <tr>
+            <td>
+<p>Photon model of electromagnetic radiation, the Planck constant, \(E = hf = \frac{hc}{\lambda}\)</p>
+            </td>
+            <td><p>The photon model of electromagnetic radiation states that light is released in packets of energy called quanta, in particles called photons<br>
+The Planck constant \(h\) is \(\SI{6.63\cdot 10^{-34}}{\joule\second}\)</p></td>
+          <tr>
+            <td>
+<p>Knowledge of annihilation and pair production processes and the respective energies involved<br>
+The use of \(E = mc^2\) is not required in calculations</p>
+            </td>
+            <td><p>Annihilation is the destruction of a particle and its antiparticle upon meeting to create two photons<br>
+Pair production is the production of a particle and its antiparticle from a photon<br>
+The annihilation of an electron &amp; positron creates 2 photons with energy \(\SI{8.2\cdot 10^{-14}}{\joule}\)<br>
+The pair production of an electron &amp; positron requires a photon with energy \(\SI{1.64\cdot10^{-13}}{\joule}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.4">1.1.4 Particle interactions</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Concept of exchange particles to explain forces between elementary particles</p>
+            </td>
+            <td><p>The exchange of virtual exchange particles between two elementary particles causes an equal and opposite force in both</p></td>
+          <tr>
+            <td>
+<p>The electromagnetic force; virtual photons as the exchange particle</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The weak interaction limited to \(\beta^-\), \(\beta^+\) decay, electron capture and electron-proton collisions; \(W^+\) and \(W^-\) as the exchange particles</p>
+            </td>
+            <td><p>The weak interaction ... ; the exchange particles are W bosons, which are charged and have a relatively high mass, so short-lived, with a range of less than \(\SI{0.001}{\femto\metre}\)<br>
+\(\beta^-\) decay is the breakdown of a neutron to become a proton, emitting a \(W^-\) boson that decays into an electron and antineutrino<br>
+\(\beta^+\) decay is the breakdown of a proton to become a neutron, emitting a \(W^+\) boson that decays into a positron and neutrino<br>
+The exchange of a \(W^+\) boson from a proton to an electron changes them into a neutron and electron antineutrino; this occurs in electron capture, when a proton in a proton-rich nucleus absorbs an inner electron, and high-speed electron-proton collisions</p></td>
+          <tr>
+            <td>
+<p>Simple Feynman diagrams to represent the above reactions or interactions in terms of particles going in and out and exchange particles</p>
+            </td>
+            <td><p>Time goes upwards<br>
+Straight lines represent particles<br>
+Wavy lines represent virtual particles</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.5">1.1.5 Classification of particles</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Hadrons: baryons (proton, neutron) and antibaryons (antiproton and antineutron) and mesons (pion, kaon)</p>
+            </td>
+            <td><p>There are three types of pions and kaons that indicated its charge<br>
+\(\pi^+\) and \(K^+\) mesons are positively charged<br>
+\(\pi^-\) and \(K^-\) mesons are negatively charged and are antiparticles of the above<br>
+\(\pi^0\) and \(K^0\) mesons are neutral<br>
+\(\pi^0\) mesons are their own antiparticle</p></td>
+          <tr>
+            <td>
+<p>Hadrons are subject to the strong nuclear force</p>
+            </td>
+            <td><p>And the electromagnetic force, if charged</p></td>
+          <tr>
+            <td>
+<p>Candidates should know that the proton is the only stable baryon into which other baryons eventually decay; in particular, the decay of the neutron should be known</p>
+            </td>
+            <td><p>Neutron decay: \(n \rightarrow p + \overline e + \overline\nu_e\)</p></td>
+          <tr>
+            <td>
+<p>Lepton: electron, muon, neutrino (electron and muon types)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Leptons are subject to the weak interaction</p>
+            </td>
+            <td><p>And the electromagnetic force, if charged, but not the strong nuclear force</p></td>
+          <tr>
+            <td>
+<p>Candidates will be expected to know baryon numbers for the hadrons<br>
+Lepton numbers for the leptons will be given in the data booklet</p>
+            </td>
+            <td><p>Baryons have a baryon number of 1<br>
+Mesons have a baryon number of 0</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.6">1.1.6 Quarks and antiquarks</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Up (u), down (d) and strange quarks only</p>
+            </td>
+            <td><p>Strange (s)</p></td>
+          <tr>
+            <td>
+<p>Properties of quarks: charge, baryon number and strangeness</p>
+            </td>
+            <td><table>
+<thead>
+<tr>
+<th align="center">Quark</th>
+<th align="center">Charge</th>
+<th align="center">Baryon number</th>
+<th align="center">Strangeness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Up</td>
+<td align="center">\(+\frac{2}{3}\)</td>
+<td align="center">\(+\frac{1}{3}\)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">Down</td>
+<td align="center">\(-\frac{1}{3}\)</td>
+<td align="center">\(+\frac{1}{3}\)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">Strange</td>
+<td align="center">\(-\frac{1}{3}\)</td>
+<td align="center">\(+\frac{1}{3}\)</td>
+<td align="center">-1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Antiquark</th>
+<th align="center">Charge</th>
+<th align="center">Baryon number</th>
+<th align="center">Strangeness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Up</td>
+<td align="center">\(-\frac{2}{3}\)</td>
+<td align="center">\(-\frac{1}{3}\)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">Down</td>
+<td align="center">\(+\frac{1}{3}\)</td>
+<td align="center">\(-\frac{1}{3}\)</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">Strange</td>
+<td align="center">\(+\frac{1}{3}\)</td>
+<td align="center">\(-\frac{1}{3}\)</td>
+<td align="center">+1</td>
+</tr>
+</tbody>
+</table></td>
+          <tr>
+            <td>
+<p>Combinations of quarks and antiquarks required for baryons (proton and neutron only), antibaryons (antiproton and antineutron only) and mesons (pion and kaon) only</p>
+            </td>
+            <td><table>
+<thead>
+<tr>
+<th align="center">Hadron</th>
+<th align="center">Quark combination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Proton</td>
+<td align="center">\(uud\)</td>
+</tr>
+<tr>
+<td align="center">Neutron</td>
+<td align="center">\(udd\)</td>
+</tr>
+<tr>
+<td align="center">Antiproton</td>
+<td align="center">\(\overline u\overline u\overline d\)</td>
+</tr>
+<tr>
+<td align="center">Antineutron</td>
+<td align="center">\(\overline u\overline d\overline d\)</td>
+</tr>
+<tr>
+<td align="center">\(\pi^+\) meson</td>
+<td align="center">\(u\overline d\)</td>
+</tr>
+<tr>
+<td align="center">\(\pi^-\) meson</td>
+<td align="center">\(d\overline u\)</td>
+</tr>
+<tr>
+<td align="center">\(\pi^0\) meson</td>
+<td align="center">\(u\overline u\) or \(d\overline d\) or \(s\overline s\)</td>
+</tr>
+<tr>
+<td align="center">\(K^+\) meson</td>
+<td align="center">\(u\overline s\)</td>
+</tr>
+<tr>
+<td align="center">\(K^-\) meson</td>
+<td align="center">\(s\overline u\)</td>
+</tr>
+<tr>
+<td align="center">\(K^0\) meson</td>
+<td align="center">\(d\overline s\)</td>
+</tr>
+</tbody>
+</table></td>
+          <tr>
+            <td>
+<p>Change of quark character in \(\beta^-\) and \(\beta^+\) decay</p>
+            </td>
+            <td><p>In \(\beta^-\) decay, a down quark decays into an up quark<br>
+In \(\beta^+\) decay, an up quark decays into a down quark</p></td>
+          <tr>
+            <td>
+<p>Applications of the conservation laws for charge, baryon number, lepton number and strangeness to particle interactions<br>
+The necessary data will be provided in questions for particles outside those specified</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="1.2">1.2 Electromagnetic Radiation and Quantum Phenomena</h2>
+      <h3 id="1.2.1">1.2.1 The photoelectric effect</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Work function \(\Phi\), threshold frequency \(f_0\), photoelectric equation \(hf = \Phi + Ek\); the stopping potential experiment is not required</p>
+            </td>
+            <td><p>The photoelectric effect is the observation that directing electromagnetic radiation onto a metal above a certain frequency, depending on the metal, causes it to instantly emit electrons from the surface<br>
+The work function is the minimum amount of energy required to remove an electron from the surface of a metal<br>
+The threshold frequency is the minimum frequency required to be directed onto the metal so that a photon can provide an electron with enough energy to escape</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.2.2">1.2.2 Collisions of electrons with atoms</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The electron volt</p>
+            </td>
+            <td><p>The electron volt is the amount of energy gained by an electron moving across an electric potential difference of one volt</p></td>
+          <tr>
+            <td>
+<p>Ionisation and excitation; understanding of ionisation and excitation in the fluorescent tube</p>
+            </td>
+            <td><p>Ionisation is the process of creating ions by providing an electron in an atom with enough energy to escape all energy levels<br>
+Excitation is the gain of energy by an electron in an atom which gives it the exact energy required to raise energy levels<br>
+In a fluorescent tube, free electrons can ionise atoms of the gas or vapour<br>
+Passing electrons or photons can also excite electrons in an atom</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.2.3">1.2.3 Energy levels and photon emission</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Line spectra (e.g. of atomic hydrogen) as evidence of transitions between discrete energy levels in atoms; \(hf = E_1 - E_2\)</p>
+            </td>
+            <td><p>A line spectrum is the pattern of light unique to an element that shows the various energies of light emitted when the electrons de-excite</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.2.4">1.2.4 Wave-particle duality</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Candidates should know that electron diffraction suggests the wave nature of particles and the photoelectric effect suggests the particle nature of electromagnetic waves; details of particular methods of particle diffraction are not expected</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>de Broglie wavelength \(\lambda = \frac{h}{mv}\), where \(mv\) is the momentum</p>
+            </td>
+            <td><p>de Broglie wavelength generalises the particle-wave duality of photons to all particles of matter</p></td>
+        </tbody>
+      </table>
+      <h2 id="1.3">1.3 Current Electricity</h2>
+      <h3 id="1.3.1">1.3.1 Charge, current and potential difference</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Electric current as the rate of flow of charge; potential difference as work done per unit charge; \(I = \frac{\Delta Q}{\Delta t}\) and \(V = \frac{W}{Q}\)</p>
+            </td>
+            <td><p>\(I = \frac{\mathrm{d}Q}{\mathrm{d}t}\)</p></td>
+          <tr>
+            <td>
+<p>Resistance is defined by \(R = \frac{V}{I}\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.2">1.3.2 Current/voltage characteristics</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>For an ohmic conductor, a semiconductor diode and a filament lamp; candidates should have experience of the use of a current sensor and a voltage sensor with a data logger to capture data from which to determine I-V curves</p>
+            </td>
+            <td><p>Ohmic conductors follow Ohm's law: \(V = IR\)<br>
+A semiconductor diode has no current at less than \(\SI{0.7}{\volt}\), but can have any current above<br>
+The resistance of a filament lamp increases with voltage</p></td>
+          <tr>
+            <td>
+<p>Ohm's law as a special case where \(I \propto V\)</p>
+            </td>
+            <td><p>\(V = IR\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.3.3">1.3.3 Resistivity</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>\(\rho = \frac{RA}{L}\)</p>
+            </td>
+            <td><p>\(R\) is the resistance, \(A\) is the cross-sectional area, \(L\) is the length</p></td>
+          <tr>
+            <td>
+<p>Descriptions of the qualitative effect of temperature on the resistance of metal conductors and thermistors<br>
+Applications (e.g. temperature sensors)</p>
+            </td>
+            <td><p>The resistance of a metal conductor increases with temperature<br>
+The resistance of a thermistor decreases as the temperature increases<br>
+The change of resistance means that a thermister can be used to make a temperature sensor</p></td>
+          <tr>
+            <td>
+<p>Superconductivity as a property of certain materials which have zero resistivity at and below a critical temperature which depends on the material<br>
+Applications (e.g. very strong electromagnets, power cables)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.4">1.3.4 Circuits</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Resistors in series; \(R = R_1 + R_2 + R_3 + \ldots\)</p>
+            </td>
+            <td><p>Resistors in series increase the resistance</p></td>
+          <tr>
+            <td>
+<p>Resistors in parallel; \(\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots\)</p>
+            </td>
+            <td><p>Resistors in parallel decrease the resistance</p></td>
+          <tr>
+            <td>
+<p>Energy \(E = IVt\), \(P = IV\), \(P = I^2R\); applications, e.g. Understanding of high current requirement for a starter motor in a motor car</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Conservation of charge and energy in simple dc circuits</p>
+            </td>
+            <td><p>Current does not change in a series circuit<br>
+The voltage across the branches of a parallel circuit is the same</p></td>
+          <tr>
+            <td>
+<p>The relationships between currents, voltages and resistances in series and parallel circuits, including cells in series and identical cells in parallel</p>
+            </td>
+            <td><p>The voltage across branches of parallel circuits are the same, but the currents aren't necessarily</p></td>
+          <tr>
+            <td>
+<p>Questions will not be set which require the use of simultaneous equations to calculate currents or potential differences</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.5">1.3.5 Potential divider</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The potential divider used to supply variable pd e.g. application as an audio 'volume' control</p>
+            </td>
+            <td><p>A potential divider provides part of the supply voltage that is defined by the resistors used according to the equation \(R = \frac{R_1}{R_1 + R_2}\)<br>
+Using a variable resistor thereby varies the output voltage</p></td>
+          <tr>
+            <td>
+<p>Examples should include the use of variable resistors, thermistors and L.D.R.s. The use of the potentiometer as a measuring instrument is not required</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.6">1.3.6 Electromotive force and internal resistance</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>\[\varepsilon = \frac{E}{Q}\] \[\varepsilon = I(R + r)\]</p>
+            </td>
+            <td><p>\(r\) is the internal resistance of the e.m.f. source</p></td>
+          <tr>
+            <td>
+<p>Applications; e.g. low internal resistance for a car battery</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.7">1.3.7 Alternating currents</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Sinusoidal voltages and currents only<br>
+Root mean square, peak and peak-to-peak values for sinusoidal waveforms only<br>
+\[I_{rms} = \frac{I_0}{\sqrt{2}}\] \[V_{rms} = \frac{V_0}{\sqrt{2}}\]</p>
+            </td>
+            <td><p>The root mean square of an alternating current gives the value of the direct current that would provide the same amount of power<br>
+The peak current is the maximum current provided<br>
+The peak-to-peak value is the difference between the peak current and the negative peak current</p></td>
+          <tr>
+            <td>
+<p>Application to calculation of mains electricity peak and peak-to-peak voltage values</p>
+            </td>
+            <td><p>The mains electricity is an alternating current with a root mean square voltage of 230 V (±10 %) and frequency of 50 Hz</p></td>
+        </tbody>
+      </table>
+      <h3 id="1.3.8">1.3.8 Oscilloscope</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Use of an oscilloscope as a dc and ac voltmeter, to measure time intervals and frequencies and to display a.c. waveforms<br>
+No details of the structure of the instrument is required but familiarity with the operation of the controls is expected</p>
+            </td>
+            <td><p>Oscilloscopes display a beam that measures time on the x-axis and voltage on the y-axis</p></td>
+        </tbody>
+      </table>
+      <h1 id="2">2 Mechanics, Materials and Waves</h1>
+      <h2 id="2.1">2.1 Mechanics</h2>
+      <h3 id="2.1.1">2.1.1 Scalars and vectors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The addition of vectors by calculation or scale drawing<br>
+Calculations will be limited to two perpendicular vectors</p>
+            </td>
+            <td><p>In a calculation, vectors can be represented by a column of values that shows its effect in each dimension, with its addition calculated by adding the corresponding values in each dimension<br>
+In a scale drawing, vectors can be represented by arrow, with its addition shown by placing one vector on the end of the other</p></td>
+          <tr>
+            <td>
+<p>The resolution of vectors into two components at right angles to each other<br>
+Examples should include the components of forces along and perpendicular to an inclined plane</p>
+            </td>
+            <td><p>The resultant force has magnitude \(\sqrt{F_1^2 + F_2^2}\) and angle \(\arctan\frac{F_2}{F_1}\)</p></td>
+          <tr>
+            <td>
+<p>Conditions for equilibrium for two or three coplanar forces acting at a point; problems may be solved either by using resolved forces or by using a closed triangle</p>
+            </td>
+            <td><p>Equilibrium can be calculated by resolving forces in all dimensions to zero<br>
+Equilibrium can be shown in a scale drawing by adding the vectors so that the last vector goes back to the original starting point, producing a closed shape</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.1.2">2.1.2 Moments</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Moment of a force about a point defined as \(\text{force} * \text{perpendicular distance from the point to the line of action of the force}\)<br>
+Torque</p>
+            </td>
+            <td><p>The terms torque and moment are interchangeable<br>
+It uses the unit Newton metre \(\si{\newton\metre}\)</p></td>
+          <tr>
+            <td>
+<p>Couple of a pair of equal and opposite forces defined as \(\text{force} * \text{perpendicular distance between the lines of action of the forces}\)</p>
+            </td>
+            <td><p>A couple is a pair of equal and opposite forces that do not act on the same line, thereby producing torque</p></td>
+          <tr>
+            <td>
+<p>The principle of moments and its applications in simple balanced situations</p>
+            </td>
+            <td><p>The principle of moments is that for a system in equilibrium, the sum of the clockwise moments are equal to the sum of the anticlockwise moments</p></td>
+          <tr>
+            <td>
+<p>Centre of mass<br>
+Calculations of the position of the centre of mass of a regular lamina are not expected</p>
+            </td>
+            <td><p>The centre of mass of a body is the point at which a force does not produce torque</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.1.3">2.1.3 Motion along a straight line</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Displacement, speed, velocity and acceleration<br>
+\(v = \frac{\Delta s}{\Delta t}\), \(a = \frac{\Delta v}{\Delta t}\)</p>
+            </td>
+            <td><p>Velocity is speed with respect to a specified direction<br>
+\(v = \frac{\mathrm{d}s}{\mathrm{d}t}\), \(a = \frac{\mathrm{d}v}{\mathrm{d}t}\)</p></td>
+          <tr>
+            <td>
+<p>Representation by graphical methods of uniform and non-uniform accceleration<br>
+Interpretation of velocity-time and displacement-time graphs for uniform and non-uniform acceleration<br>
+Significance of areas and gradients</p>
+            </td>
+            <td><p>\(g = \SI{9.8}{\metre\per\second}\) to two significant figures<br>
+The gradient of a displacement-time graph is the velocity<br>
+The gradient of a velocity-time graph is the acceleration<br>
+The area under a velocity-time graph is the displacement</p></td>
+          <tr>
+            <td>
+<p>Equations for uniform acceleration<br>
+\(v = u + at\), \(s = (\frac{u + v}{2})t\), \(s = ut + \frac{at^2}{2}\), \(v^2 = u^2 + 2as\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Acceleration due to gravity, \(g\)<br>
+Detailed experimental methods of measuring \(g\) are not required<br>
+Terminal speed</p>
+            </td>
+            <td><p>Terminal speed is the speed of freefall at which the acceleration due to gravity is balanced by the decceleration due to air resistance</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.1.4">2.1.4 Projectile motion</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Independence of vertical and horizontal motion; problems will be solvable from first principles<br>
+The memorising of projectile equations is not required</p>
+            </td>
+            <td><p>The acceleration due to gravity only affects the vertical speed of a projectile, not the horizontal speed</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.1.5">2.1.5 Newton's laws of motion</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Knowledge and applications of the three laws of motion in appropriate situations</p>
+            </td>
+            <td><p>First law: A body at equilibrium either remains at rest of continues to move at a constant velocity<br>
+Second law: The force on a body is equal to the product of its mass and acceleration<br>
+Third law: A body exerting a force on another body experiences an equal and opposite force from the ther body</p></td>
+          <tr>
+            <td>
+<p>For constant mass, \(F = ma\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.1.6">2.1.6 Work, energy and power</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>\(W = Fs\cos\theta\)</p>
+            </td>
+            <td><p>\(W\) is the work done in joules<br>
+\(F\) is the force in newtons<br>
+\(s\) is the distance in metres<br>
+\(\theta\) is the angle the force is working away from the direction of measurement</p></td>
+          <tr>
+            <td>
+<p>\(P = \frac{\Delta W}{\Delta t}\)</p>
+            </td>
+            <td><p>\(P = \frac{\mathrm{d}W}{\mathrm{d}t}\)<br>
+\(P\) is the power in watts<br>
+\(t\) is the time in seconds</p></td>
+          <tr>
+            <td>
+<p>\(P = Fv\)</p>
+            </td>
+            <td><p>\(v\) is the velocity in metres per second</p></td>
+          <tr>
+            <td>
+<p>\(\text{efficiency} = \frac{\text{useful output power}}{\text{input power}}\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.1.7">2.1.7 Conservation of energy</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Principle of conservation of energy, applied to examples involving gravitational potential energy, kinetic energy and work done against resistive forces</p>
+            </td>
+            <td><p>In a closed system, energy is conserved</p></td>
+          <tr>
+            <td>
+<p>\(\Delta E_p = mg\Delta h\)</p>
+            </td>
+            <td><p>\(E_p\) is the potential energy in joules<br>
+\(m\) is the mass in kilograms<br>
+\(g\) is the gravitational field strength<br>
+\(\Delta h\) is the change height in metres</p></td>
+          <tr>
+            <td>
+<p>\(E_k = \frac{1}{2}mv^2\)</p>
+            </td>
+            <td><p>\(E_k\) is the kinetic energy in joules<br>
+\(v\) is the velocity in metres per second</p></td>
+        </tbody>
+      </table>
+      <h2 id="2.2">2.2 Materials</h2>
+      <h3 id="2.2.1">2.2.1 Bulk properties of solids</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Density \(ρ = \frac{m}{V}\)</p>
+            </td>
+            <td><p>\(\rho\) is the density in kilograms per metre cubed<br>
+\(m\) is the mass in kilogram<br>
+\(V\) is the volume in metres cubed</p></td>
+          <tr>
+            <td>
+<p>Hooke's law, elastic limit, experimental investigations; \(F = k\Delta L\)</p>
+            </td>
+            <td><p>Hooke's law states that the forces required to stretch a spring is the directly proportional to the distance stretched, up to the elastic limit, past which the spring deforms irrevocably</p></td>
+          <tr>
+            <td>
+<p>Tensile strain and tensile stress</p>
+            </td>
+            <td><p>A stretched body is under tension<br>
+Tensile strain is the ratio length stretched to original length \(\varepsilon = \frac{\Delta L}{L}\)<br>
+Tensile stress is the ratio tension to cross-sectional area: \(\sigma = \frac{T}{A}\)</p></td>
+          <tr>
+            <td>
+<p>Elastic strain energy, breaking stress</p>
+            </td>
+            <td><p>Elastic strain energy is the energy stored in a stretched elastic body<br>
+Breaking stress is the point past which an elastic body loses its strength, extending and becoming narrower as more tensile stress is put upon it</p></td>
+          <tr>
+            <td>
+<p>Derivation of \(\text{energy stored} = \frac{1}{2}F\Delta L\)</p>
+            </td>
+            <td><p>\(\text{Energy} = \text{average force} * \text{extension} = \frac{1}{2}F\Delta L\)</p></td>
+          <tr>
+            <td>
+<p>Description of plastic behaviour, fracture and brittleness; interpretation of simple stress-strain curves</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.2.2">2.2.2 The Young modulus</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>\(\text{The Young modulus} = \frac{\text{tensile stress}}{\text{tensile strain}} = \frac{FL}{A\Delta L}\)</p>
+            </td>
+            <td></td>
+          <tr>
+            <td>
+<p>One simple method of measurement</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Use of stress-strain graphs to find the Young modulus</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="2.3">2.3 Waves</h2>
+      <h3 id="2.3.1">2.3.1 Progressive Waves</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Oscillation of the particles of the medium; amplitude, frequency, wavelength, speed, phase, path difference; \(c = f\lambda\)</p>
+            </td>
+            <td><p>Mechanical waves propagate by the oscillation of particles in a medium<br>
+Amplitude is the maximum displacement of an oscillating particle<br>
+Frequency is the number of oscillations per second<br>
+Wavelength is the distance between two adjacent crests<br>
+Speed is frequency multiplied by wavelength<br>
+Phase is the fraction of the wave cycle elapsed relative to the origin<br>
+Path difference is the difference in phase of two waves with the same frequency</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.3.2">2.3.2 Longitudinal and transverse waves</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Characteristics and examples, including sound and electromagnetic waves</p>
+            </td>
+            <td><p>Longitudinal waves displace along the same line as the direction of travel, such as sound waves<br>
+Transverse waves displace perpendicular to the direction of travel, such as light waves</p></td>
+          <tr>
+            <td>
+<p>Polarisation as evidence for the nature of transverse waves; applications e.g. Polaroid sunglasses, aerial alignment for transmitter and receiver</p>
+            </td>
+            <td><p>Polarisation allows oscillation in just one direction, so another polarisation in the perpendicular direction blocks all transverse waves</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.3.3">2.3.3 Refraction at a plane surface</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Refractive index of a substance s, \(n = \frac{c}{c_s}\)</p>
+            </td>
+            <td><p>The refractive index of a substance is equal to the speed of light in a vacuum divided by the speed of light in the substance</p></td>
+          <tr>
+            <td>
+<p>Candidates are not expected to recall methods for determining refractive indices</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Law of refraction for a boundary between two different substances of refractive indices \(n_1\)  and \(n_2\) in the form \(n_1\sin\theta_1 = n_2\sin\theta_2\)</p>
+            </td>
+            <td><p>At the boundary between two different substances, the light wave changes angle determined by the refractive indices of the substances</p></td>
+          <tr>
+            <td>
+<p>Total internal reflection including calculations of the critical angle at a boundary between a substance of refractive index \(n_1\) and a substance of lesser refractive index \(n_2\) or air; \(\sin\theta_c = \frac{n_2}{n_1}\)</p>
+            </td>
+            <td><p>Total internal reflection occurs when the sine of the angle required in the second substance is too high, greater than 1, so no light refracts</p></td>
+          <tr>
+            <td>
+<p>Simple treatment of fibre optics including function of the cladding with lower refractive index around central core limited to step index only; application to communications</p>
+            </td>
+            <td><p>Fibre optics are cladded with a substance with a lower refractive index than the core so that light travelling down it undergoes total internal reflection, allowing transmission of information that is fast and lossless</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.3.4">2.3.4 Superposition of waves, stationary waves</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The formation of stationary waves by two waves of the same frequency travelling in opposite directions; the formula for fundamental frequency in terms of tension and mass per unit length is not required</p>
+            </td>
+            <td></td>
+          <tr>
+            <td>
+<p>Simple graphical representation of stationary waves, nodes and antinodes on strings</p>
+            </td>
+            <td><p>Nodes are the points with the minimum frequency<br>
+Antinodes are the points with the maximum frequency, and occur at the midpoints of nodes</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.3.5">2.3.5 Interference</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The concept of path difference and coherence</p>
+            </td>
+            <td><p>Path difference is the difference in phase of two waves with the same frequency<br>
+Coherence is the property of two waves that have the same frequency and constant phase difference</p></td>
+          <tr>
+            <td>
+<p>The laser as a source of coherent monochromatic light used to demonstrate interference and diffraction; comparison with non-laser light; awareness of safety issues</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Candidates will not be required to describe how a laser works</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Requirements of two source and single source double-slit systems for the production of fringes</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The appearance of the interference fringes produced by a double-slit system, fringe spacing \(w = \frac{\lambda D}{s}\) where s is the slit separation</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.3.6">2.3.6 Diffraction</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Appearance of the diffraction pattern from a single slit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The plane transmission diffraction grating at normal incidence; optical details of the spectrometer will not be required</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Derivation of \(d\sin\theta = n\lambda\) where \(n\) is the order number</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Applications; e.g. to spectral analysis of light from stars</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h1 id="4">4 Fields and Further Mechanics</h1>
+      <h2 id="4.1">4.1 Further Mechanics</h2>
+      <h3 id="4.1.1">4.1.1 Momentum concepts</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Force as the rate of change of momentum; \(F = \frac{\Delta(mv)}{\Delta t}\)</p>
+            </td>
+            <td><p>Constant mass gives \(F = m\frac{\Delta v}{\Delta t} = ma\), Newton's second law</p></td>
+          <tr>
+            <td>
+<p>Impulse \(F\Delta t = \Delta(mv)\)</p>
+            </td>
+            <td><p>Impulse is the result of a force over time</p></td>
+          <tr>
+            <td>
+<p>Significance of area under a force-time graph</p>
+            </td>
+            <td><p>The area under a force-time graph gives the impulse of the force</p></td>
+          <tr>
+            <td>
+<p>Principle of conservation of linear momentum applied to problems in one dimension</p>
+            </td>
+            <td><p>In a closed system, momentum is conserved</p></td>
+          <tr>
+            <td>
+<p>Elastic and inelastic collisions; explosions</p>
+            </td>
+            <td><p>The elasticity of a collision between two bodies denotes the ratio of the difference in velocity after the collision to before the collision<br>
+A completely elastic collision results in the two bodies moving apart at the same speed as before the collision<br>
+An inelastic collision results in the two bodies moving at the same velocity, touching<br>
+In an explosion, two bodies initially at rest recoil to move apart with equal and opposite momentum</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.1.2">4.1.2 Circular motion</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Motion in a circular path at constant speed implies there is an acceleration and requires a centripetal force</p>
+            </td>
+            <td><p>Otherwise the body would move in a straight line tangent to the circle<br>
+The centripetal force is towards the centre of the circle</p></td>
+          <tr>
+            <td>
+<p>Angular speed \(\omega = \frac{v}{r} = 2\pi f\)</p>
+            </td>
+            <td><p>Angular velocity is the rate of change of angular displacement, and is measured in radians per second</p></td>
+          <tr>
+            <td>
+<p>Centripetal acceleration \(a = \frac{v^2}{r} = \omega^2r\)</p>
+            </td>
+            <td><p>Centripetal acceleration is the acceleration required to keep the body on a circular path</p></td>
+          <tr>
+            <td>
+<p>Centripetal force \(F = \frac{mv^2}{r} = m\omega^2r\)</p>
+            </td>
+            <td><p>From \(F = ma\)</p></td>
+          <tr>
+            <td>
+<p>The derivation of \(a = \frac{v^2}{r}\)</p>
+            </td>
+            <td><p>Rudimentary derivation:<br>
+<img alt="" src="../img/centripetal_acceleration.svg"><br>
+From \(s = ut + \frac{1}{2}at^2\), \(u = 0\) so \(s = \frac{1}{2}a\delta t^2\)<br>
+But \((s+r)^2 = r^2 + (v\delta t)^2\)<br>
+So \(s^2 + 2sr = v^2\delta t^2\)<br>
+\(\implies \frac{1}{4}a^2\delta t^4 + ar\delta t^2 = v^2\delta t^2\)<br>
+\(\implies \frac{1}{4}a^2\delta t^2 + ar = v^2\)<br>
+\(\delta t\) tends to 0, so \(ar = v^2\)<br>
+Or \(a = \frac{v^2}{r}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.1.3">4.1.3 Simple harmonic motion</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Characteristic features of simple harmonic motion</p>
+            </td>
+            <td><p>A body moving in simple harmonic motion experiences a force that is directly proportional to its displacement from a given origin in the direction opposite to the direction of displacement</p></td>
+          <tr>
+            <td>
+<p>Condition for shm: \(a = -(2\pi f)^2x\), \(x = A\cos 2\pi ft\) and \(v = \pm 2\pi f\sqrt{\strut A^2 - x^2}\)</p>
+            </td>
+            <td><p>\(x\) is the displacement from the origin in metres<br>
+\(f\) is the frequency of oscillation in Hertz<br>
+\(A\) is the amplitude in metres<br>
+\(t\) is the time in seconds<br>
+\(v\) is the velocity in metres per second<br>
+\(a\) is the velocity in metres per second squared<br>
+The sign of v depends on the sign of x</p></td>
+          <tr>
+            <td>
+<p>Graphical representations linking \(x\), \(v\), \(a\) and \(t\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Velocity as gradient of displacement-time graphs</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Maximum speed = \(2\pi fA\)</p>
+            </td>
+            <td><p>When \(x = 0\), at the origin</p></td>
+          <tr>
+            <td>
+<p>Maximum acceleration = \((2\pi f)^2A\)</p>
+            </td>
+            <td><p>When \(x = A\), at the maximum displacement</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.1.4">4.1.4 Simple harmonic systems</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Study of mass-spring systems; \(T = 2\pi\sqrt{\frac{m}{k}}\)</p>
+            </td>
+            <td><p>The force of a mass oscillating on the end of a spring is \(F = -kx\) so \(a = -\frac{k}{m}x\), which is the form for shm where \((2\pi f)^2 = \frac{k}{m}\)<br>
+This gives \(T = \frac{1}{f} = 2\pi\sqrt\frac{m}{k}\)</p></td>
+          <tr>
+            <td>
+<p>Study of simple pendulum; \(T = 2\pi\sqrt{\frac{l}{g}}\)</p>
+            </td>
+            <td><p>The force of a mass oscillating on the end of a pendulum is \(F = -mg\sin\theta\) so \(a = -g\sin\theta\)<br>
+At small values of \(\theta\) (\(&lt;\SI{10}{\degree}\)), \(\sin\theta \approx \frac{x}{L}\), so \(a = -\frac{g}{l}x\), which is the form for shm, where \((2\pi f)^2 = \frac{g}{l}\)<br>
+This gives \(T = \frac{1}{f} = 2\pi\sqrt\frac{l}{g}\)</p></td>
+          <tr>
+            <td>
+<p>Variations of \(E_k\), \(E_p\) and total energy with displacement, and with time</p>
+            </td>
+            <td><p>The potential energy stored in the spring as measured from the origin is \(E_p = \frac{1}{2}kx^2\)<br>
+Since it is a closed system, energy is conserved, so at the maximum displacement, where kinetic energy is 0, the total energy is equal to the potential energy, so \(E_t = \frac{1}{2}kA^2\), where \(A\) is the amplitude<br>
+It follows that the kinetic energy is equal to \(E_k = E_t - E_p = \frac{1}{2}k(A^2 - x^2)\)<br>
+The velocity is \(v = \pm\sqrt\frac{2E_k}{m} = \pm\sqrt{\frac{k}{m}(A^2 - x^2)}\)<br>
+Since \((2\pi f)^2 = \frac{k}{m}\), \(v = \pm\sqrt{(2πf)^2(A^2 - x^2)} = \pm 2\pi f\sqrt{(A^2 - x^2)}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.1.5">4.1.5 Forced vibrations and resonance</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Qualitative treatment of free and forced vibrations</p>
+            </td>
+            <td><p>Free vibrations occur without an input force at the natural frequency of the system<br>
+Forced vibrations have a periodic force applied to keep it oscillating</p></td>
+          <tr>
+            <td>
+<p>Resonance and the effects of damping on the sharpness of resonance</p>
+            </td>
+            <td><p>Resonance occurs when the frequency of forced vibrations is equal to the natural frequency and in phase with the velocity, causing the amplitude to become very large<br>
+Damping reduces the sharpness of resonance</p></td>
+          <tr>
+            <td>
+<p>Phase difference between driver and driven displacements</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Examples of these effects in mechanical systems and stationary wave situations</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="4.2">4.2 Gravitation</h2>
+      <h3 id="4.2.1">4.2.1 Newton's law</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Gravity as a universal attractive force acting between all matter</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Force between point masses \(F = \frac{Gm_1m_2}{r^2}\), where G is the gravitational constant</p>
+            </td>
+            <td><p>This is Newton's Universal Law of Gravitation<br>
+\(G = \SI{6.67\cdot 10^{-11}}{\newton\meter\squared\per\kilogram\squared}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.2.2">4.2.2 Gravitational field strength</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Concept of a force field as a region in which a body experiences a force</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Representation by gravitational field lines</p>
+            </td>
+            <td><p>The denser the field lines in an area, the stronger the force</p></td>
+          <tr>
+            <td>
+<p>\(g\) as force per unit mass defined by \(g = \frac{F}{m}\)</p>
+            </td>
+            <td><p>\(g\) is the gravitational field strength</p></td>
+          <tr>
+            <td>
+<p>Magnitude of \(g\) in a radial field given by \(g = \frac{GM}{r^2}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  g &amp; = \frac{F}{m}<br>
+\\ &amp; = \frac{\frac{GMm}{r^2}}{m}<br>
+\\ &amp; = \frac{GM}{r^2}<br>
+\end{align}\]</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.2.3">4.2.3 Gravitational potential</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understanding of the definition of gravitational potential, including zero value at infinity, and of gravitational potential difference</p>
+            </td>
+            <td><p>The gravitational potential at a point is the negative of the work done per kilogram by gravity to move a body from infinity to that point</p></td>
+          <tr>
+            <td>
+<p>Work done in moving mass \(m\) given by \(\Delta W = m\Delta V\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Gravitational potential \(V\) in a radial field given by \(V = -\frac{GM}{r}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  V &amp; = -\frac{1}{m}W<br>
+\\ &amp; = -\frac{1}{m}\int F\mathrm{d}s<br>
+\\ &amp; = -\frac{1}{m}\int_r^\infty \frac{GMm}{s^2} \mathrm{d}s<br>
+\\ &amp; = GM[s^{-1}]_r^\infty<br>
+\\ &amp; = GM(0-r^{-1})<br>
+\\ &amp; = -\frac{GM}{r}<br>
+\end{align}\]</p></td>
+          <tr>
+            <td>
+<p>Gravitational representations of variations of \(g\) and \(V\) with \(r\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>\(V\) related to \(g\) by \(g = -\frac{\Delta V}{\Delta r}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  g &amp; = \frac{GM}{r^2}<br>
+\\ &amp; = \frac{\frac{GM}{r}}{r}<br>
+\\ &amp; = \frac{V}{r}<br>
+\end{align}\]</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.2.4">4.2.4 Orbits of planets and satellites</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Orbital period and speed related to radius of circular orbit</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  T &amp; = \frac{1}{f}<br>
+\\ &amp; = \frac{1}{\frac{\omega}{2\pi}}<br>
+\\ &amp; = \frac{2\pi}{\sqrt\frac{F}{mr}}<br>
+\\ &amp; = \frac{2\pi\sqrt{mr}}{\sqrt\frac{GMm}{r^2}}<br>
+\\ &amp; = \frac{2\pi}{\sqrt{GM}}r^\frac{3}{2}<br>
+\end{align}\]<br>
+In other words, the orbital period squared is proportional to the radius cubed<br>
+\[\begin{align}<br>
+  v &amp; = \sqrt\frac{Fr}{m}<br>
+\\ &amp; = \sqrt{\frac{GMm}{r^2}\frac{r}{m}}<br>
+\\ &amp; = \sqrt{GM}r^{-\frac{1}{2}}<br>
+\end{align}\]<br>
+In other words, the orbital speed is inversely proportional to the square root of the radius</p></td>
+          <tr>
+            <td>
+<p>Energy considerations for an orbiting satellite</p>
+            </td>
+            <td><p>The total energy, the sum of the potential and kinetic energy, remains constant, due to the law of the conservation of energy</p></td>
+          <tr>
+            <td>
+<p>Significance of a geosynchronous orbit</p>
+            </td>
+            <td><p>The geosynchronous orbit has an orbital period equal to the rotational period of the planet it is orbiting</p></td>
+        </tbody>
+      </table>
+      <h2 id="4.3">4.3 Electric Fields</h2>
+      <h3 id="4.3.1">4.3.1 Coulomb's law</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Force between point charges in a vacuum \(F = \frac{1}{4\pi\epsilon_0}\frac{Q_1Q_2}{r^2}\), where \(\varepsilon_0\) is the permittivity of free space</p>
+            </td>
+            <td><p>This is Coulomb's law<br>
+\(\varepsilon_0 = \SI{8.85\cdot 10^{-12}}{\farad\per\meter}\)<br>
+\(\frac{1}{4\pi\epsilon_0} = \SI{8.99\cdot 10^9}{\meter\per\farad}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.3.2">4.3.2 Electric field strength</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>\(E\) as force per unit charge defined by \(E = \frac{F}{Q}\)</p>
+            </td>
+            <td><p>\(E\) is the gravitational field strength</p></td>
+          <tr>
+            <td>
+<p>Representation by electric field lines</p>
+            </td>
+            <td><p>The denser the field lines in an area, the stronger the force</p></td>
+          <tr>
+            <td>
+<p>Magnitude of \(E\) in a radial field given by \(E = \frac{1}{4\pi\epsilon_0}\frac{Q}{r^2}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  E &amp; = \frac{F}{q}<br>
+\\ &amp; = \frac{\frac{1}{4\pi\epsilon_0}\frac{Qq}{r^2}}{q}<br>
+\\ &amp; = \frac{1}{4\pi\epsilon_0}\frac{Q}{r^2}<br>
+\end{align}\]</p></td>
+          <tr>
+            <td>
+<p>Magnitude of \(E\) in a uniform field given by \(E = \frac{V}{d}\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.3.3">4.3.3 Electric potential</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understanding of definition of absolute electric potential, including zero value at infinity, and of electric potential difference</p>
+            </td>
+            <td><p>The electric potential at a point is the work done per kilogram to move a positive charge from infinity to that point</p></td>
+          <tr>
+            <td>
+<p>Work done in moving charge \(Q\) given by \(\Delta W = Q\Delta V\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Magnitude of \(V\) in a radial field given by \(V = \frac{1}{4\pi\epsilon_0}\frac{Q}{r}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  V &amp; = \frac{1}{q}W<br>
+\\ &amp; = \frac{1}{q}\int F\mathrm{d}s<br>
+\\ &amp; = \frac{1}{q}\int_r^\infty \frac{1}{4\pi\epsilon_0}\frac{Qq}{s^2} \mathrm{d}s<br>
+\\ &amp; = \frac{1}{4\pi\epsilon_0}Q[-s^{-1}]_r^\infty<br>
+\\ &amp; = \frac{1}{4\pi\epsilon_0}Q(-0+r^{-1})<br>
+\\ &amp; = \frac{1}{4\pi\epsilon_0}\frac{Q}{r}<br>
+\end{align}\]</p></td>
+          <tr>
+            <td>
+<p>Graphical representations of variations of \(E\) and \(V\) with \(r\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.3.4">4.3.4 Comparison of electric and gravitational fields</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Similarities; inverse square law fields having many characteristics in common</p>
+            </td>
+            <td><p>Inverse square square<br>
+Infinite range<br>
+Radial, with linear approximation as short distances</p></td>
+          <tr>
+            <td>
+<p>Differences; masses always attract but charges may attract or repel</p>
+            </td>
+            <td><p>Electric fields depend on the medium between the charges<br>
+Charges may repel as well as attract<br>
+Gravity between two masses, electric between two charges</p></td>
+        </tbody>
+      </table>
+      <h2 id="4.4">4.4 Capacitance</h2>
+      <h3 id="4.4.1">4.4.1 Capacitance</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Definition of capacitance; \(C = \frac{Q}{V}\)</p>
+            </td>
+            <td><p>Capacitance is measured in terms of charge per voltage, with unit coulombs per volt</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.4.2">4.4.2 Energy stored by a capacitor</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Derivation of \(E = \frac{1}{2}QV\) and interpretation of area under a graph of charge against pd; \(E = \frac{1}{2}QV = \frac{1}{2}CV^2 = \frac{1}{2}\frac{Q^2}{C}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+  E &amp; = \int_0^V q \mathrm{d}v<br>
+\\ &amp; = \int_0^V Cv \mathrm{d}v<br>
+\\ &amp; = C[\frac{1}{2}v^2]_0^V<br>
+\\ &amp; = \frac{1}{2}CV^2<br>
+\\ &amp; = \frac{1}{2}QV<br>
+\\ &amp; = \frac{1}{2}\frac{Q^2}{C}<br>
+\end{align}\]</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.4.3">4.4.3 Capacitor discharge</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Graphical representations of charging and discharging of capacitors through resistors</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Time constant = \(RC\)</p>
+            </td>
+            <td><p>The time constant is the time taken for the charge to fall in value to \(\frac{1}{e}\)</p></td>
+          <tr>
+            <td>
+<p>Calculation of time constants including their determination from graphical data</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Quantative treatment of capacitor discharge</p>
+            </td>
+            <td><p>The rate of discharge is proportional to the charge remaining</p></td>
+          <tr>
+            <td>
+<p>\(Q = Q_0e^{-\frac{t}{RC}}\)</p>
+            </td>
+            <td><p>\[\begin{align}<br>
+    \frac{\mathrm{d}Q}{\mathrm{d}t} &amp; = -kQ<br>
+\\ \frac{1}{Q}\frac{\mathrm{d}Q}{\mathrm{d}t} &amp; = -k<br>
+\\ \int Q^{-1} \mathrm{d}Q &amp; = \int -k \mathrm{d}t<br>
+\\ \ln Q &amp; = -kt + \ln A<br>
+\\ Q &amp; = Ae^{-kt}<br>
+\end{align}\]<br>
+where \(A = Q_0\) and \(k = \frac{1}{RC}\)</p></td>
+          <tr>
+            <td>
+<p>Candidates should have experience of the use of a voltage sensor and datalogger to plot discharge curves for a capacitor</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="4.5">4.5 Magnetic Fields</h2>
+      <h3 id="4.5.1">4.5.1 Magnetic flux density</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Force on a current-carrying wire in a magnetic field</p>
+            </td>
+            <td><p>In a magnetic field, a current-carrying wire perpendicular to the direction of the field experiences a force perpendicular to both, namely the direction in which the magnetic effect of the current counteracts the field</p></td>
+          <tr>
+            <td>
+<p>\(F = BIl\), when field is perpendicular to current</p>
+            </td>
+            <td><p>\(F\) is the force in newtons<br>
+\(B\) is the magnetic flux density in teslas<br>
+\(I\) is the current in the wire in amperes<br>
+\(l\) is the length of the wire in metres</p></td>
+          <tr>
+            <td>
+<p>Fleming's left hand rule</p>
+            </td>
+            <td><p>Fleming's left hand rule is a visual mnemonic to work out the direction of the force on a current-carrying wire, where the middle finger denotes the direction of the current, the index finger the field, and the thumb the force</p></td>
+          <tr>
+            <td>
+<p>Magnetic flux density \(B\) and definition of the tesla</p>
+            </td>
+            <td><p>The tesla is the measure of magnetic flux density, in newtons per ampere metres</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.5.2">4.5.2 Moving charges in a magnetic field</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Force on charged particles moving in a magnetic field</p>
+            </td>
+            <td><p>In a magnetic field, charged particles moving perpendicular to the direction of the field experiences a force perpendicular to both; since this changes the direction of movement, it also changes the direction of the force</p></td>
+          <tr>
+            <td>
+<p>\(F = BQv\), when the field is perpendicular to velocity</p>
+            </td>
+            <td><p>\(F\) is the force in newtons<br>
+\(B\) is the magnetic flux density in teslas<br>
+\(Q\) is the charge of the particles in coulombs<br>
+\(v\) is the velocity in metres per second</p></td>
+          <tr>
+            <td>
+<p>Circular path of particles; application in devices such as the cyclotron</p>
+            </td>
+            <td><p>Since the force is always perpendicular to motion, the particles move in circular motion, with radius \(r = \frac{mv}{BQ}\)</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.5.3">4.5.3 Magnetic flux and flux linkage</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Magnetic flux defined by \(\Phi = BA\), where \(B\) is normal to \(A\)</p>
+            </td>
+            <td><p>\(B\) is the magnetic flux density in teslas<br>
+\(A\) is the area of the surface in metres squared</p></td>
+          <tr>
+            <td>
+<p>Flux linkage as \(N\Phi\), where \(N\) is the number of turns cutting the flux</p>
+            </td>
+            <td><p>Flux linkage is the magnetic flux passing through a coil</p></td>
+          <tr>
+            <td>
+<p>Flux and flux linkage passing through a rectangular coil rotated in a magnetic field</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Flux linkage \(N\Phi = BAN\cos\theta\) where \(\theta\) is the angle between the normal to the plane of the coil and the magnetic field</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.5.4">4.5.4 Electromagnetic induction</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Simple experimental phenomena</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Faraday's and Lenz's laws</p>
+            </td>
+            <td><p>Faraday's law: the induced emf is equal to the negative of the rate of change of flux linkage<br>
+Lenz's law: the direction of induced current opposes the charge producing it</p></td>
+          <tr>
+            <td>
+<p>Magnitude of induced emf = rate of change of flux linkage = \(N\frac{\Delta\Phi}{\Delta t}\)</p>
+            </td>
+            <td><p>However, the direction is opposite to the rate of change</p></td>
+          <tr>
+            <td>
+<p>Applications such as a moving straight conductor</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Emf induced in a coil rotating uniformly in a magnetic field</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>\(E = BAN\omega\cos\omega t\)</p>
+            </td>
+            <td><p>Where \(\omega\ = 2\pi f\) is the angular frequency, and \(f\) is the frequency of rotation in Hertz</p></td>
+          <tr>
+            <td>
+<p>The operation of a transformer; The transformer equation = \(\frac{N_s}{N_p} = \frac{V_s}{V_p}\)</p>
+            </td>
+            <td><p>A transformer transfers energy from one circuit, the primary circuit, to another, the secondary circuit; it consists of two coils wound round a common iron core; an alternating current in the primary coil induces an alternating magnetic field in the core, which in turn induces an alternating current in the secondary coil</p></td>
+          <tr>
+            <td>
+<p>Transformer efficiency = \(\frac{I_sV_s}{I_pV_p}\)</p>
+            </td>
+            <td><p>Transformers are almost 100% efficient</p></td>
+          <tr>
+            <td>
+<p>Causes of inefficiency of a transformer</p>
+            </td>
+            <td><p>Resistance in the wire causes heating equal to \(I^2R\)</p></td>
+          <tr>
+            <td>
+<p>Transmission of electrical power at high voltage</p>
+            </td>
+            <td><p>Since the power wasted is proportional to current squared, and inversely proportional to voltage squared, it is much more efficient energy efficient to transfer electrical power at high voltage<br>
+Transformers are used in transmission by stepping-up the voltage before transmission and stepping-down the voltage after transmission</p></td>
+        </tbody>
+      </table>
+      <h1 id="5">5 Nuclear and Thermal Physics</h1>
+      <h2 id="5.1">5.1 Radioactivity</h2>
+      <h3 id="5.1.1">5.1.1 Evidence for the nucleus</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Qualitative study of Rutherford scattering</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.1.2">5.1.2 ɑ, β and ɣ radiation</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Their properties and experimental identification using simple absorption experiments<br>
+Applications e.g. to relative hazards of exposure to humans</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The inverse square law for ɣ radiation \(I = \frac{k}{x^2}\) including its experimental verification<br>
+Applications, e.g. to safe handling of radioactive sources</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Background radiation<br>
+Examples of its origins and experimental elimination from calculations</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.1.3">5.1.3 Radioactive decay</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Random nature of radioactive decay<br>
+Constant decay probability of a given nucleus<br>
+\(\frac{\Delta N}{\Delta t} = -\lambda N\), \(N = N_0e^{-\lambda t}\)</p>
+            </td>
+            <td><p>Radioactive decay is random because it is impossible to predict when a single atom will decay<br>
+\[\begin{align}<br>
+    \frac{\mathrm{d}N}{\mathrm{d}t} &amp; = -\lambda N<br>
+\\ \frac{1}{N}\frac{\mathrm{d}N}{\mathrm{d}t} &amp; = -\lambda<br>
+\\ \int N^{-1} \mathrm{d}N &amp; = \int -\lambda \mathrm{d}t<br>
+\\ \ln N &amp; = -\lambda t + \ln N_0<br>
+\\ Q &amp; = N_0e^{-\lambda t}<br>
+\end{align}\]</p></td>
+          <tr>
+            <td>
+<p>Use of activity \(A = \lambda N\)</p>
+            </td>
+            <td><p>Activity is measured in units Becquerels \(\si{\becquerel}\), equal to decays per second \(\si{\per\second}\)</p></td>
+          <tr>
+            <td>
+<p>Half life \(T_\frac{1}{2} = \frac{\ln 2}{\lambda}\)<br>
+Determination from graphical decay including decay curves and log graphs<br>
+Applications e.g. relevance to storage of radioactive waste, radioactive dating</p>
+            </td>
+            <td><p>Derivation of half life:<br>
+\[\begin{align}<br>
+    \frac{1}{2}N_0 &amp; = N_0e^{-\lambda T_\frac{1}{2}}<br>
+\\ \ln\frac{1}{2} &amp; = -\lambda T_\frac{1}{2}<br>
+\\ T_\frac{1}{2} &amp; = \frac{\ln 2}{\lambda}<br>
+\end{align}\]</p></td>
+        </tbody>
+      </table>
+      <h3 id="5.1.4">5.1.4 Nuclear instability</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Graph of \(N\) against \(Z\) for stable nuclei</p>
+            </td>
+            <td><p>From 0 to 20, \(N = Z\)<br>
+Then, N increases increasingly with Z until \(N = 120\) at \(Z = 80\)</p></td>
+          <tr>
+            <td>
+<p>Possible decay modes of unstable nuclei including \(\alpha\), \(\beta^+\), \(\beta^-\) and electron capture</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Changes of \(N\) and \(Z\) caused by radioactive decay and representation in simple decay equations</p>
+            </td>
+            <td><p>\(\alpha\): \(N\) decreases by 2 and \(Z\) decreases by 2<br>
+\(\beta^-\): \(N\) decreases by 1 and \(Z\) increases by 1<br>
+\(\beta^+\): \(N\) increases by 1 and \(Z\) decreases by 1</p></td>
+          <tr>
+            <td>
+<p>Existence of nuclear excited states<br>
+\(\gamma\) ray emission<br>
+Applications e.g. use of technetium-99m as a \(\gamma\) source in medical diagnosis</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.1.5">5.1.5 Nuclear radius</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Estimate of radius from closest approach of alpha particles and determination of radius from electron diffraction<br>
+Knowledge of typical values</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Dependence of radius on nucleon number \(R = r_0A^\frac{1}{3}\) derived from experimental data</p>
+            </td>
+            <td><p>\(A\) is the nucleon/mass number<br>
+\(r_0 = \SI{1.05}{\femto\metre}\)</p></td>
+          <tr>
+            <td>
+<p>Calculation of nuclear density</p>
+            </td>
+            <td><p>Nuclear density is constant:<br>
+\[\begin{align}<br>
+   \rho &amp; = \frac{m}{V}<br>
+\\     &amp; = \frac{Au}{\frac{4}{3}\pi R^3}<br>
+\\     &amp; = \frac{3Au}{4r_0^3 A}<br>
+\\     &amp; = \frac{3u}{4r_0^3}<br>
+\\     &amp; \approx \SI{3.4 \cdot 10^{17}}{\kilogram\per\metre\cubed}<br>
+\end{align}\]</p></td>
+        </tbody>
+      </table>
+      <h2 id="5.2">5.2 Nuclear Energy</h2>
+      <h3 id="5.2.1">5.2.1 Mass and energy</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Appreciation that \(E = mc^2\) applies to all energy changes</p>
+            </td>
+            <td><p>Binding energy is the energy required to disassemble a nucleus into its nucleons and is calculated from the total energy of the unbound nucleons minus the energy of the nucleus<br>
+This also applies to atoms when electrons are included</p></td>
+          <tr>
+            <td>
+<p>Simple calculations on mass difference and binding energy</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Atomic mass unit \(u\)<br>
+Conversion of units<br>
+\(\SI{1}{\amu} = \SI{931.5}{\mega\electronvolt}\)</p>
+            </td>
+            <td><p>Atomic mass unit is one twelfth of the mass of an unbound carbon-12 atom, equal to \(\SI{1}{\gram\per\mole}\), and is approximately the mass of one nucleon<br>
+\(\SI{1}{\amu} = \SI{1.66 \cdot 10^{-27}}{\kilogram}\)</p></td>
+          <tr>
+            <td>
+<p>Graph of average binding energy per nucleon against nucleon number</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Fission and fusion processes</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Simple calculations from nuclear masses of energy released in fission and fusion reactions</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.2.2">5.2.2 Induced fission</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Induced fission by thermal neutrons<br>
+Possibility of a chain reaction<br>
+Critical mass</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The functions of the moderator, the control rods and the coolant in a thermal nuclear reactor<br>
+Factors affecting the choice of materials for the moderator, the control rods and the coolant and examples of materials used<br>
+Details of particular reactors are not required</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.2.3">5.2.3 Safety aspects</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Fuel used, shielding, emergency shut-down</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Production, handling and storage of radioactive waste materials</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="5.3">5.3 Thermal Physics</h2>
+      <h3 id="5.3.1">5.3.1 Thermal energy</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Calculations involving change of energy</p>
+            </td>
+            <td><p>In a closed system, changes in energy can be equated due to the law of conservation of energy</p></td>
+          <tr>
+            <td>
+<p>For a change of temperature \(Q = mc\Delta T\) where \(c\) is the specific heat capacity</p>
+            </td>
+            <td><p>The specific heat capacity of a substance is the amount of thermal energy required to raise the temperature of one kilogram by one Kelvin</p></td>
+          <tr>
+            <td>
+<p>For a change of state \(Q = ml\) where \(l\) is the specific latent heat</p>
+            </td>
+            <td><p>The specific latent of a substance is the amount of thermal energy required to change the state of a kilogram</p></td>
+        </tbody>
+      </table>
+      <h3 id="5.3.2">5.3.2 Ideal gases</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Gas laws as experimental relationships between \(p\), \(V\), \(T\) and mass</p>
+            </td>
+            <td></td>
+          <tr>
+            <td>
+<p>Concept of absolute zero of temperature</p>
+            </td>
+            <td><p>Absolute zero is the lower limit of the temperature scale, at which an ideal gas reaches its minimum enthalpy and entropy of 0</p></td>
+          <tr>
+            <td>
+<p>Ideal gas equation as \(pV = T\) for \(n\) moles and as \(pV = NkT\) for \(N\) molecules</p>
+            </td>
+            <td><p>The pressure of a gas is directly proportional to the number of moles and the temperature, and inversely proportional to the volume, where R is the molar gas constant<br>
+The pressure of a gas is directly proportional to the number of molecules and the temperature, and inversely proportional to the volume, where k is the Boltzmann constant</p></td>
+          <tr>
+            <td>
+<p>Avogadro constant \(N_A\), molar gas constant \(R\), Boltzmann constant \(k\)</p>
+            </td>
+            <td><p>The Avogadro constant is the number of particles in one mole of a substance and is approximately \(\SI{6.022\cdot 10^{23}}{\per\mole}\)<br>
+The molar gas constant is the constant of proportionality in the ideal gas law and is approximately \(\SI{8.31}{\joule\per\kelvin\per\mole}\)<br>
+The Boltzmann constant is the gas constant divided by the Avogadro constant and is approximately \(\SI{1.38\cdot 10^{-23}}{\joule\per\kelvin}\)</p></td>
+          <tr>
+            <td>
+<p>Molar mass and molecular mass</p>
+            </td>
+            <td><p>The molar mass of a substance is its mass divided by the number of moles in it<br>
+The molecular mass of a molecule is the total mass of its atoms ()</p></td>
+        </tbody>
+      </table>
+      <h3 id="5.3.3">5.3.3 Molecular kinetic theory model</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Explanation of relationships between \(p\), \(V\), and \(T\) in terms of a simple molecular model</p>
+            </td>
+            <td><p>In a simple molecular model, particles are modelled as point masses that travel randomle in a straight line until colliding with the boundary or another particle, which exerts a force<br>
+Increasing the volume decreases the pressure since the particles have to travel farther, so impact with the boundary less often, therefore reducing the pressure<br>
+Increasing the pressure increases the temperature since the particles move faster, so impact with the boundary more often, therefore raising the pressure</p></td>
+          <tr>
+            <td>
+<p>Assumptions leading to and derivation of \(pV = \frac{1}{3}Nm(c_{rms})^2\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Average molecular kinetic energy \(\frac{1}{2}m(c_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>

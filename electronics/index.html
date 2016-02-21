@@ -1,0 +1,2312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="/alevel/style.css" rel="stylesheet">
+    <script src="/alevel/script.js" async></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
+        MathJax.Hub.Config({
+            extensions: ["[Contrib]/siunitx/siunitx.js"],
+        });
+    </script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
+  </head>
+  <body>
+    <nav class="electronics">
+      <ul>
+        <li><a href="/alevel/electronics">Electronics</a></li>
+        <li><a href="/alevel/physics">Physics</a></li>
+      </ul>
+      <ol id="electronics">
+        <li><a href="#0">0 Prerequisites</a></li>
+        <li>
+          <a href="#1">1 Simple Systems</a>
+          <ol>
+            <li>
+              <a href="#1.1">1.1 Simple Digital Systems</a>
+              <ol>
+                <li><a href="#1.1.1">1.1.1 Switches in series with resistors can be used to convert information into digital signals</a></li>
+                <li><a href="#1.1.2">1.1.2 Digital signals can be processed by logic gates</a></li>
+                <li><a href="#1.1.3">1.1.3 A logic gate's output signal can be used to switch off a variety of devices on and off via a driver</a></li>
+                <li><a href="#1.1.4">1.1.4 Standard symbols are used to draw circuit diagrams</a></li>
+                <li><a href="#1.1.5">1.1.5 The flow of information through a system can be shown with block diagrams</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.2">1.2 Digital from Analogue</a>
+              <ol>
+                <li><a href="#1.2.1">1.2.1 The resistance of some components depends on their environment; they can be used as sensors</a></li>
+                <li><a href="#1.2.2">1.2.2 Op-amps can convert the analogue signal from a sensor into a digital signal for a logic system</a></li>
+                <li><a href="#1.2.3">1.2.3 Capacitors can delay the change of a signal</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.3">1.3 Pulses</a>
+              <ol>
+                <li><a href="#1.3.1">1.3.1 A monostable uses an RC network to generate a single pulse</a></li>
+                <li><a href="#1.3.2">1.3.2 A relaxation oscillator uses a Schmitt trigger NOT gate to produce a continuous train of pulses</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.4">1.4 Logic Systems</a>
+              <ol>
+                <li><a href="#1.4.1">1.4.1 Combinations of logic gates can process signals in many different ways</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#2">2 Signal Processors</a>
+          <ol>
+            <li>
+              <a href="#2.1">2.1 Storing Signals</a>
+              <ol>
+                <li><a href="#2.1.1">2.1.1 Arrays of logic gates can be used to store information</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.2">2.2 Negative Feedback</a>
+              <ol>
+                <li><a href="#2.2.1">2.2.1 Negative feedback allows op-amps to process audio signals</a></li>
+                <li><a href="#2.2.2">2.2.2 Resistors can be used to make op-amps into non-inverting, inverting and summing amplifiers</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.3">2.3 Counting pulses</a>
+              <ol>
+                <li><a href="#2.3.1">2.3.1 Arrays of D flip-flops can count pulses</a></li>
+                <li><a href="#2.3.2">2.3.2 Binary counters are at the heart of systems that produce sequences of digital signals</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.4">2.4 Amplifying Audio</a>
+              <ol>
+                <li><a href="#2.4.1">2.4.1 An audio amplifier allows signals from a microphone to be heard from a loudspeaker</a></li>
+                <li><a href="#2.4.2">2.4.2 Capacitors can be used as filters</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.5">2.5 Microcontrollers</a>
+              <ol>
+                <li><a href="#2.5.1">2.5.1 The behaviour of a microcontroller is fixed by the program fed into it</a></li>
+                <li><a href="#2.5.2">2.5.2 A small set of microcontroller instructions allows a wide range of behaviours</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#4">4 Electronic Control Systems</a>
+          <ol>
+            <li>
+              <a href="#4.1">4.1 MOSFET Circuits</a>
+              <ol>
+                <li><a href="#4.1.1">4.1.1 MOSFETs are used to make a wide range of useful circuits</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.2">4.2 Digital Processing</a>
+              <ol>
+                <li><a href="#4.2.1">4.2.1 Memory stores information as binary words</a></li>
+                <li><a href="#4.2.2">4.2.2 Some types of memory can retain information in the absence of a power supply</a></li>
+                <li><a href="#4.2.3">4.2.3 Digital information can be processed with registers and logic gates</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.3">4.3 Servo Control</a>
+              <ol>
+                <li><a href="#4.3.1">4.3.1 Simple control systems use negative feedback</a></li>
+                <li><a href="#4.3.2">4.3.2 Proportional control systems allow accurate control of a transducer</a></li>
+                <li><a href="#4.3.3">4.3.3 Many power supplies use negative feedback to control the voltage at their output</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.4">4.4 Microcontroller Systems</a>
+              <ol>
+                <li><a href="#4.4.1">4.4.1 A microcontroller system contains a number of blocks connected by buses</a></li>
+                <li><a href="#4.4.2">4.4.2 The behaviour of a microcontroller depends on the program in its memory</a></li>
+                <li><a href="#4.4.3">4.4.3 Programs can be made from subroutines</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#5">5 Communication Systems</a>
+          <ol>
+            <li>
+              <a href="#5.1">5.1 Video Displays</a>
+              <ol>
+                <li><a href="#5.1.1">5.1.1 Rapidly changing digital signals are used to display moving pictures on screens</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.2">5.2 Modulating Carriers</a>
+              <ol>
+                <li><a href="#5.2.1">5.2.1 The amplitude of a high-frequency carrier can be modulated to carry information about a signal</a></li>
+                <li><a href="#5.2.2">5.2.2 The frequency of a high-frequency carrier can be modulated to carry information about a signal</a></li>
+                <li><a href="#5.2.3">5.2.3 Pulse width modulation uses a digital signal to carry analogue information</a></li>
+                <li><a href="#5.2.4">5.2.4 Modulated carriers pick up noise and interference in transmission</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.3">5.3 Frequency Division Multiplexing</a>
+              <ol>
+                <li><a href="#5.3.1">5.3.1 Many modulated carriers can be sent down a link by allocating each one to a different channel</a></li>
+                <li><a href="#5.3.2">5.3.2 Radio transmissions use FDM</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.4">5.4 Time Division Multiplexing</a>
+              <ol>
+                <li><a href="#5.4.1">5.4.1 Telephone systems use time division multiplexing to make efficient use of links</a></li>
+                <li><a href="#5.4.2">5.4.2 Computers exchange information along cables using time-division multiplexing</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <ol id="physics">
+        <li>
+          <a href="#1">1 Particles, Quantum Phenomena and Electricity</a>
+          <ol>
+            <li>
+              <a href="#1.1">1.1 Particles and Radiation</a>
+              <ol>
+                <li><a href="#1.1.1">1.1.1 Constituents of the atom</a></li>
+                <li><a href="#1.1.2">1.1.2 Stable and unstable nuclei</a></li>
+                <li><a href="#1.1.3">1.1.3 Particles, antiparticles and photons</a></li>
+                <li><a href="#1.1.4">1.1.4 Particle interactions</a></li>
+                <li><a href="#1.1.5">1.1.5 Classification of particles</a></li>
+                <li><a href="#1.1.6">1.1.6 Quarks and antiquarks</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.2">1.2 Electromagnetic Radiation and Quantum Phenomena</a>
+              <ol>
+                <li><a href="#1.2.1">1.2.1 The photoelectric effect</a></li>
+                <li><a href="#1.2.2">1.2.2 Collisions of electrons with atoms</a></li>
+                <li><a href="#1.2.3">1.2.3 Energy levels and photon emission</a></li>
+                <li><a href="#1.2.4">1.2.4 Wave-particle duality</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#1.3">1.3 Current Electricity</a>
+              <ol>
+                <li><a href="#1.3.1">1.3.1 Charge, current and potential difference</a></li>
+                <li><a href="#1.3.2">1.3.2 Current/voltage characteristics</a></li>
+                <li><a href="#1.3.3">1.3.3 Resistivity</a></li>
+                <li><a href="#1.3.4">1.3.4 Circuits</a></li>
+                <li><a href="#1.3.5">1.3.5 Potential divider</a></li>
+                <li><a href="#1.3.6">1.3.6 Electromotive force and internal resistance</a></li>
+                <li><a href="#1.3.7">1.3.7 Alternating currents</a></li>
+                <li><a href="#1.3.8">1.3.8 Oscilloscope</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#2">2 Mechanics, Materials and Waves</a>
+          <ol>
+            <li>
+              <a href="#2.1">2.1 Mechanics</a>
+              <ol>
+                <li><a href="#2.1.1">2.1.1 Scalars and vectors</a></li>
+                <li><a href="#2.1.2">2.1.2 Moments</a></li>
+                <li><a href="#2.1.3">2.1.3 Motion along a straight line</a></li>
+                <li><a href="#2.1.4">2.1.4 Projectile motion</a></li>
+                <li><a href="#2.1.5">2.1.5 Newton's laws of motion</a></li>
+                <li><a href="#2.1.6">2.1.6 Work, energy and power</a></li>
+                <li><a href="#2.1.7">2.1.7 Conservation of energy</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.2">2.2 Materials</a>
+              <ol>
+                <li><a href="#2.2.1">2.2.1 Bulk properties of solids</a></li>
+                <li><a href="#2.2.2">2.2.2 The Young modulus</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#2.3">2.3 Waves</a>
+              <ol>
+                <li><a href="#2.3.1">2.3.1 Progressive Waves</a></li>
+                <li><a href="#2.3.2">2.3.2 Longitudinal and transverse waves</a></li>
+                <li><a href="#2.3.3">2.3.3 Refraction at a plane surface</a></li>
+                <li><a href="#2.3.4">2.3.4 Superposition of waves, stationary waves</a></li>
+                <li><a href="#2.3.5">2.3.5 Interference</a></li>
+                <li><a href="#2.3.6">2.3.6 Diffraction</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#4">4 Fields and Further Mechanics</a>
+          <ol>
+            <li>
+              <a href="#4.1">4.1 Further Mechanics</a>
+              <ol>
+                <li><a href="#4.1.1">4.1.1 Momentum concepts</a></li>
+                <li><a href="#4.1.2">4.1.2 Circular motion</a></li>
+                <li><a href="#4.1.3">4.1.3 Simple harmonic motion</a></li>
+                <li><a href="#4.1.4">4.1.4 Simple harmonic systems</a></li>
+                <li><a href="#4.1.5">4.1.5 Forced vibrations and resonance</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.2">4.2 Gravitation</a>
+              <ol>
+                <li><a href="#4.2.1">4.2.1 Newton's law</a></li>
+                <li><a href="#4.2.2">4.2.2 Gravitational field strength</a></li>
+                <li><a href="#4.2.3">4.2.3 Gravitational potential</a></li>
+                <li><a href="#4.2.4">4.2.4 Orbits of planets and satellites</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.3">4.3 Electric Fields</a>
+              <ol>
+                <li><a href="#4.3.1">4.3.1 Coulomb's law</a></li>
+                <li><a href="#4.3.2">4.3.2 Electric field strength</a></li>
+                <li><a href="#4.3.3">4.3.3 Electric potential</a></li>
+                <li><a href="#4.3.4">4.3.4 Comparison of electric and gravitational fields</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.4">4.4 Capacitance</a>
+              <ol>
+                <li><a href="#4.4.1">4.4.1 Capacitance</a></li>
+                <li><a href="#4.4.2">4.4.2 Energy stored by a capacitor</a></li>
+                <li><a href="#4.4.3">4.4.3 Capacitor discharge</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#4.5">4.5 Magnetic Fields</a>
+              <ol>
+                <li><a href="#4.5.1">4.5.1 Magnetic flux density</a></li>
+                <li><a href="#4.5.2">4.5.2 Moving charges in a magnetic field</a></li>
+                <li><a href="#4.5.3">4.5.3 Magnetic flux and flux linkage</a></li>
+                <li><a href="#4.5.4">4.5.4 Electromagnetic induction</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#5">5 Nuclear and Thermal Physics</a>
+          <ol>
+            <li>
+              <a href="#5.1">5.1 Radioactivity</a>
+              <ol>
+                <li><a href="#5.1.1">5.1.1 Evidence for the nucleus</a></li>
+                <li><a href="#5.1.2">5.1.2 ɑ, β and ɣ radiation</a></li>
+                <li><a href="#5.1.3">5.1.3 Radioactive decay</a></li>
+                <li><a href="#5.1.4">5.1.4 Nuclear instability</a></li>
+                <li><a href="#5.1.5">5.1.5 Nuclear radius</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.2">5.2 Nuclear Energy</a>
+              <ol>
+                <li><a href="#5.2.1">5.2.1 Mass and energy</a></li>
+                <li><a href="#5.2.2">5.2.2 Induced fission</a></li>
+                <li><a href="#5.2.3">5.2.3 Safety aspects</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#5.3">5.3 Thermal Physics</a>
+              <ol>
+                <li><a href="#5.3.1">5.3.1 Thermal energy</a></li>
+                <li><a href="#5.3.2">5.3.2 Ideal gases</a></li>
+                <li><a href="#5.3.3">5.3.3 Molecular kinetic theory model</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </nav>
+    <section>
+      <h1 id="0">0 Prerequisites</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>The concepts of conductors and insulators in terms of the mobility of charge</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Voltage as a measure of the energy per charge at a point in a circuit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Current as the rate of transfer of charge past a point in a circuit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Need for a power supply to maintain a current in a circuit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The conversion of energy from electrical to other forms as charge moves round a circuit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The behaviour of currents at a junction</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The voltage across a series circuit is the sum of the voltage across the components</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The current in a series circuit is the same in all the components</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h1 id="1">1 Simple Systems</h1>
+      <h2 id="1.1">1.1 Simple Digital Systems</h2>
+      <h3 id="1.1.1">1.1.1 Switches in series with resistors can be used to convert information into digital signals</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall how to use switches and pull-up or pull-down resistors in series with a power supply to generate digital signals</p>
+            </td>
+            <td><p>Switch with a pull-up resistor: !\(\)() generates a high signal when the switch is open and a low signal when the switch is closed<br>
+Switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed</p></td>
+          <tr>
+            <td>
+<p>Recall that, unless otherwise stated, logic 1 (high) is a signal at \(\SI{+5}{\volt}\) and logic 0 (low) is a signal at \(\SI{0}{\volt}\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the defining equation for resistance (\(R = \frac{V}{I}\))</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for power (\(P = VI\)) to calculate the rate of heating, or output power, or a component</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that components have maximum ratings for current, voltage or power</p>
+            </td>
+            <td><p>In practice, components may be able to tolerate a little above the maximum ratings, but the limits should still be observed</p></td>
+          <tr>
+            <td>
+<p>Recall how to use multimeters as voltmeters, ammeters and ohmmeters to measure voltage, current ad resistance in a circuit</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of the prefixes G, M, k, m, μ, n and p when calculating values of quantities</p>
+            </td>
+            <td><table>
+<thead>
+<tr>
+<th align="center">Prefix</th>
+<th align="center">Magnitude</th>
+<th align="center">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">G</td>
+<td align="center">\(10^9\)</td>
+<td align="center">Giga-</td>
+</tr>
+<tr>
+<td align="center">M</td>
+<td align="center">\(10^6\)</td>
+<td align="center">Mega-</td>
+</tr>
+<tr>
+<td align="center">k</td>
+<td align="center">\(10^3\)</td>
+<td align="center">Kilo-</td>
+</tr>
+<tr>
+<td align="center">-</td>
+<td align="center">\(10^0\)</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">m</td>
+<td align="center">\(10^{-3}\)</td>
+<td align="center">Milli-</td>
+</tr>
+<tr>
+<td align="center">μ</td>
+<td align="center">\(10^{-6}\)</td>
+<td align="center">Micro-</td>
+</tr>
+<tr>
+<td align="center">n</td>
+<td align="center">\(10^{-9}\)</td>
+<td align="center">Nano-</td>
+</tr>
+<tr>
+<td align="center">p</td>
+<td align="center">\(10^{-12}\)</td>
+<td align="center">Pico-</td>
+</tr>
+</tbody>
+</table></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.2">1.1.2 Digital signals can be processed by logic gates</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of a NOT gate (an input above \(\SI{+3}{\volt}\) gives \(\SI{0}{\volt}\) at the output, an input below \(\SI{+2}{\volt}\) gives \(\SI{+5}{\volt}\) at the output) and represent it as an input-output graph</p>
+            </td>
+            <td><p>Ideal: <img alt="" src=""><br>
+Practice: <img alt="" src=""></p></td>
+          <tr>
+            <td>
+<p>Recall the truth tables of the following two-input logic gates: AND, EOR, NAND, NOR, OR</p>
+            </td>
+            <td><p>AND:</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p>EOR (XOR):</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>NAND:</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>NOR:</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>OR:</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th align="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table></td>
+          <tr>
+            <td>
+<p>Understand the use of an LED to indicate the state of a logic gate's output (including the need for a series resistor)</p>
+            </td>
+            <td><p>If LED is on, signal is high<br>
+Resistor limits current</p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of an LED and represent it as a current-voltage graph (no current in reverse bias; current rises rapidly in forward bias when voltage reaches \(\SI{2}{\volt}\))</p>
+            </td>
+            <td><p>Ideal: <img alt="" src=""><br>
+Practice: <img alt="" src=""></p></td>
+        </tbody>
+      </table>
+      <h3 id="1.1.3">1.1.3 A logic gate's output signal can be used to switch off a variety of devices on and off via a driver</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall that logic gates can only source or sink currents of a few milliamps, so cannot supply much power to output devices</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that a MOSFET is a voltage-controlled resistor (the voltage at the gate determines the resistance between the drain and the source)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of a MOSFET (drain-source resistance is infinite until gate-source voltage reaches a threshold value, then drops to a constant low value for higher gate-source voltages) and represent it as a resistance-voltage graph</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that MOSFETs with appropriate threshold voltages can act as drivers, sinking current from motors, heaters, buzzers and lamps</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.1.4">1.1.4 Standard symbols are used to draw circuit diagrams</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall and use standard circuit symbols to draw circuit diagrams</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that circuit diagrams omit power supply connection for integrated circuits</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.1.5">1.1.5 The flow of information through a system can be shown with block diagrams</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Represent a simple digital system as a block diagram, showing input, processing and output stages</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that a block diagram shows the flow of information through a system</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that block diagrams make it easier to analyse the operation of a system</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Analyse and synthesise circuit and block diagrams for digital systems with only one logic gate</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="1.2">1.2 Digital from Analogue</h2>
+      <h3 id="1.2.1">1.2.1 The resistance of some components depends on their environment; they can be used as sensors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of an LDR (resistance falls as light intensity increases) and represent this as a resistance-intensity graph</p>
+            </td>
+            <td><p><img alt="" src=""></p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of a thermistor (resistance falls as temperature increases) and represent this as a resistance-temperature graph</p>
+            </td>
+            <td><p><img alt="" src=""></p></td>
+          <tr>
+            <td>
+<p>Recall and use the equation for the resistance of resistors in series (\(R = R_1 + R_2\)) and parallel</p>
+            </td>
+            <td><p>\(\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}\)</p></td>
+          <tr>
+            <td>
+<p>Calculate the output voltage of an unloaded voltage divider made from a pair of resistors in series with a power supply</p>
+            </td>
+            <td><p>\(V_{out} = \frac{R_1}{R_1 + R_2}V_{in}\)</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a potentiometer to generate a signal of variable voltage</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the different between analogue and digital signals (analogue have any value, digital have just two)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.2.2">1.2.2 Op-amps can convert the analogue signal from a sensor into a digital signal for a logic system</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of an open-loop op-amp operating from supply rails at \(\SI{+15}{\volt}\) and \(\SI{-15}{\volt}\) (output saturates at \(\SI{+13}{\volt}\) if non-inverting input higher than inverting input, otherwise output saturates at \(\SI{-13}{\volt}\))</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that an ideal op-amp can be modelled as having no current at its inputs, but able to source or sink currents of up to \(\SI{10}{\milli\ampere}\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a diode in series with resistors to convert the output of an op-amp into high and low signals for a logic system</p>
+            </td>
+            <td><p>The diode rectifies the \(\SI{-13}{\volt}\) to \(\SI{0}{\volt}\)<br>
+The resistors form a potential divider that converts the \(\SI{+13}{\volt}\) into \(\SI{+5}{\volt}\)</p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic for a diode and represent it as a current-voltage graph (no current in reverse bias; current rises rapidly in forward bias when the voltage reaches \(\SI{0.7}{\volt}\))</p>
+            </td>
+            <td><p>!\(\)()</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a zener diode in series with a resistor to generate a fixed voltage at one of the inputs of an op-amp</p>
+            </td>
+            <td><p>A zener diode placed in reverse bias in series with a resistor can provide a voltage equal to its breakdown voltage that is invariant to the supply voltage</p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic for a zener diode and represent it as a current-voltage graph (no current in reverse bias until the breakdown voltage; current rises rapidly in forward bias when voltage reaches \(\SI{0.7}{\volt}\))</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Analyse and synthesise sensor systems with digital outputs for position, light intensity and temperature</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.2.3">1.2.3 Capacitors can delay the change of a signal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the exponential change in voltage across a capacitor as it is charged or discharged from a constant voltage through a resistor, and represent it as a voltage-time graph</p>
+            </td>
+            <td><p>Charging: \(V = V_0(1 - e^{-\frac{t}{RC}})\)<br>
+Discharging: \(V = V_0e^{-\frac{t}{RC}}\)</p></td>
+          <tr>
+            <td>
+<p>Recall and use the equation for time constant (\(\tau = RC\))</p>
+            </td>
+            <td><p>\(\tau\) is the time required for the voltage across the capacitor to fall to \(\frac{1}{e}\) of the original value<br>
+\(R\) is the resistance in Ohms<br>
+\(C\) is the capacitance in Farads</p></td>
+          <tr>
+            <td>
+<p>Recall and use the idea that the voltage across the resistor of an RC series circuit is halved in a time of \(0.7\tau\)</p>
+            </td>
+            <td><p>\(\frac{V_0}{2} = V_0e^{-\frac{t}{\tau}} \implies t = -\tau\ln\frac{1}{2} = \tau\ln 2 = 0.69\ldots\tau \approx 0.7\tau\)</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a capacitor to delay the change of signal caused by the closing or opening of a switch in series with a resistor</p>
+            </td>
+            <td><p>Passing a signal to a NOT gate through a capacitor delays the switching time until the capacitor charges to half the supply voltage</p></td>
+        </tbody>
+      </table>
+      <h2 id="1.3">1.3 Pulses</h2>
+      <h3 id="1.3.1">1.3.1 A monostable uses an RC network to generate a single pulse</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of an RC network to generate spikes from rising or falling edges, representing them as voltage-time graphs at input and output (exponential drop lasts about two time constants)</p>
+            </td>
+            <td><p>Wiring an RC network as a potential divider causes an edge to be transformed to the input voltage, before falling to 0 as the capacitor charges, resulting in a spike</p></td>
+          <tr>
+            <td>
+<p>Understand the use of diodes as clamps to suppress spikes from RC networks</p>
+            </td>
+            <td><p>A diode connected to the output from 0 suppresses the negative spike, clamping the voltage to \(\SI{0.7}{\volt}\), and shortening the time constant</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a pair of NAND gates and an RC network to make a monostable the output of which goes low for \(\SI{0.7RC}{\second}\) when triggered by a falling edge</p>
+            </td>
+            <td><p>The input &amp; output of the monostable is initially high, <br>
+On the falling edge of the input, the RC network goes high, causing the output to go low<br>
+The feedback of the output back to the first monostable keeps the RC network high until the capacitor charges halfway, causing the output to return hig</p></td>
+          <tr>
+            <td>
+<p>Recall that inputs to logic gates draw no current and have clamping diodes to the supply rails</p>
+            </td>
+            <td><p>The clamping diodes prevent the inputs from going higher than \(\SI{0.7}{\volt}\) outside the limits</p></td>
+          <tr>
+            <td>
+<p>Sketch voltage-time graphs at inputs and outputs of the logic gates in a monostable</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="1.3.2">1.3.2 A relaxation oscillator uses a Schmitt trigger NOT gate to produce a continuous train of pulses</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of a Schmitt trigger NOT gate and represent it as an input-output graph (no recall of trip point values required)</p>
+            </td>
+            <td><p>The trip point when the gate is low is higher than when it is high</p></td>
+          <tr>
+            <td>
+<p>Understand the use of an RC network and Schmitt trigger NOT gate to make an oscillator and sketch voltage-time graphs at input and output (period \(T = 0.5RC\))</p>
+            </td>
+            <td><p>When the output of the Schmitt trigger is high, the capacitor charges through the resistor until it reaches the upper trip point, when the Schmitt trigger goes low, causing the capacitor to discharge through the resistor until it reaches the the lower trip point</p></td>
+          <tr>
+            <td>
+<p>Understand how to use an oscilloscope to observe voltage that vary with time (including use of timebase and vertical amplifier settings to measure amplitude and period)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for frequency (\(f = \frac{1}{T}\))</p>
+            </td>
+            <td><p>\(T\) is the time period</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a driver to provide the interface between an oscillator and a loudspeaker</p>
+            </td>
+            <td><p>Drivers provide the necessary current to drive a loudspeaker that logic gates are unable to provide</p></td>
+        </tbody>
+      </table>
+      <h2 id="1.4">1.4 Logic Systems</h2>
+      <h3 id="1.4.1">1.4.1 Combinations of logic gates can process signals in many different ways</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of truth tables to analyse the behaviour of logic systems with up to three inputs</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use Boolean algebra to represent the output of logic gates</p>
+            </td>
+            <td><p>\(\operatorname{NOT} A = \overline A\)<br>
+\(A \operatorname{AND} B = A\cdot B\)<br>
+\(A \operatorname{OR} B = A + B\)</p></td>
+          <tr>
+            <td>
+<p>Recall and use Boolean algebra to represent the output columns of a truth table</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the construction of a truth table from a Boolean algebra expression</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of Boolean algebra to represent the behaviour of a logic system (including the use of the rules given in Appendix B to simplify expressions)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Synthesise AND, OR and NOT gates from NAND gates</p>
+            </td>
+            <td><p>\(A \operatorname{AND} B = (A \operatorname{NAND} B) \operatorname{NAND} (A \operatorname{AND} B)\)<br>
+\(A \operatorname{OR} B = ((A \operatorname{NAND} A) \operatorname{NAND} (B \operatorname{NAND} B)) \operatorname{NAND} ((A \operatorname{NAND} A) \operatorname{NAND} (B \operatorname{NAND} B))\)<br>
+\(\operatorname{NOT} A = A \operatorname{NAND} A\)</p></td>
+          <tr>
+            <td>
+<p>Understand the use of NAND gates to synthesise logic systems with up to four inputs</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the advantages of only using NAND gates (more economic use of integrated circuits, economies of scale)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Analyse the behaviour of logic systems with up to four inputs and four outputs</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h1 id="2">2 Signal Processors</h1>
+      <h2 id="2.1">2.1 Storing Signals</h2>
+      <h3 id="2.1.1">2.1.1 Arrays of logic gates can be used to store information</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the behaviour of a bistable (separate inputs to set and reset a single output) and represent its behaviour with timing diagrams</p>
+            </td>
+            <td><p>A bistable latches its output, until it is "set" high or "reset" low</p></td>
+          <tr>
+            <td>
+<p>Understand the use of NOR gates to make a bistable with active-high inputs</p>
+            </td>
+            <td></td>
+          <tr>
+            <td>
+<p>Understand the use of NAND gates to make a bistable with active-low inputs</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the behaviour of a latch (data and enable inputs to set and reset a single output) and represent its behaviour with timing diagrams</p>
+            </td>
+            <td><p>A latch stores the information in its data input when the enable input is high, or can be set or reset</p></td>
+          <tr>
+            <td>
+<p>Analyse the operation of a latch made from logic gates and a bistable</p>
+            </td>
+            <td><p>The data input demultiplexes the enable input, sending it to the set or reset input depending on whether the data is high or low</p></td>
+          <tr>
+            <td>
+<p>Recall the behaviour of a rising-edge triggered D flip-flop (data, clock, set and reset inputs, complementary outputs) and represent its behaviour with timing diagrams</p>
+            </td>
+            <td><p>A rising-edge triggered D flip-flop only copies the data to the output on the rising edge of the clock input</p></td>
+          <tr>
+            <td>
+<p>Analyse the operation of a D flip-flop made from a master-slave pair of latches</p>
+            </td>
+            <td><p>The master latch stores the data input while the clock input is low<br>
+When the clock input goes high, the master latch locks its output, and the slave latch is enabled, causing the data input at the time of the rising edge to be stored regardless of whether it changes any further</p></td>
+          <tr>
+            <td>
+<p>Understand the use of an array of D flip-flops to store a binary word</p>
+            </td>
+            <td><p>The clock inputs are connected so that information can be stored simultaneously</p></td>
+        </tbody>
+      </table>
+      <h2 id="2.2">2.2 Negative Feedback</h2>
+      <h3 id="2.2.1">2.2.1 Negative feedback allows op-amps to process audio signals</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the use of an electret microphone to transfer sounds into electrical signals, to include the use of a pull-up resistor and a coupling capacitor</p>
+            </td>
+            <td><p>The coupling capacitor removes d.c. bias</p></td>
+          <tr>
+            <td>
+<p>Understand that an ideal amplifier increases the amplitude of an ac signal without altering its frequency or shape</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for voltage gain (\(G = \frac{V_{out}}{V_{in}}\))</p>
+            </td>
+            <td><p>The gain is effectively infinite, causing the output to saturate unless the difference in voltage between the inputs is effectively 0</p></td>
+          <tr>
+            <td>
+<p>Recall that an op-amp is a differential amplifier (\(V_{out} = A(V_+ - V_-)\)) with a very large open-loop gain A</p>
+            </td>
+            <td><p>\(V_{out} = A(V_+ - V_-) = A(V_+ - V_{out})\)<br>
+Re-arranging gives \(V_{out} = \frac{A}{A + 1}V_+\)<br>
+A is so large that the 1 is negligible, so \(V_{out} = V_+\)<br>
+The pull-down resistor allows a safe path for current leak to 0</p></td>
+          <tr>
+            <td>
+<p>Understand the use of negative feedback to make an op-amp into a voltage follower, including the need for a pull-down resistor at the non-inverting input</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that a voltage follower has a voltage gain of one but can provide power gain</p>
+            </td>
+            <td><p>The output of an op-amp can source more current</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.2.2">2.2.2 Resistors can be used to make op-amps into non-inverting, inverting and summing amplifiers</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of feedback and pull-down resistors to make an op-amp into a non-inverting amplifier with a known voltage gain (\(G = 1 + \frac{R_f}{R_d}\))</p>
+            </td>
+            <td><p>The output does not saturate, so \(V_- = V_+\), and from the potential divider formula:<br>
+\(V_{out} = \frac{R_f + R_d}{R_d}V_- = V_+(1 + \frac{R_f}{R_d})\) so \(G = 1 + \frac{R_f}{R_d}\)</p></td>
+          <tr>
+            <td>
+<p>Understand the use of feedback and input resistors to make an op-amp into an inverting amplifier with a known voltage gain (\(G = -\frac{R_f}{R_{in}}\)), to include the concept of virtual earth for the inverting input</p>
+            </td>
+            <td><p>The output does not saturate, so the difference in voltage of the inputs is effectively 0<br>
+Since the non-inverting input is tied to ground, this means that there is a virtual earth at the inverting input<br>
+\(V_{out} = \frac{-R_f}{R_{in}}V_- = -\frac{R_f}{R_{in}}V_{in}\) so \(G = -\frac{R_f}{R_{in}}\)</p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristic of inverting and non-inverting amplifiers based on op-amps, and represent them as input-output graphs, including saturation</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of feedback and input resistors to allow an op-amp to combine two or more different ac signals (\(-\frac{V_{out}}{R_f} = \frac{V_1}{R_1} + \frac{V_2}{R_2}...\))</p>
+            </td>
+            <td><p>Equating current gives \(-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\)</p></td>
+          <tr>
+            <td>
+<p>Recall that resistors in op-amp amplifiers need to be in the range \(\SI{1}{\kilo\ohm}\) to \(\SI{10}{\mega\ohm}\)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="2.3">2.3 Counting pulses</h2>
+      <h3 id="2.3.1">2.3.1 Arrays of D flip-flops can count pulses</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the connection of D to \(\overline Q\) to make a D flip-flop into a one-bit counter</p>
+            </td>
+            <td><p>D switches state on every rising clock, causing it to emulate a one-bit counter</p></td>
+          <tr>
+            <td>
+<p>Understand the use of D flip-flops and a NOT gate to make a binary ripple up-counter</p>
+            </td>
+            <td><p>Connecting the inverted output of each flip-flop in an array to the clock input of the next one causes the array to emulate a binary ripple up-counter</p></td>
+          <tr>
+            <td>
+<p>Understand the use of logic gates to make binary counters that reset to m after n counts, where m and n are integers</p>
+            </td>
+            <td><p>AND gates processing the high bits of n causes its output to go high upon reaching n, which can then be connected to the set &amp; reset inputs of the respective flip-flops that will set the counter to m</p></td>
+          <tr>
+            <td>
+<p>Recall and use timing diagrams to represent the transfer characteristic of a binary counter</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of decoders and seven segment LEDs to display the output of a binary counter in decimal</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.3.2">2.3.2 Binary counters are at the heart of systems that produce sequences of digital signals</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of binary counters to make systems that can be used as clocks, including the use of crystal oscillators for precision timing</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of oscillators, logic systems and binary counters to generate continuous sequences of digital signals, to include frequency division</p>
+            </td>
+            <td><p>The frequency division of an oscillating signal can be achieved by connecting the signal to a binary counter that counts up to the desired number, flips the state of the output and resets</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a flip-flop, oscillators, logic systems and binary counters to generate a single train of pulses when triggered by a pulse</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="2.4">2.4 Amplifying Audio</h2>
+      <h3 id="2.4.1">2.4.1 An audio amplifier allows signals from a microphone to be heard from a loudspeaker</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Explain the operation of a complete audio amplifier system in terms of blocks representing voltage amplifier, volume and tone controls and power amplifiers</p>
+            </td>
+            <td><p>Signal source -&gt; Pre-amplifier -&gt; Tone controls -&gt; Volume control -&gt; Voltage amplifier -&gt; Power amplifier -&gt; Loudspeaker</p></td>
+          <tr>
+            <td>
+<p>Recall and use the concepts of output and input impedance to solve problems of power and signal transfer between subsystems</p>
+            </td>
+            <td><p>The output impedance should be lower than the following input impedance to minimise signal loss</p></td>
+          <tr>
+            <td>
+<p>Understand the use of a potentiometer as a volume control</p>
+            </td>
+            <td><p>The position of the wiper on the potentiometer determines how much of the signal passes through to the voltage amplifier</p></td>
+        </tbody>
+      </table>
+      <h3 id="2.4.2">2.4.2 Capacitors can be used as filters</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Explain the use of a capacitor as a frequency dependant impedance, with impedance decreasing with increasing frequency</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for break frequency (\(f_0 = \frac{1}{2\pi RC}\)) in bass cut and treble cut filters</p>
+            </td>
+            <td><p>The break frequency is the frequency at which half the input power is outputted, where the impedance of the capacitor is equal to the resistance of the resistor</p></td>
+          <tr>
+            <td>
+<p>Recall the transfer characteristics of simple passive filters and represent them with log-log gain-frequency graphs, using straight line approximations</p>
+            </td>
+            <td><p>Passive filters cannot boost signals, only cut</p></td>
+          <tr>
+            <td>
+<p>Understand treble cut, bass cut and bandpass filters based on op-amps, including the use of log-log gain-frequency graphs to represent their transfer characteristics</p>
+            </td>
+            <td><p>Treble-cut filters are based on an inverting amplifier with a capacitor wired in parallel with the feedback resistor<br>
+Bass-cut filters are based on an inverting amplifier with a capacitor wired in series with the input resistor<br>
+A bandpass filter includes both capacitors</p></td>
+        </tbody>
+      </table>
+      <h2 id="2.5">2.5 Microcontrollers</h2>
+      <h3 id="2.5.1">2.5.1 The behaviour of a microcontroller is fixed by the program fed into it</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Describe a microcontroller as a digital system whose transfer characteristics are decided by the program stored in its memory</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the difference between hardware and the software that controls it</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the advantages of programmable systems (economies of scale, reusable, ease of systems design)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the limitations of programmable systems (digital only, relatively slow)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the need for a host computer to translate a program into machine code and download it into a microcontroller</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="2.5.2">2.5.2 A small set of microcontroller instructions allows a wide range of behaviours</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the meaning of the terms input port, output port, memory address and register in the context of a microcontroller system</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that an analogue-to-digital converter outputs a byte that represents the input voltage</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use flowcharts to analyse and design simple programs for microcontrollers, using the symbols of Appendix C</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of hexadecimal notation to summarise four-bit binary words and bytes</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h1 id="4">4 Electronic Control Systems</h1>
+      <h2 id="4.1">4.1 MOSFET Circuits</h2>
+      <h3 id="4.1.1">4.1.1 MOSFETs are used to make a wide range of useful circuits</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the transfer characteristics of an n-channel MOSFET, representing them as graphs of drain current against gate-source voltage and drain current against drain-source voltage (including the use of threshold voltage and transconductance)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a MOSFET as a voltage-controlled resistor for small drain-source voltages</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of MOSFETs in a voltage divider circuit to make a potentiometer whose wiper position is controlled by an external voltage</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of MOSFETs in analogue switches, multiplexers and tristates</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of MOSFETs as voltage followers with very high input impedance (including the use of coupling capacitors to inject and extract signals)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of MOSFETs as high input impedance voltage amplifiers, including the need for biasing with a voltage divider to place the drain at a suitable voltage</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for voltage gain (\(G = -g_mR_d\)) of a MOSFET amplifier</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of drain bias for a MOSFET amplifier (including why this is better than biasing with a voltage divider)</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="4.2">4.2 Digital Processing</h2>
+      <h3 id="4.2.1">4.2.1 Memory stores information as binary words</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the block diagram for a memory module (to include data bus, address bus and control bus)</p>
+            </td>
+            <td><p>The data bus controls the data that is read from or written to memory<br>
+The address bus controls where the data is stored in memory<br>
+The control bus controls how the module functions</p></td>
+          <tr>
+            <td>
+<p>Understand that memory module stores information as binary words (one bit per cell), including how the number of data lines is related to the word length</p>
+            </td>
+            <td><p>The number of data lines is equal to the word length</p></td>
+          <tr>
+            <td>
+<p>Recall the relationship between the number of address lines and the number of different locations in the memory module</p>
+            </td>
+            <td><p>The number of different locations in the memory module is equal to 2 to the power of the number of address lines</p></td>
+          <tr>
+            <td>
+<p>Understand that the control bus contains active-low read, write and enable lines</p>
+            </td>
+            <td><p>The lines are normally high, and must be taken low to perform their function</p></td>
+          <tr>
+            <td>
+<p>Recall the sequence of operations required for a word to be written to, and read from a location in a memory module</p>
+            </td>
+            <td><p>Writing: place location address on address bus -&gt; place data on data bus -&gt; pull chip-enable low -&gt; pulse write-enable low<br>
+Reading: place location address on address bus -&gt; wait for location to be accessed -&gt; pull chip-enable low -&gt; pulse read-enable low</p></td>
+        </tbody>
+      </table>
+      <h3 id="4.2.2">4.2.2 Some types of memory can retain information in the absence of a power supply</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the distinction between volatile and non-volatile memory</p>
+            </td>
+            <td></td>
+          <tr>
+            <td>
+<p>Understand the use of a D flip-flop and a tristate to make a volatile memory cell</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a capacitor and a MOSFET to make a non-volatile memory cell</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of tristates to allow more than one memory module to access a common data bus</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of multiplexers and logic gates to combine small memory modules into large ones</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.2.3">4.2.3 Digital information can be processed with registers and logic gates</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall the use of D flip-flops to assemble registers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of registers and logic systems (such as full adders) in the parallel processing of pairs of binary words</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of two's complement coding to represent decimal numbers in binary code</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of AND and EOR gates to combine pairs of binary words stored in shift registers</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="4.3">4.3 Servo Control</h2>
+      <h3 id="4.3.1">4.3.1 Simple control systems use negative feedback</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the difference between open- and closed-loop control systems</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of on-off servo control systems in terms of the following blocks: sensor, reference, comparator, switch, transducer</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand circuits for the on-off control of temperature, position, motor speed and light intensity (based on components studied at AS)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of voltage-time graphs to represent the response of an on-off control system to changes of conditions</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that on-off control results in a rapid response to change, but that the output never settles to a constant value</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.3.2">4.3.2 Proportional control systems allow accurate control of a transducer</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the operation of proportional servo control systems in terms of the following blocks: sensor, reference, difference amplifier, voltage amplifier, ramp generator, power amplifier, transducer</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of an op-amp and four identical resistors to make a difference amplifier</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of an op-amp to make a ramp generator, including the use of the equation \(ΔV_{out} = -V_{in}\frac{\Delta t}{RC}\)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of voltage-time graphs to represent the response of a proportional control system to changes of conditions</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that proportional control systems respond relatively slowly, but allow the sensor and reference to settle at the same value</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.3.3">4.3.3 Many power supplies use negative feedback to control the voltage at their output</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of a diode bridge and a capacitor to produce an unstabilised dc voltage from an ac supply</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of a switched-mode power supply in terms of the following blocks: switched oscillator, transformer, rectifier, smoother, comparator, reference (including the use of opto-isolators to switch the oscillator on and off)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of a dc voltage regulator in terms of the following blocks: reference, comparator, MOSFET follower</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="4.4">4.4 Microcontroller Systems</h2>
+      <h3 id="4.4.1">4.4.1 A microcontroller system contains a number of blocks connected by buses</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the operation of a microcontroller system in terms of the following blocks: CPU, memory, input port, output port, clock, reset</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of the address, data and ccontrol buse to transfer data between the CPU and memory, input ports and output ports</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of the following registers in the CPU: program counter, stack pointer, general purpose registers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of tristates and D flip-flops to contruct input and output ports</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand how in each machine cycle the CPU fetches an instruction from the memory and executes it, including changes in the contents of its registers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the changes in the porgram counter when jump instructions are executed</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall why the program counter is reset when the CPU's reset pin is activated</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that programs are stored in memory as hexadecimal code produced by compilers from programs written in other languages such as assembler and C</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.4.2">4.4.2 The behaviour of a microcontroller depends on the program in its memory</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the instruction set given in Appendix E to:</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Loop until a required condition at the input port is met, including the use of the AND operation for selective resetting of bits (masking)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Provide a time delay by counting down in a register until it reaches 0</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Fetch a byte from a look-up table and copy it to the output port</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Use the EOR operation to selectively invert bits in the acccumulator</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Process a byte at the input port to generate an address for a look-up table</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Shift bytes in the accumulator to the left or right</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>The use of conditional and unconditional jumps, including the need for relative addressing</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Call and return from subroutines, using registers to transfer information</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="4.4.3">4.4.3 Programs can be made from subroutines</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall that the stack is an area of memory for storing the contents of the program counter on a last-in, first-out (LIFO) basis</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the changes in the stack pointer and program counter when calling and returning from subroutines</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the advantages of designing programs from subroutines</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Use the instruction set given in Appendix E to write subroutines, using registers to transfer data to and from the main program</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h1 id="5">5 Communication Systems</h1>
+      <h2 id="5.1">5.1 Video Displays</h2>
+      <h3 id="5.1.1">5.1.1 Rapidly changing digital signals are used to display moving pictures on screens</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall that video screens display colour pictures as lines of pixels in a frame, with separate red, green and blue pixels</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that the intensity of each pixel in a computer monitor is controlled by an analogue signal</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the need for raster scans, line synchronisation signals and frame synchronisation signals</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that the separate signals for red, green, blue, line sync and frame sync pass from a computer to a monitor</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the frame refresh rate has to be about 25 Hz for a flicker-free moving image</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall how to calculate the bandwidth required for a monitor cable from the refresh rate and the number of pixels per frame</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that a binary word can be used to determine the intensity of a pixel, including the relationship between the word length and the number of intensity level</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall how to calculate the bit rate required for a digital video stream from the bits per pixel, pixels per frame and the frame refresh rate</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the bandwidth required for a digital video stream is half the bit rate</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that compression of a digital image reduces the bits per frame but may result in a loss of quality</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="5.2">5.2 Modulating Carriers</h2>
+      <h3 id="5.2.1">5.2.1 The amplitude of a high-frequency carrier can be modulated to carry information about a signal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand that amplitude modulation (AM) requires the amplitude of the carrier to carry information about the instantaneous voltage of the signal</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a variable gain amplifier to produce AM carriers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall how to construct voltage-time and amplitude-frequency graphs of AM carriers (including the presence of sidebands on either side of the carrier)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a rectifier and filter (diode detector) to recover a signal from an AM carrier</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the rule that the bandwidth required for an amplitude modulated signal is twice the maximum signal frequency</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.2.2">5.2.2 The frequency of a high-frequency carrier can be modulated to carry information about a signal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand that frequency modulation (FM) requireds the frequency of the carrier to carry information about the instantaneous voltage of the signal</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a variable frequency oscillator to produce FM carriers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a monostable and treble cut filter for frequency demodulation</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall how to construct voltage-time graphs of frequenccy modulated carriers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the rule that the bandwidth required for an FM carrier is about five times the maximum frequency of the signal</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.2.3">5.2.3 Pulse width modulation uses a digital signal to carry analogue information</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand that the mark-space ratio of a pulse-width modulated (PWM) carrier is determined by the instantaneous voltage of the signal</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of a triangle waveform generator and a comparator to produce PWM carriers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of an op-amp ramp generator and an op-amp non-inverting Schmitt trigger to make a triangle waveform generator (including calculations of trip points and rate rates from component values)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the need to sample the signal at least twice in each cycle (Nyquist criteria)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.2.4">5.2.4 Modulated carriers pick up noise and interference in transmission</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Recall that modulated carriers can be transmitted as electrical sygnals aloung cables, as infrared along optical fibre or as radio waves</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the intensity of a modulated carrier decreases with increasing distance of transmission (no quantitative details required)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that noise is a random signal that is added to modulated carriers in transmission</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that interference is a signal from another carrier that is added to modulated carriers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the relative susceptibility of twisted-pair cables, optical fibres and radio waves to noise and interference</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the meaning of signal-to-noise ratio (no quantitative details required)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of limiters/Schmitt triggers to remove noise and interference from FM and PWM carriers, including that this is not possible for AM carriers</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="5.3">5.3 Frequency Division Multiplexing</h2>
+      <h3 id="5.3.1">5.3.1 Many modulated carriers can be sent down a link by allocating each one to a different channel</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand that frequency division multiplexing (FDM) allocates a different range of frequencies (channel) for each modulated carrier</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand how the maximum number of channels in a link is related to its bandwidth and the bandwidth allocated to each channel</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parralel LC circuit)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equations for the reactance of an inductor (\(X_L = 2\pi fL\)) and a capacitor (\(X_C = \frac{1}{2\pi fC}\)), including the use of log-log plots of reactance against frequency to represent these characteristics</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall and use the equation for the resonant frequency (\(f_0 = \frac{1}{2\pi\sqrt{\strut LC}}\))</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of three stacked filters to make a bandpass filter with a flat top and sharp edges, including the need for buffer amplifiers between stages</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.3.2">5.3.2 Radio transmissions use FDM</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the use of a tuned circuit at the base of an aerial to select a modulated carrier from just one broadcast channel</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that increasing the resistance in parallel with the tuned circuit increases the signal and reduces its bandwidth</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the operation of a simple AM radio receiver in terms of the following blocks: aerial, tuned circuit, rf amplifier, diode demodulator, af amplifier, loudspeaker</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the selectivity of a radio receiver is its ability to reject modulated carriers from neighbouring channels</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the sensitivity of a radio receiver is its ability to pick up weak stations</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of a superhet radio receiver in terms of the following blocks: aerial, tuned circuit, local oscillator, mixer, if filter, if amplifier, demodulator, af amplifier, loudspeaker</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h2 id="5.4">5.4 Time Division Multiplexing</h2>
+      <h3 id="5.4.1">5.4.1 Telephone systems use time division multiplexing to make efficient use of links</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand the operation of a digital transmission system in terms of the following blocks: analogue-to-digital converter (ADC), parallel-to-serial converter (PSC), serial-to-parallel converter (SPC), digital-to-analogue converter (DAC)</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that an ADC represents the signal voltage of each sample as a binary word, with the sampling rate at least twice the maximum signal frequency</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the meaning of the terms range, resolution and sample rate as applied to ADCs</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of flash ADCs made from comparators and logic gates</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall the use of summing amplifiers as DACs, including calculating the range and resolution from the resistor values</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the operation of an ADC made from a binary counter, a comparator and a DAC, including its advantages and disadvantages compared with a flash converter</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand how time-division multiplexing (TDM) allows many channels to share the same link</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that the bandwidth required for TDM is half the total bit rate</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of multiplexers and demultiplexers in TDM</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+      <h3 id="5.4.2">5.4.2 Computers exchange information along cables using time-division multiplexing</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            <th>Exposition</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+<p>Understand that computers can exchange information with each other along a twisted-pair cable by packets of serial digital signals</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand that each packet contains the following information: the source address, the destination address, the data payload, checksum</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of analogue switches to allow many systems to place signals on a single link in tur4 Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the need for start (0) and stop (1) bits at the start and end of each packet</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of D flip-flops and logic gates to construct parallel-in serial-out (PISO) and serial-in parallel-out (SIPO) shift registers</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Understand the use of shift registers in PTS and STP converters, including the need to use crystal oscillators</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that the bandwidth of the cable is half the maximum bit rate</p>
+            </td>
+            <td>
+            </td>
+        </tbody>
+      </table>
+    </section>
+    <footer>
+    </footer>
+  </body>
+</html>

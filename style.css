@@ -1,0 +1,96 @@
+body {
+  background: #fff;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  border-right: 1px solid #000;
+}
+
+nav a {
+  display: block;
+  padding: 1% 2%;
+  transition: background .3s;
+}
+
+nav a:hover {
+  background: #eee;
+}
+
+nav a:active {
+  background: #ddd;
+}
+
+nav > ul {
+  padding: 0;
+  text-align: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+  width: 49%;
+}
+
+nav > ol {
+  position: absolute;
+  top: 2em;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+nav ol {
+  padding-left: 1em;
+  list-style: none;
+}
+
+.electronics > #physics,
+.physics > #electronics {
+  display: none;
+}
+
+section {
+  margin-left: 25%;
+  padding: 1%;
+}
+
+table {
+  width: 100%;
+  margin: 16px 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 0 0 8px #888;
+}
+
+th {
+  background: #eee;
+  font-weight: normal;
+}
+
+tr {
+  border-top: 1px solid #eee;
+  transition: background .3s;
+}
+
+tr:hover {
+  background: #eee;
+}
+
+td, th {
+  padding: .5% 1%;
+}
+
+img {
+  min-width: 50%;
+  max-width: 100%;
+}

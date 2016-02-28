@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="56" width="80" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80.000001 56">
+ <g transform="translate(0 -996.4)">
+  <path stroke-linejoin="round" d="m32 1016v24l28-12z" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <g stroke-linejoin="round">
+    <path d="m34 1024h4"/>
+    <path d="m36 1022v4"/>
+    <path d="m34 1032h4"/>
+    <path d="m32 1032-8 0.0002v12"/>
+   </g>
+   <path d="m32 1024h-24"/>
+  </g>
+  <g stroke="#000">
+   <rect stroke-linejoin="round" height="4" width="8" y="1022" x="16" fill="#fff"/>
+   <path stroke-linejoin="round" d="m28 1024v-12h36v16" stroke-width="1px" fill="none"/>
+   <path d="m60 1028h8" stroke-width="1px" fill="none"/>
+  </g>
+  <circle cx="28" cy="1024" r="1"/>
+  <g stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m20 1044h8"/>
+   <path d="m21 1046h6"/>
+   <path d="m22 1048h4"/>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="8" stroke-linecap="round" stroke="#000" cy="1024" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1028" cx="68" r="1" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" y="1029.4824" x="71.517944" font-family="sans-serif" line-height="125%" fill="#000000"><tspan y="1029.4824" x="71.517944" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-size="5px" y="1025.5022" x="0" font-family="sans-serif" xml:space="preserve" fill="#000000"><tspan y="1025.5022" x="0" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+  </g>
+  <path d="m40 1006h12" stroke="#000" stroke-width="1px" fill="none"/>
+  <path d="m42 1004-2 2 2 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" y="1003.6422" x="44.192562" font-family="sans-serif" line-height="125%" fill="#000000"><tspan y="1003.6422" x="44.192562" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">f</tspan></tspan></text>
+  <path d="m14 1018h12" stroke="#000" stroke-width="1px" fill="none"/>
+  <path d="m16 1016-2 2 2 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <g font-size="5px" font-family="sans-serif" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1015.6422" x="17.835064" xml:space="preserve"><tspan y="1015.6422" x="17.835064" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">1</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1036.858" x="26.270563" line-height="125%"><tspan y="1036.858" x="26.270563" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">-</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1029.6711" x="25.958563" xml:space="preserve"><tspan y="1029.6711" x="25.958563" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">+</tspan></tspan></text>
+  </g>
+  <circle cy="1028" cx="64" r="1"/>
+  <path d="m59 1010 2 2-2 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" font-size="5px" y="1008.4827" x="56.163857" font-family="sans-serif" xml:space="preserve" fill="#000000"><tspan y="1008.4827" x="56.163857" font-family="&apos;Source Sans Pro&apos;">I<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  <path d="m11 1022 2 2-2 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <g font-size="5px" font-family="sans-serif" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1020.5022" x="9.7822285" line-height="125%"><tspan y="1020.5022" x="9.7822285" font-family="&apos;Source Sans Pro&apos;">I<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1018.5022" x="43.835728" xml:space="preserve"><tspan y="1018.5022" x="43.835728" font-family="&apos;Source Sans Pro&apos;">R<tspan style="baseline-shift:sub" font-size="65%">f</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1030.5022" x="17.02051" line-height="125%"><tspan y="1030.5022" x="17.02051" font-family="&apos;Source Sans Pro&apos;">R<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+  </g>
+  <rect stroke-linejoin="round" height="4" width="8" stroke="#000" y="1010" x="42" fill="#fff"/>
+ </g>
+</svg>

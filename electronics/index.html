@@ -7,7 +7,7 @@
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({
-            extensions: ["[Contrib]/siunitx/siunitx.js"],
+            extensions: ["[Contrib]/siunitx/siunitx.js"]
         });
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
@@ -1179,7 +1179,7 @@ Since the non-inverting input is tied to ground, this means that there is a virt
             <td>
 <p>Understand the use of feedback and input resistors to allow an op-amp to combine two or more different ac signals (\(-\frac{V_{out}}{R_f} = \frac{V_1}{R_1} + \frac{V_2}{R_2}...\))</p>
             </td>
-            <td><p>Equating current gives \(-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\)</p></td>
+            <td><p>Equating current gives \[-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\]</p></td>
           <tr>
             <td>
 <p>Recall that resistors in op-amp amplifiers need to be in the range \(\SI{1}{\kilo\ohm}\) to \(\SI{10}{\mega\ohm}\)</p>
@@ -1874,8 +1874,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that the separate signals for red, green, blue, line sync and frame sync pass from a computer to a monitor</p>
             </td>
-            <td>
-            </td>
+            <td><p>Splitting the RGB signals means that only a third of the total data is sent down each signal, so the bandwidth is a third of what is would otherwise need to be</p></td>
           <tr>
             <td>
 <p>Understand that the frame refresh rate has to be about 25 Hz for a flicker-free moving image</p>
@@ -1886,32 +1885,28 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall how to calculate the bandwidth required for a monitor cable from the refresh rate and the number of pixels per frame</p>
             </td>
-            <td>
-            </td>
+            <td><p>The bitrate is the number of bits that must be sent down the cable in a second, and is equal to \(\text{pixels per frame} \cdot \text{frame rate}\)<br>
+The bandwidth is half the bitrate</p></td>
           <tr>
             <td>
 <p>Understand that a binary word can be used to determine the intensity of a pixel, including the relationship between the word length and the number of intensity level</p>
             </td>
-            <td>
-            </td>
+            <td><p>The number of intensity levels is \(2^\text{word length}\)</p></td>
           <tr>
             <td>
 <p>Recall how to calculate the bit rate required for a digital video stream from the bits per pixel, pixels per frame and the frame refresh rate</p>
             </td>
-            <td>
-            </td>
+            <td><p>The bitrate is equal to \(\text{bits per pixel} \cdot \text{pixels per frame} \cdot \text{frame rate}\)</p></td>
           <tr>
             <td>
 <p>Understand that the bandwidth required for a digital video stream is half the bit rate</p>
             </td>
-            <td>
-            </td>
+            <td><p>This is since maximum bandwidth occurs when the bitstream alternates between 0 &amp; 1, so each cycle is 2 bits, so the bandwidth is half the bitrate</p></td>
           <tr>
             <td>
 <p>Recall that compression of a digital image reduces the bits per frame but may result in a loss of quality</p>
             </td>
-            <td>
-            </td>
+            <td><p>Compression reduces the bandwidth</p></td>
         </tbody>
       </table>
       <h2 id="5.2">5.2 Modulating Carriers</h2>
@@ -1928,32 +1923,32 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand that amplitude modulation (AM) requires the amplitude of the carrier to carry information about the instantaneous voltage of the signal</p>
             </td>
-            <td>
-            </td>
+            <td><p>The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude</p></td>
           <tr>
             <td>
 <p>Understand the use of a variable gain amplifier to produce AM carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p>With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)</p></td>
           <tr>
             <td>
 <p>Recall how to construct voltage-time and amplitude-frequency graphs of AM carriers (including the presence of sidebands on either side of the carrier)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/am_voltage_time.svg"><br>
+<img alt="" src="/alevel/img/amplitude_frequency.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of a rectifier and filter (diode detector) to recover a signal from an AM carrier</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/am_demodulation.svg"><br>
+The diode rectifier removes the negative signal<br>
+The low pass filter removes the carrier frequency, since it is much higher than the signal frequency</p></td>
           <tr>
             <td>
 <p>Recall and use the rule that the bandwidth required for an amplitude modulated signal is twice the maximum signal frequency</p>
             </td>
-            <td>
-            </td>
+            <td><p>The bandwidth is the distance from the lowest sideband to the highest sideband<br>
+Each sideband is a distance equal to its frequency away from the carrier frequency, so the most extreme sideband is a distance equal to the maximum signal frequency away<br>
+Therefore, the bandwidth is equal to twice the maximum signal frequency</p></td>
         </tbody>
       </table>
       <h3 id="5.2.2">5.2.2 The frequency of a high-frequency carrier can be modulated to carry information about a signal</h3>
@@ -1967,22 +1962,20 @@ Reading: place location address on address bus -&gt; wait for location to be acc
         <tbody>
           <tr>
             <td>
-<p>Understand that frequency modulation (FM) requireds the frequency of the carrier to carry information about the instantaneous voltage of the signal</p>
+<p>Understand that frequency modulation (FM) requires the frequency of the carrier to carry information about the instantaneous voltage of the signal</p>
             </td>
-            <td>
-            </td>
+            <td><p>The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude</p></td>
           <tr>
             <td>
 <p>Understand the use of a variable frequency oscillator to produce FM carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p>With the signal voltage controlling the frequency of the oscillator, a higher signal causes a higher frequency in the carrier, and a lower signal causes a lower frequency in the carrier (or vice versa, depending on the configuration of the oscillator)</p></td>
           <tr>
             <td>
 <p>Understand the use of a monostable and treble cut filter for frequency demodulation</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/fm_demodulation.svg"><br>
+The monostable produces a short pulse for each cycle of the recieved signal</p></td>
           <tr>
             <td>
 <p>Recall how to construct voltage-time graphs of frequenccy modulated carriers</p>
@@ -1993,8 +1986,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall and use the rule that the bandwidth required for an FM carrier is about five times the maximum frequency of the signal</p>
             </td>
-            <td>
-            </td>
+            <td><p>This is a rule of thumb</p></td>
         </tbody>
       </table>
       <h3 id="5.2.3">5.2.3 Pulse width modulation uses a digital signal to carry analogue information</h3>
@@ -2010,26 +2002,51 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand that the mark-space ratio of a pulse-width modulated (PWM) carrier is determined by the instantaneous voltage of the signal</p>
             </td>
-            <td>
-            </td>
+            <td><p>A pulse-width modulated carrier consists of a fixed-length high-low cycle with a variable-length high pulse during it<br>
+The mark-space ratio is the ratio of the period of the high pulse to the period of the cycle</p></td>
           <tr>
             <td>
 <p>Understand the use of a triangle waveform generator and a comparator to produce PWM carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p>Assuming the triangle wave generator is fast enough that the signal voltage can be assumed to be constant during each cycle, the length of the cycle is the time period of the triangle<br>
+The length of the pulse is determined by the period of time the voltage of the triangle wave is higher (or lower, depending on the configuration of the comparator) than the voltage of the signal, and is therefore has a linear relationship with the voltage</p></td>
           <tr>
             <td>
 <p>Understand the operation of an op-amp ramp generator and an op-amp non-inverting Schmitt trigger to make a triangle waveform generator (including calculations of trip points and rate rates from component values)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/ramp_generator.svg"><br>
+An op-amp ramp generator has a similar design to an inverting amplifier<br>
+Since the output is not saturated and the non-inverting input is grounded, the difference between the two inputs is effectively zero and there is a virtual ground at the inverting input, so \(V_- = V_+ = \SI{0}{\volt}\)<br>
+Since the op-amp draws no current, the current across the resistor is equal to the current acress the capacitor<br>
+The output voltage is:<br>
+\[\begin{alignat}{2}<br>
+&amp; Q_C &amp;&amp; = CV_C<br>
+\\ \implies &amp; \int I_C \mathrm{d}t &amp;&amp; = C(V_- - V_{out})<br>
+\\ \implies &amp; \int I_R \mathrm{d}t &amp;&amp; = -CV_{out}<br>
+\\ \implies &amp; V_{out} &amp;&amp; = -\frac{1}{C}\int \frac{V_R}{R} \mathrm{d}t<br>
+\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} - V_- \mathrm{d}t<br>
+\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} \mathrm{d}t<br>
+\\ &amp; &amp;&amp; = -\frac{1}{RC}V_{in}t<br>
+\end{alignat}\]<br>
+<img alt="" src="/alevel/img/schmitt_trigger.svg"><br>
+A non-inverting Schmitt trigger has a similar design to an inverting amplifier with positive feedback instead of negative, causing the system to be unstable and switching very rapidly rather than stable<br>
+Since the output is saturated and the inverting input is grounded, the non-inverting output is not necessarily zero, but the trip point occurs when the inverting input reaches zero, so when \(V_+ = V_- = \SI{0}{\volt}\)<br>
+Since the op-amp draws no current, the currents across the resistors are equal<br>
+The trip points occur at:<br>
+\[\begin{align}<br>
+&amp; I_{in} = I_{out}<br>
+\\ \implies &amp; \frac{V_{1}}{R_{in}} = \frac{V_f}{R_f}<br>
+\\ \implies &amp; V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - V_{out})<br>
+\\ \implies &amp; V_{in} = -\frac{R_{in}}{R_f}V_{out}<br>
+\end{align}\]<br>
+where output voltage can be either the positive or negative saturation value<br>
+<img alt="" src="/alevel/img/triangle_wave_generator.svg"><br>
+By connecting the ramp generator to the Schmitt trigger in a feedback loop, the ramp generator can be made to trip the Schmitt trigger when it saturates, thereby causing the input to switch to the equal but opposite-signed voltage, causing it to ramp in the opposite direction and generating a triangle wave</p></td>
           <tr>
             <td>
 <p>Understand the need to sample the signal at least twice in each cycle (Nyquist criteria)</p>
             </td>
-            <td>
-            </td>
+            <td><p>To record a high and low point for each cycle</p></td>
           <tr>
             <td>
 <p>Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier</p>
@@ -2049,7 +2066,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
         <tbody>
           <tr>
             <td>
-<p>Recall that modulated carriers can be transmitted as electrical sygnals aloung cables, as infrared along optical fibre or as radio waves</p>
+<p>Recall that modulated carriers can be transmitted as electrical signals along cables, as infrared along optical fibre or as radio waves</p>
             </td>
             <td>
             </td>
@@ -2069,14 +2086,13 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand that interference is a signal from another carrier that is added to modulated carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p>Interference is not random</p></td>
           <tr>
             <td>
 <p>Understand the relative susceptibility of twisted-pair cables, optical fibres and radio waves to noise and interference</p>
             </td>
-            <td>
-            </td>
+            <td><p>Schmitt triggers are used to equalise the amplitude by squaring the wave<br>
+Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal</p></td>
           <tr>
             <td>
 <p>Understand the meaning of signal-to-noise ratio (no quantitative details required)</p>
@@ -2115,10 +2131,9 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             </td>
           <tr>
             <td>
-<p>Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parralel LC circuit)</p>
+<p>Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parallel LC circuit)</p>
             </td>
-            <td>
-            </td>
+            <td><p>Increasing the resistance of a parallel LC circuit increases the bandwidth, as well as decreasing the peak impedance</p></td>
           <tr>
             <td>
 <p>Recall and use the equations for the reactance of an inductor (\(X_L = 2\pi fL\)) and a capacitor (\(X_C = \frac{1}{2\pi fC}\)), including the use of log-log plots of reactance against frequency to represent these characteristics</p>
@@ -2129,14 +2144,13 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall and use the equation for the resonant frequency (\(f_0 = \frac{1}{2\pi\sqrt{\strut LC}}\))</p>
             </td>
-            <td>
-            </td>
+            <td><p>The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor<br>
+At the resonant frequency, the impedance of an ideal parallel LC circuit is infinite</p></td>
           <tr>
             <td>
 <p>Understand the use of three stacked filters to make a bandpass filter with a flat top and sharp edges, including the need for buffer amplifiers between stages</p>
             </td>
-            <td>
-            </td>
+            <td><p>The buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter</p></td>
         </tbody>
       </table>
       <h3 id="5.3.2">5.3.2 Radio transmissions use FDM</h3>
@@ -2152,8 +2166,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the use of a tuned circuit at the base of an aerial to select a modulated carrier from just one broadcast channel</p>
             </td>
-            <td>
-            </td>
+            <td><p>A tuned circuit is a parallel LC circuit</p></td>
           <tr>
             <td>
 <p>Recall that increasing the resistance in parallel with the tuned circuit increases the signal and reduces its bandwidth</p>
@@ -2164,8 +2177,12 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall the operation of a simple AM radio receiver in terms of the following blocks: aerial, tuned circuit, rf amplifier, diode demodulator, af amplifier, loudspeaker</p>
             </td>
-            <td>
-            </td>
+            <td><p>The aerial receives a signal that induces alternating currents into the input<br>
+The tuned circuit isolates frequencies that are within signal range of the carrier frequency<br>
+The rf amplifier amplifies the selected radio frequency<br>
+The diode demodulator extracts the audio signal from the carrier<br>
+The af amplifier amplifies the audio frequencies<br>
+The loudspeaker outputs the audio</p></td>
           <tr>
             <td>
 <p>Understand that the selectivity of a radio receiver is its ability to reject modulated carriers from neighbouring channels</p>
@@ -2182,8 +2199,15 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the operation of a superhet radio receiver in terms of the following blocks: aerial, tuned circuit, local oscillator, mixer, if filter, if amplifier, demodulator, af amplifier, loudspeaker</p>
             </td>
-            <td>
-            </td>
+            <td><p>The aerial receives a signal that induces alternating currents into the input<br>
+The tuned circuit isolates frequencies that are within signal range of the carrier frequency<br>
+The local oscillator <br>
+The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies<br>
+The if filter is a stacked filter that isolates the intermediate frequency<br>
+The if amplifier amplifiers the intermediate frequency<br>
+The demodulator extracts the audio signal from the carrier<br>
+The af amplifier amplifies the audio frequencies<br>
+The loudspeaker outputs the audio</p></td>
         </tbody>
       </table>
       <h2 id="5.4">5.4 Time Division Multiplexing</h2>
@@ -2200,38 +2224,46 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the operation of a digital transmission system in terms of the following blocks: analogue-to-digital converter (ADC), parallel-to-serial converter (PSC), serial-to-parallel converter (SPC), digital-to-analogue converter (DAC)</p>
             </td>
-            <td>
-            </td>
+            <td><p>The ADC encodes an analogue signal into a digital stream of binary words, which is a group of 8 bits<br>
+The PSC converts the 8 parallel streams into a single stream<br>
+The transmission link sends the data from one point to another<br>
+The SPC groups every 8 bits into the stream into a parallel stream of binary words<br>
+The DAC decodes the stream of binary words into an analogue signal</p></td>
           <tr>
             <td>
 <p>Understand that an ADC represents the signal voltage of each sample as a binary word, with the sampling rate at least twice the maximum signal frequency</p>
             </td>
-            <td>
-            </td>
+            <td><p>To record a high and low point for each cycle</p></td>
           <tr>
             <td>
 <p>Understand the meaning of the terms range, resolution and sample rate as applied to ADCs</p>
             </td>
-            <td>
-            </td>
+            <td><p>The range is the voltage represented by the highest value minus the voltage represented by the lowest value<br>
+The resolution is the voltage between consecutive values<br>
+The sample rate is how often the signal gets sampled</p></td>
           <tr>
             <td>
 <p>Understand the operation of flash ADCs made from comparators and logic gates</p>
             </td>
-            <td>
-            </td>
+            <td><p>The resistors divide the supply voltage into equal divisions which are the thresholds for each step of the ADC<br>
+The comparators </p></td>
           <tr>
             <td>
 <p>Recall the use of summing amplifiers as DACs, including calculating the range and resolution from the resistor values</p>
             </td>
-            <td>
-            </td>
+            <td><p>If \(R_n = 2^{-n}R_0\), then:<br>
+\[\begin{align}<br>
+V_{out} &amp; = -R_f\sum_{i=1}^n\frac{V_i}{R_i}<br>
+\\ &amp; = -R_f\sum_{i=1}^n\frac{V_i}{2^{-i}R_0}<br>
+\\ &amp; = -\frac{R_f}{R_0}\sum_{i=1}^n2^iV_i<br>
+\end{align}\]<br>
+which represents the binary encoding of the voltage</p></td>
           <tr>
             <td>
 <p>Understand the operation of an ADC made from a binary counter, a comparator and a DAC, including its advantages and disadvantages compared with a flash converter</p>
             </td>
-            <td>
-            </td>
+            <td><p>Advantages: fewer components<br>
+Disadvantages: slower</p></td>
           <tr>
             <td>
 <p>Understand how time-division multiplexing (TDM) allows many channels to share the same link</p>
@@ -2275,7 +2307,13 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             </td>
           <tr>
             <td>
-<p>Understand the use of analogue switches to allow many systems to place signals on a single link in tur4 Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet</p>
+<p>Understand the use of analogue switches to allow many systems to place signals on a single link in turn</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
+<p>Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet</p>
             </td>
             <td>
             </td>
@@ -2301,8 +2339,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that the bandwidth of the cable is half the maximum bit rate</p>
             </td>
-            <td>
-            </td>
+            <td><p>In the worst case scenario, the signal alternates between 0 &amp; 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate</p></td>
         </tbody>
       </table>
     </section>

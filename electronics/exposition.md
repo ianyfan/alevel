@@ -133,7 +133,7 @@
 2 The output does not saturate, so the difference in voltage of the inputs is effectively 0
 \ Since the non-inverting input is tied to ground, this means that there is a virtual earth at the inverting input
 \ \\(V_{out} = \frac{-R_f}{R_{in}}V_- = -\frac{R_f}{R_{in}}V_{in}\\) so \\(G = -\frac{R_f}{R_{in}}\\)
-4 Equating current gives \\(-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\\)
+4 Equating current gives \\[-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\\]
 
 2.3.1
 1 D switches state on every rising clock, causing it to emulate a one-bit counter
@@ -169,3 +169,121 @@
 
 4.2.2
 1 
+
+5.1.1
+4 Splitting the RGB signals means that only a third of the total data is sent down each signal, so the bandwidth is a third of what is would otherwise need to be
+6 The bitrate is the number of bits that must be sent down the cable in a second, and is equal to \\(\text{pixels per frame} \cdot \text{frame rate}\\)
+\ The bandwidth is half the bitrate
+7 The number of intensity levels is \\(2^\text{word length}\\)
+8 The bitrate is equal to \\(\text{bits per pixel} \cdot \text{pixels per frame} \cdot \text{frame rate}\\)
+9 This is since maximum bandwidth occurs when the bitstream alternates between 0 & 1, so each cycle is 2 bits, so the bandwidth is half the bitrate
+10 Compression reduces the bandwidth
+
+5.2.1
+1 The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude
+2 With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)
+3 ![](/alevel/img/am_voltage_time.svg)
+\ ![](/alevel/img/amplitude_frequency.svg)
+4 ![](/alevel/img/am_demodulation.svg)
+\ The diode rectifier removes the negative signal
+\ The low pass filter removes the carrier frequency, since it is much higher than the signal frequency
+5 The bandwidth is the distance from the lowest sideband to the highest sideband
+\ Each sideband is a distance equal to its frequency away from the carrier frequency, so the most extreme sideband is a distance equal to the maximum signal frequency away
+\ Therefore, the bandwidth is equal to twice the maximum signal frequency
+
+5.2.2
+1 The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude
+2 With the signal voltage controlling the frequency of the oscillator, a higher signal causes a higher frequency in the carrier, and a lower signal causes a lower frequency in the carrier (or vice versa, depending on the configuration of the oscillator)
+3 ![](/alevel/img/fm_demodulation.svg)
+\ The monostable produces a short pulse for each cycle of the recieved signal
+5 This is a rule of thumb
+
+5.2.3
+1 A pulse-width modulated carrier consists of a fixed-length high-low cycle with a variable-length high pulse during it
+\ The mark-space ratio is the ratio of the period of the high pulse to the period of the cycle
+2 Assuming the triangle wave generator is fast enough that the signal voltage can be assumed to be constant during each cycle, the length of the cycle is the time period of the triangle
+\ The length of the pulse is determined by the period of time the voltage of the triangle wave is higher (or lower, depending on the configuration of the comparator) than the voltage of the signal, and is therefore has a linear relationship with the voltage
+3 ![](/alevel/img/ramp_generator.svg)
+\ An op-amp ramp generator has a similar design to an inverting amplifier
+\ Since the output is not saturated and the non-inverting input is grounded, the difference between the two inputs is effectively zero and there is a virtual ground at the inverting input, so \\(V_- = V_+ = \SI{0}{\volt}\\)
+\ Since the op-amp draws no current, the current across the resistor is equal to the current acress the capacitor
+\ The output voltage is:
+\ \\[\begin{alignat}{2}
+\ & Q_C && = CV_C
+\ \\\ \implies & \int I_C \mathrm{d}t && = C(V_- - V_{out})
+\ \\\ \implies & \int I_R \mathrm{d}t && = -CV_{out}
+\ \\\ \implies & V_{out} && = -\frac{1}{C}\int \frac{V_R}{R} \mathrm{d}t
+\ \\\ & && = -\frac{1}{RC}\int V_{in} - V_- \mathrm{d}t
+\ \\\ & && = -\frac{1}{RC}\int V_{in} \mathrm{d}t
+\ \\\ & && = -\frac{1}{RC}V_{in}t
+\ \end{alignat}\\]
+\ ![](/alevel/img/schmitt_trigger.svg)
+\ A non-inverting Schmitt trigger has a similar design to an inverting amplifier with positive feedback instead of negative, causing the system to be unstable and switching very rapidly rather than stable
+\ Since the output is saturated and the inverting input is grounded, the non-inverting output is not necessarily zero, but the trip point occurs when the inverting input reaches zero, so when \\(V_+ = V_- = \SI{0}{\volt}\\)
+\ Since the op-amp draws no current, the currents across the resistors are equal
+\ The trip points occur at:
+\ \\[\begin{align}
+\ & I_{in} = I_{out}
+\ \\\ \implies & \frac{V_{1}}{R_{in}} = \frac{V_f}{R_f}
+\ \\\ \implies & V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - V_{out})
+\ \\\ \implies & V_{in} = -\frac{R_{in}}{R_f}V_{out}
+\ \end{align}\\]
+\ where output voltage can be either the positive or negative saturation value
+\ ![](/alevel/img/triangle_wave_generator.svg)
+\ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the ramp generator can be made to trip the Schmitt trigger when it saturates, thereby causing the input to switch to the equal but opposite-signed voltage, causing it to ramp in the opposite direction and generating a triangle wave
+4 To record a high and low point for each cycle
+
+5.2.4
+4 Interference is not random
+5 Schmitt triggers are used to equalise the amplitude by squaring the wave
+\ Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal
+
+5.3.1
+3 Increasing the resistance of a parallel LC circuit increases the bandwidth, as well as decreasing the peak impedance
+5 The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor
+\ At the resonant frequency, the impedance of an ideal parallel LC circuit is infinite
+6 The buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter
+
+5.3.2
+1 A tuned circuit is a parallel LC circuit
+3 The aerial receives a signal that induces alternating currents into the input
+\ The tuned circuit isolates frequencies that are within signal range of the carrier frequency
+\ The rf amplifier amplifies the selected radio frequency
+\ The diode demodulator extracts the audio signal from the carrier
+\ The af amplifier amplifies the audio frequencies
+\ The loudspeaker outputs the audio
+6 The aerial receives a signal that induces alternating currents into the input
+\ The tuned circuit isolates frequencies that are within signal range of the carrier frequency
+\ The local oscillator 
+\ The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies
+\ The if filter is a stacked filter that isolates the intermediate frequency
+\ The if amplifier amplifiers the intermediate frequency
+\ The demodulator extracts the audio signal from the carrier
+\ The af amplifier amplifies the audio frequencies
+\ The loudspeaker outputs the audio
+
+5.4.1
+1 The ADC encodes an analogue signal into a digital stream of binary words, which is a group of 8 bits
+\ The PSC converts the 8 parallel streams into a single stream
+\ The transmission link sends the data from one point to another
+\ The SPC groups every 8 bits into the stream into a parallel stream of binary words
+\ The DAC decodes the stream of binary words into an analogue signal
+2 To record a high and low point for each cycle
+3 The range is the voltage represented by the highest value minus the voltage represented by the lowest value
+\ The resolution is the voltage between consecutive values
+\ The sample rate is how often the signal gets sampled
+4 The resistors divide the supply voltage into equal divisions, normally integer voltages, which are the thresholds for each step of the ADC
+\ The comparators compare each division with the input voltage, establishing a threshold where every comparator above the voltage is high and every comparator below it is low (or vice versa, depending on the configuration of the comparators)
+\ The XOR gates recieve inputs from each pair of adjacent comparators, which finds the two divisions the input voltage is between since the comparator outputs change from low to high, thereby being the only XOR gate that is high
+5 If \\(R_n = 2^{-n}R_0\\), then:
+\ \\[\begin{align}
+\ V_{out} & = -R_f\sum_{i=1}^n\frac{V_i}{R_i}
+\ \\\ & = -R_f\sum_{i=1}^n\frac{V_i}{2^{-i}R_0}
+\ \\\ & = -\frac{R_f}{R_0}\sum_{i=1}^n2^iV_i
+\ \end{align}\\]
+\ which represents the binary encoding of the voltage
+6 Advantages: fewer components
+\ Disadvantages: slower
+
+5.4.2
+8 In the worst case scenario, the signal alternates between 0 & 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate

@@ -115,7 +115,7 @@ for subject in subjects:
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({{
-            extensions: ["[Contrib]/siunitx/siunitx.js"],
+            extensions: ["[Contrib]/siunitx/siunitx.js"]
         }});
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>

@@ -244,7 +244,7 @@
 5 Recall and use the rule that the bandwidth required for an amplitude modulated signal is twice the maximum signal frequency
 
 5.2.2
-1 Understand that frequency modulation (FM) requireds the frequency of the carrier to carry information about the instantaneous voltage of the signal
+1 Understand that frequency modulation (FM) requires the frequency of the carrier to carry information about the instantaneous voltage of the signal
 2 Understand the use of a variable frequency oscillator to produce FM carriers
 3 Understand the use of a monostable and treble cut filter for frequency demodulation
 4 Recall how to construct voltage-time graphs of frequenccy modulated carriers
@@ -258,7 +258,7 @@
 5 Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier
 
 5.2.4
-1 Recall that modulated carriers can be transmitted as electrical sygnals aloung cables, as infrared along optical fibre or as radio waves
+1 Recall that modulated carriers can be transmitted as electrical signals along cables, as infrared along optical fibre or as radio waves
 2 Understand that the intensity of a modulated carrier decreases with increasing distance of transmission (no quantitative details required)
 3 Understand that noise is a random signal that is added to modulated carriers in transmission
 4 Understand that interference is a signal from another carrier that is added to modulated carriers
@@ -269,7 +269,7 @@
 5.3.1
 1 Understand that frequency division multiplexing (FDM) allocates a different range of frequencies (channel) for each modulated carrier
 2 Understand how the maximum number of channels in a link is related to its bandwidth and the bandwidth allocated to each channel
-3 Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parralel LC circuit)
+3 Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parallel LC circuit)
 4 Recall and use the equations for the reactance of an inductor (\\(X_L = 2\pi fL\\)) and a capacitor (\\(X_C = \frac{1}{2\pi fC}\\)), including the use of log-log plots of reactance against frequency to represent these characteristics
 5 Recall and use the equation for the resonant frequency (\\(f_0 = \frac{1}{2\pi\sqrt{\strut LC}}\\))
 6 Understand the use of three stacked filters to make a bandpass filter with a flat top and sharp edges, including the need for buffer amplifiers between stages
@@ -296,7 +296,8 @@
 5.4.2
 1 Understand that computers can exchange information with each other along a twisted-pair cable by packets of serial digital signals
 2 Understand that each packet contains the following information: the source address, the destination address, the data payload, checksum
-3 Understand the use of analogue switches to allow many systems to place signals on a single link in tur4 Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet
+3 Understand the use of analogue switches to allow many systems to place signals on a single link in turn
+4 Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet
 5 Understand the need for start (0) and stop (1) bits at the start and end of each packet
 6 Understand the use of D flip-flops and logic gates to construct parallel-in serial-out (PISO) and serial-in parallel-out (SIPO) shift registers
 7 Understand the use of shift registers in PTS and STP converters, including the need to use crystal oscillators

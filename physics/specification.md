@@ -103,7 +103,7 @@
 3 Conditions for equilibrium for two or three coplanar forces acting at a point; problems may be solved either by using resolved forces or by using a closed triangle
 
 2.1.2
-1 Moment of a force about a point defined as \\(\text{force} * \text{perpendicular distance from the point to the line of action of the force}\\)
+1 Moment of a force about a point defined as \\[\text{force} * \text{perpendicular distance from the point to the line of action of the force}\\]
 \ Torque
 2 Couple of a pair of equal and opposite forces defined as \\(\text{force} * \text{perpendicular distance between the lines of action of the forces}\\)
 3 The principle of moments and its applications in simple balanced situations

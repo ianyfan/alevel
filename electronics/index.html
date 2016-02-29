@@ -2245,8 +2245,12 @@ The sample rate is how often the signal gets sampled</p></td>
             <td>
 <p>Understand the operation of flash ADCs made from comparators and logic gates</p>
             </td>
-            <td><p>The resistors divide the supply voltage into equal divisions which are the thresholds for each step of the ADC<br>
-The comparators </p></td>
+            <td><p>The resistors divide the supply voltage into equal divisions, normally integer voltages, which are the thresholds for each step of the ADC<br>
+The comparators compare each division with the input voltage, establishing a threshold where every comparator above the voltage is high and every comparator below it is low (or vice versa, depending on the configuration of the comparators)<br>
+The XOR gates recieve inputs from each pair of adjacent comparators, which finds the two divisions the input voltage is between since the comparator outputs change from low to high, thereby being the only XOR gate that is high<br>
+The logic gate system determines which bits go high for which voltage value<br>
+The monostable sends a pulse every cycle that causes the latch to transfer the data of the new word to the output<br>
+The latch retains the transmitted word until the next cycle</p></td>
           <tr>
             <td>
 <p>Recall the use of summing amplifiers as DACs, including calculating the range and resolution from the resistor values</p>
@@ -2262,26 +2266,29 @@ which represents the binary encoding of the voltage</p></td>
             <td>
 <p>Understand the operation of an ADC made from a binary counter, a comparator and a DAC, including its advantages and disadvantages compared with a flash converter</p>
             </td>
-            <td><p>Advantages: fewer components<br>
-Disadvantages: slower</p></td>
+            <td><p>The counter produces increasing digital values, normally in \(\SI{1}{\volt}\) steps<br>
+The DAC converts the digital value into an analogue voltage<br>
+The comparator remains low until the counter reaches the lowest value that exceeds the input signal<br>
+This activates the latch so it transmits the digital value<br>
+Advantages: fewer components<br>
+Disadvantages: slower, since it can depends on the counter's speed, whereas the flash converter is instant</p></td>
           <tr>
             <td>
 <p>Understand how time-division multiplexing (TDM) allows many channels to share the same link</p>
             </td>
-            <td>
-            </td>
+            <td><p>Time-division multiplexing allows many channels per second to share the same link by rapidly cycling through each input at a high enough frequency such that enough information is retained to extract at the receiving end</p></td>
           <tr>
             <td>
 <p>Understand that the bandwidth required for TDM is half the total bit rate</p>
             </td>
-            <td>
-            </td>
+            <td><p>In the worst case scenario, the signal alternates between 0 &amp; 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate<br>
+The bitrate is equal to \(\text{word length} \cdot \text{channel number} \cdot \text{frame rate}\)</p></td>
           <tr>
             <td>
 <p>Understand the use of multiplexers and demultiplexers in TDM</p>
             </td>
-            <td>
-            </td>
+            <td><p>Multiplexers are used in the transmission of TDM to select which input is being transmitted<br>
+Demultiplexers are used in the reception of TDM to select which output is being received</p></td>
         </tbody>
       </table>
       <h3 id="5.4.2">5.4.2 Computers exchange information along cables using time-division multiplexing</h3>
@@ -2303,8 +2310,10 @@ Disadvantages: slower</p></td>
             <td>
 <p>Understand that each packet contains the following information: the source address, the destination address, the data payload, checksum</p>
             </td>
-            <td>
-            </td>
+            <td><p>The source address identifies the device the signal is coming from, if there are multiple transmission devices on the same line; it is sent first so that collisions are detected at the earliest possible moment<br>
+The destination address identifies the device the signal is sending to; every device listens to the line, but only processes the information if its address matches the destination address<br>
+The data payload is the part of the payload that contains the information to be sent<br>
+The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload</p></td>
           <tr>
             <td>
 <p>Understand the use of analogue switches to allow many systems to place signals on a single link in turn</p>
@@ -2315,14 +2324,13 @@ Disadvantages: slower</p></td>
             <td>
 <p>Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet</p>
             </td>
-            <td>
-            </td>
+            <td><p>When the device transmits data, it simultaneously listen to the line to check that the source address is transmitted correctly; if not, there is another device transmitting that is corrupting the signal, so it stops transmitting waits for a predetermined time that is different for each device before transmitting again on a hopefully quiet line</p></td>
           <tr>
             <td>
 <p>Understand the need for start (0) and stop (1) bits at the start and end of each packet</p>
             </td>
-            <td>
-            </td>
+            <td><p>The natural state of the line is high, so the first bit is a 0 to instruct the device that data is incoming<br>
+The stop bit is a 1 to inform the device that there is no more data to receive and the line returns to its high state</p></td>
           <tr>
             <td>
 <p>Understand the use of D flip-flops and logic gates to construct parallel-in serial-out (PISO) and serial-in parallel-out (SIPO) shift registers</p>

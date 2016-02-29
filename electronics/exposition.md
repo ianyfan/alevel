@@ -275,6 +275,9 @@
 4 The resistors divide the supply voltage into equal divisions, normally integer voltages, which are the thresholds for each step of the ADC
 \ The comparators compare each division with the input voltage, establishing a threshold where every comparator above the voltage is high and every comparator below it is low (or vice versa, depending on the configuration of the comparators)
 \ The XOR gates recieve inputs from each pair of adjacent comparators, which finds the two divisions the input voltage is between since the comparator outputs change from low to high, thereby being the only XOR gate that is high
+\ The logic gate system determines which bits go high for which voltage value
+\ The monostable sends a pulse every cycle that causes the latch to transfer the data of the new word to the output
+\ The latch retains the transmitted word until the next cycle
 5 If \\(R_n = 2^{-n}R_0\\), then:
 \ \\[\begin{align}
 \ V_{out} & = -R_f\sum_{i=1}^n\frac{V_i}{R_i}
@@ -282,8 +285,24 @@
 \ \\\ & = -\frac{R_f}{R_0}\sum_{i=1}^n2^iV_i
 \ \end{align}\\]
 \ which represents the binary encoding of the voltage
-6 Advantages: fewer components
-\ Disadvantages: slower
+6 The counter produces increasing digital values, normally in \\(\SI{1}{\volt}\\) steps
+\ The DAC converts the digital value into an analogue voltage
+\ The comparator remains low until the counter reaches the lowest value that exceeds the input signal
+\ This activates the latch so it transmits the digital value
+\ Advantages: fewer components
+\ Disadvantages: slower, since it can depends on the counter's speed, whereas the flash converter is instant
+7 Time-division multiplexing allows many channels per second to share the same link by rapidly cycling through each input at a high enough frequency such that enough information is retained to extract at the receiving end
+8 In the worst case scenario, the signal alternates between 0 & 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate
+\ The bitrate is equal to \\(\text{word length} \cdot \text{channel number} \cdot \text{frame rate}\\)
+9 Multiplexers are used in the transmission of TDM to select which input is being transmitted
+\ Demultiplexers are used in the reception of TDM to select which output is being received
 
 5.4.2
+2 The source address identifies the device the signal is coming from, if there are multiple transmission devices on the same line; it is sent first so that collisions are detected at the earliest possible moment
+\ The destination address identifies the device the signal is sending to; every device listens to the line, but only processes the information if its address matches the destination address
+\ The data payload is the part of the payload that contains the information to be sent
+\ The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload
+4 When the device transmits data, it simultaneously listen to the line to check that the source address is transmitted correctly; if not, there is another device transmitting that is corrupting the signal, so it stops transmitting waits for a predetermined time that is different for each device before transmitting again on a hopefully quiet line
+5 The natural state of the line is high, so the first bit is a 0 to instruct the device that data is incoming
+\ The stop bit is a 1 to inform the device that there is no more data to receive and the line returns to its high state
 8 In the worst case scenario, the signal alternates between 0 & 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate

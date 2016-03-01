@@ -359,9 +359,9 @@
 \ \end{align}\\]
 
 4.3.4
-1 Inverse square square
+1 Inverse square law
 \ Infinite range
-\ Radial, with linear approximation as short distances
+\ Radial, with linear approximation at short distances
 2 Electric fields depend on the medium between the charges
 \ Charges may repel as well as attract
 \ Gravity between two masses, electric between two charges
@@ -407,9 +407,11 @@
 \ \\(Q\\) is the charge of the particles in coulombs
 \ \\(v\\) is the velocity in metres per second
 3 Since the force is always perpendicular to motion, the particles move in circular motion, with radius \\(r = \frac{mv}{BQ}\\)
+\ A cyclotron is a particle accelerator that uses a magnetic and electric field in two semicircular dees to accelerate charged particles outwards in a spiral path until it leaves the edge in a straight line
 
 4.5.3
-1 \\(B\\) is the magnetic flux density in teslas
+1 Flux 
+\ \\(B\\) is the magnetic flux density in teslas
 \ \\(A\\) is the area of the surface in metres squared
 2 Flux linkage is the magnetic flux passing through a coil
 
@@ -417,10 +419,15 @@
 2 Faraday's law: the induced emf is equal to the negative of the rate of change of flux linkage
 \ Lenz's law: the direction of induced current opposes the charge producing it
 3 However, the direction is opposite to the rate of change
+4 If moving straight conductor has length \\(l\\) and moves a distance \\(s\\), then the change in flux linkage \\(\Delta\Phi = B\Delta A = Bl\Delta s\\), so the induced emf \\(\varepsilon = N\frac{\Delta\Phi}{\Delta t} = 1\frac{Bl\Delta s}{\Delta t} = Bl\frac{\Delta s}{\Delta t} = Blv\\)
+5 The flux linkage \\(N\Phi = BAN\sin\theta = BAN\sin(\omega t)\\) so the induced emf \\(\varepsilon = \frac{N\Delta\Phi}{\Delta t} = N\frac{\Delta(BA\sin(\omega t))}{\Delta t} = BAN\frac{\Delta(\sin(\omega t))}{\Delta t} = BAN\omega\cos(\omega t)\\)
 6 Where \\(\omega\\ = 2\pi f\\) is the angular frequency, and \\(f\\) is the frequency of rotation in Hertz
 7 A transformer transfers energy from one circuit, the primary circuit, to another, the secondary circuit; it consists of two coils wound round a common iron core; an alternating current in the primary coil induces an alternating magnetic field in the core, which in turn induces an alternating current in the secondary coil
-8 Transformers are almost 100% efficient
+8 By comparing the energy in the circuit after transformation to before
+\ Transformers are almost 100% efficient
 9 Resistance in the wire causes heating equal to \\(I^2R\\)
+\ Eddy currents are induced in the iron core, which is minimised by partitioning the core with insulating layers
+\ Energy is wasted to repeatedly magnetise and demagnetise the iron core
 10 Since the power wasted is proportional to current squared, and inversely proportional to voltage squared, it is much more efficient energy efficient to transfer electrical power at high voltage
 \ Transformers are used in transmission by stepping-up the voltage before transmission and stepping-down the voltage after transmission
 

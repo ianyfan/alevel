@@ -171,20 +171,27 @@
 1 
 
 5.1.1
+1 RGB pixels facilitate a colour display
+3 A raster scan is the method of rendering a frame employed by CRT screens since they can only render one pixel at a time, so sweep across the screen bit by bit moving across each line and going down each line
+\ Line synchronisation signals instruct the screen to start scanning a new line
+\ Frame synchronisation signals instruct the screen to start scanning a new frame
 4 Splitting the RGB signals means that only a third of the total data is sent down each signal, so the bandwidth is a third of what is would otherwise need to be
+5 The higher the frame refresh rate, the smoother the image
 6 The bitrate is the number of bits that must be sent down the cable in a second, and is equal to \\(\text{pixels per frame} \cdot \text{frame rate}\\)
 \ The bandwidth is half the bitrate
 7 The number of intensity levels is \\(2^\text{word length}\\)
 8 The bitrate is equal to \\(\text{bits per pixel} \cdot \text{pixels per frame} \cdot \text{frame rate}\\)
 9 This is since maximum bandwidth occurs when the bitstream alternates between 0 & 1, so each cycle is 2 bits, so the bandwidth is half the bitrate
 10 Compression reduces the bandwidth
+\ This may cause the image to become blockier, as there is less variation in consecutive pixels
 
 5.2.1
 1 The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude
 2 With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)
+\ Example using a MOSFET: ![](/alevel/img/am_modulator.svg)
 3 ![](/alevel/img/am_voltage_time.svg)
-\ ![](/alevel/img/amplitude_frequency.svg)
-4 ![](/alevel/img/am_demodulation.svg)
+\ ![](/alevel/img/am_amplitude_frequency.svg)
+4 ![](/alevel/img/am_demodulator.svg)
 \ The diode rectifier removes the negative signal
 \ The low pass filter removes the carrier frequency, since it is much higher than the signal frequency
 5 The bandwidth is the distance from the lowest sideband to the highest sideband
@@ -194,8 +201,9 @@
 5.2.2
 1 The frequency of the carrier is normally much higher than the frequency of the signal, by at least a magnitude
 2 With the signal voltage controlling the frequency of the oscillator, a higher signal causes a higher frequency in the carrier, and a lower signal causes a lower frequency in the carrier (or vice versa, depending on the configuration of the oscillator)
-3 ![](/alevel/img/fm_demodulation.svg)
+3 ![](/alevel/img/fm_demodulator.svg)
 \ The monostable produces a short pulse for each cycle of the recieved signal
+4 ![](/alevel/img/fm_voltage_time.svg)
 5 This is a rule of thumb
 
 5.2.3
@@ -234,32 +242,49 @@
 4 To record a high and low point for each cycle
 
 5.2.4
+1 A twisted-pair cable transmitted the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal
 4 Interference is not random
-5 Schmitt triggers are used to equalise the amplitude by squaring the wave
+5 Optical fibre is immune to interference since the signal is carried by infrared light, and outside sources of light are blocked by a plastic coating
+6 The signal-to-noise ratio refers to the amplitude of the signal compared to the noise; a high signal-to-noise ratio is desirable so that the signal is more easily extracted
+7 Schmitt triggers are used to equalise the amplitude by squaring the wave
 \ Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal
 
 5.3.1
+1 FDM allows many signals to share the same transmission medium without interference, such as radio waves in the atmosphere, by only allowing each carrier to be within an allocated range of frequencies
+2 If the bandwidth for each channel is the same, then the maximum number of channels on a link is equaL to the bandwidth of the link divided by the bandwidth of a channel
 3 Increasing the resistance of a parallel LC circuit increases the bandwidth, as well as decreasing the peak impedance
-5 The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor
+5 The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor:
+\ \\[\begin{align}
+\ & X_C = X_L
+\ \\\ \implies & \frac{1}{2\pi fC} = 2\pi fL
+\ \\\ \implies & f^2 = \frac{1}{4\pi^2 LC}
+\ \\\ \implies & f = \frac{1}{2\pi\sqrt{LC}}
+\ \end{align}\\]
 \ At the resonant frequency, the impedance of an ideal parallel LC circuit is infinite
-6 The buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter
+6 The three filters have slightly different resonant frequencies to allow a flat top, with one at the lower end of the desired band, one at the upper end of the band, and one in the centre
+\ Buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter
 
 5.3.2
 1 A tuned circuit is a parallel LC circuit
-3 The aerial receives a signal that induces alternating currents into the input
+2 But also increases the impedance
+3 ![](/alevel/img/am_radio_receiver.svg)
+\ The aerial receives a signal that induces alternating currents into the input
 \ The tuned circuit isolates frequencies that are within signal range of the carrier frequency
 \ The rf amplifier amplifies the selected radio frequency
-\ The diode demodulator extracts the audio signal from the carrier
-\ The af amplifier amplifies the audio frequencies
-\ The loudspeaker outputs the audio
-6 The aerial receives a signal that induces alternating currents into the input
-\ The tuned circuit isolates frequencies that are within signal range of the carrier frequency
-\ The local oscillator 
-\ The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies
-\ The if filter is a stacked filter that isolates the intermediate frequency
-\ The if amplifier amplifiers the intermediate frequency
 \ The demodulator extracts the audio signal from the carrier
 \ The af amplifier amplifies the audio frequencies
+\ The loudspeaker outputs the audio
+4 A balance must be struck between the selectivity of the receiver and the attenuation of the signal
+5 However, since the signal is weak, the signal-to-noise ratio may be low
+6 ![](/alevel/img/superhet.svg)
+\ The aerial receives a signal that induces alternating currents into the input
+\ The tuned circuit isolates frequencies that are within signal range of the carrier frequency
+\ The local oscillator produces oscillations whose frequency is offset from the radio frequency
+\ The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies; this translates the signal to a lower frequency, which is easier to work with
+\ The i.f. filter is a stacked filter that isolates the intermediate frequency
+\ The i.f. amplifier amplifiers the intermediate frequency
+\ The demodulator extracts the audio signal from the carrier
+\ The a.f. amplifier amplifies the audio frequencies
 \ The loudspeaker outputs the audio
 
 5.4.1
@@ -278,7 +303,8 @@
 \ The logic gate system determines which bits go high for which voltage value
 \ The monostable sends a pulse every cycle that causes the latch to transfer the data of the new word to the output
 \ The latch retains the transmitted word until the next cycle
-5 If \\(R_n = 2^{-n}R_0\\), then:
+5 ![](/alevel/img/dac.svg)
+\ If \\(R_n = 2^{-n}R_0\\), then:
 \ \\[\begin{align}
 \ V_{out} & = -R_f\sum_{i=1}^n\frac{V_i}{R_i}
 \ \\\ & = -R_f\sum_{i=1}^n\frac{V_i}{2^{-i}R_0}
@@ -298,11 +324,16 @@
 \ Demultiplexers are used in the reception of TDM to select which output is being received
 
 5.4.2
+1 The packets are sent asynchronously, so the receiving computer must be able to recognise arrival of a packet and interpret it correctly
 2 The source address identifies the device the signal is coming from, if there are multiple transmission devices on the same line; it is sent first so that collisions are detected at the earliest possible moment
 \ The destination address identifies the device the signal is sending to; every device listens to the line, but only processes the information if its address matches the destination address
 \ The data payload is the part of the payload that contains the information to be sent
-\ The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload
+\ The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload, such as a parity check
 4 When the device transmits data, it simultaneously listen to the line to check that the source address is transmitted correctly; if not, there is another device transmitting that is corrupting the signal, so it stops transmitting waits for a predetermined time that is different for each device before transmitting again on a hopefully quiet line
 5 The natural state of the line is high, so the first bit is a 0 to instruct the device that data is incoming
 \ The stop bit is a 1 to inform the device that there is no more data to receive and the line returns to its high state
+6 A shift register is a row of D-type latches whose outputs are connected to the input of the next latch, so that on each clock pulse, the output each latch is loaded into the next latch along, causing the data to "shift" along
+7 In a parallel-serial converter, the parallel data is loaded into the shift register using multiplexers, allowing each clock pulse to transmit each bit in the word through the output of the last latch in a serial fashion
+\ In a serial-parallel converter, the serial data is loaded into the first latch and shifted along, and after the right number of clock pulses, the output of each latch is copied onto a parallel bus
+\ Crystal oscillators are used since each end of transmission must use the same timings, and crystal oscillators have very high precision
 8 In the worst case scenario, the signal alternates between 0 & 1, which is effectively a square wave with a time period of two bits, and therefore a frequency of half the bitrate

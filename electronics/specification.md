@@ -199,7 +199,7 @@
 
 4.4.1
 1 Understand the operation of a microcontroller system in terms of the following blocks: CPU, memory, input port, output port, clock, reset
-2 Understand the use of the address, data and ccontrol buse to transfer data between the CPU and memory, input ports and output ports
+2 Understand the use of the address, data and control bus to transfer data between the CPU and memory, input ports and output ports
 3 Understand the use of the following registers in the CPU: program counter, stack pointer, general purpose registers
 4 Recall the use of tristates and D flip-flops to contruct input and output ports
 5 Understand how in each machine cycle the CPU fetches an instruction from the memory and executes it, including changes in the contents of its registers
@@ -247,7 +247,7 @@
 1 Understand that frequency modulation (FM) requires the frequency of the carrier to carry information about the instantaneous voltage of the signal
 2 Understand the use of a variable frequency oscillator to produce FM carriers
 3 Understand the use of a monostable and treble cut filter for frequency demodulation
-4 Recall how to construct voltage-time graphs of frequenccy modulated carriers
+4 Recall how to construct voltage-time graphs of frequency modulated carriers
 5 Recall and use the rule that the bandwidth required for an FM carrier is about five times the maximum frequency of the signal
 
 5.2.3

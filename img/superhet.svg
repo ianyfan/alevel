@@ -1,0 +1,35 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="224" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 224 28">
+ <g stroke="#000" transform="translate(0,-36)">
+  <path d="m20 44h184v8" stroke-width="1px" fill="none"/>
+  <path d="m72 44v12" stroke-width="1px" fill="none"/>
+  <g stroke-linejoin="round" stroke-linecap="round" fill="#fff">
+   <rect height="8" width="16" y="40" x="4"/>
+   <rect height="8" width="32" y="40" x="24"/>
+   <rect height="8" width="16" y="40" x="64"/>
+   <rect height="8" width="24" y="40" x="88"/>
+   <rect height="8" width="32" y="40" x="116"/>
+   <rect height="8" width="32" y="40" x="152"/>
+   <rect height="8" width="32" y="40" x="188"/>
+   <rect height="8" width="32" y="52" x="188"/>
+   <rect height="8" width="40" y="52" x="52"/>
+  </g>
+  <path d="m59 42 2 2-2 2" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <path d="m83 42 2 2-2 2" stroke-linecap="round" stroke-width="1px" fill="none"/>
+ </g>
+ <g font-size="5px" transform="translate(0 -1024)">
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1034.1122" x="6.1058202" font-family="sans-serif" line-height="125%" fill="#000000"><tspan y="1034.1122" x="6.1058202" font-family="&apos;Source Sans Pro&apos;">Aerial</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="1011.3622" x="57" font-family="&apos;Source Sans Pro&apos;" fill="#ffffff"><tspan x="57" y="1011.3622">aoe</tspan></text>
+  <g font-family="sans-serif" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1034.1122" x="26.329414" xml:space="preserve"><tspan y="1034.1122" x="26.329414" font-family="&apos;Source Sans Pro&apos;">Tuned circuit</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1034.0623" x="66.158791" xml:space="preserve"><tspan stroke-linecap="round" y="1034.0623" x="66.158791" font-family="&apos;Source Sans Pro&apos;">Mixer</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1046.1123" x="56.012306" line-height="125%"><tspan y="1046.1123" x="56.012306" font-family="&apos;Source Sans Pro&apos;">Local oscillator</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1034.1423" x="91.960426" line-height="125%"><tspan y="1034.1423" x="91.960426" font-family="&apos;Source Sans Pro&apos;">i.f. filter</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1033.6598" x="119.43894" xml:space="preserve"><tspan y="1033.6598" x="119.43894" font-family="&apos;Source Sans Pro&apos;">i.f. amplifier</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1034.1123" x="153.91171" line-height="125%"><tspan y="1034.1123" x="153.91171" font-family="&apos;Source Sans Pro&apos;">Demodulator</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1033.6598" x="190.83191" xml:space="preserve"><tspan y="1033.6598" x="190.83191" font-family="&apos;Source Sans Pro&apos;">a.f. amplifier</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1045.6298" x="190.27304" line-height="125%"><tspan y="1045.6298" x="190.27304" font-family="&apos;Source Sans Pro&apos;">Loudspeaker</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1029.1422" x="81.531677" xml:space="preserve"><tspan y="1029.1422" x="81.531677" font-family="&apos;Source Sans Pro&apos;">i.f.</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1029.1422" x="57.381878" line-height="125%"><tspan y="1029.1422" x="57.381878" font-family="&apos;Source Sans Pro&apos;">r.f.</tspan></text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="204" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 204 16">
+ <g stroke="#000" transform="translate(0,-48)">
+  <path d="m20 56h148" stroke-width="1px" fill="none"/>
+  <g stroke-linejoin="round" stroke-linecap="round" fill="#fff">
+   <rect height="8" width="16" y="52" x="4"/>
+   <rect height="8" width="32" y="52" x="24"/>
+   <rect height="8" width="32" y="52" x="60"/>
+   <rect height="8" width="32" y="52" x="96"/>
+   <rect height="8" width="32" y="52" x="132"/>
+   <rect height="8" width="32" y="52" x="168"/>
+  </g>
+ </g>
+ <g font-size="5px" transform="translate(0 -1036)">
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1046.1122" x="6.1058202" font-family="sans-serif" line-height="125%" fill="#000000"><tspan y="1046.1122" x="6.1058202" font-family="&apos;Source Sans Pro&apos;">Aerial</tspan></text>
+  <text style="text-anchor:middle;text-align:center" xml:space="preserve" y="1011.3622" x="57" font-family="&apos;Source Sans Pro&apos;" fill="#ffffff"><tspan x="57" y="1011.3622">aoe</tspan></text>
+  <g font-family="sans-serif" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1046.1122" x="26.329414" xml:space="preserve"><tspan y="1046.1122" x="26.329414" font-family="&apos;Source Sans Pro&apos;">Tuned circuit</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1045.6597" x="63.289139" xml:space="preserve"><tspan y="1045.6597" x="63.289139" font-family="&apos;Source Sans Pro&apos;">r.f. amplifier</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1046.1123" x="97.911713" line-height="125%"><tspan y="1046.1123" x="97.911713" font-family="&apos;Source Sans Pro&apos;">Demodulator</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1045.6598" x="134.83191" xml:space="preserve"><tspan y="1045.6598" x="134.83191" font-family="&apos;Source Sans Pro&apos;">a.f. amplifier</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="1045.6298" x="170.27304" line-height="125%"><tspan y="1045.6298" x="170.27304" font-family="&apos;Source Sans Pro&apos;">Loudspeaker</tspan></text>
+  </g>
+ </g>
+</svg>

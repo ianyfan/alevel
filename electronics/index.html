@@ -1699,7 +1699,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             </td>
           <tr>
             <td>
-<p>Understand the use of the address, data and ccontrol buse to transfer data between the CPU and memory, input ports and output ports</p>
+<p>Understand the use of the address, data and control bus to transfer data between the CPU and memory, input ports and output ports</p>
             </td>
             <td>
             </td>
@@ -1856,8 +1856,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that video screens display colour pictures as lines of pixels in a frame, with separate red, green and blue pixels</p>
             </td>
-            <td>
-            </td>
+            <td><p>RGB pixels facilitate a colour display</p></td>
           <tr>
             <td>
 <p>Recall that the intensity of each pixel in a computer monitor is controlled by an analogue signal</p>
@@ -1868,8 +1867,9 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the need for raster scans, line synchronisation signals and frame synchronisation signals</p>
             </td>
-            <td>
-            </td>
+            <td><p>A raster scan is the method of rendering a frame employed by CRT screens since they can only render one pixel at a time, so sweep across the screen bit by bit moving across each line and going down each line<br>
+Line synchronisation signals instruct the screen to start scanning a new line<br>
+Frame synchronisation signals instruct the screen to start scanning a new frame</p></td>
           <tr>
             <td>
 <p>Recall that the separate signals for red, green, blue, line sync and frame sync pass from a computer to a monitor</p>
@@ -1879,8 +1879,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand that the frame refresh rate has to be about 25 Hz for a flicker-free moving image</p>
             </td>
-            <td>
-            </td>
+            <td><p>The higher the frame refresh rate, the smoother the image</p></td>
           <tr>
             <td>
 <p>Recall how to calculate the bandwidth required for a monitor cable from the refresh rate and the number of pixels per frame</p>
@@ -1906,7 +1905,8 @@ The bandwidth is half the bitrate</p></td>
             <td>
 <p>Recall that compression of a digital image reduces the bits per frame but may result in a loss of quality</p>
             </td>
-            <td><p>Compression reduces the bandwidth</p></td>
+            <td><p>Compression reduces the bandwidth<br>
+This may cause the image to become blockier, as there is less variation in consecutive pixels</p></td>
         </tbody>
       </table>
       <h2 id="5.2">5.2 Modulating Carriers</h2>
@@ -1928,18 +1928,19 @@ The bandwidth is half the bitrate</p></td>
             <td>
 <p>Understand the use of a variable gain amplifier to produce AM carriers</p>
             </td>
-            <td><p>With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)</p></td>
+            <td><p>With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)<br>
+Example using a MOSFET: <img alt="" src="/alevel/img/am_modulator.svg"></p></td>
           <tr>
             <td>
 <p>Recall how to construct voltage-time and amplitude-frequency graphs of AM carriers (including the presence of sidebands on either side of the carrier)</p>
             </td>
             <td><p><img alt="" src="/alevel/img/am_voltage_time.svg"><br>
-<img alt="" src="/alevel/img/amplitude_frequency.svg"></p></td>
+<img alt="" src="/alevel/img/am_amplitude_frequency.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of a rectifier and filter (diode detector) to recover a signal from an AM carrier</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/am_demodulation.svg"><br>
+            <td><p><img alt="" src="/alevel/img/am_demodulator.svg"><br>
 The diode rectifier removes the negative signal<br>
 The low pass filter removes the carrier frequency, since it is much higher than the signal frequency</p></td>
           <tr>
@@ -1974,14 +1975,13 @@ Therefore, the bandwidth is equal to twice the maximum signal frequency</p></td>
             <td>
 <p>Understand the use of a monostable and treble cut filter for frequency demodulation</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/fm_demodulation.svg"><br>
+            <td><p><img alt="" src="/alevel/img/fm_demodulator.svg"><br>
 The monostable produces a short pulse for each cycle of the recieved signal</p></td>
           <tr>
             <td>
-<p>Recall how to construct voltage-time graphs of frequenccy modulated carriers</p>
+<p>Recall how to construct voltage-time graphs of frequency modulated carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/fm_voltage_time.svg"></p></td>
           <tr>
             <td>
 <p>Recall and use the rule that the bandwidth required for an FM carrier is about five times the maximum frequency of the signal</p>
@@ -2068,8 +2068,7 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td>
 <p>Recall that modulated carriers can be transmitted as electrical signals along cables, as infrared along optical fibre or as radio waves</p>
             </td>
-            <td>
-            </td>
+            <td><p>A twisted-pair cable transmitted the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal</p></td>
           <tr>
             <td>
 <p>Understand that the intensity of a modulated carrier decreases with increasing distance of transmission (no quantitative details required)</p>
@@ -2091,20 +2090,18 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td>
 <p>Understand the relative susceptibility of twisted-pair cables, optical fibres and radio waves to noise and interference</p>
             </td>
-            <td><p>Schmitt triggers are used to equalise the amplitude by squaring the wave<br>
-Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal</p></td>
+            <td><p>Optical fibre is immune to interference since the signal is carried by infrared light, and outside sources of light are blocked by a plastic coating</p></td>
           <tr>
             <td>
 <p>Understand the meaning of signal-to-noise ratio (no quantitative details required)</p>
             </td>
-            <td>
-            </td>
+            <td><p>The signal-to-noise ratio refers to the amplitude of the signal compared to the noise; a high signal-to-noise ratio is desirable so that the signal is more easily extracted</p></td>
           <tr>
             <td>
 <p>Understand the use of limiters/Schmitt triggers to remove noise and interference from FM and PWM carriers, including that this is not possible for AM carriers</p>
             </td>
-            <td>
-            </td>
+            <td><p>Schmitt triggers are used to equalise the amplitude by squaring the wave<br>
+Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal</p></td>
         </tbody>
       </table>
       <h2 id="5.3">5.3 Frequency Division Multiplexing</h2>
@@ -2121,14 +2118,12 @@ Since Schmitt triggers affect the amplitude of the carrier, it cannot be used fo
             <td>
 <p>Understand that frequency division multiplexing (FDM) allocates a different range of frequencies (channel) for each modulated carrier</p>
             </td>
-            <td>
-            </td>
+            <td><p>FDM allows many signals to share the same transmission medium without interference, such as radio waves in the atmosphere, by only allowing each carrier to be within an allocated range of frequencies</p></td>
           <tr>
             <td>
 <p>Understand how the maximum number of channels in a link is related to its bandwidth and the bandwidth allocated to each channel</p>
             </td>
-            <td>
-            </td>
+            <td><p>If the bandwidth for each channel is the same, then the maximum number of channels on a link is equaL to the bandwidth of the link divided by the bandwidth of a channel</p></td>
           <tr>
             <td>
 <p>Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parallel LC circuit)</p>
@@ -2144,13 +2139,20 @@ Since Schmitt triggers affect the amplitude of the carrier, it cannot be used fo
             <td>
 <p>Recall and use the equation for the resonant frequency (\(f_0 = \frac{1}{2\pi\sqrt{\strut LC}}\))</p>
             </td>
-            <td><p>The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor<br>
+            <td><p>The resonant frequency occurs when the reactance of the capacitor is equal to the reactance of the inductor:<br>
+\[\begin{align}<br>
+&amp; X_C = X_L<br>
+\\ \implies &amp; \frac{1}{2\pi fC} = 2\pi fL<br>
+\\ \implies &amp; f^2 = \frac{1}{4\pi^2 LC}<br>
+\\ \implies &amp; f = \frac{1}{2\pi\sqrt{LC}}<br>
+\end{align}\]<br>
 At the resonant frequency, the impedance of an ideal parallel LC circuit is infinite</p></td>
           <tr>
             <td>
 <p>Understand the use of three stacked filters to make a bandpass filter with a flat top and sharp edges, including the need for buffer amplifiers between stages</p>
             </td>
-            <td><p>The buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter</p></td>
+            <td><p>The three filters have slightly different resonant frequencies to allow a flat top, with one at the lower end of the desired band, one at the upper end of the band, and one in the centre<br>
+Buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter</p></td>
         </tbody>
       </table>
       <h3 id="5.3.2">5.3.2 Radio transmissions use FDM</h3>
@@ -2171,42 +2173,41 @@ At the resonant frequency, the impedance of an ideal parallel LC circuit is infi
             <td>
 <p>Recall that increasing the resistance in parallel with the tuned circuit increases the signal and reduces its bandwidth</p>
             </td>
-            <td>
-            </td>
+            <td><p>But also increases the impedance</p></td>
           <tr>
             <td>
 <p>Recall the operation of a simple AM radio receiver in terms of the following blocks: aerial, tuned circuit, rf amplifier, diode demodulator, af amplifier, loudspeaker</p>
             </td>
-            <td><p>The aerial receives a signal that induces alternating currents into the input<br>
+            <td><p><img alt="" src="/alevel/img/am_radio_receiver.svg"><br>
+The aerial receives a signal that induces alternating currents into the input<br>
 The tuned circuit isolates frequencies that are within signal range of the carrier frequency<br>
 The rf amplifier amplifies the selected radio frequency<br>
-The diode demodulator extracts the audio signal from the carrier<br>
+The demodulator extracts the audio signal from the carrier<br>
 The af amplifier amplifies the audio frequencies<br>
 The loudspeaker outputs the audio</p></td>
           <tr>
             <td>
 <p>Understand that the selectivity of a radio receiver is its ability to reject modulated carriers from neighbouring channels</p>
             </td>
-            <td>
-            </td>
+            <td><p>A balance must be struck between the selectivity of the receiver and the attenuation of the signal</p></td>
           <tr>
             <td>
 <p>Understand that the sensitivity of a radio receiver is its ability to pick up weak stations</p>
             </td>
-            <td>
-            </td>
+            <td><p>However, since the signal is weak, the signal-to-noise ratio may be low</p></td>
           <tr>
             <td>
 <p>Understand the operation of a superhet radio receiver in terms of the following blocks: aerial, tuned circuit, local oscillator, mixer, if filter, if amplifier, demodulator, af amplifier, loudspeaker</p>
             </td>
-            <td><p>The aerial receives a signal that induces alternating currents into the input<br>
+            <td><p><img alt="" src="/alevel/img/superhet.svg"><br>
+The aerial receives a signal that induces alternating currents into the input<br>
 The tuned circuit isolates frequencies that are within signal range of the carrier frequency<br>
-The local oscillator <br>
-The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies<br>
-The if filter is a stacked filter that isolates the intermediate frequency<br>
-The if amplifier amplifiers the intermediate frequency<br>
+The local oscillator produces oscillations whose frequency is offset from the radio frequency<br>
+The mixer modulates the radio frequency with the local frequency to form two more frequencies: one with the difference of the two frequencies, the intermediate frequency, and the other with the sum of the frequencies; this translates the signal to a lower frequency, which is easier to work with<br>
+The i.f. filter is a stacked filter that isolates the intermediate frequency<br>
+The i.f. amplifier amplifiers the intermediate frequency<br>
 The demodulator extracts the audio signal from the carrier<br>
-The af amplifier amplifies the audio frequencies<br>
+The a.f. amplifier amplifies the audio frequencies<br>
 The loudspeaker outputs the audio</p></td>
         </tbody>
       </table>
@@ -2255,7 +2256,8 @@ The latch retains the transmitted word until the next cycle</p></td>
             <td>
 <p>Recall the use of summing amplifiers as DACs, including calculating the range and resolution from the resistor values</p>
             </td>
-            <td><p>If \(R_n = 2^{-n}R_0\), then:<br>
+            <td><p><img alt="" src="/alevel/img/dac.svg"><br>
+If \(R_n = 2^{-n}R_0\), then:<br>
 \[\begin{align}<br>
 V_{out} &amp; = -R_f\sum_{i=1}^n\frac{V_i}{R_i}<br>
 \\ &amp; = -R_f\sum_{i=1}^n\frac{V_i}{2^{-i}R_0}<br>
@@ -2304,8 +2306,7 @@ Demultiplexers are used in the reception of TDM to select which output is being 
             <td>
 <p>Understand that computers can exchange information with each other along a twisted-pair cable by packets of serial digital signals</p>
             </td>
-            <td>
-            </td>
+            <td><p>The packets are sent asynchronously, so the receiving computer must be able to recognise arrival of a packet and interpret it correctly</p></td>
           <tr>
             <td>
 <p>Understand that each packet contains the following information: the source address, the destination address, the data payload, checksum</p>
@@ -2313,7 +2314,7 @@ Demultiplexers are used in the reception of TDM to select which output is being 
             <td><p>The source address identifies the device the signal is coming from, if there are multiple transmission devices on the same line; it is sent first so that collisions are detected at the earliest possible moment<br>
 The destination address identifies the device the signal is sending to; every device listens to the line, but only processes the information if its address matches the destination address<br>
 The data payload is the part of the payload that contains the information to be sent<br>
-The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload</p></td>
+The checksum is an identifier that is calculated from the payload and is used to verify the integrity of the payload, such as a parity check</p></td>
           <tr>
             <td>
 <p>Understand the use of analogue switches to allow many systems to place signals on a single link in turn</p>
@@ -2335,14 +2336,14 @@ The stop bit is a 1 to inform the device that there is no more data to receive a
             <td>
 <p>Understand the use of D flip-flops and logic gates to construct parallel-in serial-out (PISO) and serial-in parallel-out (SIPO) shift registers</p>
             </td>
-            <td>
-            </td>
+            <td><p>A shift register is a row of D-type latches whose outputs are connected to the input of the next latch, so that on each clock pulse, the output each latch is loaded into the next latch along, causing the data to "shift" along</p></td>
           <tr>
             <td>
 <p>Understand the use of shift registers in PTS and STP converters, including the need to use crystal oscillators</p>
             </td>
-            <td>
-            </td>
+            <td><p>In a parallel-serial converter, the parallel data is loaded into the shift register using multiplexers, allowing each clock pulse to transmit each bit in the word through the output of the last latch in a serial fashion<br>
+In a serial-parallel converter, the serial data is loaded into the first latch and shifted along, and after the right number of clock pulses, the output of each latch is copied onto a parallel bus<br>
+Crystal oscillators are used since each end of transmission must use the same timings, and crystal oscillators have very high precision</p></td>
           <tr>
             <td>
 <p>Recall that the bandwidth of the cable is half the maximum bit rate</p>

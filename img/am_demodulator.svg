@@ -1,0 +1,29 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="52" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 52 28">
+ <g transform="translate(0 -1024)">
+  <g stroke="#000">
+   <g stroke-width="1px">
+    <path d="m8 1032h32" fill="none"/>
+    <path stroke-linejoin="round" d="m20 1028v4l-8 4v-8l8 4v4" fill-rule="evenodd" stroke-linecap="round" fill="#fff"/>
+    <path d="m32 1037h8" fill="none"/>
+    <path d="m32 1039h8" fill="none"/>
+   </g>
+   <rect stroke-linejoin="round" height="4" width="8" stroke-linecap="round" y="1030" x="24" fill="#fff"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m36 1032v5"/>
+   <path d="m36 1039v5"/>
+   <g stroke-linecap="round">
+    <path d="m32 1044h8"/>
+    <path d="m33 1046h6"/>
+    <path d="m34 1048h4"/>
+   </g>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="8" stroke-linecap="round" stroke="#000" cy="1032" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" cx="40" stroke-linecap="round" stroke="#000" cy="1032" r="1" fill="#fff"/>
+   <circle cx="36" cy="1032" r="1"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1033.5022" x="1.0000002" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="1.0000002" y="1033.5022">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1033.4827" x="42.517944" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="42.517944" y="1033.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

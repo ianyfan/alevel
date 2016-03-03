@@ -1,0 +1,71 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="72" width="80" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80 72.000001">
+ <g transform="translate(0 -980.4)">
+  <g stroke-width="1px" stroke="#000">
+   <path d="m4 1012h8" fill="none"/>
+   <path stroke-linejoin="round" d="m8 1044v-32" fill="none"/>
+   <path stroke-linejoin="round" d="m20 1008v-24l28 12z" fill-rule="evenodd" fill="#fff"/>
+  </g>
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px">
+    <g>
+     <path d="m22 992.4h4"/>
+     <path d="m24 990.4v4"/>
+     <path d="m22 1e3h4"/>
+    </g>
+    <path stroke-linejoin="round" d="m52 996.4v16h-36v-12h4"/>
+    <path d="m20 992.4h-4"/>
+   </g>
+   <g stroke-linejoin="round" stroke-linecap="round" stroke-width="1px">
+    <path d="m8 1028h38v-10"/>
+    <path d="m48 1028v-2"/>
+    <path d="m48 1024v-2"/>
+    <path d="m48 1020v-2"/>
+   </g>
+   <path d="m48 1027h4" stroke-width="1px"/>
+   <g stroke-linejoin="round">
+    <path d="m52 1044v-21h-3l1-1v2l-1-1" stroke-linecap="round" stroke-width="1px"/>
+    <path d="m48 1019h4v-7" stroke-width="1px"/>
+    <ellipse stroke-linecap="round" rx="7" ry="7" cy="1023" cx="49"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="8" width="4" stroke="#000" stroke-linecap="round" y="1e3" x="50" fill="#fff"/>
+  <path d="m48 996.4h8" stroke="#000" stroke-width="1px" fill="none"/>
+  <g>
+   <circle stroke-linejoin="round" cx="56" stroke-linecap="round" stroke="#000" cy="996.4" r="1" fill="#fff"/>
+   <circle cx="52" cy="996.4" r="1"/>
+   <circle cx="52" cy="1012" r="1"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cy="992.4" cx="16" r="1"/>
+   <rect height="8" width="4" y="1016" x="6"/>
+   <rect height="8" width="4" y="1032" x="6"/>
+  </g>
+  <g stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m4 1044h8"/>
+   <path d="m5 1046h6"/>
+   <path d="m6 1048h4"/>
+   <path d="m48 1044h8"/>
+   <path d="m49 1046h6"/>
+   <path d="m50 1048h4"/>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="4" stroke-linecap="round" stroke="#000" cy="1012" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1012" cx="12" r="1" fill="#fff"/>
+   <circle cy="1028" cx="8" r="1"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m37 1016v8"/>
+   <path d="m35 1016v8"/>
+   <path d="m35 1020h-5"/>
+  </g>
+  <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1020" cx="30" r="1" fill="#fff"/>
+  <path stroke-linejoin="round" d="m37 1020h3v8" stroke="#000" stroke-width="1px" fill="none"/>
+  <circle cx="40" cy="1028" r="1"/>
+  <g font-size="5px" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" y="993.65253" x="10.492203" font-family="sans-serif" line-height="125%"><tspan y="993.65253" x="10.492203" font-family="&apos;Source Sans Pro&apos;">f<tspan style="baseline-shift:sub" font-size="65%">c</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="997.58215" x="57.679764" font-family="&apos;Source Sans Pro&apos;"><tspan x="57.679764" y="997.58215">a.m. signal</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1021.6526" x="24.563704" font-family="sans-serif" xml:space="preserve"><tspan y="1021.6526" x="24.563704" font-family="&apos;Source Sans Pro&apos;">f<tspan style="baseline-shift:sub" font-size="65%">s</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1042.1122" x="12.226016" font-family="&apos;Source Sans Pro&apos;"><tspan x="12.226016" y="1042.1122">Bias network</tspan></text>
+  </g>
+ </g>
+</svg>

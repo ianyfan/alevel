@@ -1,0 +1,21 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="96" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 96.000001 32">
+ <g transform="translate(0 -1020)">
+  <path d="m4 1024v20h68" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1045.4797" x="74.164452" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="74.164452" y="1045.4797">Frequency</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1025.6298" x="7.1795311" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="7.1795311" y="1025.6298">Amplitude</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" d="m2 1027 2-3 2 3" stroke-linecap="round"/>
+   <path stroke-linejoin="round" d="m69 1042 3 2-3 2" stroke-linecap="round"/>
+   <g>
+    <path d="m52 1044v-20"/>
+    <path d="m64 1044v-8"/>
+    <path d="m40 1044v-8"/>
+   </g>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.6527" x="50.492203"><tspan x="50.492203" y="1049.6527">f<tspan style="baseline-shift:sub" font-size="65%">c</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.6527" x="36.240662"><tspan x="36.240662" y="1049.6527">f<tspan style="baseline-shift:sub" font-size="65%">c</tspan>-f<tspan style="baseline-shift:sub" font-size="65%">s</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1049.6527" x="59.776794" xml:space="preserve"><tspan y="1049.6527" x="59.776794">f<tspan style="baseline-shift:sub" font-size="65%">c</tspan>+f<tspan style="baseline-shift:sub" font-size="65%">s</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

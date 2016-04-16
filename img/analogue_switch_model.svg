@@ -1,0 +1,25 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 32">
+ <g transform="translate(0 -1020)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m32 1040v4"/>
+   <path d="m36 1032h12"/>
+   <path d="m16 1032h12"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.7372" x="0.064062499"><tspan x="0.064062499" y="1033.7372">In/Out</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1050.1122" x="24.132734"><tspan x="24.132734" y="1050.1122">Control</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.7372" x="50.064064"><tspan x="50.064064" y="1033.7372">In/Out</tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="48" cy="1032" r="1"/>
+   <circle cx="36" cy="1032" r="1"/>
+   <circle cx="28" cy="1032" r="1"/>
+  </g>
+  <g stroke="#000" stroke-linecap="round">
+   <rect stroke-linejoin="round" height="16" width="16" y="1024" x="24" fill="none"/>
+   <path d="m28 1028h8" stroke-width="1px" fill="none"/>
+   <circle stroke-linejoin="round" cy="1032" cx="16" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" cx="32" cy="1044" r="1" fill="#fff"/>
+  </g>
+ </g>
+</svg>

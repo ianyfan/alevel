@@ -1,0 +1,54 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 48">
+ <g transform="translate(0 -1004)">
+  <g stroke="#000" fill="none">
+   <path d="m16 1008h20" stroke-width="1px"/>
+   <path stroke-linejoin="round" d="m28 1031h4v-8" stroke-width="1px"/>
+   <g stroke-linejoin="round" stroke-linecap="round">
+    <g stroke-width="1px">
+     <path d="m28 1040v-2"/>
+     <path d="m28 1036v-2"/>
+     <path d="m28 1032v-2"/>
+     <path d="m28 1039h4v-4h-3l1 1v-2l-1 1"/>
+    </g>
+    <circle transform="matrix(0,-1,-1,0,0,0)" cy="-29" cx="-1035" r="7"/>
+    <path d="m20 1043v-3h6v-10" stroke-width="1px"/>
+    <path d="m32 1039v9h-12v-3" stroke-width="1px"/>
+   </g>
+   <path d="m16 1043h8" stroke-width="1px"/>
+   <path d="m24 1045h-8" stroke-width="1px"/>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="16" stroke-linecap="round" stroke="#000" cy="1008" r="1" fill="#fff"/>
+   <rect stroke-linejoin="round" height="4" width="8" stroke="#000" stroke-linecap="round" y="1006" x="20" fill="#fff"/>
+   <circle cx="32" cy="1008" r="1"/>
+   <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1008" cx="36" r="1" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1009.7372" x="37.733711" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="37.733711" y="1009.7372">I/O</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1009.5021" x="7.7946811" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="7.7946811" y="1009.5021">V<tspan style="baseline-shift:sub" font-size="65%">DD</tspan></tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" fill="none">
+   <path d="m28 1015h4v-7" stroke-width="1px"/>
+   <g stroke-linecap="round">
+    <g stroke-width="1px">
+     <path d="m28 1024v-2"/>
+     <path d="m28 1020v-2"/>
+     <path d="m28 1016v-2"/>
+     <path d="m28 1023h4v-4h-3l1 1v-2l-1 1"/>
+    </g>
+    <circle cx="-1019" transform="matrix(0,-1,-1,0,0,0)" cy="-29" r="7"/>
+    <path d="m26 1014v10h-4" stroke-width="1px"/>
+   </g>
+   <path d="m12 1028s4 0 8-4c-4-4-8-4-8-4s2 4 0 8z" stroke-width="1px"/>
+  </g>
+  <g stroke="#000">
+   <circle stroke-linejoin="round" cx="21" stroke-linecap="round" cy="1024" r="1" fill="#fff"/>
+   <path d="m13 1022h-5" stroke-width="1px" fill="none"/>
+   <path d="m13 1026h-5" stroke-width="1px" fill="none"/>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="8" stroke-linecap="round" stroke="#000" cy="1022" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" cx="8" stroke-linecap="round" stroke="#000" cy="1026" r="1" fill="#fff"/>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" font-size="5px" line-height="125%" y="1029.0022" x="0.014843702" fill="#000000"><tspan x="0.014843702" y="1029.0022">OE</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" font-family="&apos;Source Sans Pro&apos;" font-size="5px" line-height="125%" y="1023.0022" x="0.2492187" xml:space="preserve" fill="#000000"><tspan y="1023.0022" x="0.2492187">CE</tspan></text>
+  </g>
+ </g>
+</svg>

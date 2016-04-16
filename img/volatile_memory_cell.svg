@@ -1,0 +1,40 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44" width="68" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 68.000001 44">
+ <g transform="translate(0 -1008)">
+  <path stroke-linejoin="round" d="m56 1022v22h-26" stroke="#000" stroke-width="1px" fill="none"/>
+  <path stroke-linejoin="round" d="m24 1012h40v8h-36v-8" stroke="#000" stroke-width="1px" fill="none"/>
+  <g>
+   <path stroke-linejoin="round" d="m32 1016h16v24h-16v-10l4 2-4 2z" stroke="#000" stroke-linecap="round" fill="#fff"/>
+   <path stroke-linejoin="round" d="m52 1016v8l8-4z" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1022.002" x="34.364998" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="34.364998" y="1022.002">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1021.6196" x="42.302502" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="42.302502" y="1021.6196">Q</tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000">
+   <path d="m20 1040s2 4 0 8c0 0 4 0 8-4-4-4-8-4-8-4z" stroke-width="1px" fill="none"/>
+   <circle cx="29" stroke-linecap="round" cy="1044" r="1" fill="#fff"/>
+   <path d="m20 1028s2 4 0 8c0 0 4 0 8-4-4-4-8-4-8-4z" stroke-width="1px" fill="none"/>
+   <circle cx="-24" stroke-linecap="round" transform="scale(-1,1)" cy="1012" r="1" fill="#fff"/>
+  </g>
+  <circle cx="-28" transform="scale(-1,1)" cy="1012" r="1"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path d="m32 1032h-4"/>
+   <path d="m21 1046h-9"/>
+   <path stroke-linejoin="round" d="m21 1042h-5v-8h5"/>
+   <path d="m21 1030h-9"/>
+   <path d="m16 1038h-4"/>
+  </g>
+  <circle cx="16" cy="1038" r="1"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="12" cy="1030" r="1"/>
+   <circle cx="12" cy="1038" r="1"/>
+   <circle cx="12" cy="1046" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1032.0022" x="3.7846093"><tspan x="3.7846093" y="1032.0022">WE</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" line-height="125%" y="1040.0022" x="4.2492189" xml:space="preserve"><tspan y="1040.0022" x="4.2492189">CE</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1048.0022" x="4.0148439"><tspan x="4.0148439" y="1048.0022">OE</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.0022" x="27.0375"><tspan x="27.0375" y="1038.0022">W</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1050.0022" x="27.415001"><tspan x="27.415001" y="1050.0022">R</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.7372" x="15.733711"><tspan x="15.733711" y="1013.7372">I/O</tspan></text>
+  </g>
+ </g>
+</svg>

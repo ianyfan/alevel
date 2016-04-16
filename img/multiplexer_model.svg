@@ -1,0 +1,30 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 32">
+ <g transform="translate(0 -1020)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m8 1036h8"/>
+   <path d="m8 1028h8"/>
+   <path d="m20 1040v4"/>
+   <path d="m24 1032h8"/>
+   <path d="m24 1032-6-3"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.4827" x="0.012507812"><tspan x="0.012507812" y="1029.4827">In<tspan style="baseline-shift:sub" font-size="65%">0</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1037.5022" x="0.035257813"><tspan x="0.035257813" y="1037.5022">In<tspan style="baseline-shift:sub" font-size="65%">1</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1034.0022" x="34.035038"><tspan x="34.035038" y="1034.0022">Out</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1050.1122" x="11.285625"><tspan x="11.285625" y="1050.1122">Selector</tspan></text>
+  </g>
+  <rect stroke-linejoin="round" height="16" width="16" stroke="#000" stroke-linecap="round" y="1024" x="12" fill="none"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="24" cy="1032" r="1"/>
+   <circle cx="16" cy="1028" r="1"/>
+   <circle cx="16" cy="1036" r="1"/>
+  </g>
+  <path stroke-linejoin="round" d="m17.79 1029h2.236l-0.8944 1.789z" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cy="1028" cx="8" r="1"/>
+   <circle cx="8" cy="1036" r="1"/>
+   <circle cx="32" cy="1032" r="1"/>
+   <circle cy="1044" cx="20" r="1"/>
+  </g>
+ </g>
+</svg>

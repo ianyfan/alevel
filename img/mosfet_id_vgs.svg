@@ -1,0 +1,21 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 64.000001">
+ <g transform="translate(0 -988.4)">
+  <g stroke-width="1px" stroke="#000" stroke-linecap="round" fill="none">
+   <g stroke-linejoin="round">
+    <path d="m4 1042v-49.6"/>
+    <path d="m2 1040h58"/>
+    <path d="m2 995.4 2-3 2 3"/>
+    <path d="m57 1038 3 2-3 2"/>
+   </g>
+   <path d="m44 992.4-24 48v1"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1045.4827" x="12.286551" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="12.286551" y="1045.4827">V<tspan style="baseline-shift:sub" font-size="65%">threshold</tspan></tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.6697" x="6.6253123" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="6.6253123" y="1050.6697">(typically 2V)</tspan></text>
+  <path stroke-linejoin="round" d="m40 1e3v24h-12" stroke="#000" stroke-dasharray="3,1" fill="none"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.0471" x="41.40411"><tspan x="41.40411" y="1013.0471">g<tspan style="baseline-shift:sub" font-size="65%">m</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1047.1382" x="57.263214"><tspan x="57.263214" y="1047.1382">V<tspan style="baseline-shift:sub" font-size="65%">gs</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="993.48267" x="6.3471951" xml:space="preserve"><tspan y="993.48267" x="6.3471951">I<tspan style="baseline-shift:sub" font-size="65%">d</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

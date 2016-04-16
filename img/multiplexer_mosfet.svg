@@ -1,0 +1,48 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="52" width="40" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 40.000001 52">
+ <g transform="translate(0 -1e3)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" d="m13 1014h10v24h-10" stroke-linecap="round"/>
+   <g>
+    <path d="m23 1032h-4"/>
+    <path stroke-linejoin="round" d="m8 1044h6v-4"/>
+    <path stroke-linejoin="round" d="m8 1008h6v4"/>
+    <path d="m31 1032h4"/>
+   </g>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1009.4827" x="0.012507439"><tspan x="0.012507439" y="1009.4827">In<tspan style="baseline-shift:sub" font-size="65%">0</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.5022" x="0.035257339"><tspan x="0.035257339" y="1045.5022">In<tspan style="baseline-shift:sub" font-size="65%">1</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1030.0022" x="32.035038"><tspan x="32.035038" y="1030.0022">Out</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1032.1122" x="0.28562501"><tspan x="0.28562501" y="1032.1122">Selector</tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cy="1008" cx="8" r="1"/>
+   <circle cx="8" cy="1044" r="1"/>
+   <circle cx="35" cy="1032" r="1"/>
+   <circle cy="1032" cx="19" r="1"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+   <g stroke-width="1px">
+    <path d="m23 1012h-2"/>
+    <path d="m19 1012h-2"/>
+    <path d="m15 1012h-2"/>
+    <path d="m22 1012v-4h-4v3l1-1h-2l1 1"/>
+   </g>
+   <circle cx="-18" transform="scale(-1,1)" cy="1011" r="7"/>
+   <g stroke-width="1px">
+    <path d="m22 1044h9v-36h-9"/>
+    <path d="m23 1040h-2"/>
+    <path d="m19 1040h-2"/>
+    <path d="m15 1040h-2"/>
+    <path d="m22 1040v4h-4v-3l1 1h-2l1-1"/>
+   </g>
+   <circle transform="scale(-1)" cy="-1041" cx="-18" r="7"/>
+  </g>
+  <path stroke-linejoin="round" d="m27 1028-4-8-4 8z" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="#fff"/>
+  <g>
+   <circle stroke-linejoin="round" cx="-23" stroke-linecap="round" transform="scale(-1)" stroke="#000" cy="-1019" r="1" fill="#fff"/>
+   <circle cx="23" cy="1032" r="1"/>
+   <circle cy="1032" cx="31" r="1"/>
+  </g>
+ </g>
+</svg>

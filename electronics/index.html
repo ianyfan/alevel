@@ -320,6 +320,33 @@
             </li>
           </ol>
         </li>
+        <li>
+          <a href="#6">6 Applied Physics</a>
+          <ol>
+            <li>
+              <a href="#6.1">6.1 Rotational dynamics</a>
+              <ol>
+                <li><a href="#6.1.1">6.1.1 Concept of moment of inertia</a></li>
+                <li><a href="#6.1.2">6.1.2 Rotational kinetic energy</a></li>
+                <li><a href="#6.1.3">6.1.3 Angular displacement, velocity and acceleration</a></li>
+                <li><a href="#6.1.4">6.1.4 Torque and angular acceleration</a></li>
+                <li><a href="#6.1.5">6.1.5 Angular momentum</a></li>
+                <li><a href="#6.1.6">6.1.6 Power</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="#6.2">6.2 Thermodynamics and Engines</a>
+              <ol>
+                <li><a href="#6.2.1">6.2.1 First law of thermodynamics</a></li>
+                <li><a href="#6.2.2">6.2.2 Non-flow processes</a></li>
+                <li><a href="#6.2.3">6.2.3 The p-V diagram</a></li>
+                <li><a href="#6.2.4">6.2.4 Engine cycles</a></li>
+                <li><a href="#6.2.5">6.2.5 Second Law and engines</a></li>
+                <li><a href="#6.2.6">6.2.6 Reversed heat engines</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
       </ol>
     </nav>
     <section>
@@ -1408,8 +1435,8 @@ A bandpass filter includes both capacitors</p></td>
             <td>
 <p>Recall the transfer characteristics of an n-channel MOSFET, representing them as graphs of drain current against gate-source voltage and drain current against drain-source voltage (including the use of threshold voltage and transconductance)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/mosfet_id_vgs.svg"><br>
+<img alt="" src="/alevel/img/mosfet_id_vds.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of a MOSFET as a voltage-controlled resistor for small drain-source voltages</p>
@@ -1420,38 +1447,42 @@ A bandpass filter includes both capacitors</p></td>
             <td>
 <p>Understand the use of MOSFETs in a voltage divider circuit to make a potentiometer whose wiper position is controlled by an external voltage</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/vcr.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs in analogue switches, multiplexers and tristates</p>
             </td>
-            <td>
-            </td>
+            <td><p>An analogue switch is a voltage-controlled switch<br>
+<img alt="" src="/alevel/img/analogue_switch_model.svg"><br>
+<img alt="" src="/alevel/img/analogue_switch_mosfet.svg"><br>
+A multiplexer selects which input is sent to the output<br>
+<img alt="" src="/alevel/img/multiplexer_model.svg"><br>
+<img alt="" src="/alevel/img/multiplexer_mosfet.svg"><br>
+A tristate is a buffer that can selectively transmit a digital signal using a third state that assumes high impedance, effectively removing the component from the circuit<br>
+<img alt="" src="/alevel/img/tristate_model.svg"><br>
+<img alt="" src="/alevel/img/tristate_mosfet.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs as voltage followers with very high input impedance (including the use of coupling capacitors to inject and extract signals)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/voltage_follower.svg"></p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs as high input impedance voltage amplifiers, including the need for biasing with a voltage divider to place the drain at a suitable voltage</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/mosfet_voltage_amplifier.svg"></p></td>
           <tr>
             <td>
 <p>Recall and use the equation for voltage gain (\(G = -g_mR_d\)) of a MOSFET amplifier</p>
             </td>
-            <td>
-            </td>
+            <td><p>\(G\) is the gain of the amplifier<br>
+\(g_m\) is the transconductance of the MOSFET<br>
+\(R_d\) is the resistance of the drain resistor</p></td>
           <tr>
             <td>
 <p>Recall the use of drain bias for a MOSFET amplifier (including why this is better than biasing with a voltage divider)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/mosfet_drain_bias_amplifier.svg"></p></td>
         </tbody>
       </table>
       <h2 id="4.2">4.2 Digital Processing</h2>
@@ -1507,31 +1538,31 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall the distinction between volatile and non-volatile memory</p>
             </td>
-            <td></td>
+            <td><p>Non-volatile memory retains the data stored upon power loss, whereas volatile memory does not</p></td>
           <tr>
             <td>
 <p>Understand the use of a D flip-flop and a tristate to make a volatile memory cell</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/volatile_memory_cell.svg"><br>
+The tristate allows the input and output to be on the same line</p></td>
           <tr>
             <td>
 <p>Understand the use of a capacitor and a MOSFET to make a non-volatile memory cell</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/non_volatile_memory_cell.svg"><br>
+The capacitor retains data since a MOSFET gate draws no current, so the capacitor does not discharge<br>
+When the data is read, if the capacitor is charged, the bottom MOSFET has low impedance, so current flows through the resistor and the output line goes low<br>
+If the capacitor is not charged, the bottom MOSFET has high impedance, so current does not flow through the resistor and the output line goes high</p></td>
           <tr>
             <td>
 <p>Understand the use of tristates to allow more than one memory module to access a common data bus</p>
             </td>
-            <td>
-            </td>
+            <td><p>The tristate creates to be high impedance between the unwanted memory module and the data bus, effectively disconnecting it, allowing only the desired memory module to write to it</p></td>
           <tr>
             <td>
 <p>Understand the use of multiplexers and logic gates to combine small memory modules into large ones</p>
             </td>
-            <td>
-            </td>
+            <td><p>Multiplexers are used to select the memory location to be processed using the data on address bus</p></td>
         </tbody>
       </table>
       <h3 id="4.2.3">4.2.3 Digital information can be processed with registers and logic gates</h3>
@@ -1547,20 +1578,17 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall the use of D flip-flops to assemble registers</p>
             </td>
-            <td>
-            </td>
+            <td><p>A register is a memory module used by the processor to hold data that it is processing, with separate input and output buses</p></td>
           <tr>
             <td>
 <p>Understand the use of registers and logic systems (such as full adders) in the parallel processing of pairs of binary words</p>
             </td>
-            <td>
-            </td>
+            <td><p>Using multiple logic systems, one for each bit in the byte, two binary words can be combined in parallel, whether it be ANDing, XORing or adding</p></td>
           <tr>
             <td>
 <p>Recall the use of two's complement coding to represent decimal numbers in binary code</p>
             </td>
-            <td>
-            </td>
+            <td><p>Two's complement allows negative numbers to be represented in binary by inverting each bit and adding one to the result, essentially taking the number modulo 2</p></td>
           <tr>
             <td>
 <p>Recall the use of AND and EOR gates to combine pairs of binary words stored in shift registers</p>
@@ -1583,14 +1611,12 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the difference between open- and closed-loop control systems</p>
             </td>
-            <td>
-            </td>
+            <td><p>Closed-loop control systems include a feedback loop from the output in order to adjust its operational parameters to more closely match the desired result, whereas open-loop systems do not</p></td>
           <tr>
             <td>
 <p>Understand the operation of on-off servo control systems in terms of the following blocks: sensor, reference, comparator, switch, transducer</p>
             </td>
-            <td>
-            </td>
+            <td><p>The switch turns on or off the transducer depending on whether the value detected at the sensor is above or below the reference, with the result then being fed back to the sensor</p></td>
           <tr>
             <td>
 <p>Understand circuits for the on-off control of temperature, position, motor speed and light intensity (based on components studied at AS)</p>
@@ -1607,8 +1633,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that on-off control results in a rapid response to change, but that the output never settles to a constant value</p>
             </td>
-            <td>
-            </td>
+            <td><p>Because the transducer must be either on or off, it cannot exactly match the power required, going either above or below the desired value, "hunting" for it</p></td>
         </tbody>
       </table>
       <h3 id="4.3.2">4.3.2 Proportional control systems allow accurate control of a transducer</h3>
@@ -1624,14 +1649,18 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the operation of proportional servo control systems in terms of the following blocks: sensor, reference, difference amplifier, voltage amplifier, ramp generator, power amplifier, transducer</p>
             </td>
-            <td>
-            </td>
+            <td><p>Proportional control systems have a continuous output whose value is determined by the difference between the sensor and the reference causing the transducer to ramp up or down more quickly or slowly, until the transducer is at the value required for them to match</p></td>
           <tr>
             <td>
 <p>Understand the use of an op-amp and four identical resistors to make a difference amplifier</p>
             </td>
-            <td>
-            </td>
+            <td><p>\[\begin{alignat}{2}<br>
+&amp; V_2 - &amp;&amp; V_- = V_- - V_{out}<br>
+\\ \implies &amp; V_{out} &amp;&amp; = 2V_+ - V_2<br>
+\\ &amp; &amp;&amp; = 2V_- - V_2<br>
+\\ &amp; &amp;&amp; = 2\frac{V_1}{2} - V_2<br>
+\\ &amp; &amp;&amp; = V_1 - V_2<br>
+\end{alignat}\]</p></td>
           <tr>
             <td>
 <p>Understand the use of an op-amp to make a ramp generator, including the use of the equation \(ΔV_{out} = -V_{in}\frac{\Delta t}{RC}\)</p>
@@ -1648,8 +1677,8 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that proportional control systems respond relatively slowly, but allow the sensor and reference to settle at the same value</p>
             </td>
-            <td>
-            </td>
+            <td><p>Proportional systems respond more slowly because as it approaches the desired value, the output is not saturated like in on-off systems, and therefore change more slowly<br>
+It asymptotically approaches the desired value</p></td>
         </tbody>
       </table>
       <h3 id="4.3.3">4.3.3 Many power supplies use negative feedback to control the voltage at their output</h3>
@@ -1665,20 +1694,22 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the use of a diode bridge and a capacitor to produce an unstabilised dc voltage from an ac supply</p>
             </td>
-            <td>
-            </td>
+            <td><p>The diode bridge rectifies the ac signal so that there is no reverse current<br>
+The capacitor stores charge on the rising half of each cycle before releasing it on the falling half in order the smooth the signal, so it is always above a certain value</p></td>
           <tr>
             <td>
 <p>Understand the operation of a switched-mode power supply in terms of the following blocks: switched oscillator, transformer, rectifier, smoother, comparator, reference (including the use of opto-isolators to switch the oscillator on and off)</p>
             </td>
-            <td>
-            </td>
+            <td><p>A switched-mode power supply is much more efficient and can run off mains power to produce a variable constant direct current<br>
+The opto-isolator sends feedback to the oscillator through an LED photodiode pair that isolates the high-current circuit from the low-current</p></td>
           <tr>
             <td>
 <p>Understand the operation of a dc voltage regulator in terms of the following blocks: reference, comparator, MOSFET follower</p>
             </td>
-            <td>
-            </td>
+            <td><p>A dc voltage regulator generates a fixed dc voltage from an unstabilised dc supply<br>
+The reference is the desired output voltage and is commonly produced by a zener diode in reverse bias<br>
+The comparator compares the output voltage with the reference voltage and turns on or off the MOSFET follower accordingly<br>
+When on, the MOSFET follower allows current to flow from the input to the output, charging a capacitor, which provides inertia so that the hunting from it being an on-off system is minimised</p></td>
         </tbody>
       </table>
       <h2 id="4.4">4.4 Microcontroller Systems</h2>
@@ -1695,35 +1726,47 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the operation of a microcontroller system in terms of the following blocks: CPU, memory, input port, output port, clock, reset</p>
             </td>
-            <td>
-            </td>
+            <td><p>The CPU is where the data of a program is processed<br>
+The memory contains the program instructions in flash memory and a lookup table in SRAM<br>
+The input port is an eight-bit bus that can receive input from an external circuit<br>
+The output port is an eight-bit bus that the CPU can put data on to send to an external circuit<br>
+The clock generates a continuous series of pulses that are used by the CPU to synchronise its operations<br>
+The reset resets the microcontroller to the start of the program, clearing the registers</p></td>
           <tr>
             <td>
 <p>Understand the use of the address, data and control bus to transfer data between the CPU and memory, input ports and output ports</p>
             </td>
-            <td>
-            </td>
+            <td><p>The address bus is used by the CPU to instruct the memory which instruction to fetch<br>
+The data bus contains data loaded from the memory or read from the input and processed by the CPU or sent to the output port<br>
+The control bus determines how data is used, using enable &amp; read/write pins</p></td>
           <tr>
             <td>
 <p>Understand the use of the following registers in the CPU: program counter, stack pointer, general purpose registers</p>
             </td>
-            <td>
-            </td>
+            <td><p>The program counter countains the address of the currently-processed instruction, and is incremented after each instruction unless a jump occurs<br>
+The stack pointer stores the address of the top of the stack, which is changed each time a subroutine is called or returned from<br>
+The general purpose registers can be used by the CPU for immediate storage &amp; processing of data</p></td>
           <tr>
             <td>
 <p>Recall the use of tristates and D flip-flops to contruct input and output ports</p>
             </td>
-            <td>
-            </td>
+            <td><p>The tristates determine whether the port is active, and the D flip-flops latch the data upon use</p></td>
           <tr>
             <td>
 <p>Understand how in each machine cycle the CPU fetches an instruction from the memory and executes it, including changes in the contents of its registers</p>
             </td>
-            <td>
-            </td>
+            <td><p>In each machine cycle:</p>
+<ul>
+<li>the value of the program counter is copied onto the address bus</li>
+<li>the data in memory at that address is loaded into the instruction register IL</li>
+<li>the program counter is incremented</li>
+<li>by the same process, the data at the address in the program counter is loaded into the instruction register IH</li>
+<li>the program counter is incremented again</li>
+<li>the ALU is activated</li>
+</ul></td>
           <tr>
             <td>
-<p>Understand the changes in the porgram counter when jump instructions are executed</p>
+<p>Understand the changes in the program counter when jump instructions are executed</p>
             </td>
             <td>
             </td>
@@ -1737,8 +1780,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand that programs are stored in memory as hexadecimal code produced by compilers from programs written in other languages such as assembler and C</p>
             </td>
-            <td>
-            </td>
+            <td><p>Hexadecimal directly translates into binary</p></td>
         </tbody>
       </table>
       <h3 id="4.4.2">4.4.2 The behaviour of a microcontroller depends on the program in its memory</h3>
@@ -1754,32 +1796,78 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Understand the instruction set given in Appendix E to:</p>
             </td>
-            <td>
-            </td>
+            <td><p>Assembler:</p>
+<ul>
+<li><code>MOVI Sd,n :</code> Copy the byte n into register Sd</li>
+<li><code>MOV Sd,Ss :</code> Copy the byte from Ss to Sd</li>
+<li><code>ADD Sd,Ss :</code> Add the byte in Ss to the byte in Sd and store the result in Sd</li>
+<li><code>SUB Sd,Ss :</code> Subtract the byte in Ss from the byte in Sd and store the result in Sd</li>
+<li><code>AND Sd,Ss :</code> Logical AND the byte in Ss with the byte in Sd and store the result in Sd</li>
+<li><code>EOR Sd,Ss :</code> Logical EOR the byte in Ss with the byte in Sd and store the result in Sd</li>
+<li><code>INC Sd    :</code> Add 1 to Sd</li>
+<li><code>DEC Sd    :</code> Subtract 1 from Sd</li>
+<li><code>IN Sd,I   :</code> Copy the byte at the input port into Sd</li>
+<li><code>OUT Q,Ss  :</code> Copy the bype in Ss to the output port</li>
+<li><code>JP e      :</code> Jump to label e</li>
+<li><code>JZ e      :</code> Jump to label e if the result of the last ADD, SUB, AND, EOR, INC, DEC, SHL or SHR was zero</li>
+<li><code>JNZ e     :</code> Jump to label e if the result of the last ADD, SUB, AND, EOR, INC, DEC, SHL or SHR was not zero</li>
+<li><code>RCALL s   :</code> Push the program counter onto the stack to store the return address and then jump to label s</li>
+<li><code>RET       :</code> Pop the program counter from the stack to return to the place the subroutine was called from</li>
+<li><code>SHL Sd    :</code> Shift the byte in Sd one bit left putting a 0 into the lsb</li>
+<li><code>SHR Sd    :</code> Shift the byte in Sd one bit right putting a 0 into the msb</li>
+</ul>
+<p>Subroutines:</p>
+<ul>
+<li><code>readtable :</code> copies the byte in the lookup table pointed at by S7 into S0; the lookup table is labelled table: when S7=0 the first byte from the table is returned in S0</li>
+<li><code>wait1ms :</code> waits 1ms before returning</li>
+<li><code>readadc :</code> returns a byte in S0 proportional to the voltage at ADC</li>
+</ul></td>
           <tr>
             <td>
 <p>Loop until a required condition at the input port is met, including the use of the AND operation for selective resetting of bits (masking)</p>
             </td>
-            <td>
-            </td>
+            <td><p>Suppose <code>n</code> is hexadecimal number with the desired bit high:</p>
+<pre><code>      MOVI S1,n
+loop: IN   S0,I
+      AND  S0,S1
+      JZ   loop
+      ...        ; continue
+</code></pre></td>
           <tr>
             <td>
 <p>Provide a time delay by counting down in a register until it reaches 0</p>
             </td>
-            <td>
-            </td>
+            <td><pre><code>      MOVI S0,n
+loop: DEC  S0
+      JNZ  S0
+      ...       ; continue
+</code></pre>
+<p>If the length of waiting time is longer than can be stored in one register, two registers and a nested loop can be used:</p>
+<pre><code>       MOVI S0,n
+outer: MOVI S1,m
+inner: DEC S1
+       JNZ inner
+       DEC S0
+       JNZ outer
+       ...       ; continue
+</code></pre></td>
           <tr>
             <td>
 <p>Fetch a byte from a look-up table and copy it to the output port</p>
             </td>
-            <td>
-            </td>
+            <td><p>Suppose <code>n</code> is the desired location</p>
+<pre><code>MOVI  S7,n
+RCALL readtable
+OUT   Q,S0
+</code></pre></td>
           <tr>
             <td>
 <p>Use the EOR operation to selectively invert bits in the acccumulator</p>
             </td>
-            <td>
-            </td>
+            <td><p>To selectively invert bits in a register, <code>EOR</code> the register with the hexadecimal number which has the desired inverted bits high, for example:</p>
+<pre><code>MOVI S1,n
+EOR  S0,S1
+</code></pre></td>
           <tr>
             <td>
 <p>Process a byte at the input port to generate an address for a look-up table</p>
@@ -1790,20 +1878,19 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Shift bytes in the accumulator to the left or right</p>
             </td>
-            <td>
-            </td>
+            <td><p>Use <code>SHL</code> and <code>SHR</code> respectively</p></td>
           <tr>
             <td>
 <p>The use of conditional and unconditional jumps, including the need for relative addressing</p>
             </td>
-            <td>
-            </td>
+            <td><p>The unconditional jump <code>JP</code> jumps to the indicated label<br>
+The conditional jumps <code>JZ</code> &amp; <code>JNZ</code> jumps to the indicated label if &amp; only if the previous calculation resulted in a zero, or not zero, respectively</p></td>
           <tr>
             <td>
 <p>Call and return from subroutines, using registers to transfer information</p>
             </td>
-            <td>
-            </td>
+            <td><p>Use <code>RCALL</code> to call a subroutine, and <code>RET</code> to return from a subroutine<br>
+Since data in registers persist, they can be used in a subroutine to store information so that the outside program can use them</p></td>
         </tbody>
       </table>
       <h3 id="4.4.3">4.4.3 Programs can be made from subroutines</h3>
@@ -1819,26 +1906,24 @@ Reading: place location address on address bus -&gt; wait for location to be acc
             <td>
 <p>Recall that the stack is an area of memory for storing the contents of the program counter on a last-in, first-out (LIFO) basis</p>
             </td>
-            <td>
-            </td>
+            <td><p>Therefore, only the top of the stack needs to tracked, which is updated upon pushing or popping the stack</p></td>
           <tr>
             <td>
 <p>Understand the changes in the stack pointer and program counter when calling and returning from subroutines</p>
             </td>
-            <td>
-            </td>
+            <td><p>Since the stack pointer counts down, when calling subroutines, the stack pointer is decremented, and the value of the program counter is copied to the address referenced by the stack pointer<br>
+When returning from subroutines, the value referenced by the stack pointer is copied into the program counter and the stack pointer is incremented</p></td>
           <tr>
             <td>
 <p>Understand the advantages of designing programs from subroutines</p>
             </td>
-            <td>
-            </td>
+            <td><p>Modularity<br>
+Readability</p></td>
           <tr>
             <td>
 <p>Use the instruction set given in Appendix E to write subroutines, using registers to transfer data to and from the main program</p>
             </td>
-            <td>
-            </td>
+            <td><p>See <a href="#4.4.2">4.4.2</a></p></td>
         </tbody>
       </table>
       <h1 id="5">5 Communication Systems</h1>
@@ -1879,7 +1964,8 @@ Frame synchronisation signals instruct the screen to start scanning a new frame<
             <td>
 <p>Understand that the frame refresh rate has to be about 25 Hz for a flicker-free moving image</p>
             </td>
-            <td><p>The higher the frame refresh rate, the smoother the image</p></td>
+            <td><p>The higher the frame refresh rate, the smoother the image<br>
+The limit is 25 Hz since that is the persistence of vision</p></td>
           <tr>
             <td>
 <p>Recall how to calculate the bandwidth required for a monitor cable from the refresh rate and the number of pixels per frame</p>

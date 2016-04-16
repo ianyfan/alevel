@@ -19,6 +19,12 @@
 \ Equation for \\(\beta^-\\) decay: \\(^A_ZX \rightarrow ^{\phantom{Z+}A}\_{Z+1}Y + ^{\phantom{-}0}\_{-1}\beta + \overline\nu\\)
 
 1.1.3
+1 | Particle | Antiparticle |
+\ |:--------:|:------------:|
+\ | Electron |   Positron   |
+\ |  Proton  |  Antiproton  |
+\ | Neutron  | Antineutron  |
+\ | Neutrino | Antineutrino |
 2 Mass is the same
 \ Charge is opposite
 \ Rest energy is the same
@@ -223,12 +229,24 @@
 
 2.3.4
 1 
-2 Nodes are the points with the minimum frequency
-\ Antinodes are the points with the maximum frequency, and occur at the midpoints of nodes
+2 Nodes are the points with the minimum amplitude
+\ Antinodes are the points with the maximum amplitude, and occur at the midpoints of nodes
 
 2.3.5
 1 Path difference is the difference in phase of two waves with the same frequency
 \ Coherence is the property of two waves that have the same frequency and constant phase difference
+2 Non-laser light must be passed through a single slit to make it coherent
+\ Lasers can damage the retina if looked at directly
+5 \\(w\\) is the fringe spacing, \\(\lambda\\) is the wavelength of the light and \\(D\\) is the distance from the slits to the surface where the fringes are produced
+
+2.3.6
+1 When a wave, such as light, passes through a thin slit, it diffracts, spreading out in the shape of a semicircle; the diffraction waves generated at different points in the slit interfere with each other, resulting in the formation of a diffraction pattern
+2 A diffraction grating expands the double-slit concept to several slits, with the interference from multiple diffraction waves reinforcing the diffraction pattern to produce clear lines of constructive interference at certain angles
+\ A spectrometer can use the produced angles of interference to calculate the wavelengths present in the incoming light
+3 By comparing two adjacent slits, the results of interference at different angles of diffraction can be determined by considering the extra distance travelled from the farther slit: if the light travels an extra integer number of wavelengths, then they are at the same point of the cycle, causing the waves to constructively interfere
+\ Since the extra distance travelled is \\(d\sin\theta\\) where \\(d\\) is the slit separation and \\(\theta\\) is the angle of diffraction, with the wavelength \\(\lambda\\), this gives rise to the equation \\(d\sin\theta = n\lambda\\), where \\(n\\) is an integer, the order number
+\ The maximum order number can be found by considering that the angle cannot be greater than 90°: \\(n < \frac{d}{\lambda}\\)
+4 
 
 4.1.1
 1 Constant mass gives \\(F = m\frac{\Delta v}{\Delta t} = ma\\), Newton's second law
@@ -285,6 +303,9 @@
 \ Forced vibrations have a periodic force applied to keep it oscillating
 2 Resonance occurs when the frequency of forced vibrations is equal to the natural frequency and in phase with the velocity, causing the amplitude to become very large
 \ Damping reduces the sharpness of resonance
+3 When the system is in resonance, the driver is \\(\frac{\pi}{2}\\) out of phase with the driven system
+\ Below the resonant frequency, the phase difference is less than \\(\frac{\pi}{2}\\)
+\ Above the resonant frequency, the phase difference is greater than \\(\frac{\pi}{2}\\), approaching \\(\pi\\)
 
 4.2.1
 2 This is Newton's Universal Law of Gravitation
@@ -493,3 +514,64 @@
 1 In a simple molecular model, particles are modelled as point masses that travel randomle in a straight line until colliding with the boundary or another particle, which exerts a force
 \ Increasing the volume decreases the pressure since the particles have to travel farther, so impact with the boundary less often, therefore reducing the pressure
 \ Increasing the pressure increases the temperature since the particles move faster, so impact with the boundary more often, therefore raising the pressure
+2 \\(c_{rms}\\) is the root mean square speed of the molecules of gas
+\ Assumptions:
+\
+\ * the molecules are point masses, so the volume of one is negligible compared to the whole gas
+\ * there are no intermolecular forces, otherwise this would reduce the force of impact with the boundary
+\ *
+\ * the collisions are elastic, so there is no loss of energy
+\ * the collision time is negligible compared to the time between impacts
+\ Derivation:
+\
+\ * consider a molecule of gas with mass \\(m\\) in a cuboid container with dimensions \\(l_x, l_y, l_z\\) in the \\(x, y, z\\) axes respectively
+\ * suppose the velocity vector of the molecule is \begin{pmatrix}u\\\v\\\w\end{pmatrix} then the speed of the molecule is \\(c^2 = u^2 + v^2 + w^2\\)
+\ * considering, without loss of generality, just the motion in the x-direction, the time between collisions with one of the faces is \\(t = \frac{2l_x}{u}\\) and the change in momentum of the collision is \\((-mu - mu = -2mu\\)
+\ * therefore, the force on the molecule is \\(F = \frac{\Delta(mv)}{\Delta t} = \frac{-2mu}{\frac{2l_x}{u}} = -\frac{mu^2}{l_x}\\), which, by Newton's third law of motion, is equal and opposite to the force on the face
+\ * thus, the pressure of the molecule on the face is \\(p = \frac{-F}{A} = \frac{\frac{mu^2}{l_x}}{l_yl_z} = \frac{mu^2}{l_xl_yl_z} = \frac{mu^2}{V}\\) where \\(V\\) is the volume of the container
+\ * now considering N molecules in the container, each with a mass of \\(m\\), with the nth molecule having velocity vector \begin{pmatrix}u_n\\\v_n\\\w_n\end{pmatrix} and exerting a pressure of \\(p_1\\) on the face, the total pressure on the face is \\[p_u = \sum^N_{n=1}\frac{mu_n^2}{V} = \frac{m}{V}\sum^N_{n=1}u_n^2 = \frac{m}{V}N\overline{u^2}\\]
+\ * since the x-direction was chosen without loss of generality, it follows that the pressure in the other two directions are \\(p_v = \frac{m}{V}N\overline{v^2}\\) and \\(p_w = \frac{m}{V}N\overline{w^2}\\)
+\ * therefore, the mean pressure on a face is \\(p = \frac{p_u + p_v + p_w}{3} = \frac{1}{3}(\frac{m}{V}N\overline{u^2} + \frac{m}{V}N\overline{v^2} + \frac{m}{V}N\overline{w^2}) = \frac{1}{3V}Nm(\overline{u^2} + \overline{v^2} + \overline{w^2}) = \frac{1}{3V}Nmc_{rms}^2\\) since \\[c_{rms}^2 = \frac{1}{N}\sum^N_{n=1}{c_n^2} = \frac{1}{N}\sum^N_{n=1}(u_n^2 + v_n^2 + w_n^2) = \\frac{1}{N}\sum^N_{n=1}{u_n^2} + \frac{1}{N}\sum^N_{n=1}{v_n^2} + \frac{1}{N}\sum^N_{n=1}{w_n^2} = \overline{u^2} + \overline{v^2} + \overline{w^2}\\]
+\ * rearranging gives \\(pV = \frac{1}{3}Nmc_{rms}^2\\)
+
+6.1.1
+1 \\(I\\) is the moment of inertia, the ratio of the torque required on a body around a given axis to produce a desired angular acceleration, i.e. \\(I = \frac{T}{\alpha}\\)
+\ \\(m\\) is the mass of the point
+\ \\(r\\) is the perpendicular distance from the point to the axis
+
+6.1.2
+1 \\(E_k\\) is kinetic energy
+\ \\(\omega\\) is angular velocity
+2 Friction and the viscosity of lubricant reduces the energy stored in a flywheel
+3 Flywheels are used to store energy so that injections of energy is smoothed out
+
+6.1.3
+1 \\(\alpha\\) is angular acceleration
+\ \\(t\\) is time
+\ \\(\theta\\) is angular displacement
+\ These equations are comparable to the linear motion "suvat" equations
+
+6.1.4
+1 \\(T\\) is torque
+
+6.1.5
+2 Angular momentum in a closed system is conserved
+\ This means that increasing the moment of inertia of a rotating body decreases the angular velocity
+
+6.1.6
+1 \\(W\\) is work done
+\ \\(P\\) is power
+2 Frictional couples reduce the effect of a torque
+
+6.2.1
+1 Due to the law of the conservation of energy, the change in internal energy of a closed system is equal to the heat entering the system minus the work done by the system
+
+6.2.2
+1 Non-flow processes are changes of a gas that does not flow across the boundary of its container
+\ Isothermal changes occur at a constant temperature
+\ Adiabatic changes do not allow heat transfer to or from the gas, so it may have a different temperature to the outside system
+\ Constant pressure changes occur at a constant pressure
+\ Constant volume changes occur at a constant volume
+2 This is the ideal gas law
+3 \\(\gamma\\) is the adiabatic index, and is necessary since the lack of heat transfer causes the temperature to change, rising with pressure
+4 This follows directly from the ideal gas law since \\(T\\) is assumed to be constant

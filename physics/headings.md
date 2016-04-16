@@ -80,3 +80,18 @@
 5.3.1 Thermal energy
 5.3.2 Ideal gases
 5.3.3 Molecular kinetic theory model
+6     Applied Physics
+6.1   Rotational dynamics
+6.1.1 Concept of moment of inertia
+6.1.2 Rotational kinetic energy
+6.1.3 Angular displacement, velocity and acceleration
+6.1.4 Torque and angular acceleration
+6.1.5 Angular momentum
+6.1.6 Power
+6.2   Thermodynamics and Engines
+6.2.1 First law of thermodynamics
+6.2.2 Non-flow processes
+6.2.3 The p-V diagram
+6.2.4 Engine cycles
+6.2.5 Second Law and engines
+6.2.6 Reversed heat engines

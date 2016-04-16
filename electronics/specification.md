@@ -203,7 +203,7 @@
 3 Understand the use of the following registers in the CPU: program counter, stack pointer, general purpose registers
 4 Recall the use of tristates and D flip-flops to contruct input and output ports
 5 Understand how in each machine cycle the CPU fetches an instruction from the memory and executes it, including changes in the contents of its registers
-6 Understand the changes in the porgram counter when jump instructions are executed
+6 Understand the changes in the program counter when jump instructions are executed
 7 Recall why the program counter is reset when the CPU's reset pin is activated
 8 Understand that programs are stored in memory as hexadecimal code produced by compilers from programs written in other languages such as assembler and C
 

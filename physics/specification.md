@@ -374,3 +374,77 @@
 1 Explanation of relationships between \\(p\\), \\(V\\), and \\(T\\) in terms of a simple molecular model
 2 Assumptions leading to and derivation of \\(pV = \frac{1}{3}Nm(c_{rms})^2\\)
 3 Average molecular kinetic energy \\(\frac{1}{2}m(c_{rms})^2 = \frac{3}{2}kT = \frac{3RT}{2N_A}\\)
+
+6.1.1
+1 \\(I = \sum{mr^2}\\)
+2 Expressions for moment of inertia will be given where necessary
+
+6.1.2
+1 \\(E_k = \frac{1}{2}I\omega^2\\)
+2 Factors affecting the energy storage capacity of a flywheel
+3 Use of flywheels in machines
+
+6.1.3
+1 Equations for uniformly accelerated motion:
+\ \\(\omega_2 = \omega_1 + \alpha t\\)
+\ \\(\theta = \omega_1 t + \frac{1}{2}\alpha t\\)
+\ \\(\omega_2^2 = \omega_1^2 + 2\alpha\theta\\)
+\ \\(\theta = \frac{1}{2}(\omega_1 + \omega_2)t\\)
+
+6.1.4
+1 \\(T = I\alpha\\)
+
+6.1.5
+1 Angular momentum = \\(I\omega\\)
+2 Conservation of angular momentum
+
+6.1.6
+1 \\(W = T\theta\\) \\(P = T\omega\\)
+2 Awareness that, in rotating machinery, frictional couples have to be taken into account
+
+6.2.1
+1 \\(Q = \Delta U + W\\), where \\(Q\\) is heat entering the system, \\(\Delta U\\) is increase in internal energy and \\(W\\) is work done by the system
+
+6.2.2
+1 Isothermal, adiabatic, constant pressure and constant volume changes
+2 \\(pV = nRT\\)
+3 Adiabatic: \\(pV^\gamma\\) = constant
+4 Isothermal: \\(pV\\) = constant
+5 At constant pressure \\(W = p\Delta V\\)
+6 Application of first law of thermodynamics to the above processes
+
+6.2.3
+1 Representation of processes on p-V diagram
+2 Estimation of work done in terms of area below the graph
+3 Expressions for work done are not required except for the constant pressure case, \\(W = p\Delta V\\)
+4 Extension to cyclic processes: work done per cycle = area of loop
+
+6.2.4
+1 Understanding of a four-stroke petrol cycle and a Diesel engine cycle, and of the corresponding indicator diagrams
+\ Comparison with the theoretical diagrams for these cycles
+\ A knowledge of engine constructional details is not required
+\ Where questions are set on other cycles, they will be interpretative and all essential information will be given
+\ Indicator diagrams predicting and measuring power and efficiency: input power = calorific value x fuel flow rate
+2 Indicated power as \\(\text{area of p-V loop} \cdot \text{no. of cycles/s} \cdot \text{no. of cylinders}\\)
+3 Output or brake power \\(P = T\omega\\)
+4 Friction power = indicated power - brake power
+5 Engine efficiency
+\ Overall, thermal and mechanical efficiencies
+6 \\(\text{Overall efficiency} = \frac{\text{brake power}}{\text{input power}}\\)
+7 \\(\text{Thermal efficiency} = \frac{\text{indicated power}}{\text{input power}}\\)
+8 \\(\text{Mechanical efficiency} = \frac{\text{brake power}}{\text{indicated power}}\\)
+
+6.2.5
+1 Need for an engine to operate between a source and a sink
+2 Efficiency = \\(\frac{W}{Q_{in}} = \frac{Q_{in} - Q_{out}}{Q_{in}}\\)
+3 Maximum theoretical efficiency = \\(\frac{T_H - T_C}{T_H}\\)
+4 ![](/alevel/img/)
+5 Reasons for the lower efficiencies of practical engines
+6 Maximising use of \\(W\\) and \\(Q_{out}\\) in combined heat and power schemes
+
+6.2.6
+1 Basic principles of heat pumps and refrigerators
+\ A knowledge of practical heat pumps or refrigerator cycles and devices is not required
+2 ![](/alevel/img)
+3 For a refrigerator: \\(COP_{ref} = \frac{Q_{out}}{W} = \frac{Q_{out}}{Q_{in} - Q_{out}}\\)
+4 For a heat pump: \\(COP_{hp} = \frac{Q_{in}}{W} = \frac{Q_{in}}{Q_{in} - Q_{out}}\\)

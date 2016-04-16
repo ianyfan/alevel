@@ -156,6 +156,24 @@
 \ A bandpass filter includes both capacitors
 
 4.1.1
+1 ![](/alevel/img/mosfet_id_vgs.svg)
+\ ![](/alevel/img/mosfet_id_vds.svg)
+3 ![](/alevel/img/vcr.svg)
+4 An analogue switch is a voltage-controlled switch
+\ ![](/alevel/img/analogue_switch_model.svg)
+\ ![](/alevel/img/analogue_switch_mosfet.svg)
+\ A multiplexer selects which input is sent to the output
+\ ![](/alevel/img/multiplexer_model.svg)
+\ ![](/alevel/img/multiplexer_mosfet.svg)
+\ A tristate is a buffer that can selectively transmit a digital signal using a third state that assumes high impedance, effectively removing the component from the circuit
+\ ![](/alevel/img/tristate_model.svg)
+\ ![](/alevel/img/tristate_mosfet.svg)
+5 ![](/alevel/img/voltage_follower.svg)
+6 ![](/alevel/img/mosfet_voltage_amplifier.svg)
+7 \\(G\\) is the gain of the amplifier
+\ \\(g_m\\) is the transconductance of the MOSFET
+\ \\(R_d\\) is the resistance of the drain resistor
+8 ![](/alevel/img/mosfet_drain_bias_amplifier.svg)
 
 4.2.1
 1 The data bus controls the data that is read from or written to memory
@@ -168,7 +186,140 @@
 \ Reading: place location address on address bus -> wait for location to be accessed -> pull chip-enable low -> pulse read-enable low
 
 4.2.2
-1 
+1 Non-volatile memory retains the data stored upon power loss, whereas volatile memory does not
+2 ![](/alevel/img/volatile_memory_cell.svg)
+\ The tristate allows the input and output to be on the same line
+3 ![](/alevel/img/non_volatile_memory_cell.svg)
+\ The capacitor retains data since a MOSFET gate draws no current, so the capacitor does not discharge
+\ When the data is read, if the capacitor is charged, the bottom MOSFET has low impedance, so current flows through the resistor and the output line goes low
+\ If the capacitor is not charged, the bottom MOSFET has high impedance, so current does not flow through the resistor and the output line goes high
+4 The tristate creates to be high impedance between the unwanted memory module and the data bus, effectively disconnecting it, allowing only the desired memory module to write to it
+5 Multiplexers are used to select the memory location to be processed using the data on address bus
+
+4.2.3
+1 A register is a memory module used by the processor to hold data that it is processing, with separate input and output buses
+2 Using multiple logic systems, one for each bit in the byte, two binary words can be combined in parallel, whether it be ANDing, XORing or adding
+3 Two's complement allows negative numbers to be represented in binary by inverting each bit and adding one to the result, essentially taking the number modulo 2
+
+4.3.1
+1 Closed-loop control systems include a feedback loop from the output in order to adjust its operational parameters to more closely match the desired result, whereas open-loop systems do not
+2 The switch turns on or off the transducer depending on whether the value detected at the sensor is above or below the reference, with the result then being fed back to the sensor
+5 Because the transducer must be either on or off, it cannot exactly match the power required, going either above or below the desired value, "hunting" for it
+
+4.3.2
+1 Proportional control systems have a continuous output whose value is determined by the difference between the sensor and the reference causing the transducer to ramp up or down more quickly or slowly, until the transducer is at the value required for them to match
+2 \\[\begin{alignat}{2}
+\ & V_2 - && V_- = V_- - V_{out}
+\ \\\ \implies & V_{out} && = 2V_+ - V_2
+\ \\\ & && = 2V_- - V_2
+\ \\\ & && = 2\frac{V_1}{2} - V_2
+\ \\\ & && = V_1 - V_2
+\ \end{alignat}\\]
+5 Proportional systems respond more slowly because as it approaches the desired value, the output is not saturated like in on-off systems, and therefore change more slowly
+\ It asymptotically approaches the desired value
+
+4.3.3
+1 The diode bridge rectifies the ac signal so that there is no reverse current
+\ The capacitor stores charge on the rising half of each cycle before releasing it on the falling half in order the smooth the signal, so it is always above a certain value
+2 A switched-mode power supply is much more efficient and can run off mains power to produce a variable constant direct current
+\ The opto-isolator sends feedback to the oscillator through an LED photodiode pair that isolates the high-current circuit from the low-current
+3 A dc voltage regulator generates a fixed dc voltage from an unstabilised dc supply
+\ The reference is the desired output voltage and is commonly produced by a zener diode in reverse bias
+\ The comparator compares the output voltage with the reference voltage and turns on or off the MOSFET follower accordingly
+\ When on, the MOSFET follower allows current to flow from the input to the output, charging a capacitor, which provides inertia so that the hunting from it being an on-off system is minimised
+
+4.4.1
+1 The CPU is where the data of a program is processed
+\ The memory contains the program instructions in flash memory and a lookup table in SRAM
+\ The input port is an eight-bit bus that can receive input from an external circuit
+\ The output port is an eight-bit bus that the CPU can put data on to send to an external circuit
+\ The clock generates a continuous series of pulses that are used by the CPU to synchronise its operations
+\ The reset resets the microcontroller to the start of the program, clearing the registers
+2 The address bus is used by the CPU to instruct the memory which instruction to fetch
+\ The data bus contains data loaded from the memory or read from the input and processed by the CPU or sent to the output port
+\ The control bus determines how data is used, using enable & read/write pins
+3 The program counter countains the address of the currently-processed instruction, and is incremented after each instruction unless a jump occurs
+\ The stack pointer stores the address of the top of the stack, which is changed each time a subroutine is called or returned from
+\ The general purpose registers can be used by the CPU for immediate storage & processing of data
+4 The tristates determine whether the port is active, and the D flip-flops latch the data upon use
+5 In each machine cycle:
+\
+\ * the value of the program counter is copied onto the address bus
+\ * the data in memory at that address is loaded into the instruction register IL
+\ * the program counter is incremented
+\ * by the same process, the data at the address in the program counter is loaded into the instruction register IH
+\ * the program counter is incremented again
+\ * the ALU is activated
+8 Hexadecimal directly translates into binary
+
+4.4.2
+0 Assembler:
+\
+\ * `MOVI Sd,n :` Copy the byte n into register Sd
+\ * `MOV Sd,Ss :` Copy the byte from Ss to Sd
+\ * `ADD Sd,Ss :` Add the byte in Ss to the byte in Sd and store the result in Sd
+\ * `SUB Sd,Ss :` Subtract the byte in Ss from the byte in Sd and store the result in Sd
+\ * `AND Sd,Ss :` Logical AND the byte in Ss with the byte in Sd and store the result in Sd
+\ * `EOR Sd,Ss :` Logical EOR the byte in Ss with the byte in Sd and store the result in Sd
+\ * `INC Sd    :` Add 1 to Sd
+\ * `DEC Sd    :` Subtract 1 from Sd
+\ * `IN Sd,I   :` Copy the byte at the input port into Sd
+\ * `OUT Q,Ss  :` Copy the bype in Ss to the output port
+\ * `JP e      :` Jump to label e
+\ * `JZ e      :` Jump to label e if the result of the last ADD, SUB, AND, EOR, INC, DEC, SHL or SHR was zero
+\ * `JNZ e     :` Jump to label e if the result of the last ADD, SUB, AND, EOR, INC, DEC, SHL or SHR was not zero
+\ * `RCALL s   :` Push the program counter onto the stack to store the return address and then jump to label s
+\ * `RET       :` Pop the program counter from the stack to return to the place the subroutine was called from
+\ * `SHL Sd    :` Shift the byte in Sd one bit left putting a 0 into the lsb
+\ * `SHR Sd    :` Shift the byte in Sd one bit right putting a 0 into the msb
+\
+\ Subroutines:
+\
+\ * `readtable :` copies the byte in the lookup table pointed at by S7 into S0; the lookup table is labelled table: when S7=0 the first byte from the table is returned in S0
+\ * `wait1ms :` waits 1ms before returning
+\ * `readadc :` returns a byte in S0 proportional to the voltage at ADC
+1 Suppose `n` is hexadecimal number with the desired bit high:
+\
+\           MOVI S1,n
+\     loop: IN   S0,I
+\           AND  S0,S1
+\           JZ   loop
+\           ...        ; continue
+2           MOVI S0,n
+\     loop: DEC  S0
+\           JNZ  S0
+\           ...       ; continue
+\ If the length of waiting time is longer than can be stored in one register, two registers and a nested loop can be used:
+\
+\            MOVI S0,n
+\     outer: MOVI S1,m
+\     inner: DEC S1
+\            JNZ inner
+\            DEC S0
+\            JNZ outer
+\            ...       ; continue
+3 Suppose `n` is the desired location
+\
+\     MOVI  S7,n
+\     RCALL readtable
+\     OUT   Q,S0
+4 To selectively invert bits in a register, `EOR` the register with the hexadecimal number which has the desired inverted bits high, for example:
+\
+\     MOVI S1,n
+\     EOR  S0,S1
+6 Use `SHL` and `SHR` respectively
+7 The unconditional jump `JP` jumps to the indicated label
+\ The conditional jumps `JZ` & `JNZ` jumps to the indicated label if & only if the previous calculation resulted in a zero, or not zero, respectively
+8 Use `RCALL` to call a subroutine, and `RET` to return from a subroutine
+\ Since data in registers persist, they can be used in a subroutine to store information so that the outside program can use them
+
+4.4.3
+1 Therefore, only the top of the stack needs to tracked, which is updated upon pushing or popping the stack
+2 Since the stack pointer counts down, when calling subroutines, the stack pointer is decremented, and the value of the program counter is copied to the address referenced by the stack pointer
+\ When returning from subroutines, the value referenced by the stack pointer is copied into the program counter and the stack pointer is incremented
+3 Modularity
+\ Readability
+4 See [4.4.2](#4.4.2)
 
 5.1.1
 1 RGB pixels facilitate a colour display
@@ -177,6 +328,7 @@
 \ Frame synchronisation signals instruct the screen to start scanning a new frame
 4 Splitting the RGB signals means that only a third of the total data is sent down each signal, so the bandwidth is a third of what is would otherwise need to be
 5 The higher the frame refresh rate, the smoother the image
+\ The limit is 25 Hz since that is the persistence of vision
 6 The bitrate is the number of bits that must be sent down the cable in a second, and is equal to \\(\text{pixels per frame} \cdot \text{frame rate}\\)
 \ The bandwidth is half the bitrate
 7 The number of intensity levels is \\(2^\text{word length}\\)

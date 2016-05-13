@@ -1,6 +1,8 @@
 1.1.1
 1 Switch with a pull-up resistor: !\\(\\)() generates a high signal when the switch is open and a low signal when the switch is closed
 \ Switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed
+3 \\(V = IR\\)
+4 \\(W = Pt\\) where \\(W\\) is the work done
 5 In practice, components may be able to tolerate a little above the maximum ratings, but the limits should still be observed
 7 | Prefix |   Magnitude    |  Name  |
 \ |:------:|:--------------:|:------:|
@@ -14,8 +16,8 @@
 \ |   p    | \\(10^{-12}\\) |  Pico- |
 
 1.1.2
-1 Ideal: ![]()
-\ Practice: ![]()
+1 CMOS: ![](/alevel/img/not_gate.svg)
+\ Between 2-3 V, the output is uncertain
 2 AND:
 \
 \ | A | B | Q |
@@ -62,20 +64,27 @@
 \ | 1 | 1 | 1 |
 3 If LED is on, signal is high
 \ Resistor limits current
-4 Ideal: ![]()
-\ Practice: ![]()
+4 Ideal: ![](/alevel/img/led.svg)
+
+1.1.3
+3 Ideal: ![](/alevel/img/mosfet.svg)
+
+1.1.4
+2 This is because they clutter the diagram without adding any useful information
 
 1.2.1
-1 ![]()
-2 ![]()
+1 ![](/alevel/img/ldr.svg)
+2 ![](/alevel/img/thermistor.svg)
 3 \\(\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}\\)
 4 \\(V_{out} = \frac{R_1}{R_1 + R_2}V_{in}\\)
 
 1.2.2
+1 Ideal: ![](/alevel/img/op-amp.svg)
 3 The diode rectifies the \\(\SI{-13}{\volt}\\) to \\(\SI{0}{\volt}\\)
 \ The resistors form a potential divider that converts the \\(\SI{+13}{\volt}\\) into \\(\SI{+5}{\volt}\\)
-4 !\\(\\)()
+4 Ideal: ![](/alevel/img/diode.svg)
 5 A zener diode placed in reverse bias in series with a resistor can provide a voltage equal to its breakdown voltage that is invariant to the supply voltage
+6 Ideal: ![](/alevel/img/zener_diode.svg)
 
 1.2.3
 1 Charging: \\(V = V_0(1 - e^{-\frac{t}{RC}})\\)
@@ -89,14 +98,16 @@
 1.3.1
 1 Wiring an RC network as a potential divider causes an edge to be transformed to the input voltage, before falling to 0 as the capacitor charges, resulting in a spike
 2 A diode connected to the output from 0 suppresses the negative spike, clamping the voltage to \\(\SI{0.7}{\volt}\\), and shortening the time constant
-3 The input & output of the monostable is initially high, 
+3 ![](/alevel/img/monostable.svg)
+\ The input & output of the monostable is initially high, 
 \ On the falling edge of the input, the RC network goes high, causing the output to go low
 \ The feedback of the output back to the first monostable keeps the RC network high until the capacitor charges halfway, causing the output to return hig
 4 The clamping diodes prevent the inputs from going higher than \\(\SI{0.7}{\volt}\\) outside the limits
 
 1.3.2
 1 The trip point when the gate is low is higher than when it is high
-2 When the output of the Schmitt trigger is high, the capacitor charges through the resistor until it reaches the upper trip point, when the Schmitt trigger goes low, causing the capacitor to discharge through the resistor until it reaches the the lower trip point
+2 ![](/alevel/img/schmitt_trigger_oscillator.svg)
+\ When the output of the Schmitt trigger is high, the capacitor charges through the resistor until it reaches the upper trip point, when the Schmitt trigger goes low, causing the capacitor to discharge through the resistor until it reaches the the lower trip point
 4 \\(T\\) is the time period
 5 Drivers provide the necessary current to drive a loudspeaker that logic gates are unable to provide
 
@@ -110,50 +121,110 @@
 
 2.1.1
 1 A bistable latches its output, until it is "set" high or "reset" low
-2 
-4 A latch stores the information in its data input when the enable input is high, or can be set or reset
-5 The data input demultiplexes the enable input, sending it to the set or reset input depending on whether the data is high or low
+2 ![](/alevel/img/bistable_nor.svg)
+3 ![](/alevel/img/bistable_nand.svg)
+4 When the enable input is high, the data input is copied to the output
+\ When the enable input is low, the output is fixed
+5 ![](/alevel/img/latch.svg)
+\ The data input demultiplexes the enable input, sending it to the set or reset input depending on whether the data is high or low
 6 A rising-edge triggered D flip-flop only copies the data to the output on the rising edge of the clock input
-7 The master latch stores the data input while the clock input is low
+7 ![](/alevel/img/d_flip-flop.svg)
+\ The master latch copies the data input to its output while the clock input is low
 \ When the clock input goes high, the master latch locks its output, and the slave latch is enabled, causing the data input at the time of the rising edge to be stored regardless of whether it changes any further
 8 The clock inputs are connected so that information can be stored simultaneously
 
 2.2.1
 1 The coupling capacitor removes d.c. bias
-3 The gain is effectively infinite, causing the output to saturate unless the difference in voltage between the inputs is effectively 0
-4 \\(V_{out} = A(V_+ - V_-) = A(V_+ - V_{out})\\)
+4 The gain is effectively infinite, causing the output to saturate unless the difference in voltage between the inputs is effectively 0
+5 ![](/alevel/img/voltage_follower.svg)
+\ \\(V_{out} = A(V_+ - V_-) = A(V_+ - V_{out})\\)
 \ Re-arranging gives \\(V_{out} = \frac{A}{A + 1}V_+\\)
 \ A is so large that the 1 is negligible, so \\(V_{out} = V_+\\)
 \ The pull-down resistor allows a safe path for current leak to 0
-6 The output of an op-amp can source more current
+6 The input of an op-amp has high impedance and the output can source more current
 
 2.2.2
-1 The output does not saturate, so \\(V_- = V_+\\), and from the potential divider formula:
+1 ![](/alevel/img/non-inverting_amplifier.svg)
+\ The output does not saturate, so \\(V_- = V_+\\), and from the potential divider formula:
 \ \\(V_{out} = \frac{R_f + R_d}{R_d}V_- = V_+(1 + \frac{R_f}{R_d})\\) so \\(G = 1 + \frac{R_f}{R_d}\\)
-2 The output does not saturate, so the difference in voltage of the inputs is effectively 0
+2 ![](/alevel/img/inverting_amplifier.svg)
+\ The output does not saturate, so the difference in voltage of the inputs is effectively 0
 \ Since the non-inverting input is tied to ground, this means that there is a virtual earth at the inverting input
 \ \\(V_{out} = \frac{-R_f}{R_{in}}V_- = -\frac{R_f}{R_{in}}V_{in}\\) so \\(G = -\frac{R_f}{R_{in}}\\)
 4 Equating current gives \\[-\frac{V_{out}}{R_f} = \sum_{i=1}^n\frac{V_i}{R_i}\\]
 
 2.3.1
-1 D switches state on every rising clock, causing it to emulate a one-bit counter
-2 Connecting the inverted output of each flip-flop in an array to the clock input of the next one causes the array to emulate a binary ripple up-counter
+1 ![](/alevel/img/one_bit_counter.svg)
+\ D switches state on every rising clock, causing it to emulate a one-bit counter
+2 ![](/alevel/img/binary_counter.svg)
+\ Connecting the inverted output of each flip-flop in an array to the clock input of the next one causes the array to emulate a binary ripple up-counter
 3 AND gates processing the high bits of n causes its output to go high upon reaching n, which can then be connected to the set & reset inputs of the respective flip-flops that will set the counter to m
+4 ![](/alevel/img/binary_counter_timing.svg)
+5 ![](/alevel/img/7-seg.svg)
+\ The decoder converts a binary value (from 0-9) into the right outputs to show on a 7-segment display
 
 2.3.2
 2 The frequency division of an oscillating signal can be achieved by connecting the signal to a binary counter that counts up to the desired number, flips the state of the output and resets
 
 2.4.1
 1 Signal source -> Pre-amplifier -> Tone controls -> Volume control -> Voltage amplifier -> Power amplifier -> Loudspeaker
+\ The signal source receives an audio signal using a microphone, which converts it into an electric signal with an amplitude of a few millivolts
+\ The pre-amplifier boosts the amplitude of the signal from the microphone to increase the signal-to-noise ratio so that noise in the circuit does not distort the signal as much
+\ The tone control adjusts the frequency balance of the signal, in terms of bass, midtones and treble
+\ The volume control adjusts the amplitude of the signal according to a variable input
+\ The voltage amplifier boosts the amplitude of the signal, from the order of millivolts to volts
+\ The power amplifier boosts the power of the signal, mainly in the current
+\ The loudspeaker outputs the signal in audio
 2 The output impedance should be lower than the following input impedance to minimise signal loss
 3 The position of the wiper on the potentiometer determines how much of the signal passes through to the voltage amplifier
 
 2.4.2
+1 Impedance is inversely proportional to frequency: \\(X = \frac{1}{2\pi fC}\\)
 2 The break frequency is the frequency at which half the input power is outputted, where the impedance of the capacitor is equal to the resistance of the resistor
 3 Passive filters cannot boost signals, only cut
-4 Treble-cut filters are based on an inverting amplifier with a capacitor wired in parallel with the feedback resistor
+4 ![](/alevel/img/treble_cut_filter.svg)
+\ Treble-cut filters are based on an inverting amplifier with a capacitor wired in parallel with the feedback resistor
+\ ![](/alevel/img/bass_cut_filter.svg)
 \ Bass-cut filters are based on an inverting amplifier with a capacitor wired in series with the input resistor
+\ ![](/alevel/img/bandpass_filter.svg)
 \ A bandpass filter includes both capacitors
+
+2.5.1
+2 The hardware cannot be easily changed, but the software can be reprogramming the microcontroller
+3 PICs are economical because they are produced in vast quantities
+\ The program can be developed once and then reused by programming multiple microcontrollers
+\ Developing the program beforehand allows the operation to be analysed without anything being built
+\ The microcontroller can be reprogrammed in the future to adjust its operation with no manufaction cost
+4 Microcontrollers work entirely in digital, so must convert analogue inputs into digital using an ADC
+\ Microcontrollers run at around 1 MHz, so are much slower than hardware systems
+
+2.5.2
+1 The input port is the interface from which a microcontroller receives input from the external circuit
+\ The output port is the interface from which a microcontroller provides an output to the external circuit
+\ A memory address is a unique identifier for each location in memory, where the program instructions are stored
+\ The registers in the microcontroller are registers which can be immediately used to store data for use by the CPU
+2 An ADC converts an analogue signal into a binary word whose value is proportional to the input voltage
+4 One hex character can represent 4 bits
+\ One byte is 8 bits, which can be represented using 2 hex characters
+\
+\ | Hex | Binary |
+\ |:---:|:------:|
+\ | `0` | `0000` |
+\ | `1` | `0001` |
+\ | `2` | `0010` |
+\ | `3` | `0011` |
+\ | `4` | `0100` |
+\ | `5` | `0101` |
+\ | `6` | `0110` |
+\ | `7` | `0111` |
+\ | `8` | `1000` |
+\ | `9` | `1001` |
+\ | `a` | `1010` |
+\ | `b` | `1011` |
+\ | `c` | `1100` |
+\ | `d` | `1101` |
+\ | `e` | `1110` |
+\ | `f` | `1111` |
 
 4.1.1
 1 ![](/alevel/img/mosfet_id_vgs.svg)
@@ -168,7 +239,7 @@
 \ A tristate is a buffer that can selectively transmit a digital signal using a third state that assumes high impedance, effectively removing the component from the circuit
 \ ![](/alevel/img/tristate_model.svg)
 \ ![](/alevel/img/tristate_mosfet.svg)
-5 ![](/alevel/img/voltage_follower.svg)
+5 ![](/alevel/img/source_follower.svg)
 6 ![](/alevel/img/mosfet_voltage_amplifier.svg)
 7 \\(G\\) is the gain of the amplifier
 \ \\(g_m\\) is the transconductance of the MOSFET

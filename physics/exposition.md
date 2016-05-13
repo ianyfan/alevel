@@ -13,8 +13,8 @@
 
 1.1.2
 1 The strong nuclear force acts between protons & neutrons
-\ It is repulsive at distances less than about \\(\SI{0.7}{\femto\metre}\\) to keep the hadrons separate
-\ It is attractive at distances between about \\(\SI{0.7}{\femto\metre}\\) and \\(\SI{3}{\femto\metre}\\) to keep atom nuclei stable
+\ It is repulsive at distances less than about \\(\SI{0.5}{\femto\metre}\\) to keep the hadrons separate
+\ It is attractive at distances between about \\(\SI{0.5}{\femto\metre}\\) and \\(\SI{3}{\femto\metre}\\) to keep atom nuclei stable
 2 Equation for alpha decay: \\(^A_ZX \rightarrow ^{A-4}_{Z-2}Y + ^4_2\alpha\\)
 \ Equation for \\(\beta^-\\) decay: \\(^A_ZX \rightarrow ^{\phantom{Z+}A}\_{Z+1}Y + ^{\phantom{-}0}\_{-1}\beta + \overline\nu\\)
 
@@ -30,16 +30,27 @@
 \ Rest energy is the same
 3 The photon model of electromagnetic radiation states that light is released in packets of energy called quanta, in particles called photons
 \ The Planck constant \\(h\\) is \\(\SI{6.63\cdot 10^{-34}}{\joule\second}\\)
-4 Annihilation is the destruction of a particle and its antiparticle upon meeting to create two photons
+4 ![](/alevel/img/annihilation.svg)
+\ Annihilation is the destruction of a particle and its antiparticle upon meeting to create two photons
+\ ![](/alevel/img/pair_production.svg)
 \ Pair production is the production of a particle and its antiparticle from a photon
 \ The annihilation of an electron & positron creates 2 photons with energy \\(\SI{8.2\cdot 10^{-14}}{\joule}\\)
 \ The pair production of an electron & positron requires a photon with energy \\(\SI{1.64\cdot10^{-13}}{\joule}\\)
 
 1.1.4
-1 The exchange of virtual exchange particles between two elementary particles causes an equal and opposite force in both
-3 The weak interaction ... ; the exchange particles are W bosons, which are charged and have a relatively high mass, so short-lived, with a range of less than \\(\SI{0.001}{\femto\metre}\\)
+1 Particles cannot instantaneously produce a force on each other, as this instantaneous action at a distance would violate the upper limit of speed of propagation of information in special relativity
+\ Instead, particles exchange virtual particles, which, between two elementary particles, causes an equal and opposite force in both
+\ They are virtual because they cannot be observed directly, but can be inferred to exist
+2 ![](/alevel/img/electromagnetic_interaction.svg)
+\ When two charged particles interact via the electromagnetic force, a virtual photon is exchange between them
+\ Since photons are massless, they can travel an infinite distance, which is why the electromagnetic force has an infinite range
+3 The weak interaction is an interaction that affects fermions (quarks, leptons and baryons) and can cause quarks to change flavour, which is responsible for radioactive decay
+\ The exchange particle is the W boson, which is charged and has a relatively high mass, so short-lived, resulting in a range of less than \\(\SI{0.001}{\femto\metre}\\)
+\ ![](/alevel/img/beta-_interaction.svg)
 \ \\(\beta^-\\) decay is the breakdown of a neutron to become a proton, emitting a \\(W^-\\) boson that decays into an electron and antineutrino
+\ ![](/alevel/img/beta+_interaction.svg)
 \ \\(\beta^+\\) decay is the breakdown of a proton to become a neutron, emitting a \\(W^+\\) boson that decays into a positron and neutrino
+\ ![](/alevel/img/electron_capture.svg)
 \ The exchange of a \\(W^+\\) boson from a proton to an electron changes them into a neutron and electron antineutrino; this occurs in electron capture, when a proton in a proton-rich nucleus absorbs an inner electron, and high-speed electron-proton collisions
 4 Time goes upwards
 \ Straight lines represent particles
@@ -47,13 +58,15 @@
 
 1.1.5
 1 Pions and kaons are also called π mesons and K mesons
-1 There are three types of pions and kaons that indicated its charge
+1 There are different types of pions and kaons, according to its charge
 \ \\(\pi^+\\) and \\(K^+\\) mesons are positively charged
 \ \\(\pi^-\\) and \\(K^-\\) mesons are negatively charged and are antiparticles of the above
-\ \\(\pi^0\\) and \\(K^0\\) mesons are neutral
+\ \\(\pi^0\\), \\(K^0\\) and \\(\overline K^0\\) mesons are neutral
 \ \\(\pi^0\\) mesons are their own antiparticle
 2 And the electromagnetic force, if charged
-3 Neutron decay: \\(n \rightarrow p + \overline e + \overline\nu_e\\)
+\ Baryons (and antibaryons) are subject to the weak interaction
+3 Neutron decay: \\(n \rightarrow p + e^- + \overline\nu_e\\)
+4 The electron and muon (and tau) leptons each have a corresponding neutrino type, which conserves lepton numbers in lepton interactions
 5 And the electromagnetic force, if charged, but not the strong nuclear force
 6 Baryons have a baryon number of 1
 \ Mesons have a baryon number of 0
@@ -71,23 +84,29 @@
 \ |    Up     | \\(-\frac{2}{3}\\) | \\(-\frac{1}{3}\\) |      0      |
 \ |   Down    | \\(+\frac{1}{3}\\) | \\(-\frac{1}{3}\\) |      0      |
 \ |  Strange  | \\(+\frac{1}{3}\\) | \\(-\frac{1}{3}\\) |     +1      |
-3 |      Hadron       |                       Quark combination                        |
-\ |:-----------------:|:--------------------------------------------------------------:|
-\ |      Proton       |                           \\(uud\\)                            |
-\ |      Neutron      |                           \\(udd\\)                            |
-\ |    Antiproton     |            \\(\overline u\overline u\overline d\\)             |
-\ |    Antineutron    |            \\(\overline u\overline d\overline d\\)             |
-\ | \\(\pi^+\\) meson |                       \\(u\overline d\\)                       |
-\ | \\(\pi^-\\) meson |                       \\(d\overline u\\)                       |
-\ | \\(\pi^0\\) meson | \\(u\overline u\\) or \\(d\overline d\\) or \\(s\overline s\\) |
-\ |  \\(K^+\\) meson  |                       \\(u\overline s\\)                       |
-\ |  \\(K^-\\) meson  |                       \\(s\overline u\\)                       |
-\ |  \\(K^0\\) meson  |                       \\(d\overline s\\)                       |
-4 In \\(\beta^-\\) decay, a down quark decays into an up quark
+3 |          Hadron           |                       Quark combination                        |
+\ |:-------------------------:|:--------------------------------------------------------------:|
+\ |          Proton           |                           \\(uud\\)                            |
+\ |          Neutron          |                           \\(udd\\)                            |
+\ |        Antiproton         |            \\(\overline u\overline u\overline d\\)             |
+\ |        Antineutron        |            \\(\overline u\overline d\overline d\\)             |
+\ |     \\(\pi^+\\) meson     |                       \\(u\overline d\\)                       |
+\ |     \\(\pi^-\\) meson     |                       \\(d\overline u\\)                       |
+\ |     \\(\pi^0\\) meson     | \\(u\overline u\\) or \\(d\overline d\\) or \\(s\overline s\\) |
+\ |      \\(K^+\\) meson      |                       \\(u\overline s\\)                       |
+\ |      \\(K^-\\) meson      |                       \\(s\overline u\\)                       |
+\ |      \\(K^0\\) meson      |                       \\(d\overline s\\)                       |
+\ | \\(\overline K^0\\) meson |                       \\(s\overline d\\)                       |
+4 ![](/alevel/img/beta-_interaction_quark.svg)
+\ In \\(\beta^-\\) decay, a down quark decays into an up quark
+\ ![](/alevel/img/beta+_interaction_quark.svg)
 \ In \\(\beta^+\\) decay, an up quark decays into a down quark
+5 Charge, baryon number, lepton number for each lepton and strangeness are all conserved
 
 1.2.1
-1 The photoelectric effect is the observation that directing electromagnetic radiation onto a metal above a certain frequency, depending on the metal, causes it to instantly emit electrons from the surface
+1 The photoelectric effect is the observation that directing electromagnetic radiation onto a metal only above a certain frequency, depending on the metal, causes it to instantly emit electrons from the surface
+\ This behaves contrary to classical physics, which would predict that the effect should be observed whatever the frequency, and less energy the light has (in terms of intensity or frequency/wavelength), the longer it should take before the metal began to emit electrons, since a wave would provide the metal with energy over time until it had enough for an electron to escape
+\ The photoelectric effect is observed because the energy is quantised in packets, photons, 
 \ The work function is the minimum amount of energy required to remove an electron from the surface of a metal
 \ The threshold frequency is the minimum frequency required to be directed onto the metal so that a photon can provide an electron with enough energy to escape
 
@@ -102,6 +121,7 @@
 1 A line spectrum is the pattern of light unique to an element that shows the various energies of light emitted when the electrons de-excite
 
 1.2.4
+1 And therefore the wave-particle duality
 2 de Broglie wavelength generalises the particle-wave duality of photons to all particles of matter
 
 1.3.1
@@ -109,7 +129,7 @@
 
 1.3.2
 1 Ohmic conductors follow Ohm's law: \\(V = IR\\)
-\ A semiconductor diode has no current at less than \\(\SI{0.7}{\volt}\\), but can have any current above
+\ A semiconductor diode does not allow current flow below \\(\SI{0.7}{\volt}\\), but can have any current above
 \ The resistance of a filament lamp increases with voltage
 2 \\(V = IR\\)
 
@@ -163,7 +183,7 @@
 \ The gradient of a displacement-time graph is the velocity
 \ The gradient of a velocity-time graph is the acceleration
 \ The area under a velocity-time graph is the displacement
-4 Terminal speed is the speed of freefall at which the acceleration due to gravity is balanced by the decceleration due to air resistance
+4 Terminal speed is the speed of freefall at which the acceleration due to gravity is equal to the decceleration due to air resistance
 
 2.1.4
 1 The acceleration due to gravity only affects the vertical speed of a projectile, not the horizontal speed

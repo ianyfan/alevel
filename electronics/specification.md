@@ -14,7 +14,7 @@
 3 Recall and use the defining equation for resistance (\\(R = \frac{V}{I}\\))
 4 Recall and use the equation for power (\\(P = VI\\)) to calculate the rate of heating, or output power, or a component
 5 Recall that components have maximum ratings for current, voltage or power
-6 Recall how to use multimeters as voltmeters, ammeters and ohmmeters to measure voltage, current ad resistance in a circuit
+6 Recall how to use multimeters as voltmeters, ammeters and ohmmeters to measure voltage, current and resistance in a circuit
 7 Understand the use of the prefixes G, M, k, m, μ, n and p when calculating values of quantities
 
 1.1.2

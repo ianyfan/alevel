@@ -6,7 +6,8 @@
 3 Proton number \\(Z\\), nucleon number \\(A\\), nuclide notation, isotopes
 
 1.1.2
-1 The strong nuclear force, its role in keeping the nucleus stable; short-range attraction to about \\(\SI{3}{\femto\metre}\\), very-short range repulsion below about \\(\SI{0.5}{\femto\metre}\\)
+1 The strong nuclear force, its role in keeping the nucleus stable
+\ Short-range attraction to about \\(\SI{3}{\femto\metre}\\), very-short range repulsion below about \\(\SI{0.5}{\femto\metre}\\)
 2 Equations for alpha decay and \\(\beta^-\\) decay including the antineutrino
 
 1.1.3
@@ -41,7 +42,8 @@
 \ The necessary data will be provided in questions for particles outside those specified
 
 1.2.1
-1 Work function \\(\Phi\\), threshold frequency \\(f_0\\), photoelectric equation \\(hf = \Phi + Ek\\); the stopping potential experiment is not required
+1 Work function \\(\Phi\\), threshold frequency \\(f_0\\), photoelectric equation \\(hf = \Phi + E_k\\)
+\ The stopping potential experiment is not required
 
 1.2.2
 1 The electron volt
@@ -51,15 +53,19 @@
 1 Line spectra (e.g. of atomic hydrogen) as evidence of transitions between discrete energy levels in atoms; \\(hf = E_1 - E_2\\)
 
 1.2.4
-1 Candidates should know that electron diffraction suggests the wave nature of particles and the photoelectric effect suggests the particle nature of electromagnetic waves; details of particular methods of particle diffraction are not expected
+1 Candidates should know that electron diffraction suggests the wave nature of particles and the photoelectric effect suggests the particle nature of electromagnetic waves
+\ Details of particular methods of particle diffraction are not expected
 2 de Broglie wavelength \\(\lambda = \frac{h}{mv}\\), where \\(mv\\) is the momentum
 
 1.3.1
-1 Electric current as the rate of flow of charge; potential difference as work done per unit charge; \\(I = \frac{\Delta Q}{\Delta t}\\) and \\(V = \frac{W}{Q}\\)
+1 Electric current as the rate of flow of charge
+\ Potential difference as work done per unit charge
+\ \\(I = \frac{\Delta Q}{\Delta t}\\) and \\(V = \frac{W}{Q}\\)
 2 Resistance is defined by \\(R = \frac{V}{I}\\)
 
 1.3.2
-1 For an ohmic conductor, a semiconductor diode and a filament lamp; candidates should have experience of the use of a current sensor and a voltage sensor with a data logger to capture data from which to determine I-V curves
+1 For an ohmic conductor, a semiconductor diode and a filament lamp
+\ Candidates should have experience of the use of a current sensor and a voltage sensor with a data logger to capture data from which to determine I-V curves
 2 Ohm's law as a special case where \\(I \propto V\\)
 
 1.3.3

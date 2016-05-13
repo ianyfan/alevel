@@ -119,6 +119,7 @@ for subject in subjects:
         }});
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
+    <title>{}</title>
   </head>
   <body>
     <nav class="{}">
@@ -134,7 +135,7 @@ for subject in subjects:
     </footer>
   </body>
 </html>'''.format(
-    subject,
+    subject.capitalize(), subject,
     '\n'.join(['        <li><a href="/alevel/{}">{}</a></li>'.format(s, s.title()) for s in subjects]),
     '\n'.join(['      <ol id="{}">\n{}\n      </ol>'.format(s, navs[s]) for s in subjects]),
     make_html(data[subject])

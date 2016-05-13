@@ -1,0 +1,76 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="80" width="140" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 140 80">
+ <g transform="translate(0 -972.4)">
+  <rect stroke-linejoin="round" fill-opacity="0" height="72" width="56" stroke="#000" stroke-linecap="round" stroke-miterlimit="4.286" y="976.4" x="80"/>
+  <circle stroke-linejoin="round" cx="126" stroke-linecap="square" stroke="#fff" cy="1036" r="4"/>
+  <g fill-rule="evenodd" stroke="#fff" stroke-width="1px">
+   <path d="m86 1032c-1 4 2 8 6 8h16c4 0 9-4 10-8l4-16-3-4 5-4 4-16c1-4-2-8-6-8h-16c-4 0-9 4-10 8l-4 16 3 4-5 4z"/>
+   <path d="m104 992.4-4 16h16l4-16z" fill="#fff"/>
+   <path d="m98 1016-4 16h16l4-16z" fill="#fff"/>
+  </g>
+  <path d="m98 984.4 21 28-35 28" stroke="#fff" stroke-width="1px" fill="none"/>
+  <path d="m116 1040-21-28 35-28" stroke="#fff" stroke-width="1px" fill="none"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#ffffff">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="989.57703" x="111.7875"><tspan x="111.7875" y="989.57703">a</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1002.1121" x="120.5275" xml:space="preserve"><tspan y="1002.1121" x="120.5275">b</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1025.577" x="114.8075"><tspan x="114.8075" y="1025.577">c</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.1121" x="99.699997"><tspan x="99.699997" y="1038.1121">d</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1025.577" x="90.739998"><tspan x="90.739998" y="1025.577">e</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1002.1721" x="97.127502"><tspan x="97.127502" y="1002.1721">f</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.0471" x="105.6575"><tspan x="105.6575" y="1013.0471">g</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.0021" x="122.92941"><tspan x="122.92941" y="1038.0021">DP</tspan></text>
+  </g>
+  <flowRoot style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><flowRegion><rect y="-16" width="32" x="-36" height="80"/></flowRegion><flowPara/></flowRoot>
+  <rect stroke-linejoin="round" height="56" width="28" stroke="#000" stroke-linecap="round" stroke-miterlimit="4.286" y="992.4" x="48" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1046.1122" x="51.053322" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="51.053322" y="1046.1122">Decoder</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m76 1044h4"/>
+   <path d="m76 1012h4"/>
+   <path d="m76 1036h4"/>
+   <path d="m76 1004h4"/>
+   <path d="m76 1028h4"/>
+   <path d="m76 996.4h4"/>
+   <path d="m76 1020h4"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="997.57697" x="70.787498"><tspan x="70.787498" y="997.57697">a</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1006.1121" x="70.527496"><tspan x="70.527496" y="1006.1121">b</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.577" x="70.807503"><tspan x="70.807503" y="1013.577">c</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1022.1121" x="70.699997"><tspan x="70.699997" y="1022.1121">d</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.577" x="70.739998"><tspan x="70.739998" y="1029.577">e</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.172" x="71.127502"><tspan x="71.127502" y="1038.172">f</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.047" x="70.657501"><tspan x="70.657501" y="1045.047">g</tspan></text>
+  </g>
+  <rect stroke-linejoin="round" height="40" width="28" stroke="#000" stroke-linecap="round" stroke-miterlimit="4.286" y="1008" x="8" fill="none"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1046.0022" x="15.431523"><tspan x="15.431523" y="1046.0022">Counter</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1014.002" x="50.640003"><tspan x="50.640003" y="1014.002">A</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1022.0021" x="50.405003"><tspan x="50.405003" y="1022.0021">B</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1030.0022" x="50.522503"><tspan x="50.522503" y="1030.0022">C</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.0022" x="50.365002"><tspan x="50.365002" y="1038.0022">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1014.002" x="10.415001"><tspan x="10.415001" y="1014.002">R</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1014.002" x="30.639999" xml:space="preserve"><tspan y="1014.002" x="30.639999">A</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1022.0021" x="30.405003" xml:space="preserve"><tspan y="1022.0021" x="30.405003">B</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1030.0022" x="30.522499" xml:space="preserve"><tspan y="1030.0022" x="30.522499">C</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1038.0022" x="30.365002" xml:space="preserve"><tspan y="1038.0022" x="30.365002">D</tspan></text>
+  </g>
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px">
+    <path d="m36 1036h12"/>
+    <path d="m36 1028h12"/>
+    <path d="m36 1020h12"/>
+    <path d="m36 1012h12"/>
+   </g>
+   <path stroke-linejoin="round" d="m24 988.4a8 8 0 0 0 -8 8 8 8 0 0 0 8 8h12v-16h-12z" stroke-linecap="round" stroke-miterlimit="4.286"/>
+   <g stroke-linejoin="round" stroke-width="1px">
+    <path d="m36 1e3h4v20"/>
+    <path d="m36 992.4h8v44"/>
+    <path d="m8 1046 4-2-4-2"/>
+    <path d="m12 1008v-12h4"/>
+   </g>
+  </g>
+  <circle cx="40" cy="1020" r="1"/>
+  <circle cx="44" cy="1036" r="1"/>
+  <path d="m4.138 1044h4" stroke="#000" stroke-width="1px" fill="none"/>
+  <circle stroke-linejoin="round" cx="4.138" stroke-linecap="round" stroke="#000" cy="1044" r="1" stroke-miterlimit="4.286" fill="#fff"/>
+ </g>
+</svg>

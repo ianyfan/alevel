@@ -1,0 +1,34 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="52" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 52.000001 48.000001">
+ <g transform="translate(0 -1004)">
+  <g stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m12 1008v16h12c4.418 0 8-3.582 8-8s-3.582-8-8-8z" stroke-linecap="round"/>
+   <path stroke-linejoin="round" d="m12 1032v16h12c4.418 0 8-3.582 8-8s-3.582-8-8-8z" stroke-linecap="round"/>
+   <g stroke-width="1px">
+    <path stroke-linejoin="round" d="m12 1020h-4v4l32 12v4"/>
+    <path stroke-linejoin="round" d="m40 1016v4l-32 12v4h4"/>
+    <g>
+     <path d="m12 1012h-4"/>
+     <path d="m12 1044h-4"/>
+     <path d="m34 1040h10"/>
+     <path d="m34 1016h10"/>
+    </g>
+   </g>
+  </g>
+  <circle cx="40" cy="1016" r="1"/>
+  <circle cy="1040" cx="40" r="1"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="44" cy="1016" r="1"/>
+   <circle cy="1040" cx="44" r="1"/>
+   <circle cx="8" cy="1012" r="1"/>
+   <circle cy="1044" cx="8" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1014.002" x="2.6575003"><tspan x="2.6575003" y="1014.002">S</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1046.0022" x="2.415"><tspan x="2.415" y="1046.0022">R</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1017.6197" x="46.302502"><tspan x="46.302502" y="1017.6197">Q</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1041.6198" x="46.302502"><tspan x="46.302502" y="1041.6198">Q</tspan></text>
+  </g>
+  <circle stroke-linejoin="round" fill-opacity="0" cx="33" stroke-linecap="square" stroke="#000" cy="1016" r="1"/>
+  <circle stroke-linejoin="round" fill-opacity="0" cx="33" stroke-linecap="square" stroke="#000" cy="1040" r="1"/>
+ </g>
+</svg>

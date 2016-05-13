@@ -1,0 +1,35 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="28" width="60" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 60.000001 28">
+ <g transform="translate(0 -1024)">
+  <path stroke-linejoin="round" d="m12 1028v16h44" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.5022" x="53.377346" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="53.377346" y="1041.5022">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1028.4827" x="1.7589726" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="1.7589726" y="1028.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  <g stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m20 1044v1"/>
+   <path d="m28 1044v1"/>
+   <path d="m36 1044v1"/>
+   <path d="m44 1044v1"/>
+   <path d="m52 1044v1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9572" x="18.705"><tspan x="18.705" y="1049.9572">1</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9872" x="26.780001"><tspan x="26.780001" y="1049.9872">2</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9572" x="34.82"><tspan x="34.82" y="1049.9572">3</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9572" x="42.785"><tspan x="42.785" y="1049.9572">4</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9271" x="50.814999"><tspan x="50.814999" y="1049.9271">5</tspan></text>
+  </g>
+  <path stroke-linejoin="round" d="m55 1043 1 1-1 1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <path d="m11 1032h1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1033.9271" x="6.8150005" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1033.9271" x="6.8150005">5</tspan></text>
+  <path d="m11 1040h1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.9572" x="6.7574997" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="6.7574997" y="1041.9572">0</tspan></text>
+  <g stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m11 1029 1-1 1 1" stroke-linecap="round" stroke-width="1px"/>
+   <g>
+    <path d="m12 1032h16" stroke-width="1px"/>
+    <path d="m36 1040h16" stroke-width="1px"/>
+    <path d="m28 1028v16" stroke-dasharray="2,2"/>
+    <path d="m36 1028v16" stroke-dasharray="2,2"/>
+   </g>
+  </g>
+ </g>
+</svg>

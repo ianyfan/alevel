@@ -1,0 +1,37 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44" width="84" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 84.000001 44">
+ <g transform="translate(0 -1008)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" d="m68 1024v16h-60v4"/>
+   <path d="m36 1020h-24"/>
+   <path stroke-linejoin="round" d="m36 1012v24l28-12z"/>
+   <g>
+    <path d="m38 1020h4"/>
+    <path d="m38 1028h4"/>
+    <path d="m40 1018v4"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="6" width="12" stroke="#000" stroke-linecap="round" y="1037" x="14" fill="#fff"/>
+  <path d="m64 1024h8" stroke="#000" stroke-width="1px" fill="none"/>
+  <g>
+   <circle stroke-linejoin="round" cx="12" stroke-linecap="round" stroke="#000" cy="1020" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" cx="72" stroke-linecap="round" stroke="#000" cy="1024" r="1" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1021.5023" x="4.377346" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="4.377346" y="1021.5023">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1025.4827" x="73.758972" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="73.758972" y="1025.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+   <circle cx="68" cy="1024" r="1"/>
+   <rect stroke-linejoin="round" height="6" width="12" stroke="#000" stroke-linecap="round" y="1037" x="44" fill="#fff"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g stroke-linecap="round">
+    <path d="m4 1044h8"/>
+    <path d="m5 1046h6"/>
+    <path d="m6 1048h4"/>
+   </g>
+   <path stroke-linejoin="round" d="m36 1028h-4v12"/>
+  </g>
+  <g>
+   <circle cx="32" cy="1040" r="1"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.4827" x="17.585476" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="17.585476" y="1041.4827">R<tspan style="baseline-shift:sub" font-size="65%">d</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1041.5022" x="47.835728" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1041.5022" x="47.835728">R<tspan style="baseline-shift:sub" font-size="65%">f</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="24" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 24">
+ <g transform="translate(0 -1028)">
+  <path stroke-linejoin="round" d="m8 1032v12h32" stroke="#404040" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1036.0022" x="3.3425" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="3.3425" y="1036.0022">I</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1046.0022" x="40.712502" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="40.712502" y="1046.0022">V</tspan></text>
+  <path d="m36 1044v1" stroke="#404040" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1049.9572" x="32.892147" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="32.892147" y="1049.9572">0.7</tspan></text>
+  <g stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="1px">
+   <path d="m39 1043 1 1-1 1" stroke="#404040"/>
+   <path d="m7 1033 1-1 1 1" stroke="#404040"/>
+   <path d="m4 1044h32v-12" stroke="#000"/>
+  </g>
+ </g>
+</svg>

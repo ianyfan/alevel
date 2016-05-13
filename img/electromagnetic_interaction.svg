@@ -1,0 +1,32 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="32" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 32 64.000001">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.36)">
+  <path d="m8 1024.4c2-1 2-3 4-2s4 0 4-2 2-3 4-2 2-1 4-2" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.0946" x="6.5275002" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="6.5275002" y="1041.0946">p</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m4 1048.4 2-12 2-12" marker-mid="url(#d)"/>
+   <path d="m24 1016.4 2-12 2-12" marker-mid="url(#b)"/>
+   <path d="m8 1024.4-2-16-2-16" marker-mid="url(#c)"/>
+   <path d="m28 1048.4-2-16-2-16" marker-mid="url(#a)"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1037.0946" x="22.5275" xml:space="preserve"><tspan y="1037.0946" x="22.5275">p</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1001.0947" x="22.5275"><tspan x="22.5275" y="1001.0947">p</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1005.0947" x="6.5275002" xml:space="preserve"><tspan y="1005.0947" x="6.5275002">p</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1017.1597" x="14.825"><tspan x="14.825" y="1017.1597">γ</tspan></text>
+  </g>
+ </g>
+</svg>

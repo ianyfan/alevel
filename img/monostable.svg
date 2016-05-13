@@ -1,0 +1,38 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="36" width="76" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 76 36">
+ <g transform="translate(0,-92)">
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m34 120v-16"/>
+   <path d="m30 104h8"/>
+   <path d="m42 102h-4v4h4"/>
+   <path d="m26 104h2"/>
+   <path d="m58 104v-8h-48v6h4"/>
+   <path d="m14 106h-4"/>
+   <path d="m30 120h8"/>
+   <path d="m31 122h6"/>
+   <path d="m32 124h4"/>
+   <path d="m54 104h8"/>
+  </g>
+  <circle stroke-linejoin="round" cx="10" stroke-linecap="round" stroke="#000" cy="106" r="1" fill="#fff"/>
+  <circle stroke-linejoin="round" cx="62" stroke-linecap="round" stroke="#000" cy="104" r="1" fill="#fff"/>
+  <g>
+   <circle cx="34" cy="104" r="1"/>
+   <circle cx="38" cy="104" r="1"/>
+   <circle cy="104" cx="58" r="1"/>
+  </g>
+ </g>
+ <g stroke-linejoin="round" stroke="#000" transform="translate(0 -1016)">
+  <rect height="8" width="4" stroke-linecap="round" y="1032" x="32" fill="#fff"/>
+  <path d="m30 1024v8" stroke-width="1px" fill="none"/>
+  <path d="m28 1024v8" stroke-width="1px" fill="none"/>
+  <g stroke-linecap="round" fill="#fff">
+   <path d="m42 1032h4c8 0 8-8 0-8h-4z" fill-rule="evenodd" stroke-width="1px"/>
+   <circle cx="53" cy="1028" r="1"/>
+   <path d="m14 1032h4c8 0 8-8 0-8h-4z" fill-rule="evenodd" stroke-width="1px"/>
+   <circle cx="25" cy="1028" r="1"/>
+  </g>
+ </g>
+ <g transform="translate(0,-92)" font-family="sans-serif" fill="#000000">
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="40px" y="107.14" x="2" line-height="125%"><tspan font-size="5px" y="107.14" x="2" font-family="&apos;Source Sans Pro&apos;">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="5px" y="105.2995" x="69.976501" line-height="125%"><tspan x="69.976501" y="105.2995">V<tspan style="baseline-shift:sub;text-anchor:middle;text-align:center" font-size="65%">OUT</tspan></tspan></text>
+ </g>
+</svg>

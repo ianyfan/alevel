@@ -1,0 +1,32 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="36" width="56" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 56.000001 36">
+ <g transform="translate(0 -1016)">
+  <g stroke="#000">
+   <g stroke-width="1px">
+    <path stroke-linejoin="round" d="m8 1039v-19h40v16" fill="none"/>
+    <path d="m8 1036h44" fill="none"/>
+    <path stroke-linejoin="round" d="m16 1024 28 12-28 12z" fill-rule="evenodd" fill="#fff"/>
+   </g>
+   <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="m18 1040h6l4-8" stroke-width="1px" fill="none"/>
+    <circle cx="45" cy="1036" r="1" fill="#fff"/>
+    <path d="m20 1040 4-8h6" stroke-width="1px" fill="none"/>
+   </g>
+  </g>
+  <circle cx="48" cy="1036" r="1"/>
+  <circle cx="8" cy="1036" r="1"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g>
+    <path d="m4 1039h8"/>
+    <path d="m4 1041h8"/>
+    <path d="m8 1041v3"/>
+   </g>
+   <g stroke-linecap="round">
+    <path d="m4 1044h8"/>
+    <path d="m5 1046h6"/>
+    <path d="m6 1048h4"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="4" width="8" stroke="#000" stroke-linecap="round" y="1018" x="24" fill="#fff"/>
+  <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1036" cx="52" r="1" fill="#fff"/>
+ </g>
+</svg>

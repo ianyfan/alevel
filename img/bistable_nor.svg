@@ -1,0 +1,34 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="52" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 52.000001 48">
+ <g transform="translate(0 -1004)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g stroke-linecap="square">
+    <path stroke-linejoin="round" d="m14 1020h-6v4l32 12v4"/>
+    <path stroke-linejoin="round" d="m40 1016v4l-32 12v4h6"/>
+    <path d="m14 1012h-6"/>
+    <path d="m14 1044h-6"/>
+   </g>
+   <path d="m34 1040h10"/>
+   <path d="m34 1016h10"/>
+  </g>
+  <circle cx="40" cy="1016" r="1"/>
+  <circle cy="1040" cx="40" r="1"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="44" cy="1016" r="1"/>
+   <circle cx="44" cy="1040" r="1"/>
+   <circle cx="8" cy="1012" r="1"/>
+   <circle cy="1044" cx="8" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1014.002" x="2.6575003"><tspan x="2.6575003" y="1014.002">S</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1046.0022" x="2.415"><tspan x="2.415" y="1046.0022">R</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1041.6196" x="46.302502"><tspan x="46.302502" y="1041.6196">Q</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1017.6196" x="46.302502"><tspan x="46.302502" y="1017.6196">Q</tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000">
+   <path d="m12 1008c4 4 4 12 0 16 16 0 20-8 20-8s-4-8-20-8z" stroke-width="1px" fill="none"/>
+   <circle cx="33" stroke-linecap="round" cy="1016" r="1" fill="#fff"/>
+   <path d="m12 1032c4 4 4 12 0 16 16 0 20-8 20-8s-4-8-20-8z" stroke-width="1px" fill="none"/>
+   <circle stroke-linecap="round" cy="1040" cx="33" r="1" fill="#fff"/>
+  </g>
+ </g>
+</svg>

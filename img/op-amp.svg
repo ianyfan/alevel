@@ -1,0 +1,19 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="24" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 24">
+ <g transform="translate(0 -1028)">
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1032.4827" x="9.7589731" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="9.7589731" y="1032.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1045.6711" x="34.447807" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="34.447807" y="1045.6711">V<tspan style="baseline-shift:sub" font-size="65%">+</tspan>-V<tspan style="baseline-shift:sub" font-size="65%">-</tspan></tspan></text>
+  <g stroke-width="1px" stroke="#000" stroke-linecap="round" fill="none">
+   <path stroke-linejoin="round" d="m35 1039 1 1-1 1"/>
+   <path stroke-linejoin="round" d="m19 1033 1-1 1 1"/>
+   <g>
+    <path d="m20 1032v16"/>
+    <path d="m4 1040h32"/>
+    <path d="m19 1036h1"/>
+    <path d="m4 1044h16"/>
+    <path d="m20 1036h16"/>
+   </g>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1037.9572" x="13.447266" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="13.447266" y="1037.9572">13</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1045.9572" x="20.765898" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1045.9572" x="20.765898">-13</tspan></text>
+ </g>
+</svg>

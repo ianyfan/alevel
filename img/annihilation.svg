@@ -1,0 +1,22 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="72" width="88" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80.000001 0">
+ <g transform="translate(0 -1080)">
+  <g stroke="#000">
+   <circle stroke-linejoin="round" cx="16" stroke-linecap="round" cy="1116" r="2" stroke-miterlimit="4.286"/>
+   <circle stroke-linejoin="round" stroke-linecap="round" cy="1116" cx="72" stroke-miterlimit="4.286" r="2" fill="#fff"/>
+   <path d="m18 1116h22" stroke-width="1px" fill="none"/>
+   <path d="m48 1116h22" stroke-width="1px" fill="none"/>
+  </g>
+  <path d="m40 1114 4 2-4 2z" fill-rule="evenodd"/>
+  <path d="m48 1114-4 2 4 2z" fill-rule="evenodd"/>
+  <path d="m44 1116c-1-1-4.005-3 0-4 4-0.9989 4-3 0-4s-4-3 0-4 4-3 0-4-4-3 0-4 0-3 0-4" stroke="#000" stroke-width="1px" fill="none"/>
+  <path fill-rule="evenodd" d="m44 1088-2 4h4z"/>
+  <path d="m44 1116c1 1 4 3 0 4s-4 3 0 4 4 3 0 4-4 3 0 4 4 3 0 4 0 3 0 4" stroke="#000" stroke-width="1px" fill="none"/>
+  <path d="m44 1144 2-4h-4z" fill-rule="evenodd"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1086.1122" x="36.337734"><tspan x="36.337734" y="1086.1122">Photon</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1125.6296" x="59.939297"><tspan x="59.939297" y="1125.6296">Antiparticle</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1150.1122" x="36.337734"><tspan x="36.337734" y="1150.1122">Photon</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1126.1122" x="7.9551954"><tspan x="7.9551954" y="1126.1122">Particle</tspan></text>
+  </g>
+ </g>
+</svg>

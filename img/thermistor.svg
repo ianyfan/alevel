@@ -1,0 +1,12 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="24" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 24">
+ <g transform="translate(0 -1028)">
+  <path stroke-linejoin="round" d="m8 1032v16h32" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1034.0022" x="2.415" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="2.415" y="1034.0022">R</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.0022" x="40.66" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="40.66" y="1050.0022">T</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" d="m39 1047 1 1-1 1" stroke-linecap="round"/>
+   <path stroke-linejoin="round" d="m7 1033 1-1 1 1" stroke-linecap="round"/>
+   <path d="m8 1036c8 6 32 8 32 8"/>
+  </g>
+ </g>
+</svg>

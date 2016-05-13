@@ -1,0 +1,51 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44" width="56" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 56 44">
+ <g transform="translate(0 -1008)">
+  <g stroke="#000" fill="none">
+   <path d="m20 1012v36" stroke-width="1px"/>
+   <g stroke-linejoin="round" stroke-linecap="round">
+    <g stroke-width="1px">
+     <path d="m30 1018v10h-15"/>
+     <path d="m32 1028v-2"/>
+     <path d="m32 1024v-2"/>
+     <path d="m32 1020v-2"/>
+     <path d="m32 1027h4v-4h-3l1-1v2l-1-1"/>
+     <path d="m32 1019h4v-7h-28"/>
+    </g>
+    <ellipse rx="7" ry="7" cy="1023" cx="33"/>
+    <path d="m36 1027v21h-28" stroke-width="1px"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="8" width="4" stroke="#000" stroke-linecap="round" y="1016" x="18" fill="#fff"/>
+  <rect stroke-linejoin="round" height="8" width="4" stroke="#000" stroke-linecap="round" y="1036" x="18" fill="#fff"/>
+  <g>
+   <circle cx="20" cy="1028" r="1"/>
+   <circle cx="20" cy="1012" r="1"/>
+   <circle cx="20" cy="1048" r="1"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m13 1024v8"/>
+   <path d="m15 1024v8"/>
+   <path d="m13 1028h-5"/>
+  </g>
+  <g stroke="#000">
+   <circle stroke-linejoin="round" cx="8" stroke-linecap="round" cy="1028" r="1" fill="#fff"/>
+   <path d="m36 1032h5" stroke-width="1px" fill="none"/>
+   <path d="m43 1032h5" stroke-width="1px" fill="none"/>
+   <circle stroke-linejoin="round" cx="48" stroke-linecap="round" cy="1032" r="1" fill="#fff"/>
+   <path d="m41 1028v8" stroke-width="1px" fill="none"/>
+   <path d="m43 1028v8" stroke-width="1px" fill="none"/>
+  </g>
+  <circle cx="36" cy="1032" r="1"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <rect height="8" width="4" y="1036" x="34"/>
+   <circle cy="1012" cx="8" r="1"/>
+   <circle cx="8" cy="1048" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1014.5022" x="0.79468155"><tspan x="0.79468155" y="1014.5022">V<tspan style="baseline-shift:sub" font-size="65%">DD</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1049.4827" x="0.062324524" xml:space="preserve"><tspan y="1049.4827" x="0.062324524">V<tspan style="baseline-shift:sub" font-size="65%">SS</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.5022" x="0.37734604"><tspan x="0.37734604" y="1029.5022">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1037.4827" x="46.758972" xml:space="preserve"><tspan y="1037.4827" x="46.758972">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

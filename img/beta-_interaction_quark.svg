@@ -1,0 +1,56 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="56" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 56 64.000001">
+ <defs>
+  <marker id="c" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#404040" stroke-width="1pt" fill="#404040"/>
+  </marker>
+  <marker id="d" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#404040" stroke-width="1pt" fill="#404040"/>
+  </marker>
+  <marker id="e" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#404040" stroke-width="1pt" fill="#404040"/>
+  </marker>
+  <marker id="f" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#404040" stroke-width="1pt" fill="#404040"/>
+  </marker>
+  <marker id="a" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="h" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.4)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m16 1024c2-1 2-3 4-2s4 0 4-2 2-3 4-2 2-1 4-2"/>
+   <path d="m12 1048 2-12 2-12" marker-mid="url(#h)"/>
+   <path d="m32 1016 2-12 2-12" marker-mid="url(#b)"/>
+   <path d="m16 1024-2-16-2-16" marker-mid="url(#g)"/>
+   <path d="m32 1016 10-5 12-6" marker-mid="url(#a)"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" line-height="125%" y="1009.6071" x="40.849998" xml:space="preserve"><tspan y="1009.6071" x="40.849998">ν</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1001.7246" x="29.950993"><tspan x="29.950993" y="1001.7246">β<tspan style="baseline-shift:super" font-size="65%">-</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1017.002" x="21.539234"><tspan x="21.539234" y="1017.002">W<tspan style="baseline-shift:super" font-size="65%">-</tspan></tspan></text>
+  </g>
+  <g stroke="#404040" stroke-width=".5" fill="none">
+   <path d="m8 1048 2-12 2-12" marker-mid="url(#f)"/>
+   <path d="m12 1024-2-16l-2-15.6" marker-mid="url(#d)"/>
+   <path d="m4 1048 2-12 2-12" marker-mid="url(#c)"/>
+   <path d="m8 1024-2-16-2-16" marker-mid="url(#e)"/>
+   <path d="m11 1016 1 8-1 6" marker-mid=""/>
+   <path d="m7 1016 1 8-1 6" marker-mid=""/>
+  </g>
+  <g font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.6072" x="14.6175"><tspan x="14.6175" y="1041.6072">n</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1005.0947" x="14.5275"><tspan x="14.5275" y="1005.0947">p</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="3.75px" line-height="125%" y="1051.6747" x="3.4165919"><tspan x="3.4165919" y="1051.6747">u  d  d</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="3.75px" line-height="125%" y="991.67468" x="3.4372168" xml:space="preserve"><tspan y="991.67468" x="3.4372168">u  d  u</tspan></text>
+  </g>
+ </g>
+</svg>

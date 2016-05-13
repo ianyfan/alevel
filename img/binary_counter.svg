@@ -1,0 +1,65 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44" width="104" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 104 44.000001">
+ <g transform="translate(0 -1008)">
+  <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1070.0022" x="22.415001" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1070.0022" x="22.415001"/></text>
+  <rect stroke-linejoin="round" height="24" width="16" stroke="#000" stroke-linecap="square" y="1024" x="8" fill="#fff"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1029.6199" x="18.302498" xml:space="preserve"><tspan y="1029.6199" x="18.302498">Q</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" line-height="125%" y="1045.6198" x="18.3025" xml:space="preserve"><tspan y="1045.6198" x="18.3025">Q</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1030.0022" x="10.365002" xml:space="preserve"><tspan y="1030.0022" x="10.365002">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1042.0022" x="30.580002" xml:space="preserve"><tspan y="1042.0022" x="30.580002"/></text>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <g stroke-linejoin="round">
+    <path d="m8 1043 2 1-2 1"/>
+    <path d="m28 1044v-24h-24v8h4"/>
+    <path d="m24 1028h8v-12"/>
+   </g>
+   <path d="m8 1044h-4"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" fill="#fff">
+   <circle cx="4" stroke-linecap="round" cy="1044" r="1"/>
+   <circle stroke-linecap="round" cy="1016" cx="32" r="1"/>
+   <rect height="24" width="16" stroke-linecap="square" y="1024" x="40"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.6199" x="50.302498"><tspan x="50.302498" y="1029.6199">Q</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1045.6198" x="50.302498"><tspan x="50.302498" y="1045.6198">Q</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1030.0022" x="42.365002"><tspan x="42.365002" y="1030.0022">D</tspan></text>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <g stroke-linejoin="round">
+    <path d="m40 1043 2 1-2 1"/>
+    <path d="m60 1044v-24h-24v8h4"/>
+    <path d="m56 1028h8v-12"/>
+   </g>
+   <path d="m40 1044h-16"/>
+  </g>
+  <g>
+   <circle stroke-linejoin="round" cx="64" stroke-linecap="round" stroke="#000" cy="1016" r="1" fill="#fff"/>
+   <circle cx="28" cy="1044" r="1"/>
+   <rect stroke-linejoin="round" height="24" width="16" stroke="#000" stroke-linecap="square" y="1024" x="72" fill="#fff"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.6199" x="82.302498"><tspan x="82.302498" y="1029.6199">Q</tspan></text>
+   <text style="letter-spacing:0px;text-decoration:overline;word-spacing:0px;text-decoration-line:overline" xml:space="preserve" line-height="125%" y="1045.6198" x="82.302498"><tspan x="82.302498" y="1045.6198">Q</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1030.0022" x="74.365005"><tspan x="74.365005" y="1030.0022">D</tspan></text>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <g stroke-linejoin="round">
+    <path d="m72 1043 2 1-2 1"/>
+    <path d="m92 1044v-24h-24v8h4"/>
+    <path d="m88 1028h8v-12"/>
+   </g>
+   <path d="m72 1044h-16"/>
+  </g>
+  <circle stroke-linejoin="round" cx="96" stroke-linecap="round" stroke="#000" cy="1016" r="1" fill="#fff"/>
+  <circle cy="1044" cx="60" r="1"/>
+  <path d="m88 1044h16" stroke="#000" stroke-width="1px" fill="none"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.6177" x="27.274824"><tspan x="27.274824" y="1013.6177">Q<tspan style="baseline-shift:sub" font-size="65%">0</tspan>/A</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.6372" x="59.159668"><tspan x="59.159668" y="1013.6372">Q<tspan style="baseline-shift:sub" font-size="65%">1</tspan>/B</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.6372" x="91.206581"><tspan x="91.206581" y="1013.6372">Q<tspan style="baseline-shift:sub" font-size="65%">2</tspan>/C</tspan></text>
+  </g>
+  <circle cx="92" cy="1044" r="1"/>
+ </g>
+</svg>

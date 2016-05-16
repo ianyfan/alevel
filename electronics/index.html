@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="/alevel/style.css" rel="stylesheet">
     <script src="/alevel/script.js" async></script>
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({
-            extensions: ["[Contrib]/siunitx/siunitx.js"]
+            jax: ["input/TeX", "output/NativeMML"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
+            extensions: ["tex2jax.js","[Contrib]/siunitx/siunitx.js"]
         });
     </script>
-    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>
     <title>Electronics</title>
   </head>
   <body>
@@ -364,20 +367,18 @@
             <td>
 <p>The concepts of conductors and insulators in terms of the mobility of charge</p>
             </td>
-            <td>
-            </td>
+            <td><p>Conductors allow the flow of charge through them, whereas insulators do not</p></td>
           <tr>
             <td>
 <p>Voltage as a measure of the energy per charge at a point in a circuit</p>
             </td>
-            <td>
-            </td>
+            <td><p>\(\SI{1}{\volt} = \SI{1}{\joule\per\coulomb}\)</p></td>
           <tr>
             <td>
 <p>Current as the rate of transfer of charge past a point in a circuit</p>
             </td>
-            <td>
-            </td>
+            <td><p>\(I = \frac{\mathrm dQ}{\mathrm dt}\)<br>
+\(\SI{1}{\ampere} = \SI{1}{\coulomb\per\second}\)</p></td>
           <tr>
             <td>
 <p>Need for a power supply to maintain a current in a circuit</p>
@@ -388,14 +389,14 @@
             <td>
 <p>The conversion of energy from electrical to other forms as charge moves round a circuit</p>
             </td>
-            <td>
-            </td>
+            <td><p>Due to the law of the conservation of energy<br>
+Energy is always lost in heat, except in superconductors</p></td>
           <tr>
             <td>
 <p>The behaviour of currents at a junction</p>
             </td>
-            <td>
-            </td>
+            <td><p>The sum of the currents flowing into a junction is equal to the sum of the currents flowing out from the junction<br>
+Or: the algebraic sum of the currents at a junction is zero</p></td>
           <tr>
             <td>
 <p>The voltage across a series circuit is the sum of the voltage across the components</p>
@@ -425,8 +426,10 @@
             <td>
 <p>Recall how to use switches and pull-up or pull-down resistors in series with a power supply to generate digital signals</p>
             </td>
-            <td><p>Switch with a pull-up resistor: !\(\)() generates a high signal when the switch is open and a low signal when the switch is closed<br>
-Switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed</p></td>
+            <td><p><img alt="" src="/alevel/img/pull-up_switch.svg"><br>
+A switch with a pull-up resistor generates a high signal when the switch is open and a low signal when the switch is closed<br>
+<img alt="" src="/alevel/img/pull-down_switch.svg"><br>
+A switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed</p></td>
           <tr>
             <td>
 <p>Recall that, unless otherwise stated, logic 1 (high) is a signal at \(\SI{+5}{\volt}\) and logic 0 (low) is a signal at \(\SI{0}{\volt}\)</p>
@@ -452,8 +455,8 @@ Switch with a pull-down resistor generates a low signal when the switch is open 
             <td>
 <p>Recall how to use multimeters as voltmeters, ammeters and ohmmeters to measure voltage, current and resistance in a circuit</p>
             </td>
-            <td>
-            </td>
+            <td><p>Voltmeters are wired in parallel with the component<br>
+Ammeters are wired in series with the component</p></td>
           <tr>
             <td>
 <p>Understand the use of the prefixes G, M, k, m, μ, n and p when calculating values of quantities</p>
@@ -2527,5 +2530,7 @@ Crystal oscillators are used since each end of transmission must use the same ti
     </section>
     <footer>
     </footer>
+    <div id="shadow"></div>
+    <button></button>
   </body>
 </html>

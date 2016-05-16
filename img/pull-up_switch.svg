@@ -1,0 +1,25 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="56" width="36" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 36 56.000001">
+ <g transform="translate(0 -996.4)">
+  <g stroke="#000">
+   <g stroke-linejoin="round">
+    <path d="m12 1048h8v-4l-9-12" stroke-linecap="round" stroke-miterlimit="4.1" fill="none"/>
+    <path d="m20 1028v-28h-8" stroke-width="1px" fill="none"/>
+    <circle cx="12" stroke-linecap="round" cy="1e3" r="1" stroke-miterlimit="4.1" fill="#fff"/>
+    <circle cx="12" stroke-linecap="round" cy="1048" r="1" stroke-miterlimit="4.1" fill="#fff"/>
+   </g>
+   <path d="m20 1024h4" stroke-width="1px" fill="none"/>
+  </g>
+  <circle cx="20" cy="1024" r="1"/>
+  <circle stroke-linejoin="round" cx="24" stroke-linecap="round" stroke="#000" cy="1024" r="1" stroke-miterlimit="4.1" fill="#fff"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1025.4827" x="26.758972"><tspan x="26.758972" y="1025.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1001.9722" x="2.9117188"><tspan x="2.9117188" y="1001.9722">5 V</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.9722" x="2.8642187"><tspan x="2.8642187" y="1049.9722">0 V</tspan></text>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cy="1028" cx="20" stroke-miterlimit="4.1" r="1"/>
+   <circle cy="1044" cx="20" stroke-miterlimit="4.1" r="1"/>
+   <rect height="16" width="8" y="1004" x="16"/>
+  </g>
+ </g>
+</svg>

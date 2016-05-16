@@ -119,10 +119,14 @@
 
 1.2.3
 1 A line spectrum is the pattern of light unique to an element that shows the various energies of light emitted when the electrons de-excite
+\ An emission spectrum can be produced by directing the light produced from an excited gas through a prism or diffraction grating
+\ An absorption spectrum can be produced by shining white light through a gas and directing the resulting light through a prism or diffraction grating, producing the inverse of an emission spectrum
+\ The energy of the photon that is emitted when an electron de-excites is equal to the difference in energy of the levels
+\ Fluorescence occurs when certain materials absorb ultraviolet light because an electron absorbs a photon, exciting it up multiple energy levels, before cascading down more than one energy level, releasing photons with lower energy than the incoming photon, which can put the frequency in the visible spectrum
 
 1.2.4
 1 And therefore the wave-particle duality
-2 de Broglie wavelength generalises the particle-wave duality of photons to all particles of matter
+2 The de Broglie hypothesis generalises the particle-wave duality of photons to all particles of matter
 
 1.3.1
 1 \\(I = \frac{\mathrm{d}Q}{\mathrm{d}t}\\)
@@ -135,9 +139,13 @@
 
 1.3.3
 1 \\(R\\) is the resistance, \\(A\\) is the cross-sectional area, \\(L\\) is the length
+\ This assumes a resistor/conductor with a uniform cross section, flow of current and material, such as a length of wire
 2 The resistance of a metal conductor increases with temperature
 \ The resistance of a thermistor decreases as the temperature increases
 \ The change of resistance means that a thermister can be used to make a temperature sensor
+3 This means that a current passes without losing energy so there is no waste to heating
+\ Electromagnets made from superconductors are much more powerful and cheaper than conventional electromagnets since there is no heat dissipation
+\ Superconductors can be used in power cables to transfer electrical energy with perfect efficiency
 
 1.3.4
 1 Resistors in series increase the resistance
@@ -145,6 +153,7 @@
 4 Current does not change in a series circuit
 \ The voltage across the branches of a parallel circuit is the same
 5 The voltage across branches of parallel circuits are the same, but the currents aren't necessarily
+\ The sum of the currents in branches of parallel circuits is equal to the current in the incoming branch
 
 1.3.5
 1 A potential divider provides part of the supply voltage that is defined by the resistors used according to the equation \\(R = \frac{R_1}{R_1 + R_2}\\)
@@ -152,15 +161,18 @@
 
 1.3.6
 1 \\(r\\) is the internal resistance of the e.m.f. source
+\ For a fixed-voltage power supply, the internal resistance limits the possible current provided
+2 Since the voltage is low and the current must be high, the internal resistance has to be very low
 
 1.3.7
 1 The root mean square of an alternating current gives the value of the direct current that would provide the same amount of power
 \ The peak current is the maximum current provided
-\ The peak-to-peak value is the difference between the peak current and the negative peak current
+\ The peak-to-peak value is the difference between the peak current and the peak negative current
 2 The mains electricity is an alternating current with a root mean square voltage of 230 V (±10 %) and frequency of 50 Hz
 
 1.3.8
 1 Oscilloscopes display a beam that measures time on the x-axis and voltage on the y-axis
+\ The peak-to-peak voltage of an ac signal can be determined by setting the timebase to zero and measuring the height of the produced line
 
 2.1.1
 1 In a calculation, vectors can be represented by a column of values that shows its effect in each dimension, with its addition calculated by adding the corresponding values in each dimension
@@ -175,6 +187,7 @@
 2 A couple is a pair of equal and opposite forces that do not act on the same line, thereby producing torque
 3 The principle of moments is that for a system in equilibrium, the sum of the clockwise moments are equal to the sum of the anticlockwise moments
 4 The centre of mass of a body is the point at which a force does not produce torque
+\ A body is stable if its centre of mass is above its base
 
 2.1.3
 1 Velocity is speed with respect to a specified direction
@@ -186,10 +199,10 @@
 4 Terminal speed is the speed of freefall at which the acceleration due to gravity is equal to the decceleration due to air resistance
 
 2.1.4
-1 The acceleration due to gravity only affects the vertical speed of a projectile, not the horizontal speed
+1 The acceleration due to gravity only affects the vertical velocity of a projectile, not the horizontal
 
 2.1.5
-1 First law: A body at equilibrium either remains at rest of continues to move at a constant velocity
+1 First law: A body at equilibrium either remains at rest or continues to move at a constant velocity
 \ Second law: The force on a body is equal to the product of its mass and acceleration
 \ Third law: A body exerting a force on another body experiences an equal and opposite force from the ther body
 
@@ -257,6 +270,7 @@
 \ Coherence is the property of two waves that have the same frequency and constant phase difference
 2 Non-laser light must be passed through a single slit to make it coherent
 \ Lasers can damage the retina if looked at directly
+4 Two sources must be coherent; the phase difference affects the offset of the fringes
 5 \\(w\\) is the fringe spacing, \\(\lambda\\) is the wavelength of the light and \\(D\\) is the distance from the slits to the surface where the fringes are produced
 
 2.3.6
@@ -266,7 +280,7 @@
 3 By comparing two adjacent slits, the results of interference at different angles of diffraction can be determined by considering the extra distance travelled from the farther slit: if the light travels an extra integer number of wavelengths, then they are at the same point of the cycle, causing the waves to constructively interfere
 \ Since the extra distance travelled is \\(d\sin\theta\\) where \\(d\\) is the slit separation and \\(\theta\\) is the angle of diffraction, with the wavelength \\(\lambda\\), this gives rise to the equation \\(d\sin\theta = n\lambda\\), where \\(n\\) is an integer, the order number
 \ The maximum order number can be found by considering that the angle cannot be greater than 90°: \\(n < \frac{d}{\lambda}\\)
-4 
+4 Directing the light from stars through a diffraction grating causes the different wavelengths present in the light to diffract at different angles, forming a spectrum that can be used for spectral analysis
 
 4.1.1
 1 Constant mass gives \\(F = m\frac{\Delta v}{\Delta t} = ma\\), Newton's second law

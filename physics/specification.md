@@ -50,7 +50,8 @@
 2 Ionisation and excitation; understanding of ionisation and excitation in the fluorescent tube
 
 1.2.3
-1 Line spectra (e.g. of atomic hydrogen) as evidence of transitions between discrete energy levels in atoms; \\(hf = E_1 - E_2\\)
+1 Line spectra (e.g. of atomic hydrogen) as evidence of transitions between discrete energy levels in atoms
+\ \\(hf = E_1 - E_2\\)
 
 1.2.4
 1 Candidates should know that electron diffraction suggests the wave nature of particles and the photoelectric effect suggests the particle nature of electromagnetic waves
@@ -129,7 +130,8 @@
 \ Terminal speed
 
 2.1.4
-1 Independence of vertical and horizontal motion; problems will be solvable from first principles
+1 Independence of vertical and horizontal motion
+\ Problems will be solvable from first principles
 \ The memorising of projectile equations is not required
 
 2.1.5
@@ -187,7 +189,8 @@
 
 2.3.6
 1 Appearance of the diffraction pattern from a single slit
-2 The plane transmission diffraction grating at normal incidence; optical details of the spectrometer will not be required
+2 The plane transmission diffraction grating at normal incidence
+\ Optical details of the spectrometer will not be required
 3 Derivation of \\(d\sin\theta = n\lambda\\) where \\(n\\) is the order number
 4 Applications; e.g. to spectral analysis of light from stars
 

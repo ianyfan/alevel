@@ -1,9 +1,23 @@
+0
+1 Conductors allow the flow of charge through them, whereas insulators do not
+2 \\(\SI{1}{\volt} = \SI{1}{\joule\per\coulomb}\\)
+3 \\(I = \frac{\mathrm dQ}{\mathrm dt}\\)
+\ \\(\SI{1}{\ampere} = \SI{1}{\coulomb\per\second}\\)
+5 Due to the law of the conservation of energy
+\ Energy is always lost in heat, except in superconductors
+6 The sum of the currents flowing into a junction is equal to the sum of the currents flowing out from the junction
+\ Or: the algebraic sum of the currents at a junction is zero
+
 1.1.1
-1 Switch with a pull-up resistor: !\\(\\)() generates a high signal when the switch is open and a low signal when the switch is closed
-\ Switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed
+1 ![](/alevel/img/pull-up_switch.svg)
+\ A switch with a pull-up resistor generates a high signal when the switch is open and a low signal when the switch is closed
+\ ![](/alevel/img/pull-down_switch.svg)
+\ A switch with a pull-down resistor generates a low signal when the switch is open and a low signal when the switch is closed
 3 \\(V = IR\\)
 4 \\(W = Pt\\) where \\(W\\) is the work done
 5 In practice, components may be able to tolerate a little above the maximum ratings, but the limits should still be observed
+6 Voltmeters are wired in parallel with the component
+\ Ammeters are wired in series with the component
 7 | Prefix |   Magnitude    |  Name  |
 \ |:------:|:--------------:|:------:|
 \ |   G    |   \\(10^9\\)   |  Giga- |

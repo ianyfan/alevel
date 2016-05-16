@@ -110,15 +110,18 @@ for subject in subjects:
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="/alevel/style.css" rel="stylesheet">
     <script src="/alevel/script.js" async></script>
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({{
-            extensions: ["[Contrib]/siunitx/siunitx.js"]
+            jax: ["input/TeX", "output/NativeMML"],
+            TeX: {{ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] }},
+            extensions: ["tex2jax.js","[Contrib]/siunitx/siunitx.js"]
         }});
     </script>
-    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML" async></script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>
     <title>{}</title>
   </head>
   <body>
@@ -133,6 +136,8 @@ for subject in subjects:
     </section>
     <footer>
     </footer>
+    <div id="shadow"></div>
+    <button></button>
   </body>
 </html>'''.format(
     subject.capitalize(), subject,

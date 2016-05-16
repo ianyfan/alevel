@@ -1,6 +1,9 @@
+/* General */
+
 body {
-  background: #fff;
   margin: 0;
+
+  background: #fff;
 }
 
 a {
@@ -11,47 +14,70 @@ p {
   margin: 0;
 }
 
+/* Nav */
+
 nav {
   position: fixed;
-  width: 25%;
+  left: -90%;
+  z-index: 1;
+
   height: 100vh;
-  border-right: 1px solid #000;
+  width: 90%;
+  max-width: 360px;
+
+  background: #444;
 }
 
 nav a {
   display: block;
-  padding: 1% 2%;
+
+  color: #fff;
+
   transition: background .3s;
 }
 
 nav a:hover {
-  background: #eee;
+  background: #666;
 }
 
 nav a:active {
-  background: #ddd;
+  background: #888;
 }
 
 nav > ul {
+  margin: 0;
   padding: 0;
+
   text-align: center;
 }
 
 nav > ul > li {
+  float: left;
+
   display: inline-block;
-  width: 49%;
+  height: 3em;
+  width: 50%;
+
+  line-height: 3em;
+}
+
+nav ol {
+  padding-left: 1em;
+
+  list-style: none;
+}
+
+nav ol a {
+  padding: 2%;
 }
 
 nav > ol {
   position: absolute;
   top: 2em;
   bottom: 0;
-  overflow-y: auto;
-}
+  padding-left: 0;
 
-nav ol {
-  padding-left: 1em;
-  list-style: none;
+  overflow-y: auto;
 }
 
 .electronics > #physics,
@@ -59,26 +85,33 @@ nav ol {
   display: none;
 }
 
+/* Main body */
+
 section {
-  margin-left: 25%;
   padding: 1%;
 }
 
 table {
   width: 100%;
   margin: 16px 0;
-  table-layout: fixed;
-  border-collapse: collapse;
   box-shadow: 0 0 8px #888;
+
+  border-collapse: collapse;
+}
+
+section > table {
+  table-layout: fixed;
 }
 
 th {
   background: #eee;
+
   font-weight: normal;
 }
 
 tr {
   border-top: 1px solid #eee;
+
   transition: background .3s;
 }
 
@@ -90,9 +123,56 @@ td, th {
   padding: .5% 1%;
 }
 
+td {
+  width: 0;
+
+  overflow: hidden;
+}
+
 img {
   display: block;
-  min-width: 75%;
-  max-width: 100%;
+  width: 50%;
   margin: 0 auto;
+}
+
+.viewing {
+  position: fixed;
+  left: 25%;
+  top: 50%;
+  z-index: 1;
+
+  max-height: 100%;
+
+  background: #eee;
+
+  transform: translateY(-50%);
+}
+
+/* Helpers */
+
+#shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+
+  background: #000;
+
+  pointer-events: none;
+}
+
+button {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  height: 3em;
+  width: 3em;
+  opacity: .5;
+
+  font-size: 1em;
 }

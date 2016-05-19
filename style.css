@@ -1,9 +1,13 @@
 /* General */
 
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 body {
   margin: 0;
 
   background: #fff;
+
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -175,4 +179,32 @@ button {
   opacity: .5;
 
   font-size: 1em;
+}
+
+/* Landing page */
+
+body > a {
+  display: block;
+  height: 44vh;
+  width: 92%;
+  margin: 4vh auto;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px #888;
+
+  background: #eee;
+  color: #000;
+
+  font-size: 2em;
+  line-height: 44vh;
+  text-align: center;
+
+  transition: background .3s;
+}
+
+body > a:hover {
+  background: #ddd;
+}
+
+body > a:active {
+  background: #ccc;
 }

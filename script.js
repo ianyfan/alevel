@@ -63,12 +63,14 @@
             } else {
                 var velocity = thisTouch.clientX - lastTouch.clientX;
                 var x = nav.offsetLeft/window.innerWidth;
-                if (x < -.5) {
-                    navState.open = velocity > 1;
-                } else if (x > -.4) {
-                    navState.open = velocity > -1;
-                } else if (thisTouch.clientX != lastTouch.clientX) {
-                    navState.open = velocity > 0;
+                if (Math.abs(thisTouch.clientX - firstTouch.clientX) > 10) {
+                    if (x < -.5) {
+                        navState.open = velocity > 1;
+                    } else if (x > -.4) {
+                        navState.open = velocity > -1;
+                    } else if (thisTouch.clientX != lastTouch.clientX) {
+                        navState.open = velocity > 0;
+                    }
                 }
                 toggleNav();
             }
@@ -156,7 +158,16 @@
             shadow.style.opacity = '.9';
         }
         window.onclick = function(e) {
-            if (!viewingImage || e.target == img) return;
+            if (!viewingImage || e.target == img) {
+                var el = e.target;
+
+                while (el != document.body) {
+                    if (el == nav || el.tagName == 'BUTTON') return;
+                    el = el.parentNode;
+                }
+                navState.open = false;
+                toggleNav();
+            }
 
             e.stopPropagation();
             img.parentNode.removeChild(placeholder);

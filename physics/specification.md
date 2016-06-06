@@ -47,7 +47,8 @@
 
 1.2.2
 1 The electron volt
-2 Ionisation and excitation; understanding of ionisation and excitation in the fluorescent tube
+2 Ionisation and excitation
+\ Understanding of ionisation and excitation in the fluorescent tube
 
 1.2.3
 1 Line spectra (e.g. of atomic hydrogen) as evidence of transitions between discrete energy levels in atoms
@@ -79,7 +80,8 @@
 1.3.4
 1 Resistors in series; \\(R = R_1 + R_2 + R_3 + \ldots\\)
 2 Resistors in parallel; \\(\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots\\)
-3 Energy \\(E = IVt\\), \\(P = IV\\), \\(P = I^2R\\); applications, e.g. Understanding of high current requirement for a starter motor in a motor car
+3 Energy \\(E = IVt\\), \\(P = IV\\), \\(P = I^2R\\)
+\ Applications, e.g. Understanding of high current requirement for a starter motor in a motor car
 4 Conservation of charge and energy in simple dc circuits
 5 The relationships between currents, voltages and resistances in series and parallel circuits, including cells in series and identical cells in parallel
 6 Questions will not be set which require the use of simultaneous equations to calculate currents or potential differences
@@ -155,7 +157,8 @@
 3 Tensile strain and tensile stress
 4 Elastic strain energy, breaking stress
 5 Derivation of \\(\text{energy stored} = \frac{1}{2}F\Delta L\\)
-6 Description of plastic behaviour, fracture and brittleness; interpretation of simple stress-strain curves
+6 Description of plastic behaviour, fracture and brittleness
+\ Interpretation of simple stress-strain curves
 
 2.2.2
 1 \\(\text{The Young modulus} = \frac{\text{tensile stress}}{\text{tensile strain}} = \frac{FL}{A\Delta L}\\)
@@ -163,11 +166,14 @@
 3 Use of stress-strain graphs to find the Young modulus
 
 2.3.1
-1 Oscillation of the particles of the medium; amplitude, frequency, wavelength, speed, phase, path difference; \\(c = f\lambda\\)
+1 Oscillation of the particles of the medium
+\ Amplitude, frequency, wavelength, speed, phase, path difference
+\ \\(c = f\lambda\\)
 
 2.3.2
 1 Characteristics and examples, including sound and electromagnetic waves
-2 Polarisation as evidence for the nature of transverse waves; applications e.g. Polaroid sunglasses, aerial alignment for transmitter and receiver
+2 Polarisation as evidence for the nature of transverse waves
+\ Applications e.g. Polaroid sunglasses, aerial alignment for transmitter and receiver
 
 2.3.3
 1 Refractive index of a substance s, \\(n = \frac{c}{c_s}\\)
@@ -177,12 +183,15 @@
 5 Simple treatment of fibre optics including function of the cladding with lower refractive index around central core limited to step index only; application to communications
 
 2.3.4
-1 The formation of stationary waves by two waves of the same frequency travelling in opposite directions; the formula for fundamental frequency in terms of tension and mass per unit length is not required
+1 The formation of stationary waves by two waves of the same frequency travelling in opposite directions
+\ The formula for fundamental frequency in terms of tension and mass per unit length is not required
 2 Simple graphical representation of stationary waves, nodes and antinodes on strings
 
 2.3.5
 1 The concept of path difference and coherence
-2 The laser as a source of coherent monochromatic light used to demonstrate interference and diffraction; comparison with non-laser light; awareness of safety issues
+2 The laser as a source of coherent monochromatic light used to demonstrate interference and diffraction
+\ Comparison with non-laser light
+\ Awareness of safety issues
 3 Candidates will not be required to describe how a laser works
 4 Requirements of two source and single source double-slit systems for the production of fringes
 5 The appearance of the interference fringes produced by a double-slit system, fringe spacing \\(w = \frac{\lambda D}{s}\\) where s is the slit separation
@@ -291,7 +300,8 @@
 4.5.2
 1 Force on charged particles moving in a magnetic field
 2 \\(F = BQv\\), when the field is perpendicular to velocity
-3 Circular path of particles; application in devices such as the cyclotron
+3 Circular path of particles
+\ Application in devices such as the cyclotron
 
 4.5.3
 1 Magnetic flux defined by \\(\Phi = BA\\), where \\(B\\) is normal to \\(A\\)
@@ -306,7 +316,8 @@
 4 Applications such as a moving straight conductor
 5 Emf induced in a coil rotating uniformly in a magnetic field
 6 \\(E = BAN\omega\cos\omega t\\)
-7 The operation of a transformer; The transformer equation = \\(\frac{N_s}{N_p} = \frac{V_s}{V_p}\\)
+7 The operation of a transformer
+\ The transformer equation = \\(\frac{N_s}{N_p} = \frac{V_s}{V_p}\\)
 8 Transformer efficiency = \\(\frac{I_sV_s}{I_pV_p}\\)
 9 Causes of inefficiency of a transformer
 10 Transmission of electrical power at high voltage
@@ -375,7 +386,7 @@
 5.3.2
 1 Gas laws as experimental relationships between \\(p\\), \\(V\\), \\(T\\) and mass
 2 Concept of absolute zero of temperature
-3 Ideal gas equation as \\(pV = T\\) for \\(n\\) moles and as \\(pV = NkT\\) for \\(N\\) molecules
+3 Ideal gas equation as \\(pV = nRT\\) for \\(n\\) moles and as \\(pV = NkT\\) for \\(N\\) molecules
 4 Avogadro constant \\(N_A\\), molar gas constant \\(R\\), Boltzmann constant \\(k\\)
 5 Molar mass and molecular mass
 

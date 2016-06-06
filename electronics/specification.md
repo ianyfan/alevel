@@ -188,7 +188,7 @@
 4.3.2
 1 Understand the operation of proportional servo control systems in terms of the following blocks: sensor, reference, difference amplifier, voltage amplifier, ramp generator, power amplifier, transducer
 2 Understand the use of an op-amp and four identical resistors to make a difference amplifier
-3 Understand the use of an op-amp to make a ramp generator, including the use of the equation \\(ΔV_{out} = -V_{in}\frac{\Delta t}{RC}\\)
+3 Understand the use of an op-amp to make a ramp generator, including the use of the equation \\(\Delta V_{out} = -V_{in}\frac{\Delta t}{RC}\\)
 4 Understand the use of voltage-time graphs to represent the response of a proportional control system to changes of conditions
 5 Recall that proportional control systems respond relatively slowly, but allow the sensor and reference to settle at the same value
 

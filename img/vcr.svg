@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="32"
-   height="32"
-   viewBox="0 0 32 32"
+   width="40"
+   height="48"
+   viewBox="0 0 40 48"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="15.839192"
-     inkscape:cx="8.0104789"
-     inkscape:cy="17.445264"
+     inkscape:cx="15.030208"
+     inkscape:cy="25.674402"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -62,101 +62,101 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1020.3622)">
+     transform="translate(0,-1004.3622)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 4,1024.3622 20,0"
-       id="path4211"
+       d="m 20,1028.3622 8,0"
+       id="path5172"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 16,1040.3622 0,-2"
+       d="m 20,1023.3622 0,21"
+       id="path4173"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 16,1024.3622 0,-2"
        id="path4138"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 16,1036.3622 0,-2"
+       d="m 16,1020.3622 0,-2"
        id="path4140"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 16,1032.3622 0,-2"
+       d="m 16,1016.3622 0,-2"
        id="path4142"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 14,1030.3622 0,10 -10,0"
+       d="m 14,1014.3622 0,10 -6,0"
        id="path4144"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 16,1039.3622 4,0 0,-4 -3,0 1,-1 0,2 -1,-1"
+       d="m 16,1023.3622 4,0 0,-4 -3,0 1,-1 0,2 -1,-1"
        id="path4146"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 16,1031.3622 4,0 0,-7"
+       d="m 16,1015.3622 4,0 0,-7 -12,0"
        id="path4148"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccc" />
+       sodipodi:nodetypes="cccc" />
     <circle
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4150"
        cx="17"
-       cy="1035.3621"
+       cy="1019.3621"
        r="7" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4171"
-       width="8"
-       height="3.9999006"
-       x="8"
-       y="1022.3622" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       d="m 20,1039.3622 0,5"
-       id="path4173"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       width="4"
+       height="8.0000172"
+       x="18"
+       y="1032.3622" />
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4175"
-       cx="4"
-       cy="1024.3622"
+       cx="8"
+       cy="1008.3622"
        r="1" />
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4177"
-       cx="4"
-       cy="1040.3622"
+       cx="8"
+       cy="1024.3622"
        r="1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="0.82693768"
-       y="1045.5022"
+       x="1.8269377"
+       y="1025.5022"
        id="text4181"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4183"
-         x="0.82693768"
-         y="1045.5022">V<tspan
+         x="1.8269377"
+         y="1025.5022">V<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan4189">R</tspan></tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4191"
-       y="1029.5022"
-       x="0.37734556"
+       y="1009.5022"
+       x="0.37734571"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="1029.5022"
-         x="0.37734556"
+         y="1009.5022"
+         x="0.37734571"
          id="tspan4193"
          sodipodi:role="line">V<tspan
    id="tspan4195"
@@ -164,20 +164,20 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5px;line-height:125%;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="22.758972"
+       x="30.758972"
        y="1029.4827"
        id="text4203"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4205"
-         x="22.758972"
+         x="30.758972"
          y="1029.4827">V<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
    id="tspan4209">OUT</tspan></tspan></text>
     <circle
        r="1"
-       cy="1024.3622"
-       cx="24"
+       cy="1028.3622"
+       cx="28"
        id="circle4213"
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <path
@@ -199,7 +199,7 @@
        style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4240"
        cx="20"
-       cy="1024.3622"
+       cy="1028.3622"
        r="1" />
   </g>
 </svg>

@@ -1,0 +1,40 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 64">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px" stroke-linecap="round">
+    <path d="m20 1048v-6"/>
+    <path d="m20 992.4v6"/>
+    <path stroke-linejoin="round" d="m4 1e3h16l40 20"/>
+    <path stroke-linejoin="round" d="m4 1040h16l16 8"/>
+   </g>
+   <path d="m44 992.4-24 48h40" stroke-dasharray="2, 4"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1026.1422" x="22.695" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="22.695" y="1026.1422">θ</tspan></text>
+  <path stroke-linejoin="round" fill="none" stroke="#000" stroke-linecap="round" d="m20 1028a12 12 0 0 1 5.373 1.27"/>
+  <path stroke-linejoin="round" d="m34 1007-1 2 2 1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1022.1122" x="1.5192969" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="1.5192969" y="1022.1122">Slits</tspan></text>
+  <path stroke-linejoin="round" marker-end="url(#a)" d="m18 1004-6 16 6 16" marker-start="url(#b)" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1010.1522" x="25.210312" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="25.210312" y="1010.1522">nλ</tspan></text>
+  <path stroke-linejoin="round" d="m1040-32a12 12 0 0 1 5.373 1.27" transform="rotate(90)" stroke="#000" stroke-linecap="round" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1046.1422" x="34.695" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1046.1422" x="34.695">θ</tspan></text>
+  <path d="m20 1e3h40" stroke="#000" stroke-dasharray="2, 4" fill="none"/>
+  <path stroke-linejoin="round" fill="none" transform="rotate(90)" stroke="#000" stroke-linecap="round" d="m1e3 -32a12 12 0 0 1 5.373 1.27"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1006.1422" x="34.695" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="34.695" y="1006.1422">θ</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1021.3622" x="16" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="16" y="1021.3622">d</tspan></text>
+  <g stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m20 1002v11"/>
+   <path d="m20 1038v-11"/>
+   <path d="m20 1015v2"/>
+   <path d="m20 1019v2"/>
+   <path d="m20 1023v2"/>
+  </g>
+ </g>
+</svg>

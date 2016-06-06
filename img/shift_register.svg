@@ -1,0 +1,54 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="36" width="88" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 88.000001 36">
+ <g transform="translate(0,-1016.3622)">
+  <path d="m8 1024.3622h70" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <g>
+   <rect stroke-linejoin="round" height="24.000105" width="16" stroke="#000" y="1020.3622" x="12" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" transform="translate(2.2888184e-7,2.7343751e-6)" line-height="125%" font-size="5px" y="1026.0022" x="14.365" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="14.365" y="1026.0022">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1025.6198" x="22.3025" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="22.3025" y="1025.6198">Q</tspan></text>
+  </g>
+  <path stroke-linejoin="round" d="m12 1034.3622 4 2-4 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <g>
+   <rect stroke-linejoin="round" height="24.000105" width="16" stroke="#000" y="1020.3622" x="36" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1026.0022" x="38.365002" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1026.0022" x="38.365002">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1025.6198" x="46.302502" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1025.6198" x="46.302502">Q</tspan></text>
+  </g>
+  <path stroke-linejoin="round" d="m35.999998 1034.3622 4 2-4 2" stroke="#000" stroke-width="1px" fill="none"/>
+  <g>
+   <rect stroke-linejoin="round" height="24.000105" width="16" stroke="#000" y="1020.3622" x="60" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1026.0022" x="62.365002" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="62.365002" y="1026.0022">D</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1025.6198" x="70.302498" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="70.302498" y="1025.6198">Q</tspan></text>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m59.999998 1034.3622 4 2-4 2"/>
+   <path d="m32 1020.3622v4"/>
+   <path d="m56 1020.3622v4"/>
+  </g>
+  <circle stroke-linejoin="round" cx="8" stroke="#000" cy="1024.3622" r="1" fill="#fff"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-width="1px" fill="none">
+   <path d="m78 1048.3622h-74" stroke-linecap="round"/>
+   <path d="m36 1036.3622h-4v12"/>
+   <path d="m12 1036.3622h-4v12"/>
+  </g>
+  <circle stroke-linejoin="round" stroke="#000" cy="1048.3622" cx="4" r="1" fill="#fff"/>
+  <g>
+   <circle cx="32" cy="1024.3622" r="1"/>
+   <circle cy="1024.3622" cx="56" r="1"/>
+   <circle cx="32" cy="1048.3622" r="1"/>
+   <circle cy="1048.3622" cx="8" r="1"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000">
+   <circle cy="1020.3622" cx="32" r="1" fill="#fff"/>
+   <circle cx="56" cy="1020.3622" r="1" fill="#fff"/>
+   <path d="m60 1036.3622h-4v12" stroke-width="1px" fill="none"/>
+  </g>
+  <g>
+   <circle cy="1048.3622" cx="56" r="1"/>
+   <circle cx="84" cy="1048.3622"/>
+   <circle cy="1048.3622" cx="82"/>
+   <circle cx="80" cy="1048.3622"/>
+   <circle cy="1024.3622" cx="84"/>
+   <circle cx="82" cy="1024.3622"/>
+   <circle cy="1024.3622" cx="80"/>
+  </g>
+ </g>
+</svg>

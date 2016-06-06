@@ -1,0 +1,57 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 32">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m-2.5-1c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill-rule="evenodd" transform="scale(.2) translate(7.4 1)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0.0" refX="0.0" overflow="visible" orient="auto">
+   <path d="m-2.5-1c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill-rule="evenodd" transform="scale(.2) translate(7.4 1)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="e" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="h" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m-2.5-1c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z" fill-rule="evenodd" transform="scale(.2) translate(7.4 1)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="f" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -1020)">
+  <g fill="none">
+   <g stroke="#e0e0e0" stroke-width=".5">
+    <path d="m8 1048v-24"/>
+    <path d="m16 1048v-24"/>
+    <path d="m24 1048v-24"/>
+    <path d="m32 1048v-24"/>
+    <path d="m40 1048v-24"/>
+    <path d="m48 1048v-24"/>
+    <path d="m56 1048v-24"/>
+    <path d="m60 1044h-56"/>
+    <path d="m60 1036h-56"/>
+    <path d="m60 1028h-56"/>
+   </g>
+   <path stroke-linejoin="round" marker-end="url(#f)" d="m4 1024v24h56" marker-start="url(#g)" stroke="#000"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1024.0022" x="5.3825002" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="5.3825002" y="1024.0022">N</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1047.0022" x="60.645" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="60.645" y="1047.0022">Z</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path marker-end="url(#e)" d="m24 1028-16 16" marker-start="url(#h)"/>
+   <path marker-end="url(#c)" d="m32 1036 8 8" marker-start="url(#d)"/>
+   <path marker-end="url(#a)" d="m56 1044-8-8" marker-start="url(#b)"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1035.5771" x="12.52"><tspan x="12.52" y="1035.5771">α</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.7247" x="36.950993"><tspan x="36.950993" y="1038.7247">β<tspan style="baseline-shift:super" font-size="65%">-</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1038.8182" x="52.638992"><tspan x="52.638992" y="1038.8182">β<tspan style="baseline-shift:super" font-size="65%">+</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

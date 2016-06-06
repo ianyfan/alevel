@@ -1,0 +1,25 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="72" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 72.000001 64.000001">
+ <defs>
+  <marker id="a" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <path stroke-linejoin="round" marker-end="url(#a)" d="m4 996.4v52h60" marker-start="url(#b)" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="993.09467" x="2.5274999" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="2.5274999" y="993.09467">p</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.0022" x="66.712502" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="66.712502" y="1050.0022">V</tspan></text>
+  <g stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none">
+   <path d="m20 996.4c5 30 13 39 44 44"/>
+   <path d="m25 996.4c4 26 13 39 39 44"/>
+   <path d="m64 1040h-56"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.5197" x="17.034571"><tspan x="17.034571" y="1045.5197">Constant pressure</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1026.1122" x="38.257774"><tspan x="38.257774" y="1026.1122">Adiabatic</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1026.1122" x="4.5660543"><tspan x="4.5660543" y="1026.1122">Isothermal</tspan></text>
+  </g>
+ </g>
+</svg>

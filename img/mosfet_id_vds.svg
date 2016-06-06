@@ -1,16 +1,21 @@
 <svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="80" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80.000001 64.000001">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
  <g transform="translate(0 -988.4)">
   <g stroke="#000" fill="none">
    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="1px">
-    <path d="m4 1046v-53.6"/>
-    <path d="m2 1044h54"/>
-    <path d="m53 1042 3 2-3 2"/>
-    <path d="m2 995.4 2-3 2 3"/>
+    <path marker-end="url(#a)" d="m4 992.4v52h52" marker-start="url(#b)"/>
     <path d="m4 1044 24-32h28"/>
     <path d="m56 1028h-28l-24 16"/>
     <path d="m56 996.4-28 0.00004-24 48"/>
    </g>
-   <path d="m28 992.4v52" stroke-dasharray="3, 1"/>
+   <path d="m28 992.4v52" stroke-dasharray="2,2"/>
   </g>
   <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
    <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1050.0621" x="29.562813"><tspan x="29.562813" y="1050.0621">Transistor</tspan></text>
@@ -18,7 +23,7 @@
    <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="997.13818" x="58.087257"><tspan x="58.087257" y="997.13818">V<tspan style="baseline-shift:sub" font-size="65%">gs</tspan> = 2.3 V</tspan></text>
    <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1013.1382" x="58.087257" xml:space="preserve"><tspan y="1013.1382" x="58.087257">V<tspan style="baseline-shift:sub" font-size="65%">gs</tspan> = 2.2 V</tspan></text>
    <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.1382" x="58.087257"><tspan x="58.087257" y="1029.1382">V<tspan style="baseline-shift:sub" font-size="65%">gs</tspan> = 2.1 V</tspan></text>
-   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.4827" x="57.180695"><tspan x="57.180695" y="1045.4827">V<tspan style="baseline-shift:sub" font-size="65%">ds</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.4827" x="61.180695"><tspan x="61.180695" y="1045.4827">V<tspan style="baseline-shift:sub" font-size="65%">ds</tspan></tspan></text>
    <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="993.48267" x="6.3471951" xml:space="preserve"><tspan y="993.48267" x="6.3471951">I<tspan style="baseline-shift:sub" font-size="65%">d</tspan></tspan></text>
   </g>
  </g>

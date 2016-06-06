@@ -1,0 +1,36 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="88" width="112" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 112 88">
+ <g transform="translate(0 -964.4)">
+  <g>
+   <flowRoot style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><flowRegion><rect y="24" width="16" x="20" height="8"/></flowRegion><flowPara/></flowRoot>
+   <rect stroke-linejoin="round" height="16" width="24" stroke="#000" y="968.4" x="32" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="978.00195" x="35.431522" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="35.431522" y="978.00195">Counter</tspan></text>
+   <rect stroke-linejoin="round" height="16" width="24" stroke="#000" y="968.4" x="4" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="978.11206" x="8.3533592" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="978.11206" x="8.3533592">Astable</tspan></text>
+   <rect stroke-linejoin="round" height="16" width="24" stroke="#000" y="1004" x="32" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="1014.002" x="39.575935" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="1014.002" x="39.575935">DAC</tspan></text>
+   <rect stroke-linejoin="round" height="16" width="24" stroke="#000" y="984.4" x="64" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="994.11194" x="70.207855" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="70.207855" y="994.11194">Latch</tspan></text>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m48 1024v24l28-12z"/>
+   <g>
+    <path d="m50 1040h4"/>
+    <path d="m52 1038v4"/>
+    <path d="m50 1032h4"/>
+   </g>
+   <path stroke-linejoin="round" d="m44 1020v12h4"/>
+   <path d="m48 1040h-4"/>
+  </g>
+  <circle stroke-linejoin="round" cx="44" stroke="#000" cy="1040" r="1" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path d="m28 976.4h4"/>
+   <path stroke-linejoin="round" d="m32 974.4 3 2-3 2"/>
+   <path stroke-linejoin="round" d="m36 984.4v16h-4l12 4 12-4h-4v-4h8v4l4-8-4-8v4h-8v-4"/>
+   <path d="m76 1036h4v-36"/>
+   <path stroke-linejoin="round" d="m78 1e3 2-4 2 4"/>
+   <path stroke-linejoin="round" d="m88 988.4h12v-4l8 8-8 8v-4h-12"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="993.51953" x="90.441292" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="90.441292" y="993.51953">Output</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1041.4896" x="30.187109" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="30.187109" y="1041.4896">Input</tspan></text>
+ </g>
+</svg>

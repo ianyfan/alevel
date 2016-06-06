@@ -1,0 +1,36 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="92" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 92.000001 32">
+ <defs>
+  <marker id="a" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -1020)">
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <rect height="8" width="32" y="1036" x="4"/>
+   <rect height="8" width="40" y="1036" x="40"/>
+   <rect height="8" width="24" y="1024" x="8"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1030.1422" x="9.5089073"><tspan x="9.5089073" y="1030.1422">Reference</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1042.1422" x="41.981056"><tspan x="41.981056" y="1042.1422">MOSFET follower</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1041.5197" x="7.3250771"><tspan x="7.3250771" y="1041.5197">Comparator</tspan></text>
+  </g>
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px">
+    <path marker-end="url(#d)" d="m20 1032v3"/>
+    <path marker-end="url(#c)" d="m80 1040h8"/>
+    <path marker-end="url(#b)" d="m36 1040h3"/>
+   </g>
+   <path stroke-linejoin="round" marker-end="url(#a)" d="m84 1040v8h-64v-3" stroke-dasharray="1, 1"/>
+  </g>
+ </g>
+</svg>

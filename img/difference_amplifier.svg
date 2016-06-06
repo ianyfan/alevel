@@ -1,0 +1,45 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="48" width="80" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80.000001 48.000001">
+ <g transform="translate(0 -1004)">
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m8 1008h56v16"/>
+   <path stroke-linejoin="round" d="m32 1036v-24l28 12z"/>
+   <g>
+    <path d="m34 1028h4"/>
+    <path d="m36 1026v4"/>
+    <path d="m34 1020h4"/>
+   </g>
+  </g>
+  <g stroke-linejoin="round" stroke="#000">
+   <rect height="6" width="12" stroke-linecap="round" y="1005" x="12" fill="#fff"/>
+   <rect height="6" width="12" stroke-linecap="round" y="1005" x="40" fill="#fff"/>
+   <path d="m8 1040h56v4" stroke-width="1px" fill="none"/>
+   <rect height="6" width="12" stroke-linecap="round" y="1037" x="12" fill="#fff"/>
+   <rect height="6" width="12" stroke-linecap="round" y="1037" x="40" fill="#fff"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path d="m60 1024h8"/>
+   <g stroke-linecap="round">
+    <path d="m60 1044h8"/>
+    <path d="m61 1046h6"/>
+    <path d="m62 1048h4"/>
+   </g>
+   <path stroke-linejoin="round" d="m28 1008v12h4"/>
+   <path stroke-linejoin="round" d="m28 1040v-12h4"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="8" cy="1008" r="1"/>
+   <circle cy="1040" cx="8" r="1"/>
+   <circle cx="68" cy="1024" r="1"/>
+  </g>
+  <g>
+   <circle cy="1024" cx="64" r="1"/>
+   <circle cx="28" cy="1008" r="1"/>
+   <circle cy="1040" cx="28" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1041.5022" x="1.9975624"><tspan x="1.9975624" y="1041.5022">V<tspan style="baseline-shift:sub" font-size="65%">1</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1009.502" x="1.9764376"><tspan x="1.9764376" y="1009.502">V<tspan style="baseline-shift:sub" font-size="65%">2</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1025.4827" x="70.758972"><tspan x="70.758972" y="1025.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

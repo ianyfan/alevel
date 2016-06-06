@@ -1,0 +1,45 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="44" width="80" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 80 44">
+ <defs>
+  <marker id="a" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.2 0 0 -.2 -1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.2 0 0 -.2 -1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.2 0 0 -.2 -1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.2 0 0 .2 1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="e" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.2 0 0 -.2 -1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(-.2 0 0 -.2 -1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="f" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" transform="matrix(.2 0 0 .2 1.2 0)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -1008)">
+  <g stroke="#000" fill="none">
+   <g>
+    <path d="m4 1032c8-8 16-8 24 0s16 8 24 0 16-8 24 0" stroke-linecap="round" stroke-width="1px"/>
+    <path d="m4 1032h72" stroke-dasharray="2, 2"/>
+    <path marker-end="url(#g)" d="m40 1016v20" stroke-linecap="round" stroke-width="1px"/>
+   </g>
+   <path stroke-linejoin="round" marker-end="url(#e)" d="m16 1024v-4h48v4" marker-start="url(#f)" stroke-width="1px"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1014.1122" x="29.483984" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="29.483984" y="1014.1122">Antinodes</tspan></text>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" marker-end="url(#c)" d="m4 1036v4h72v-4" marker-start="url(#d)"/>
+   <g stroke-linecap="round">
+    <path marker-end="url(#b)" d="m28 1040v-4"/>
+    <path marker-end="url(#a)" d="m52 1040v-4"/>
+    <path d="m40 1040v4"/>
+   </g>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.1122" x="33.206913" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="33.206913" y="1050.1122">Nodes</tspan></text>
+ </g>
+</svg>

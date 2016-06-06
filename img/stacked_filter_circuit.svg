@@ -1,0 +1,73 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="32" width="136" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 136 32">
+ <g transform="translate(0 -1020)">
+  <g stroke-linejoin="round" stroke="#000" stroke-width="1px" fill="none">
+   <path d="m12 1028h112"/>
+   <path d="m40 1032c-3 0-3 4 0 4-3 0-3 4 0 4-3 0-3 4 0 4" stroke-linecap="round"/>
+   <path d="m44 1037h8"/>
+   <path d="m44 1039h8"/>
+  </g>
+  <rect stroke-linejoin="round" height="4" width="8" stroke="#000" stroke-linecap="round" y="1026" x="28" fill="#fff"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g>
+    <path d="m40 1028v4"/>
+    <path d="m40 1044v4"/>
+    <path d="m48 1028v9"/>
+    <path d="m48 1039v9"/>
+   </g>
+   <g stroke-linejoin="round">
+    <path d="m76 1032c-3 0-3 4 0 4-3 0-3 4 0 4-3 0-3 4 0 4" stroke-linecap="round"/>
+    <path d="m80 1037h8"/>
+    <path d="m80 1039h8"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="4" width="8" stroke="#000" stroke-linecap="round" y="1026" x="64" fill="#fff"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g>
+    <path d="m76 1028v4"/>
+    <path d="m76 1044v4"/>
+    <path d="m84 1028v9"/>
+    <path d="m84 1039v9"/>
+   </g>
+   <g stroke-linejoin="round">
+    <path d="m112 1032c-3 0-3 4 0 4-3 0-3 4 0 4-3 0-3 4 0 4" stroke-linecap="round"/>
+    <path d="m116 1037h8"/>
+    <path d="m116 1039h8"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="4" width="8" stroke="#000" stroke-linecap="round" y="1026" x="100" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path d="m112 1028v4"/>
+   <path d="m112 1044v4"/>
+   <path stroke-linejoin="round" d="m120 1039v9h-108"/>
+  </g>
+  <g stroke-linejoin="round" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="#fff">
+   <path d="m16 1024v8l8-4z"/>
+   <path d="m52 1024v8l8-4z"/>
+   <path d="m88 1024v8l8-4z"/>
+  </g>
+  <g stroke="#000">
+   <path d="m120 1028v9" stroke-width="1px" fill="none"/>
+   <circle stroke-linejoin="round" stroke-linecap="round" cy="1048" cx="12" r="1" fill="#fff"/>
+   <circle stroke-linejoin="round" cx="12" stroke-linecap="round" cy="1028" r="1" fill="#fff"/>
+  </g>
+  <g>
+   <circle cx="40" cy="1028" r="1"/>
+   <circle cy="1028" cx="48" r="1"/>
+   <circle cx="76" cy="1028" r="1"/>
+   <circle cy="1028" cx="84" r="1"/>
+   <circle cx="112" cy="1028" r="1"/>
+   <circle cy="1028" cx="120" r="1"/>
+   <circle cx="112" cy="1048" r="1"/>
+   <circle cy="1048" cx="84" r="1"/>
+   <circle cx="76" cy="1048" r="1"/>
+   <circle cy="1048" cx="48" r="1"/>
+   <circle cx="40" cy="1048" r="1"/>
+  </g>
+  <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1028" cx="124" r="1" fill="#fff"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.5022" x="3.3773458"><tspan x="3.3773458" y="1029.5022">V<tspan style="baseline-shift:sub" font-size="65%">IN</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.5022" x="2.7946815"><tspan x="2.7946815" y="1049.5022">V<tspan style="baseline-shift:sub" font-size="65%">DD</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.4827" x="125.75897"><tspan x="125.75897" y="1029.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  </g>
+ </g>
+</svg>

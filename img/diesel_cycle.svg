@@ -1,0 +1,22 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="64" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 64.000001 64.000001">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <path stroke-linejoin="round" marker-end="url(#a)" d="m4 996.4v52h52" marker-start="url(#b)" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="993.09467" x="2.5274999" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="2.5274999" y="993.09467">p</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.0022" x="58.712502" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="58.712502" y="1050.0022">V</tspan></text>
+  <path stroke-linejoin="round" d="m8 996.4h16c4 24 16 32 32 36v8c-28-4-44-16-48-44z" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1041.9572" x="58.705002"><tspan x="58.705002" y="1041.9572">1</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="993.98718" x="6.7800002"><tspan x="6.7800002" y="993.98718">2</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="993.95715" x="22.82"><tspan x="22.82" y="993.95715">3</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.9572" x="58.785"><tspan x="58.785" y="1033.9572">4</tspan></text>
+  </g>
+ </g>
+</svg>

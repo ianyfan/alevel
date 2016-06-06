@@ -1,0 +1,60 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="68" width="84" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 84.000001 68.000001">
+ <g transform="translate(0 -984.4)">
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path d="m16 988.4v60"/>
+   <path stroke-linejoin="round" d="m24 1024v-24l28 12z"/>
+   <g>
+    <path d="m26 1016h4"/>
+    <path d="m28 1006v4"/>
+    <path d="m26 1008h4"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="12" width="6" stroke="#000" stroke-linecap="round" y="992.4" x="13" fill="#fff"/>
+  <path stroke-linejoin="round" d="m12 1035v-1h4l4 8h-8l4-8h4" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="#fff"/>
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px" stroke-linecap="round">
+    <path stroke-linejoin="round" d="m52 1012h8v-18"/>
+    <g>
+     <path d="m63 1012v-4"/>
+     <path d="m63 1005v-4"/>
+     <path d="m63 998.4v-4"/>
+    </g>
+   </g>
+   <g stroke-linejoin="round" stroke-width="1px">
+    <path d="m63 1010h5"/>
+    <path d="m64 1003 1 1v-2l-1 1h4v45h-56"/>
+    <path d="m63 996.4 5 0.00004v-8h-56"/>
+   </g>
+   <circle stroke-linejoin="round" cx="64" stroke-linecap="round" cy="1003" r="12"/>
+  </g>
+  <rect stroke-linejoin="round" height="12" width="6" stroke="#000" stroke-linecap="round" y="1032" x="65" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path d="m16 1008h8"/>
+   <path stroke-linejoin="round" d="m24 1016h-4v12h52"/>
+   <g>
+    <path d="m52 1037h8"/>
+    <path d="m60 1039h-8"/>
+    <path d="m56 1028v9"/>
+    <path d="m56 1039v9"/>
+   </g>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="#fff">
+   <circle cx="72" cy="1028" r="1"/>
+   <circle cy="1048" cx="12" r="1"/>
+   <circle cx="12" cy="988.4" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1049.4827" x="3.0623243"><tspan x="3.0623243" y="1049.4827">V<tspan style="baseline-shift:sub" font-size="65%">SS</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="989.50214" x="2.7946815"><tspan x="2.7946815" y="989.50214">V<tspan style="baseline-shift:sub" font-size="65%">DD</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1029.4827" x="74.758972"><tspan x="74.758972" y="1029.4827">V<tspan style="baseline-shift:sub" font-size="65%">OUT</tspan></tspan></text>
+  </g>
+  <g>
+   <circle cx="56" cy="1028" r="1"/>
+   <circle cy="1028" cx="68" r="1"/>
+   <circle cy="1048" cx="56" r="1"/>
+   <circle cx="16" cy="1048" r="1"/>
+   <circle cy="988.4" cx="16" r="1"/>
+   <circle cx="16" cy="1008" r="1"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,189 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="192" width="140" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 140 192">
+ <defs>
+  <clipPath id="b" clipPathUnits="userSpaceOnUse">
+   <rect stroke-linejoin="round" height="16" width="36" stroke="#000" stroke-linecap="round" y="956.362" x="16" fill="#fff"/>
+  </clipPath>
+  <clipPath id="a" clipPathUnits="userSpaceOnUse">
+   <rect stroke-linejoin="round" height="8" width="16" stroke="#000" stroke-linecap="round" y="940.362" x="16" fill="#fff"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(0 -860.362)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g>
+    <g stroke-linejoin="round">
+     <path d="m64 944.362-8-0.00006v4"/>
+     <path d="m64 912.362-8-0.00006v23l8 0.00006"/>
+     <path d="m4 864.362 52 0.00006v8h8"/>
+    </g>
+    <path d="m24 888.362h-12"/>
+    <path stroke-linejoin="round" d="m64 968.362-8-0.00006v-12"/>
+   </g>
+   <path d="m12 948.362v-84" stroke-linecap="round"/>
+   <path d="m108 996.362 24 0.00002"/>
+  </g>
+  <circle stroke-linejoin="round" cx="132" stroke-linecap="round" stroke="#000" cy="996.362" r="1" fill="#fff"/>
+  <path stroke-linejoin="round" d="m64 904.362-8-0.00006v-23.9999l8 0.00006" stroke="#000" stroke-width="1px" fill="none"/>
+  <circle cy="892.362" cx="56" r="1"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path stroke-linejoin="round" d="m60 1032.36h60v-24"/>
+   <path stroke-linejoin="round" d="m64 976.362-8-0.00006v24.0001l8 0.0001"/>
+   <path d="m12 956.362v88.0001" stroke-linecap="round"/>
+  </g>
+  <rect stroke-linejoin="round" height="16" width="8" stroke="#000" stroke-linecap="round" y="1024.36" x="8" fill="#fff"/>
+  <rect stroke-linejoin="round" height="16" width="8" stroke="#000" stroke-linecap="round" y="992.362" x="8" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m24 976.362v24.0001l28-12.0001z"/>
+   <g>
+    <path d="m26 984.362h4"/>
+    <path d="m26 992.362h4"/>
+    <path d="m28 990.362v4"/>
+   </g>
+   <path stroke-linejoin="round" d="m24 1008.36v24l28-12z"/>
+   <g>
+    <path d="m26 1016.36h4"/>
+    <path d="m26 1024.36h4"/>
+    <path d="m28 1022.36v4"/>
+   </g>
+   <path stroke-linejoin="round" d="m24 912.362v24l28-12z"/>
+   <g>
+    <path d="m26 920.362h4"/>
+    <path d="m26 928.362h4"/>
+    <path d="m28 926.362v4"/>
+   </g>
+  </g>
+  <rect stroke-linejoin="round" height="16" width="8" stroke="#000" stroke-linecap="round" y="896.362" x="8" fill="#fff"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g>
+    <path d="m12 1016.36h12"/>
+    <path d="m12 984.362h12"/>
+    <path d="m12 920.362h12"/>
+   </g>
+   <path stroke-linejoin="round" d="m20 956.362v88.0001" stroke-linecap="round"/>
+   <g>
+    <g>
+     <path d="m20 992.362h4"/>
+     <path d="m20 928.362h4"/>
+     <path d="m58 964.362c4 4 4 12 0 16"/>
+     <path d="m58 996.362c4 4.00014 4 12.0001 0 16.0001"/>
+     <path d="m52 924.362h4"/>
+     <path d="m52 988.362h4"/>
+    </g>
+    <path stroke-linejoin="round" d="m52 1020.36h4v-12l8 0.0001"/>
+   </g>
+  </g>
+  <g stroke="#000">
+   <g stroke-width="1px">
+    <path d="m68 980.362h-8c4-4 4-12 0-16h8c8 0 12 8.00004 12 8.00004s-4 8-12 8z" fill-rule="evenodd" fill="#fff"/>
+    <path d="m68 1012.36h-8c4-4 4-12 0-16.0001h8c8 0 12 8.00014 12 8.00014s-4 8-12 8z" fill-rule="evenodd" fill="#fff"/>
+    <path d="m80 972.362h4" fill="none"/>
+    <path d="m80 1004.36h4" fill="none"/>
+   </g>
+   <path stroke-linejoin="round" d="m108 956.362v52.0001h-24v-52.0001" stroke-linecap="round" fill="#fff"/>
+   <path d="m108 1004.36h24" stroke-width="1px" fill="none"/>
+   <path d="m108 988.362 24 0.00002" stroke-width="1px" fill="none"/>
+   <path stroke-linejoin="round" d="m128 956.362v52.0001h-16v-52.0001" stroke-linecap="round" fill="#fff"/>
+  </g>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g stroke-linecap="round">
+    <path d="m8 1044.36h8"/>
+    <path d="m9 1046.36h6"/>
+    <path d="m10 1048.36h4"/>
+   </g>
+   <path d="m20 1024.36h4"/>
+  </g>
+  <g>
+   <circle cx="12" cy="1016.36" r="1"/>
+   <circle cy="1024.36" cx="20" r="1"/>
+   <circle cx="20" cy="992.362" r="1"/>
+   <circle cy="984.362" cx="12" r="1"/>
+   <circle cx="20" cy="928.362" r="1"/>
+   <circle cy="920.362" cx="12" r="1"/>
+   <circle cy="988.362" cx="56" r="1"/>
+   <circle cx="56" cy="924.362" r="1"/>
+  </g>
+  <g stroke-linejoin="round" stroke="#000" fill="#fff">
+   <rect height="16" width="32" stroke-linecap="round" y="1024.36" x="64"/>
+   <path d="m100 1024.36v16l16-8z" fill-rule="evenodd" stroke-width="1px"/>
+   <circle cx="117" stroke-linecap="round" cy="1032.36" r="1"/>
+   <circle cx="20" stroke-linecap="round" cy="1044.36" r="1"/>
+  </g>
+  <g>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1034.1122" x="67.658325" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="67.658325" y="1034.1122">Monostable</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1006.0021" x="117.06414" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="117.06414" y="1006.0021">EN</tspan></text>
+   <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="1032.36" cx="60" r="1" fill="#fff"/>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="994.11218" x="114.20786" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="114.20786" y="994.11218">Latch</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px;text-anchor:middle;text-align:center" xml:space="preserve" font-size="5px" line-height="125%" y="990.44464" x="96.117813" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="96.117813" y="990.44464">Logic</tspan><tspan x="96.117813" y="996.69464">system</tspan></text>
+  </g>
+  <path d="m58 900.362c4 4 4 12 0 16" stroke="#000" stroke-width="1px" fill="none"/>
+  <path d="m68 916.362h-8c4-4 4-12 0-16h8c8 0 12 8.00004 12 8.00004s-4 8-12 8z" fill-rule="evenodd" stroke="#000" stroke-width="1px" fill="#fff"/>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m24 880.362v24l28-12z"/>
+   <g>
+    <path d="m26 888.362h4"/>
+    <path d="m26 896.362h4"/>
+    <path d="m28 894.362v4"/>
+    <path d="m52 892.362h4"/>
+    <path d="m80 908.362h4"/>
+   </g>
+  </g>
+  <circle stroke-linejoin="round" cx="132" stroke-linecap="round" stroke="#000" cy="1004.36" r="1" fill="#fff"/>
+  <circle stroke-linejoin="round" stroke-linecap="round" stroke="#000" cy="988.362" cx="132" r="1" fill="#fff"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1013.5197" x="124.44129"><tspan x="124.44129" y="1013.5197">Output</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.6296" x="40.060547"><tspan x="40.060547" y="1033.6296">Sample</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.4896" x="22.187109"><tspan x="22.187109" y="1045.4896">Input</tspan></text>
+  </g>
+  <g>
+   <circle cx="12" cy="952.362"/>
+   <circle cy="954.362" cx="12"/>
+   <circle cx="12" cy="950.362"/>
+   <circle cy="952.362" cx="20"/>
+   <circle cx="20" cy="954.362"/>
+   <circle cy="950.362" cx="20"/>
+  </g>
+  <path stroke-linejoin="round" d="m20 948.362v-48l4 0.00003" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <path d="m58 868.362c4 4 4 12 0 16" stroke="#000" stroke-width="1px" fill="none"/>
+  <g stroke="#000" fill="#fff">
+   <path d="m68 884.362h-8c4-4 4-12 0-16h8c8 0 12 8.00004 12 8.00004s-4 8-12 8z" fill-rule="evenodd" stroke-width="1px"/>
+   <circle stroke-linejoin="round" cx="4" stroke-linecap="round" cy="864.362" r="1"/>
+   <rect stroke-linejoin="round" height="16" width="8" stroke-linecap="round" y="868.362" x="8"/>
+  </g>
+  <circle cx="12" cy="888.362" r="1"/>
+  <g stroke="#000">
+   <path d="m80 876.362h4" stroke-width="1px" fill="none"/>
+   <rect stroke-linejoin="round" height="16" width="8" stroke-linecap="round" y="960.362" x="8" fill="#fff"/>
+   <rect stroke-linejoin="round" height="16" width="8" stroke-linecap="round" y="928.362" x="8" fill="#fff"/>
+  </g>
+  <g stroke-width="1px" stroke="#000" fill="none">
+   <path stroke-linejoin="round" d="m20 944.362v24.0001l28-12.0001z" clip-path="url(#b)" transform="translate(4,-4e-5)"/>
+   <path d="m26 960.362h4"/>
+   <path d="m28 958.362v4"/>
+   <path stroke-linejoin="round" d="m48 956.362-28-12v24" clip-path="url(#a)" transform="translate(4,-4e-5)"/>
+   <path d="m58 932.362c4 4 4 12 0 16"/>
+  </g>
+  <g stroke="#000">
+   <path d="m68 948.362h-8c4-4 4-12 0-16h8c8 0 12 8.00004 12 8.00004s-4 8-12 8z" fill-rule="evenodd" stroke-width="1px" fill="#fff"/>
+   <path d="m80 940.362h4" stroke-width="1px" fill="none"/>
+   <path stroke-linejoin="round" d="m108 948.362v-76h-24v76" stroke-linecap="round" fill="#fff"/>
+   <path stroke-linejoin="round" d="m128 948.362v-76h-16v76" stroke-linecap="round" fill="#fff"/>
+  </g>
+  <g>
+   <circle cy="952.362" cx="56"/>
+   <circle cx="56" cy="954.362"/>
+   <circle cy="950.362" cx="56"/>
+   <circle cx="84" cy="952.362"/>
+   <circle cy="954.362" cx="84"/>
+   <circle cx="84" cy="950.362"/>
+   <circle cy="952.362" cx="108"/>
+   <circle cx="108" cy="954.362"/>
+   <circle cy="950.362" cx="108"/>
+   <circle cx="112" cy="952.362"/>
+   <circle cy="954.362" cx="112"/>
+   <circle cx="112" cy="950.362"/>
+   <circle cy="952.362" cx="128"/>
+   <circle cx="128" cy="954.362"/>
+   <circle cy="950.362" cx="128"/>
+   <circle cy="864.362" cx="12" r="1"/>
+  </g>
+ </g>
+</svg>

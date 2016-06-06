@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Electronics</title>
     <link href="/alevel/style.css" rel="stylesheet">
     <script src="/alevel/script.js" async></script>
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({
             jax: ["input/TeX", "output/NativeMML"],
-            TeX: { extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"] },
-            extensions: ["tex2jax.js","[Contrib]/siunitx/siunitx.js"]
+            TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] },
+            extensions: ["tex2jax.js", "[Contrib]/siunitx/siunitx.js"]
         });
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>
-    <title>Electronics</title>
   </head>
   <body>
     <nav class="electronics">
@@ -1385,7 +1385,8 @@ A bandpass filter includes both capacitors</p></td>
             <td><p>PICs are economical because they are produced in vast quantities<br>
 The program can be developed once and then reused by programming multiple microcontrollers<br>
 Developing the program beforehand allows the operation to be analysed without anything being built<br>
-The microcontroller can be reprogrammed in the future to adjust its operation with no manufaction cost</p></td>
+The microcontroller can be reprogrammed in the future to adjust its operation with no manufaction cost<br>
+A single PIC can perform the same operation as multiple chips</p></td>
           <tr>
             <td>
 <p>Understand the limitations of programmable systems (digital only, relatively slow)</p>
@@ -1526,18 +1527,23 @@ One byte is 8 bits, which can be represented using 2 hex characters</p>
 <p>Recall the transfer characteristics of an n-channel MOSFET, representing them as graphs of drain current against gate-source voltage and drain current against drain-source voltage (including the use of threshold voltage and transconductance)</p>
             </td>
             <td><p><img alt="" src="/alevel/img/mosfet_id_vgs.svg"><br>
-<img alt="" src="/alevel/img/mosfet_id_vds.svg"></p></td>
+Below the threshold voltage (typically \(\SI{2}{\volt}\)), the MOSFET is in its high resistance state, so does not allow the flow of current<br>
+Above the threshold voltage, the current rises rapidly with voltage until it saturates<br>
+The change in current with voltage is the transconductance of the MOSFET, \(g_m\), so the formula \(I_d = g_m(V_{gs} - V_{th})\) can be used whilst the current is not saturated<br>
+Transconductance is measured in siemens \(\SI{1}{\siemens} = \SI{1}{\ampere\per\volt}\)<br>
+<img alt="" src="/alevel/img/mosfet_id_vds.svg"><br>
+The current also depends on \(V_{ds}\): when it is small, the MOSFET behaves less like a transistor and more like a resistor whose resistance is controlled by \(V_{gs}\)</p></td>
           <tr>
             <td>
 <p>Understand the use of a MOSFET as a voltage-controlled resistor for small drain-source voltages</p>
             </td>
-            <td>
-            </td>
+            <td><p>The resistance falls as \(V_{gs}\) rises</p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs in a voltage divider circuit to make a potentiometer whose wiper position is controlled by an external voltage</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/vcr.svg"></p></td>
+            <td><p><img alt="" src="/alevel/img/vcr.svg"><br>
+\(V_{OUT}\) rises with \(V_R\)</p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs in analogue switches, multiplexers and tristates</p>
@@ -1545,7 +1551,7 @@ One byte is 8 bits, which can be represented using 2 hex characters</p>
             <td><p>An analogue switch is a voltage-controlled switch<br>
 <img alt="" src="/alevel/img/analogue_switch_model.svg"><br>
 <img alt="" src="/alevel/img/analogue_switch_mosfet.svg"><br>
-A multiplexer selects which input is sent to the output<br>
+A multiplexer selects which input is sent to the output (a digital multiplexer can also be contructed using logic gates)<br>
 <img alt="" src="/alevel/img/multiplexer_model.svg"><br>
 <img alt="" src="/alevel/img/multiplexer_mosfet.svg"><br>
 A tristate is a buffer that can selectively transmit a digital signal using a third state that assumes high impedance, effectively removing the component from the circuit<br>
@@ -1555,24 +1561,40 @@ A tristate is a buffer that can selectively transmit a digital signal using a th
             <td>
 <p>Understand the use of MOSFETs as voltage followers with very high input impedance (including the use of coupling capacitors to inject and extract signals)</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/source_follower.svg"></p></td>
+            <td><p><img alt="" src="/alevel/img/source_follower.svg"><br>
+As \(V_g\) rises, so does \(V_s\) so that \(V_{gs}\) stays in the resistive region<br>
+Because of that, \(V_s\) can be calculated:<br>
+\[\begin{align}<br>
+V_s &amp; = I_dR + V_{SS}<br>
+\\ &amp; = g_m(V_{gs} - V_{th})\cdot R + V_{SS}<br>
+\\ &amp; = g_mR(V_g - V_{th}) - g_mR\cdot V_s + V_{SS}<br>
+\\ &amp; = \frac{g_mR(V_g - V_{th}) + V_{SS}}{1 + g_mR}<br>
+\\ &amp; = (1 - \frac{1}{1 + g_mR})(V_g - V_{th}) + \frac{V_{SS}}{1 + g_mR}<br>
+\end{align}\]<br>
+If \(g_mR\) is sufficiently large, then the gain is effectively 1, so the source voltage is always lower than the gate voltage by the threshold voltage<br>
+If the input signal is an ac signal, then this offset can be ignored by using coupling capacitor and a biasing network to ensure that the gate voltage is always above the threshold voltage</p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs as high input impedance voltage amplifiers, including the need for biasing with a voltage divider to place the drain at a suitable voltage</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/mosfet_voltage_amplifier.svg"></p></td>
+            <td><p><img alt="" src="/alevel/img/mosfet_voltage_amplifier.svg"><br>
+The bias network is required to ensure that the gate voltage remains in the resistive region<br>
+\[\begin{align}<br>
+V_d &amp; = V_{DD} - I_dR_d<br>
+\\ &amp; = V_{DD} - g_m(V_{gs} - V_{th})\cdot R_d<br>
+\\ &amp; = -g_mR_d\cdot V_g - g_mR_d\cdot V_{th} + V_{DD}<br>
+\end{align}\]</p></td>
           <tr>
             <td>
 <p>Recall and use the equation for voltage gain (\(G = -g_mR_d\)) of a MOSFET amplifier</p>
             </td>
-            <td><p>\(G\) is the gain of the amplifier<br>
-\(g_m\) is the transconductance of the MOSFET<br>
-\(R_d\) is the resistance of the drain resistor</p></td>
+            <td><p>This equation applies for ac signals, since the coupling capacitors allow the offset to be ignored, so \(V_{OUT} = -g_mR_d\cdot V_{IN}\)</p></td>
           <tr>
             <td>
 <p>Recall the use of drain bias for a MOSFET amplifier (including why this is better than biasing with a voltage divider)</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/mosfet_drain_bias_amplifier.svg"></p></td>
+            <td><p>Using a fixed bias is unreliable because a different MOSFET may have different characteristics which means that the bias does not keep the signal in the resistive region<br>
+<img alt="" src="/alevel/img/mosfet_drain_bias_amplifier.svg"></p></td>
         </tbody>
       </table>
       <h2 id="4.2">4.2 Digital Processing</h2>
@@ -1589,8 +1611,8 @@ A tristate is a buffer that can selectively transmit a digital signal using a th
             <td>
 <p>Recall the block diagram for a memory module (to include data bus, address bus and control bus)</p>
             </td>
-            <td><p>The data bus controls the data that is read from or written to memory<br>
-The address bus controls where the data is stored in memory<br>
+            <td><p>The data bus contains the data that is read from or written to memory<br>
+The address bus selects the data location to be used<br>
 The control bus controls how the module functions</p></td>
           <tr>
             <td>
@@ -1641,13 +1663,13 @@ The tristate allows the input and output to be on the same line</p></td>
             </td>
             <td><p><img alt="" src="/alevel/img/non_volatile_memory_cell.svg"><br>
 The capacitor retains data since a MOSFET gate draws no current, so the capacitor does not discharge<br>
-When the data is read, if the capacitor is charged, the bottom MOSFET has low impedance, so current flows through the resistor and the output line goes low<br>
-If the capacitor is not charged, the bottom MOSFET has high impedance, so current does not flow through the resistor and the output line goes high</p></td>
+When the data is read, if the capacitor is charged, the lower MOSFET has low impedance, so current flows through the resistor and the output line goes low<br>
+If the capacitor is not charged, the lower MOSFET has high impedance, so current does not flow through the resistor and the output line goes high</p></td>
           <tr>
             <td>
 <p>Understand the use of tristates to allow more than one memory module to access a common data bus</p>
             </td>
-            <td><p>The tristate creates to be high impedance between the unwanted memory module and the data bus, effectively disconnecting it, allowing only the desired memory module to write to it</p></td>
+            <td><p>The tristate effects high impedance between the unwanted memory module and the data bus, effectively disconnecting it, allowing only the desired memory module to write to it</p></td>
           <tr>
             <td>
 <p>Understand the use of multiplexers and logic gates to combine small memory modules into large ones</p>
@@ -1706,7 +1728,8 @@ If the capacitor is not charged, the bottom MOSFET has high impedance, so curren
             <td>
 <p>Understand the operation of on-off servo control systems in terms of the following blocks: sensor, reference, comparator, switch, transducer</p>
             </td>
-            <td><p>The switch turns on or off the transducer depending on whether the value detected at the sensor is above or below the reference, with the result then being fed back to the sensor</p></td>
+            <td><p><img alt="" src="/alevel/img/on-off_servo_block_diagram.svg"><br>
+The switch turns on or off the transducer depending on whether the value detected at the sensor is above or below the reference, with the result then being fed back to the sensor</p></td>
           <tr>
             <td>
 <p>Understand circuits for the on-off control of temperature, position, motor speed and light intensity (based on components studied at AS)</p>
@@ -1739,24 +1762,38 @@ If the capacitor is not charged, the bottom MOSFET has high impedance, so curren
             <td>
 <p>Understand the operation of proportional servo control systems in terms of the following blocks: sensor, reference, difference amplifier, voltage amplifier, ramp generator, power amplifier, transducer</p>
             </td>
-            <td><p>Proportional control systems have a continuous output whose value is determined by the difference between the sensor and the reference causing the transducer to ramp up or down more quickly or slowly, until the transducer is at the value required for them to match</p></td>
+            <td><p><img alt="" src="/alevel/img/proportional_control_block_diagram.svg"><br>
+Proportional control systems have a continuous output whose value is determined by the difference between the sensor and the reference causing the transducer to ramp up or down more quickly or slowly, until the transducer is at the value required for them to match</p></td>
           <tr>
             <td>
 <p>Understand the use of an op-amp and four identical resistors to make a difference amplifier</p>
             </td>
-            <td><p>\[\begin{alignat}{2}<br>
+            <td><p><img alt="" src="/alevel/img/difference_amplifier.svg"><br>
+\[\begin{alignat}{2}<br>
 &amp; V_2 - &amp;&amp; V_- = V_- - V_{out}<br>
-\\ \implies &amp; V_{out} &amp;&amp; = 2V_+ - V_2<br>
-\\ &amp; &amp;&amp; = 2V_- - V_2<br>
+\\ \implies &amp; V_{out} &amp;&amp; = 2V_- - V_2<br>
+\\ &amp; &amp;&amp; = 2V_+ - V_2<br>
 \\ &amp; &amp;&amp; = 2\frac{V_1}{2} - V_2<br>
 \\ &amp; &amp;&amp; = V_1 - V_2<br>
 \end{alignat}\]</p></td>
           <tr>
             <td>
-<p>Understand the use of an op-amp to make a ramp generator, including the use of the equation \(ΔV_{out} = -V_{in}\frac{\Delta t}{RC}\)</p>
+<p>Understand the use of an op-amp to make a ramp generator, including the use of the equation \(\Delta V_{out} = -V_{in}\frac{\Delta t}{RC}\)</p>
             </td>
-            <td>
-            </td>
+            <td><p><img alt="" src="/alevel/img/ramp_generator.svg"><br>
+An op-amp ramp generator has a similar design to an inverting amplifier<br>
+Since the output is not saturated and the non-inverting input is grounded, the difference between the two inputs is effectively zero and there is a virtual ground at the inverting input, so \(V_- = V_+ = \SI{0}{\volt}\)<br>
+Since the op-amp draws no current, the current across the resistor is equal to the current across the capacitor<br>
+The output voltage is:<br>
+\[\begin{alignat}{2}<br>
+&amp; Q_C &amp;&amp; = CV_C<br>
+\\ \implies &amp; \int I_C \mathrm{d}t &amp;&amp; = C(V_- - V_{out})<br>
+\\ \implies &amp; \int I_R \mathrm{d}t &amp;&amp; = -CV_{out}<br>
+\\ \implies &amp; V_{out} &amp;&amp; = -\frac{1}{C}\int \frac{V_R}{R} \mathrm{d}t<br>
+\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} - V_- \mathrm{d}t<br>
+\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} \mathrm{d}t<br>
+\end{alignat}\]<br>
+If the input voltage is constant, then \(\Delta V_{out} = -V_{in}\frac{\Delta t}{RC}\)</p></td>
           <tr>
             <td>
 <p>Understand the use of voltage-time graphs to represent the response of a proportional control system to changes of conditions</p>
@@ -1784,22 +1821,33 @@ It asymptotically approaches the desired value</p></td>
             <td>
 <p>Understand the use of a diode bridge and a capacitor to produce an unstabilised dc voltage from an ac supply</p>
             </td>
-            <td><p>The diode bridge rectifies the ac signal so that there is no reverse current<br>
+            <td><p><img alt="" src="/alevel/img/diode_bridge.svg"><br>
+The diode bridge rectifies the ac signal so that there is no reverse current (but drops \(\SI{1.4}{\volt}\) since the signal passes through two diodes)<br>
 The capacitor stores charge on the rising half of each cycle before releasing it on the falling half in order the smooth the signal, so it is always above a certain value</p></td>
           <tr>
             <td>
 <p>Understand the operation of a switched-mode power supply in terms of the following blocks: switched oscillator, transformer, rectifier, smoother, comparator, reference (including the use of opto-isolators to switch the oscillator on and off)</p>
             </td>
-            <td><p>A switched-mode power supply is much more efficient and can run off mains power to produce a variable constant direct current<br>
-The opto-isolator sends feedback to the oscillator through an LED photodiode pair that isolates the high-current circuit from the low-current</p></td>
+            <td><p>A switched-mode power supply is much more efficient than a simple diode bridge and can run off mains power to produce a variable constant direct current<br>
+<img alt="" src="/alevel/img/power_supply_block_diagram.svg"><br>
+The switched oscillator increases the frequency of the ac signal, since the transformer is more efficient at higher frequencies<br>
+The transformer steps down the voltage to a value closer to required, which increases the current<br>
+The rectifier converts the signal to dc by inverting the negative part of the signal<br>
+The smoother stabilises the voltage, reducing ripple in the signal<br>
+The voltage reference provides the required voltage, generally using a zener diode<br>
+The comparator determines how well the processed signal matches the voltage reference, and turns on the oscillator when the voltage is too low<br>
+This feedback is sent back to the oscillator through an opto-isolator, an LED phototransistor pair that isolates the high-voltage circuit from the low-voltage</p></td>
           <tr>
             <td>
 <p>Understand the operation of a dc voltage regulator in terms of the following blocks: reference, comparator, MOSFET follower</p>
             </td>
-            <td><p>A dc voltage regulator generates a fixed dc voltage from an unstabilised dc supply<br>
+            <td><p><img alt="" src="/alevel/img/voltage_regulator_block_diagram.svg"><br>
+<img alt="" src="/alevel/img/voltage_regulator_circuit.svg"><br>
+A dc voltage regulator generates a fixed dc voltage from an unstabilised dc supply<br>
 The reference is the desired output voltage and is commonly produced by a zener diode in reverse bias<br>
 The comparator compares the output voltage with the reference voltage and turns on or off the MOSFET follower accordingly<br>
-When on, the MOSFET follower allows current to flow from the input to the output, charging a capacitor, which provides inertia so that the hunting from it being an on-off system is minimised</p></td>
+When on, the MOSFET follower allows current to flow from the input to the output, charging a capacitor<br>
+Using an on-off servo control system here is acceptable since the capacitor provides intertia, minimising the effect of hunting</p></td>
         </tbody>
       </table>
       <h2 id="4.4">4.4 Microcontroller Systems</h2>
@@ -1826,16 +1874,17 @@ The reset resets the microcontroller to the start of the program, clearing the r
             <td>
 <p>Understand the use of the address, data and control bus to transfer data between the CPU and memory, input ports and output ports</p>
             </td>
-            <td><p>The address bus is used by the CPU to instruct the memory which instruction to fetch<br>
+            <td><p><img alt="" src="/alevel/img/microcontroller_block_diagram.svg"><br>
+The address bus is used by the CPU to instruct the memory which instruction to fetch<br>
 The data bus contains data loaded from the memory or read from the input and processed by the CPU or sent to the output port<br>
 The control bus determines how data is used, using enable &amp; read/write pins</p></td>
           <tr>
             <td>
 <p>Understand the use of the following registers in the CPU: program counter, stack pointer, general purpose registers</p>
             </td>
-            <td><p>The program counter countains the address of the currently-processed instruction, and is incremented after each instruction unless a jump occurs<br>
+            <td><p>The program counter contains the address of the instruction to be fetched; it is incremented after the instruction is fetched, but may be changed once the instruction is executed if it contains a jump<br>
 The stack pointer stores the address of the top of the stack, which is changed each time a subroutine is called or returned from<br>
-The general purpose registers can be used by the CPU for immediate storage &amp; processing of data</p></td>
+The general purpose registers can be used by the CPU for immediate storage &amp; processing of data, as well as for the transference of data to &amp; from the I/O ports</p></td>
           <tr>
             <td>
 <p>Recall the use of tristates and D flip-flops to contruct input and output ports</p>
@@ -1848,24 +1897,20 @@ The general purpose registers can be used by the CPU for immediate storage &amp;
             <td><p>In each machine cycle:</p>
 <ul>
 <li>the value of the program counter is copied onto the address bus</li>
-<li>the data in memory at that address is loaded into the instruction register IL</li>
+<li>the data at that address is fetched from memory loaded into the instruction register</li>
 <li>the program counter is incremented</li>
-<li>by the same process, the data at the address in the program counter is loaded into the instruction register IH</li>
-<li>the program counter is incremented again</li>
-<li>the ALU is activated</li>
+<li>the instruction is executed</li>
 </ul></td>
           <tr>
             <td>
 <p>Understand the changes in the program counter when jump instructions are executed</p>
             </td>
-            <td>
-            </td>
+            <td><p>When the microcontroller is programmed, the label of each jump instruction is replaced with the address which the label is attached to, so when the jump instruction is executed, this address is loaded into the program counter</p></td>
           <tr>
             <td>
 <p>Recall why the program counter is reset when the CPU's reset pin is activated</p>
             </td>
-            <td>
-            </td>
+            <td><p>When the CPU's reset pin is activated, the program counter is loaded with the value 00, which is the address of the first instruction of the program</p></td>
           <tr>
             <td>
 <p>Understand that programs are stored in memory as hexadecimal code produced by compilers from programs written in other languages such as assembler and C</p>
@@ -1908,9 +1953,9 @@ The general purpose registers can be used by the CPU for immediate storage &amp;
 </ul>
 <p>Subroutines:</p>
 <ul>
-<li><code>readtable :</code> copies the byte in the lookup table pointed at by S7 into S0; the lookup table is labelled table: when S7=0 the first byte from the table is returned in S0</li>
-<li><code>wait1ms :</code> waits 1ms before returning</li>
-<li><code>readadc :</code> returns a byte in S0 proportional to the voltage at ADC</li>
+<li><code>readtable :</code> copies the byte in the lookup table pointed at by S7 into S0; the lookup table is labelled table: when S7=00 the first byte from the table is returned in S0</li>
+<li><code>wait1ms   :</code> waits 1ms before returning</li>
+<li><code>readadc   :</code> returns a byte in S0 proportional to the voltage at ADC</li>
 </ul></td>
           <tr>
             <td>
@@ -1930,16 +1975,16 @@ loop: IN   S0,I
             <td><pre><code>      MOVI S0,n
 loop: DEC  S0
       JNZ  S0
-      ...       ; continue
+      ...        ; continue
 </code></pre>
 <p>If the length of waiting time is longer than can be stored in one register, two registers and a nested loop can be used:</p>
 <pre><code>       MOVI S0,n
 outer: MOVI S1,m
-inner: DEC S1
-       JNZ inner
-       DEC S0
-       JNZ outer
-       ...       ; continue
+inner: DEC  S1
+       JNZ  inner
+       DEC  S0
+       JNZ  outer
+       ...        ; continue
 </code></pre></td>
           <tr>
             <td>
@@ -1955,15 +2000,16 @@ OUT   Q,S0
 <p>Use the EOR operation to selectively invert bits in the acccumulator</p>
             </td>
             <td><p>To selectively invert bits in a register, <code>EOR</code> the register with the hexadecimal number which has the desired inverted bits high, for example:</p>
-<pre><code>MOVI S1,n
-EOR  S0,S1
+<pre><code>MOVI  S1,n
+EOR   S0,S1
 </code></pre></td>
           <tr>
             <td>
 <p>Process a byte at the input port to generate an address for a look-up table</p>
             </td>
-            <td>
-            </td>
+            <td><pre><code>IN    S7,I
+RCALL readtable
+</code></pre></td>
           <tr>
             <td>
 <p>Shift bytes in the accumulator to the left or right</p>
@@ -2001,14 +2047,19 @@ Since data in registers persist, they can be used in a subroutine to store infor
             <td>
 <p>Understand the changes in the stack pointer and program counter when calling and returning from subroutines</p>
             </td>
-            <td><p>Since the stack pointer counts down, when calling subroutines, the stack pointer is decremented, and the value of the program counter is copied to the address referenced by the stack pointer<br>
-When returning from subroutines, the value referenced by the stack pointer is copied into the program counter and the stack pointer is incremented</p></td>
+            <td><p>When a subroutine is called, the stack pointer is incremented and the address held by the program counter, which is the address of the instruction after the subroutine call, is pushed onto the stack, by being copied to the address held by the stack pointer<br>
+Then, the program counter is loaded with the address of the start of the called subroutine<br>
+When the subroutine returns, the address held by the stack pointer is popped from the stack and copied into the program counter<br>
+Then, the stack pointer is decremented</p></td>
           <tr>
             <td>
 <p>Understand the advantages of designing programs from subroutines</p>
             </td>
-            <td><p>Modularity<br>
-Readability</p></td>
+            <td><p>Modularity means that the program can be designed in distinct parts, and therefore easier to write<br>
+Readability, since each subroutine is self-contained and can be conceptualised separately<br>
+Reuseability, since the subroutine only needs to be designed once and can be used in several places<br>
+Testability, since the subroutines can be tested separately, making them easier to debug<br>
+Saves memory, since subroutines only need to be stored once, instead of in multiple places</p></td>
           <tr>
             <td>
 <p>Use the instruction set given in Appendix E to write subroutines, using registers to transfer data to and from the main program</p>
@@ -2042,20 +2093,21 @@ Readability</p></td>
             <td>
 <p>Understand the need for raster scans, line synchronisation signals and frame synchronisation signals</p>
             </td>
-            <td><p>A raster scan is the method of rendering a frame employed by CRT screens since they can only render one pixel at a time, so sweep across the screen bit by bit moving across each line and going down each line<br>
+            <td><p>A raster scan is the method of rendering a frame used by CRT screens since they can only render one pixel at a time, so sweep across the screen bit by bit moving across each line and going down each line<br>
 Line synchronisation signals instruct the screen to start scanning a new line<br>
 Frame synchronisation signals instruct the screen to start scanning a new frame</p></td>
           <tr>
             <td>
 <p>Recall that the separate signals for red, green, blue, line sync and frame sync pass from a computer to a monitor</p>
             </td>
-            <td><p>Splitting the RGB signals means that only a third of the total data is sent down each signal, so the bandwidth is a third of what is would otherwise need to be</p></td>
+            <td><p>Splitting the RGB signals means that only a third of the total data is sent down each line, so the bandwidth is a third of what is would otherwise need to be</p></td>
           <tr>
             <td>
 <p>Understand that the frame refresh rate has to be about 25 Hz for a flicker-free moving image</p>
             </td>
             <td><p>The higher the frame refresh rate, the smoother the image<br>
-The limit is 25 Hz since that is the persistence of vision</p></td>
+However, a higher frame rate also increases the bandwidth<br>
+The minimum acceptable frame rate is 25 Hz since that is the persistence of vision</p></td>
           <tr>
             <td>
 <p>Recall how to calculate the bandwidth required for a monitor cable from the refresh rate and the number of pixels per frame</p>
@@ -2110,7 +2162,8 @@ Example using a MOSFET: <img alt="" src="/alevel/img/am_modulator.svg"></p></td>
             <td>
 <p>Recall how to construct voltage-time and amplitude-frequency graphs of AM carriers (including the presence of sidebands on either side of the carrier)</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/am_voltage_time.svg"><br>
+            <td><p>The overall signal has a frequency equal to the carrier frequency, but the shape of the envelope of the signal has a frequency equal to the signal frequency<br>
+<img alt="" src="/alevel/img/am_voltage_time.svg"><br>
 <img alt="" src="/alevel/img/am_amplitude_frequency.svg"></p></td>
           <tr>
             <td>
@@ -2146,13 +2199,16 @@ Therefore, the bandwidth is equal to twice the maximum signal frequency</p></td>
             <td>
 <p>Understand the use of a variable frequency oscillator to produce FM carriers</p>
             </td>
-            <td><p>With the signal voltage controlling the frequency of the oscillator, a higher signal causes a higher frequency in the carrier, and a lower signal causes a lower frequency in the carrier (or vice versa, depending on the configuration of the oscillator)</p></td>
+            <td><p>The signal voltage controls the frequency of the oscillator, whereby the higher the signal voltage, the higher the frequency in the carrier (or vice versa, depending on the configuration of the oscillator)<br>
+This is the exact role of a variable-frequency oscillator</p></td>
           <tr>
             <td>
 <p>Understand the use of a monostable and treble cut filter for frequency demodulation</p>
             </td>
             <td><p><img alt="" src="/alevel/img/fm_demodulator.svg"><br>
-The monostable produces a short pulse for each cycle of the recieved signal</p></td>
+The monostable produces a short pulse for each cycle of the recieved signalo<br>
+The higher the voltage in the signal frequency, the shorter the carrier time period, so the longer the monostable pulse in relation to the cycle length<br>
+The treble-cut filter averages the voltage in each cycle, so the shorter cycle time becomes a higher voltage, mirroring the input signal</p></td>
           <tr>
             <td>
 <p>Recall how to construct voltage-time graphs of frequency modulated carriers</p>
@@ -2178,44 +2234,31 @@ The monostable produces a short pulse for each cycle of the recieved signal</p><
             <td>
 <p>Understand that the mark-space ratio of a pulse-width modulated (PWM) carrier is determined by the instantaneous voltage of the signal</p>
             </td>
-            <td><p>A pulse-width modulated carrier consists of a fixed-length high-low cycle with a variable-length high pulse during it<br>
+            <td><p>A pulse-width modulated carrier is a digital stream with a fixed-length high-low cycle and a variable-length high pulse during it<br>
 The mark-space ratio is the ratio of the period of the high pulse to the period of the cycle</p></td>
           <tr>
             <td>
 <p>Understand the use of a triangle waveform generator and a comparator to produce PWM carriers</p>
             </td>
-            <td><p>Assuming the triangle wave generator is fast enough that the signal voltage can be assumed to be constant during each cycle, the length of the cycle is the time period of the triangle<br>
+            <td><p>Assuming the triangle wave generator is fast enough that the signal voltage is considered constant during each cycle, the length of the cycle is the time period of the triangle<br>
 The length of the pulse is determined by the period of time the voltage of the triangle wave is higher (or lower, depending on the configuration of the comparator) than the voltage of the signal, and is therefore has a linear relationship with the voltage</p></td>
           <tr>
             <td>
 <p>Understand the operation of an op-amp ramp generator and an op-amp non-inverting Schmitt trigger to make a triangle waveform generator (including calculations of trip points and rate rates from component values)</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/ramp_generator.svg"><br>
-An op-amp ramp generator has a similar design to an inverting amplifier<br>
-Since the output is not saturated and the non-inverting input is grounded, the difference between the two inputs is effectively zero and there is a virtual ground at the inverting input, so \(V_- = V_+ = \SI{0}{\volt}\)<br>
-Since the op-amp draws no current, the current across the resistor is equal to the current acress the capacitor<br>
-The output voltage is:<br>
-\[\begin{alignat}{2}<br>
-&amp; Q_C &amp;&amp; = CV_C<br>
-\\ \implies &amp; \int I_C \mathrm{d}t &amp;&amp; = C(V_- - V_{out})<br>
-\\ \implies &amp; \int I_R \mathrm{d}t &amp;&amp; = -CV_{out}<br>
-\\ \implies &amp; V_{out} &amp;&amp; = -\frac{1}{C}\int \frac{V_R}{R} \mathrm{d}t<br>
-\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} - V_- \mathrm{d}t<br>
-\\ &amp; &amp;&amp; = -\frac{1}{RC}\int V_{in} \mathrm{d}t<br>
-\\ &amp; &amp;&amp; = -\frac{1}{RC}V_{in}t<br>
-\end{alignat}\]<br>
+            <td><p>See <a href="#4.3.2">4.3.2</a> for the operation of a ramp generator<br>
 <img alt="" src="/alevel/img/schmitt_trigger.svg"><br>
 A non-inverting Schmitt trigger has a similar design to an inverting amplifier with positive feedback instead of negative, causing the system to be unstable and switching very rapidly rather than stable<br>
-Since the output is saturated and the inverting input is grounded, the non-inverting output is not necessarily zero, but the trip point occurs when the inverting input reaches zero, so when \(V_+ = V_- = \SI{0}{\volt}\)<br>
+Since the output is saturated and the inverting input is grounded, the non-inverting output is not necessarily zero, but the trip point occurs when the non-inverting input reaches zero, so when \(V_+ = V_- = \SI{0}{\volt}\)<br>
 Since the op-amp draws no current, the currents across the resistors are equal<br>
 The trip points occur at:<br>
 \[\begin{align}<br>
 &amp; I_{in} = I_{out}<br>
 \\ \implies &amp; \frac{V_{1}}{R_{in}} = \frac{V_f}{R_f}<br>
-\\ \implies &amp; V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - V_{out})<br>
+\\ \implies &amp; V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - (V_{out})<br>
 \\ \implies &amp; V_{in} = -\frac{R_{in}}{R_f}V_{out}<br>
 \end{align}\]<br>
-where output voltage can be either the positive or negative saturation value<br>
+where the output voltage can be either the positive or negative saturation value, so the trip point has the opposite sign to the current output voltage<br>
 <img alt="" src="/alevel/img/triangle_wave_generator.svg"><br>
 By connecting the ramp generator to the Schmitt trigger in a feedback loop, the ramp generator can be made to trip the Schmitt trigger when it saturates, thereby causing the input to switch to the equal but opposite-signed voltage, causing it to ramp in the opposite direction and generating a triangle wave</p></td>
           <tr>
@@ -2249,14 +2292,13 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td>
 <p>Understand that the intensity of a modulated carrier decreases with increasing distance of transmission (no quantitative details required)</p>
             </td>
-            <td>
-            </td>
+            <td><p>This is attenuation; a further problem is that different frequencies may have different attenuations, which can change the shape of the resultant signal<br>
+Because of this, repeaters are placed periodically along a line to maintain the amplitude of the signal at a high level</p></td>
           <tr>
             <td>
 <p>Understand that noise is a random signal that is added to modulated carriers in transmission</p>
             </td>
-            <td>
-            </td>
+            <td><p>Noise is generally added by electrical components due to thermal noise</p></td>
           <tr>
             <td>
 <p>Understand that interference is a signal from another carrier that is added to modulated carriers</p>
@@ -2266,17 +2308,20 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td>
 <p>Understand the relative susceptibility of twisted-pair cables, optical fibres and radio waves to noise and interference</p>
             </td>
-            <td><p>Optical fibre is immune to interference since the signal is carried by infrared light, and outside sources of light are blocked by a plastic coating</p></td>
+            <td><p>Twisted-pair cable is almost immune to interference, but may be susceptible to noise since it has moderate attenuation<br>
+Optical fibre is immune to interference since the signal is carried by infrared light, and outside sources of light are blocked by a plastic coating, and has very low noise since there are no electrical components and it has low attenuation<br>
+Radio waves are susceptible to noise &amp; interference because it has high attenuation, there are many other radio transmitters and there is no way to screen the signal, but using frequency modulation can mitigate these problems</p></td>
           <tr>
             <td>
 <p>Understand the meaning of signal-to-noise ratio (no quantitative details required)</p>
             </td>
-            <td><p>The signal-to-noise ratio refers to the amplitude of the signal compared to the noise; a high signal-to-noise ratio is desirable so that the signal is more easily extracted</p></td>
+            <td><p>The signal-to-noise ratio refers to the amplitude of the signal compared to the noise; a high signal-to-noise ratio is desirable so that the signal is more easily extracted<br>
+The more a signal is attenuated, the lower its signal-to-noise ratio</p></td>
           <tr>
             <td>
 <p>Understand the use of limiters/Schmitt triggers to remove noise and interference from FM and PWM carriers, including that this is not possible for AM carriers</p>
             </td>
-            <td><p>Schmitt triggers are used to equalise the amplitude by squaring the wave<br>
+            <td><p>Schmitt triggers are used to reproduce the pulses in the original signal by squaring the wave to equalise the amplitude<br>
 Since Schmitt triggers affect the amplitude of the carrier, it cannot be used for AM signals since the amplitude carries information about the signal</p></td>
         </tbody>
       </table>
@@ -2299,7 +2344,7 @@ Since Schmitt triggers affect the amplitude of the carrier, it cannot be used fo
             <td>
 <p>Understand how the maximum number of channels in a link is related to its bandwidth and the bandwidth allocated to each channel</p>
             </td>
-            <td><p>If the bandwidth for each channel is the same, then the maximum number of channels on a link is equaL to the bandwidth of the link divided by the bandwidth of a channel</p></td>
+            <td><p>If the bandwidth for each channel is the same, then the maximum number of channels on a link is equal to the bandwidth of the link divided by the bandwidth of a channel</p></td>
           <tr>
             <td>
 <p>Recall the use of a parallel LC circuit and a resistor as a bandpass filter (including the effect on the bandwidth of increasing the resistance in the parallel LC circuit)</p>
@@ -2327,7 +2372,8 @@ At the resonant frequency, the impedance of an ideal parallel LC circuit is infi
             <td>
 <p>Understand the use of three stacked filters to make a bandpass filter with a flat top and sharp edges, including the need for buffer amplifiers between stages</p>
             </td>
-            <td><p>The three filters have slightly different resonant frequencies to allow a flat top, with one at the lower end of the desired band, one at the upper end of the band, and one in the centre<br>
+            <td><p><img alt="" src="/alevel/img/stacked_filter_circuit.svg"><br>
+The three filters have slightly different resonant frequencies so their frequency responses combine to form one that has a relatively flat top for a band of frequencies from the resonant frequency of the lowest filter to the resonant frequency of the highest filter<br>
 Buffer amplifiers are required to drive the low-impedance input of the LC bandpass filter with the high-impedance output of the filter</p></td>
         </tbody>
       </table>
@@ -2375,7 +2421,8 @@ The loudspeaker outputs the audio</p></td>
             <td>
 <p>Understand the operation of a superhet radio receiver in terms of the following blocks: aerial, tuned circuit, local oscillator, mixer, if filter, if amplifier, demodulator, af amplifier, loudspeaker</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/superhet.svg"><br>
+            <td><p>A superheterodyne receiver is better than a simple radio receiver because the circuit can be tuned to differenct frequencies and<br>
+<img alt="" src="/alevel/img/superhet.svg"><br>
 The aerial receives a signal that induces alternating currents into the input<br>
 The tuned circuit isolates frequencies that are within signal range of the carrier frequency<br>
 The local oscillator produces oscillations whose frequency is offset from the radio frequency<br>
@@ -2422,7 +2469,8 @@ The sample rate is how often the signal gets sampled</p></td>
             <td>
 <p>Understand the operation of flash ADCs made from comparators and logic gates</p>
             </td>
-            <td><p>The resistors divide the supply voltage into equal divisions, normally integer voltages, which are the thresholds for each step of the ADC<br>
+            <td><p><img alt="" src="/alevel/img/flash_adc.svg"><br>
+The resistors divide the supply voltage into equal divisions, normally integer voltages, which are the thresholds for each step of the ADC<br>
 The comparators compare each division with the input voltage, establishing a threshold where every comparator above the voltage is high and every comparator below it is low (or vice versa, depending on the configuration of the comparators)<br>
 The XOR gates recieve inputs from each pair of adjacent comparators, which finds the two divisions the input voltage is between since the comparator outputs change from low to high, thereby being the only XOR gate that is high<br>
 The logic gate system determines which bits go high for which voltage value<br>
@@ -2444,7 +2492,8 @@ which represents the binary encoding of the voltage</p></td>
             <td>
 <p>Understand the operation of an ADC made from a binary counter, a comparator and a DAC, including its advantages and disadvantages compared with a flash converter</p>
             </td>
-            <td><p>The counter produces increasing digital values, normally in \(\SI{1}{\volt}\) steps<br>
+            <td><p><img alt="" src="/alevel/img/ramp_adc.svg"><br>
+The counter produces increasing digital values, normally in \(\SI{1}{\volt}\) steps<br>
 The DAC converts the digital value into an analogue voltage<br>
 The comparator remains low until the counter reaches the lowest value that exceeds the input signal<br>
 This activates the latch so it transmits the digital value<br>
@@ -2495,13 +2544,12 @@ The checksum is an identifier that is calculated from the payload and is used to
             <td>
 <p>Understand the use of analogue switches to allow many systems to place signals on a single link in turn</p>
             </td>
-            <td>
-            </td>
+            <td><p>Each device is connected to the link through an analogue switch, which can turn on if it is transmitting data, or turn off if it isn't, effectively disconnecting the device from the line</p></td>
           <tr>
             <td>
 <p>Recall that each computer waits until there is no traffic on the cables before it attempts to transmit a packet</p>
             </td>
-            <td><p>When the device transmits data, it simultaneously listen to the line to check that the source address is transmitted correctly; if not, there is another device transmitting that is corrupting the signal, so it stops transmitting waits for a predetermined time that is different for each device before transmitting again on a hopefully quiet line</p></td>
+            <td><p>As soon as the line becomes free, the device starts transmitting data, simultaneously listening to the line to check that the source address is transmitted correctly; if not, there is another device transmitting that is corrupting the signal, so it stops transmitting waits for a predetermined time that is different for each device before transmitting again on a hopefully quiet line</p></td>
           <tr>
             <td>
 <p>Understand the need for start (0) and stop (1) bits at the start and end of each packet</p>
@@ -2512,7 +2560,8 @@ The stop bit is a 1 to inform the device that there is no more data to receive a
             <td>
 <p>Understand the use of D flip-flops and logic gates to construct parallel-in serial-out (PISO) and serial-in parallel-out (SIPO) shift registers</p>
             </td>
-            <td><p>A shift register is a row of D-type latches whose outputs are connected to the input of the next latch, so that on each clock pulse, the output each latch is loaded into the next latch along, causing the data to "shift" along</p></td>
+            <td><p><img alt="" src="/alevel/img/shift_register.svg"><br>
+A shift register is a row of D-type latches whose outputs are connected to the input of the next latch, so that on each clock pulse, the output each latch is loaded into the next latch along, causing the data to "shift" along</p></td>
           <tr>
             <td>
 <p>Understand the use of shift registers in PTS and STP converters, including the need to use crystal oscillators</p>

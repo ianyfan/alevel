@@ -1,0 +1,59 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="84" width="120" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 120 84.000001">
+ <defs>
+  <marker id="a" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="h" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="e" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="f" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -968.4)">
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <g stroke-linejoin="round" stroke-linecap="round">
+    <path marker-end="url(#f)" d="m12 1028v-16"/>
+    <path marker-end="url(#b)" d="m12 1020h100"/>
+    <path marker-end="url(#e)" d="m12 1008v-16"/>
+    <path marker-end="url(#a)" d="m12 1e3h100"/>
+    <path marker-end="url(#d)" d="m12 988.4v-16"/>
+    <path marker-end="url(#g)" d="m12 980.4h100"/>
+   </g>
+   <g>
+    <path d="m12 1e3c8 8 16 8 24 0s16-8 24 0 16 8 24 0 16-8 24 0"/>
+    <path d="m108 974.4c-4 0-8 2-12 6-8 8-16 8-24 0s-16-8-24 0-16 8-24 0c-4-4-8-6-12-6"/>
+    <path d="m108 1026c-4 0-8-2-12-6-8-8-16-8-24 0s-16 8-24 0-16-8-24 0c-4 4-8 6-12 6"/>
+   </g>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="981.57709" x="114.885"><tspan x="114.885" y="981.57709">x</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1001.577" x="114.8325" xml:space="preserve"><tspan y="1001.577" x="114.8325">v</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1021.5771" x="114.7875"><tspan x="114.7875" y="1021.5771">a</tspan></text>
+  </g>
+  <path stroke-linejoin="round" marker-end="url(#c)" d="m12 1032v16h100" marker-start="url(#h)" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <path d="m12 1048c5 0 7-16 12-16s7 16 12 16 7-16 12-16 7 16 12 16 7-16 12-16 7 16 12 16 7-16 12-16 7 16 12 16" stroke="#000" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.0022" x="113.13469" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="113.13469" y="1050.0022">KE</tspan></text>
+  <path d="m11 974.4h1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="976.00214" x="7.2950001" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="7.2950001" y="976.00214">A</tspan></text>
+  <path d="m11 994.4h1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" font-size="5px" line-height="125%" y="995.97217" x="3.7891407" font-family="&apos;Source Sans Pro&apos;" xml:space="preserve" fill="#000000"><tspan y="995.97217" x="3.7891407">ωA</tspan></text>
+  <path d="m11 1014h1" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1016.3884" x="2.176836" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="2.176836" y="1016.3884">ω<tspan style="baseline-shift:super" font-size="65%">2</tspan>A</tspan></text>
+ </g>
+</svg>

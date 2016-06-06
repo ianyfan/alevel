@@ -1,0 +1,56 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="40" width="188" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 188 40">
+ <defs>
+  <marker id="a" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="d" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="e" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="f" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="g" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -1012)">
+  <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+   <rect height="8" width="40" y="1028" x="144"/>
+   <rect height="8" width="40" y="1028" x="100"/>
+   <rect height="8" width="48" y="1028" x="4"/>
+   <rect height="8" width="32" y="1040" x="148"/>
+   <rect height="8" width="40" y="1028" x="56"/>
+   <rect height="8" width="24" y="1016" x="16"/>
+   <rect height="8" width="24" y="1040" x="16"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1046.0022" x="20.672344"><tspan x="20.672344" y="1046.0022">Sensor</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1022.1422" x="17.508907"><tspan x="17.508907" y="1022.1422">Reference</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.6122" x="58.303711"><tspan x="58.303711" y="1033.6122">Voltage amplifier</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1046.1122" x="152.27374"><tspan x="152.27374" y="1046.1122">Transducer</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.6597" x="7.2564449"><tspan x="7.2564449" y="1033.6597">Difference amplifier</tspan></text>
+  </g>
+  <g stroke="#000" fill="none">
+   <g stroke-width="1px">
+    <path marker-end="url(#g)" d="m28 1024v3"/>
+    <path marker-end="url(#f)" d="m28 1040v-3"/>
+    <path marker-end="url(#e)" d="m52 1032h3"/>
+    <path marker-end="url(#d)" d="m164 1036v3"/>
+   </g>
+   <path marker-end="url(#c)" d="m148 1044h-107" stroke-dasharray="1, 1"/>
+  </g>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1033.4423" x="102.99668" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="102.99668" y="1033.4423">Ramp generator</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1033.6597" x="147.24081" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="147.24081" y="1033.6597">Power amplifier</tspan></text>
+  <path marker-end="url(#b)" d="m96 1032h3" stroke="#000" stroke-width="1px" fill="none"/>
+  <path marker-end="url(#a)" d="m140 1032h3" stroke="#000" stroke-width="1px" fill="none"/>
+ </g>
+</svg>

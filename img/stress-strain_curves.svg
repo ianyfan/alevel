@@ -1,0 +1,47 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="128" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 128 64.000002">
+ <defs>
+  <marker id="a" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0.0" refX="0.0" orient="auto" overflow="visible">
+   <path d="m5.77 0l-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(-.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="994.00208" x="1.6735938" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="1.6735938" y="994.00208">Stress</tspan></text>
+  <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="5px" line-height="125%" y="1050.0621" x="113.91281" font-family="&apos;Source Sans Pro&apos;" fill="#000000"><tspan x="113.91281" y="1050.0621">Strain</tspan></text>
+  <path stroke-linejoin="round" marker-end="url(#a)" d="m8 996.4v52h104" marker-start="url(#b)" stroke="#000" stroke-width="1px" fill="none"/>
+  <path stroke-linejoin="round" d="m8 1048 16-32c8-16 16-4 16-4 24-24 48-12 48-12" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <g>
+   <circle cx="24" cy="1016" r="1"/>
+   <circle cy="1012" cx="40" r="1"/>
+   <circle cx="88" cy="1e3" r="1"/>
+   <circle cy="1010" cx="28" r="1"/>
+   <circle cx="73" cy="997.4" r="1"/>
+   <circle cy="1008" cx="33" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1017.0021" x="20.467501"><tspan x="20.467501" y="1017.0021">P</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1009.0021" x="24.58"><tspan x="24.58" y="1009.0021">E</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="996.00208" x="68.693436"><tspan x="68.693436" y="996.00208">UTS</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="998.00208" x="86.404999"><tspan x="86.404999" y="998.00208">B</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1008.5021" x="38.076595"><tspan x="38.076595" y="1008.5021">Y<tspan style="baseline-shift:sub" font-size="65%">2</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1005.5021" x="31.097719"><tspan x="31.097719" y="1005.5021">Y<tspan style="baseline-shift:sub" font-size="65%">1</tspan></tspan></text>
+  </g>
+  <path d="m8 1048 24-24c2-2 4-2 4-2" stroke="#000" stroke-width="1px" fill="none"/>
+  <path stroke-linejoin="round" d="m8 1048 32-24c32-24 72-12 72-12" stroke="#000" stroke-linecap="round" stroke-width="1px" fill="none"/>
+  <g>
+   <circle cy="1012" cx="112" r="1"/>
+   <circle cy="1009" cx="88" r="1"/>
+   <circle cx="36" cy="1022" r="1"/>
+   <circle cy="1024" cx="40" r="1"/>
+   <circle cy="1024" cx="32" r="1"/>
+   <circle cx="46" cy="1020" r="1"/>
+  </g>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1020.1121" x="30.410313"><tspan x="30.410313" y="1020.1121">Glass</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1018.5196" x="104.19813"><tspan x="104.19813" y="1018.5196">Copper</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1002.1121" x="89.986954"><tspan x="89.986954" y="1002.1121">Mild steel</tspan></text>
+  </g>
+ </g>
+</svg>

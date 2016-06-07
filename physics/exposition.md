@@ -194,11 +194,11 @@
 2.1.3
 1 Velocity is speed with respect to a specified direction
 \ \\(v = \frac{\mathrm{d}s}{\mathrm{d}t}\\), \\(a = \frac{\mathrm{d}v}{\mathrm{d}t}\\)
-2 \\(g = \SI{9.8}{\metre\per\second}\\) to two significant figures
-\ The gradient of a displacement-time graph is the velocity
+2 The gradient of a displacement-time graph is the velocity
 \ The gradient of a velocity-time graph is the acceleration
 \ The area under a velocity-time graph is the displacement
-4 Terminal speed is the speed of freefall at which the acceleration due to gravity is equal to the decceleration due to air resistance
+4 \\(g = \SI{9.8}{\metre\per\second}\\) to two significant figures
+\ Terminal speed is the speed of freefall at which the acceleration due to gravity is equal to the decceleration due to air resistance
 
 2.1.4
 1 The acceleration due to gravity only affects the vertical velocity of a projectile, not the horizontal
@@ -233,17 +233,29 @@
 \ \\(V\\) is the volume in metres cubed
 2 Hooke's law states that the forces required to stretch a spring is the directly proportional to the distance stretched, up to the elastic limit, past which the spring deforms irrevocably
 3 A stretched body is under tension
-\ Tensile strain is the ratio length stretched to original length \\(\varepsilon = \frac{\Delta L}{L}\\)
-\ Tensile stress is the ratio tension to cross-sectional area: \\(\sigma = \frac{T}{A}\\)
+\ Tensile strain is the ratio of length stretched to original length \\(\varepsilon = \frac{\Delta L}{L}\\)
+\ Tensile stress is the ratio of tension to cross-sectional area: \\(\sigma = \frac{T}{A}\\)
 4 Elastic strain energy is the energy stored in a stretched elastic body
-\ Breaking stress is the point past which an elastic body loses its strength, extending and becoming narrower as more tensile stress is put upon it
+\ Breaking stress is the point past which an elastic body loses its strength, extending and becoming narrower as more stress is put upon it
 5 \\(\text{Energy} = \text{average force} * \text{extension} = \frac{1}{2}F\Delta L\\)
 6 Plastic deformation occurs when a material is stretched beyond the elastic point such that it does not return to its original shape when the force is removed; if it does, the deformation is elastic
 \ Brittle materials have a rigid structure, so will not display plastic behaviour and, and break when the force is too great without and noticeable yield
-\ Fractures occur in brittle materials when stress causes cracks in the material to grow until it breaks completely; fractures do not occure in plastic materials because atoms can move to stop the cracks from growing
+\ Fractures occur in brittle materials when stress causes cracks in the material to grow until it breaks completely; fractures do not occur in plastic materials because atoms can move to stop the cracks from growing
+\ Materials may behave differently when loading to unloading: if so, the area inside the curve is equal to the net work done; below the elastic limit, the unloading graph returns to the origin, but it does not when above
+\ ![](/alevel/img/stress-strain_curves.svg)
+\ As the strain increases, the stress rises proportionally up to P, and then continues to increase past E until the first yield point
+\ Past the yield point, the material undergoes necking, whereby the material weakens and the and part of the material thins
+\ The ultimate tensile stress is the maximum stress the material can withstand
+\ The material then weakens until the breaking point
+\ For a brittle material, the ultimate tensile stress is the breaking point
 
 2.2.2
-1
+1 This only applies below the proportionality limit
+2 The Young's modulus of a wire can be obtained by attaching weights onto the end and hanging the wire vertically alongside a control wire or clamping it horizontally on a tableand hanging the weights off the end
+\ The area is calculated by measuring the diameter of the wire with a micrometer at three points with different orientations
+\ The extension is also measured using a micrometer with a marking at the original length
+\ The wire should be long, at least a metre, to produce appreciable results for the extension, and to reduce the error in the measurements
+3 Measure the gradient of stress by strain for the line below the proportionality limit
 
 2.3.1
 1 Mechanical waves propagate by the oscillation of particles in a medium
@@ -257,8 +269,10 @@
 2.3.2
 1 Longitudinal waves displace along the same line as the direction of travel, such as sound waves
 \ Transverse waves displace perpendicular to the direction of travel, such as light waves
-2 Polarisation allows oscillation in just one direction, so another polarisation in the perpendicular direction blocks all transverse waves
+2 Unpolarised light vibrates in all directions
+\ Polarisation allows oscillation in just one direction, so another polarisation in the perpendicular direction blocks all transverse waves
 \ Since light (and EM waves in general) gets blocked by this, it shows that light is a transverse wave
+\ Polarised sunglasses are polarised to attenuate glare on surfaces, since when light is scattered off a surface, it is mostly polarised in the direction parallel to the surface; this improves the visibility of the scene
 \ Radio transmitters are polarised, so receivers must be rotated in the same direction in order to receive the strongest signal
 
 2.3.3
@@ -268,6 +282,7 @@
 5 Fibre optics are cladded with a substance with a lower refractive index than the core so that light travelling down it undergoes total internal reflection, allowing transmission of information that is fast and lossless
 \ However, the refractive index must still be high so that the critical angle is high, to prevent multipath dispersion, wherein light travelling at a greater angle reflects more, thereby travelling a longer path so that different components of the signal arrive at different times, distorting it
 \ Multipath dispersion is also mitigated by having a narrow core
+\ Cladding is also present to proctect the core from being damaged, which would affect the data transfer, and prevent the crossover of signal with outside sources by blocking incoming EM waves
 
 2.3.4
 1 A stationary wave can be formed by two waves with the same frequency and wavelength (and amplitude) travelling in opposite directions to form the superposition of the two waves: when the waves are in phase, they reinforce to form a wave with twice the amplitude, and when they are a half a wavelength out of phase, they cancel
@@ -277,16 +292,21 @@
 2 ![](/alevel/img/stationary_wave.svg)
 \ Nodes are the points with the minimum amplitude
 \ Antinodes are the points with the maximum amplitude, and occur at the midpoints of nodes
+\ Comparison with progressive waves:
+\
+\ * same frequency, apart from the nodes
+\ * the amplitude of the particles on a progressive wave are the same, but the particles on a stationary wave have variable frequency, from zero at the node to maximum at the antinodes
+\ * the phase difference between two particles on a progressive wave \\(d\\) apart is \\(\frac{2\pi d}{\lambda}\\); the phase difference between two particles on a standing wave with \\(n\\) nodes between them is \\(n\pi\\)
 
 2.3.5
 1 Path difference is the difference in phase of two waves with the same frequency
-\ Coherence is the property of two waves that have the same frequency and constant phase difference
+\ Coherence is the property of two waves that have the same frequency and constant path difference
 2 A laser produces light that is coherent, as well as being spatially coherent, so that it can be focused on a single spot and not spread out over a long distance; it can also be monochromatic, whereby its light has a single frequency/wavelength
 \ Non-laser light must be passed through a single slit to make it coherent
 \ Lasers can damage the retina if looked at directly
 4 Two sources must be coherent; the phase difference affects the offset of the fringes
 5 \\(w\\) is the fringe spacing, \\(\lambda\\) is the wavelength of the light and \\(D\\) is the distance from the slits to the surface where the fringes are produced
-\ \\(D\\) must be large enough so that the diffraction observed is Fraunhofer diffraction, not near-field diffraction
+\ \\(D\\) must be large enough so that the diffraction observed is Fraunhofer diffraction rather than near-field diffraction
 
 2.3.6
 1 When a wave, such as light, passes through a thin slit, it diffracts, spreading out in the shape of a semicircle; the diffraction waves generated at different points in the slit interfere with each other, resulting in the formation of a diffraction pattern

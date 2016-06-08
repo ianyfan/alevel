@@ -117,7 +117,7 @@ for subject in subjects:
     <script type="text/x-mathjax-config">
         MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
         MathJax.Hub.Config({{
-            jax: ["input/TeX", "output/NativeMML"],
+            jax: ["input/TeX", "output/CommonHTML", "output/NativeMML"],
             TeX: {{ extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] }},
             extensions: ["tex2jax.js", "[Contrib]/siunitx/siunitx.js"]
         }});

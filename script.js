@@ -100,7 +100,8 @@
         var el, start, minimum;
         section.ontouchstart = function(e) {
             el = e.target;
-            while (el.tagName != 'TABLE' && el.className != 'MathJax_MathContainer') {
+            while (el.tagName != 'TABLE' &&
+                    el.className != 'MathJax_MathContainer' && el.className != 'mjx-chtml MathJax_CHTML') {
                 el = el.parentNode;
                 if (el.tagName == 'SECTION') return;
             }

@@ -274,12 +274,13 @@
 \ \end{align}\\]
 \ If \\(g_mR\\) is sufficiently large, then the gain is effectively 1, so the source voltage is always lower than the gate voltage by the threshold voltage
 \ If the input signal is an ac signal, then this offset can be ignored by using coupling capacitor and a biasing network to ensure that the gate voltage is always above the threshold voltage
+\ The voltage follower has very high input impedance because the MOSFET draws no current, but using resistors in a bias network reduces the impedance
 6 ![](/alevel/img/mosfet_voltage_amplifier.svg)
 \ The bias network is required to ensure that the gate voltage remains in the resistive region
 \ \\[\begin{align}
 \ V_d & = V_{DD} - I_dR_d
 \ \\\ & = V_{DD} - g_m(V_{gs} - V_{th})\cdot R_d
-\ \\\ & = -g_mR_d\cdot V_g - g_mR_d\cdot V_{th} + V_{DD}
+\ \\\ & = -g_mR_d\cdot V_g + g_mR_d\cdot V_{th} + V_{DD}
 \ \end{align}\\]
 7 This equation applies for ac signals, since the coupling capacitors allow the offset to be ignored, so \\(V_{OUT} = -g_mR_d\cdot V_{IN}\\)
 8 ![](/alevel/img/mosfet_drain_bias_amplifier.svg)
@@ -293,13 +294,24 @@
 2 The number of data lines is equal to the word length
 3 The number of different locations in the memory module is equal to 2 to the power of the number of address lines
 4 The lines are normally high, and must be taken low to perform their function
-5 Writing: place location address on address bus -> place data on data bus -> pull chip-enable low -> pulse write-enable low
-\ Reading: place location address on address bus -> wait for location to be accessed -> pull chip-enable low -> pulse read-enable low
+5 Writing:
+\
+\ 1. place location address on address bus
+\ 2. place data on data bus
+\ 3. pull chip-enable low
+\ 4. pulse write-enable low
+\
+\ Reading:
+\
+\ 1. place location address on address bus
+\ 2. wait for location to be accessed
+\ 3. pull chip-enable low
+\ 4. pulse read-enable low
 
 4.2.2
 1 Non-volatile memory retains the data stored upon power loss, whereas volatile memory does not
 2 ![](/alevel/img/volatile_memory_cell.svg)
-\ The tristate allows the input and output to be on the same line
+\ The tristate allows the cell to be bidirectional, so the input and output are on the same line
 3 ![](/alevel/img/non_volatile_memory_cell.svg)
 \ The capacitor retains data since a MOSFET gate draws no current, so the capacitor does not discharge
 \ When the data is read, if the capacitor is charged, the lower MOSFET has low impedance, so current flows through the resistor and the output line goes low
@@ -359,7 +371,7 @@
 \ The smoother stabilises the voltage, reducing ripple in the signal
 \ The voltage reference provides the required voltage, generally using a zener diode
 \ The comparator determines how well the processed signal matches the voltage reference, and turns on the oscillator when the voltage is too low
-\ This feedback is sent back to the oscillator through an opto-isolator, an LED phototransistor pair that isolates the high-voltage circuit from the low-voltage
+\ This feedback is sent back to the oscillator through an opto-isolator, an LED phototransistor pair that electrically isolates the high-voltage circuit from the low-voltage
 3 ![](/alevel/img/voltage_regulator_block_diagram.svg)
 \ ![](/alevel/img/voltage_regulator_circuit.svg)
 \ A dc voltage regulator generates a fixed dc voltage from an unstabilised dc supply
@@ -375,9 +387,10 @@
 \ The output port is an eight-bit bus that the CPU can put data on to send to an external circuit
 \ The clock generates a continuous series of pulses that are used by the CPU to synchronise its operations
 \ The reset resets the microcontroller to the start of the program, clearing the registers
-2 ![](/alevel/img/microcontroller_block_diagram.svg)
-\ The address bus is used by the CPU to instruct the memory which instruction to fetch
-\ The data bus contains data loaded from the memory or read from the input and processed by the CPU or sent to the output port
+2 A bus is a collection of wire that transfers data from one part of a system to another
+\ ![](/alevel/img/microcontroller_block_diagram.svg)
+\ The address bus is unidirectional, used by the CPU to instruct the memory which instruction to fetch
+\ The data bus is bidirectional and contains data loaded from the memory or read from the input to be processed by the CPU or sent by the CPU to the output port
 \ The control bus determines how data is used, using enable & read/write pins
 3 The program counter contains the address of the instruction to be fetched; it is incremented after the instruction is fetched, but may be changed once the instruction is executed if it contains a jump
 \ The stack pointer stores the address of the top of the stack, which is changed each time a subroutine is called or returned from
@@ -457,7 +470,7 @@
 \ Since data in registers persist, they can be used in a subroutine to store information so that the outside program can use them
 
 4.4.3
-1 Therefore, only the top of the stack needs to tracked, which is updated upon pushing or popping the stack
+1 This means that only the top of the stack needs to tracked, which is updated upon pushing or popping the stack
 2 When a subroutine is called, the stack pointer is incremented and the address held by the program counter, which is the address of the instruction after the subroutine call, is pushed onto the stack, by being copied to the address held by the stack pointer
 \ Then, the program counter is loaded with the address of the start of the called subroutine
 \ When the subroutine returns, the address held by the stack pointer is popped from the stack and copied into the program counter

@@ -1573,7 +1573,8 @@ V_s &amp; = I_dR + V_{SS}<br>
 \\ &amp; = (1 - \frac{1}{1 + g_mR})(V_g - V_{th}) + \frac{V_{SS}}{1 + g_mR}<br>
 \end{align}\]<br>
 If \(g_mR\) is sufficiently large, then the gain is effectively 1, so the source voltage is always lower than the gate voltage by the threshold voltage<br>
-If the input signal is an ac signal, then this offset can be ignored by using coupling capacitor and a biasing network to ensure that the gate voltage is always above the threshold voltage</p></td>
+If the input signal is an ac signal, then this offset can be ignored by using coupling capacitor and a biasing network to ensure that the gate voltage is always above the threshold voltage<br>
+The voltage follower has very high input impedance because the MOSFET draws no current, but using resistors in a bias network reduces the impedance</p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs as high input impedance voltage amplifiers, including the need for biasing with a voltage divider to place the drain at a suitable voltage</p>
@@ -1583,7 +1584,7 @@ The bias network is required to ensure that the gate voltage remains in the resi
 \[\begin{align}<br>
 V_d &amp; = V_{DD} - I_dR_d<br>
 \\ &amp; = V_{DD} - g_m(V_{gs} - V_{th})\cdot R_d<br>
-\\ &amp; = -g_mR_d\cdot V_g - g_mR_d\cdot V_{th} + V_{DD}<br>
+\\ &amp; = -g_mR_d\cdot V_g + g_mR_d\cdot V_{th} + V_{DD}<br>
 \end{align}\]</p></td>
           <tr>
             <td>
@@ -1635,8 +1636,20 @@ The control bus controls how the module functions</p></td>
             <td>
 <p>Recall the sequence of operations required for a word to be written to, and read from a location in a memory module</p>
             </td>
-            <td><p>Writing: place location address on address bus -&gt; place data on data bus -&gt; pull chip-enable low -&gt; pulse write-enable low<br>
-Reading: place location address on address bus -&gt; wait for location to be accessed -&gt; pull chip-enable low -&gt; pulse read-enable low</p></td>
+            <td><p>Writing:</p>
+<ol>
+<li>place location address on address bus</li>
+<li>place data on data bus</li>
+<li>pull chip-enable low</li>
+<li>pulse write-enable low</li>
+</ol>
+<p>Reading:</p>
+<ol>
+<li>place location address on address bus</li>
+<li>wait for location to be accessed</li>
+<li>pull chip-enable low</li>
+<li>pulse read-enable low</li>
+</ol></td>
         </tbody>
       </table>
       <h3 id="4.2.2">4.2.2 Some types of memory can retain information in the absence of a power supply</h3>
@@ -1658,7 +1671,7 @@ Reading: place location address on address bus -&gt; wait for location to be acc
 <p>Understand the use of a D flip-flop and a tristate to make a volatile memory cell</p>
             </td>
             <td><p><img alt="" src="/alevel/img/volatile_memory_cell.svg"><br>
-The tristate allows the input and output to be on the same line</p></td>
+The tristate allows the cell to be bidirectional, so the input and output are on the same line</p></td>
           <tr>
             <td>
 <p>Understand the use of a capacitor and a MOSFET to make a non-volatile memory cell</p>
@@ -1837,7 +1850,7 @@ The rectifier converts the signal to dc by inverting the negative part of the si
 The smoother stabilises the voltage, reducing ripple in the signal<br>
 The voltage reference provides the required voltage, generally using a zener diode<br>
 The comparator determines how well the processed signal matches the voltage reference, and turns on the oscillator when the voltage is too low<br>
-This feedback is sent back to the oscillator through an opto-isolator, an LED phototransistor pair that isolates the high-voltage circuit from the low-voltage</p></td>
+This feedback is sent back to the oscillator through an opto-isolator, an LED phototransistor pair that electrically isolates the high-voltage circuit from the low-voltage</p></td>
           <tr>
             <td>
 <p>Understand the operation of a dc voltage regulator in terms of the following blocks: reference, comparator, MOSFET follower</p>
@@ -1875,9 +1888,10 @@ The reset resets the microcontroller to the start of the program, clearing the r
             <td>
 <p>Understand the use of the address, data and control bus to transfer data between the CPU and memory, input ports and output ports</p>
             </td>
-            <td><p><img alt="" src="/alevel/img/microcontroller_block_diagram.svg"><br>
-The address bus is used by the CPU to instruct the memory which instruction to fetch<br>
-The data bus contains data loaded from the memory or read from the input and processed by the CPU or sent to the output port<br>
+            <td><p>A bus is a collection of wire that transfers data from one part of a system to another<br>
+<img alt="" src="/alevel/img/microcontroller_block_diagram.svg"><br>
+The address bus is unidirectional, used by the CPU to instruct the memory which instruction to fetch<br>
+The data bus is bidirectional and contains data loaded from the memory or read from the input to be processed by the CPU or sent by the CPU to the output port<br>
 The control bus determines how data is used, using enable &amp; read/write pins</p></td>
           <tr>
             <td>
@@ -2043,7 +2057,7 @@ Since data in registers persist, they can be used in a subroutine to store infor
             <td>
 <p>Recall that the stack is an area of memory for storing the contents of the program counter on a last-in, first-out (LIFO) basis</p>
             </td>
-            <td><p>Therefore, only the top of the stack needs to tracked, which is updated upon pushing or popping the stack</p></td>
+            <td><p>This means that only the top of the stack needs to tracked, which is updated upon pushing or popping the stack</p></td>
           <tr>
             <td>
 <p>Understand the changes in the stack pointer and program counter when calling and returning from subroutines</p>

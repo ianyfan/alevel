@@ -246,10 +246,11 @@
 \ Below the threshold voltage (typically \\(\SI{2}{\volt}\\)), the MOSFET is in its high resistance state, so does not allow the flow of current
 \ Above the threshold voltage, the current rises rapidly with voltage until it saturates
 \ The change in current with voltage is the transconductance of the MOSFET, \\(g_m\\), so the formula \\(I_d = g_m(V_{gs} - V_{th})\\) can be used whilst the current is not saturated
-\ Transconductance is measured in siemens \\(\SI{1}{\siemens} = \SI{1}{\ampere\per\volt}\\)
+\ Transconductance is measured in siemens, where \\(\SI{1}{\siemens} = \SI{1}{\ampere\per\volt}\\)
 \ ![](/alevel/img/mosfet_id_vds.svg)
 \ The current also depends on \\(V_{ds}\\): when it is small, the MOSFET behaves less like a transistor and more like a resistor whose resistance is controlled by \\(V_{gs}\\)
 2 The resistance falls as \\(V_{gs}\\) rises
+\ The drain-source voltage must be small so that the MOSFET is in its resistive region
 3 ![](/alevel/img/vcr.svg)
 \ \\(V_{OUT}\\) rises with \\(V_R\\)
 4 An analogue switch is a voltage-controlled switch
@@ -281,8 +282,9 @@
 \ \\\ & = -g_mR_d\cdot V_g - g_mR_d\cdot V_{th} + V_{DD}
 \ \end{align}\\]
 7 This equation applies for ac signals, since the coupling capacitors allow the offset to be ignored, so \\(V_{OUT} = -g_mR_d\cdot V_{IN}\\)
-8 Using a fixed bias is unreliable because a different MOSFET may have different characteristics which means that the bias does not keep the signal in the resistive region
-\ ![](/alevel/img/mosfet_drain_bias_amplifier.svg)
+8 ![](/alevel/img/mosfet_drain_bias_amplifier.svg)
+\ Drain bias is achieved by connecting the gate of the MOSFET to the drain through a resistor so that the gate voltage is biased to the same voltage as the drain voltage (assuming that no current flows through the resistor)
+\ Drain bias is better than fixed bias because MOSFETs have different characteristics, which cause their resistive region to occur at different voltages, so a fixed bias may work for some MOSFETs but not others so would have to be adjusted for different MOSFETs, but using drain bias ensures that the bias falls within the resistive region of every MOSFET regardless of their charactaristics, and means that a single circuit design works for every MOSFET
 
 4.2.1
 1 The data bus contains the data that is read from or written to memory
@@ -303,12 +305,13 @@
 \ When the data is read, if the capacitor is charged, the lower MOSFET has low impedance, so current flows through the resistor and the output line goes low
 \ If the capacitor is not charged, the lower MOSFET has high impedance, so current does not flow through the resistor and the output line goes high
 4 The tristate effects high impedance between the unwanted memory module and the data bus, effectively disconnecting it, allowing only the desired memory module to write to it
-5 Multiplexers are used to select the memory location to be processed using the data on address bus
+5 Multiplexers are used to select the memory location to be processed using the data on address bus, with the selector acting as an extra address bit
 
 4.2.3
 1 A register is a memory module used by the processor to hold data that it is processing, with separate input and output buses
 2 Using multiple logic systems, one for each bit in the byte, two binary words can be combined in parallel, whether it be ANDing, XORing or adding
 3 Two's complement allows negative numbers to be represented in binary by inverting each bit and adding one to the result, essentially taking the number modulo 2
+4 A logic system can be used to combine two words bit by bit as they are transmitted from two shift registers and fed into another shift register
 
 4.3.1
 1 Closed-loop control systems include a feedback loop from the output in order to adjust its operational parameters to more closely match the desired result, whereas open-loop systems do not
@@ -468,6 +471,7 @@
 
 5.1.1
 1 RGB pixels facilitate a colour display
+2 Generally, the higher the signal, the brighter the (sub-)pixel
 3 A raster scan is the method of rendering a frame used by CRT screens since they can only render one pixel at a time, so sweep across the screen bit by bit moving across each line and going down each line
 \ Line synchronisation signals instruct the screen to start scanning a new line
 \ Frame synchronisation signals instruct the screen to start scanning a new frame
@@ -488,6 +492,7 @@
 2 With the signal voltage controlling the gain of the amplifier, a higher signal causes a higher amplitude in the carrier, and a lower signal causes a lower amplitude in the carrier (or vice versa, depending on the configuration of the amplifier)
 \ Example using a MOSFET: ![](/alevel/img/am_modulator.svg)
 3 The overall signal has a frequency equal to the carrier frequency, but the shape of the envelope of the signal has a frequency equal to the signal frequency
+\ Assuming a constant signal frequency:
 \ ![](/alevel/img/am_voltage_time.svg)
 \ ![](/alevel/img/am_amplitude_frequency.svg)
 4 ![](/alevel/img/am_demodulator.svg)
@@ -531,7 +536,7 @@
 4 To record a high and low point for each cycle
 
 5.2.4
-1 A twisted-pair cable transmitted the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal
+1 A twisted-pair cable transmits the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal
 2 This is attenuation; a further problem is that different frequencies may have different attenuations, which can change the shape of the resultant signal
 \ Because of this, repeaters are placed periodically along a line to maintain the amplitude of the signal at a high level
 3 Noise is generally added by electrical components due to thermal noise

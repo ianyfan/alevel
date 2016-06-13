@@ -255,7 +255,8 @@
 2 Understand the use of a triangle waveform generator and a comparator to produce PWM carriers
 3 Understand the operation of an op-amp ramp generator and an op-amp non-inverting Schmitt trigger to make a triangle waveform generator (including calculations of trip points and rate rates from component values)
 4 Understand the need to sample the signal at least twice in each cycle (Nyquist criteria)
-5 Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier
+5 Understand the use of a treble cut filter to demodulate a PWM carrier
+6 Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier
 
 5.2.4
 1 Recall that modulated carriers can be transmitted as electrical signals along cables, as infrared along optical fibre or as radio waves

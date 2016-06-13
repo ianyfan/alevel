@@ -11,7 +11,7 @@
         MathJax.Hub.Config({
             jax: ["input/TeX", "output/CommonHTML", "output/NativeMML"],
             TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] },
-            extensions: ["tex2jax.js", "[Contrib]/siunitx/siunitx.js"]
+            extensions: ["tex2jax.js", "mml3.js", "[Contrib]/siunitx/siunitx.js"]
         });
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>
@@ -1530,14 +1530,15 @@ One byte is 8 bits, which can be represented using 2 hex characters</p>
 Below the threshold voltage (typically \(\SI{2}{\volt}\)), the MOSFET is in its high resistance state, so does not allow the flow of current<br>
 Above the threshold voltage, the current rises rapidly with voltage until it saturates<br>
 The change in current with voltage is the transconductance of the MOSFET, \(g_m\), so the formula \(I_d = g_m(V_{gs} - V_{th})\) can be used whilst the current is not saturated<br>
-Transconductance is measured in siemens \(\SI{1}{\siemens} = \SI{1}{\ampere\per\volt}\)<br>
+Transconductance is measured in siemens, where \(\SI{1}{\siemens} = \SI{1}{\ampere\per\volt}\)<br>
 <img alt="" src="/alevel/img/mosfet_id_vds.svg"><br>
 The current also depends on \(V_{ds}\): when it is small, the MOSFET behaves less like a transistor and more like a resistor whose resistance is controlled by \(V_{gs}\)</p></td>
           <tr>
             <td>
 <p>Understand the use of a MOSFET as a voltage-controlled resistor for small drain-source voltages</p>
             </td>
-            <td><p>The resistance falls as \(V_{gs}\) rises</p></td>
+            <td><p>The resistance falls as \(V_{gs}\) rises<br>
+The drain-source voltage must be small so that the MOSFET is in its resistive region</p></td>
           <tr>
             <td>
 <p>Understand the use of MOSFETs in a voltage divider circuit to make a potentiometer whose wiper position is controlled by an external voltage</p>
@@ -1593,8 +1594,9 @@ V_d &amp; = V_{DD} - I_dR_d<br>
             <td>
 <p>Recall the use of drain bias for a MOSFET amplifier (including why this is better than biasing with a voltage divider)</p>
             </td>
-            <td><p>Using a fixed bias is unreliable because a different MOSFET may have different characteristics which means that the bias does not keep the signal in the resistive region<br>
-<img alt="" src="/alevel/img/mosfet_drain_bias_amplifier.svg"></p></td>
+            <td><p><img alt="" src="/alevel/img/mosfet_drain_bias_amplifier.svg"><br>
+Drain bias is achieved by connecting the gate of the MOSFET to the drain through a resistor so that the gate voltage is biased to the same voltage as the drain voltage (assuming that no current flows through the resistor)<br>
+Drain bias is better than fixed bias because MOSFETs have different characteristics, which cause their resistive region to occur at different voltages, so a fixed bias may work for some MOSFETs but not others so would have to be adjusted for different MOSFETs, but using drain bias ensures that the bias falls within the resistive region of every MOSFET regardless of their charactaristics, and means that a single circuit design works for every MOSFET</p></td>
         </tbody>
       </table>
       <h2 id="4.2">4.2 Digital Processing</h2>
@@ -1674,7 +1676,7 @@ If the capacitor is not charged, the lower MOSFET has high impedance, so current
             <td>
 <p>Understand the use of multiplexers and logic gates to combine small memory modules into large ones</p>
             </td>
-            <td><p>Multiplexers are used to select the memory location to be processed using the data on address bus</p></td>
+            <td><p>Multiplexers are used to select the memory location to be processed using the data on address bus, with the selector acting as an extra address bit</p></td>
         </tbody>
       </table>
       <h3 id="4.2.3">4.2.3 Digital information can be processed with registers and logic gates</h3>
@@ -1705,8 +1707,7 @@ If the capacitor is not charged, the lower MOSFET has high impedance, so current
             <td>
 <p>Recall the use of AND and EOR gates to combine pairs of binary words stored in shift registers</p>
             </td>
-            <td>
-            </td>
+            <td><p>A logic system can be used to combine two words bit by bit as they are transmitted from two shift registers and fed into another shift register</p></td>
         </tbody>
       </table>
       <h2 id="4.3">4.3 Servo Control</h2>
@@ -2087,8 +2088,7 @@ Saves memory, since subroutines only need to be stored once, instead of in multi
             <td>
 <p>Recall that the intensity of each pixel in a computer monitor is controlled by an analogue signal</p>
             </td>
-            <td>
-            </td>
+            <td><p>Generally, the higher the signal, the brighter the (sub-)pixel</p></td>
           <tr>
             <td>
 <p>Understand the need for raster scans, line synchronisation signals and frame synchronisation signals</p>
@@ -2163,6 +2163,7 @@ Example using a MOSFET: <img alt="" src="/alevel/img/am_modulator.svg"></p></td>
 <p>Recall how to construct voltage-time and amplitude-frequency graphs of AM carriers (including the presence of sidebands on either side of the carrier)</p>
             </td>
             <td><p>The overall signal has a frequency equal to the carrier frequency, but the shape of the envelope of the signal has a frequency equal to the signal frequency<br>
+Assuming a constant signal frequency:<br>
 <img alt="" src="/alevel/img/am_voltage_time.svg"><br>
 <img alt="" src="/alevel/img/am_amplitude_frequency.svg"></p></td>
           <tr>
@@ -2268,6 +2269,12 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td><p>To record a high and low point for each cycle</p></td>
           <tr>
             <td>
+<p>Understand the use of a treble cut filter to demodulate a PWM carrier</p>
+            </td>
+            <td>
+            </td>
+          <tr>
+            <td>
 <p>Recall and use the rule that the bandwidth of a PWM carrier is about half the highest frequency present in the carrier</p>
             </td>
             <td>
@@ -2287,7 +2294,7 @@ By connecting the ramp generator to the Schmitt trigger in a feedback loop, the 
             <td>
 <p>Recall that modulated carriers can be transmitted as electrical signals along cables, as infrared along optical fibre or as radio waves</p>
             </td>
-            <td><p>A twisted-pair cable transmitted the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal</p></td>
+            <td><p>A twisted-pair cable transmits the signal down one wire in a cable and an inverted copy of the signal down another wire wrapped round the other; since the interference picked up by the wires are the same, taking the difference of the signals on the receiving end recovers the original signal</p></td>
           <tr>
             <td>
 <p>Understand that the intensity of a modulated carrier decreases with increasing distance of transmission (no quantitative details required)</p>

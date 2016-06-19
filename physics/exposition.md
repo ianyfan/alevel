@@ -253,7 +253,7 @@
 1 This only applies below the proportionality limit
 2 The Young's modulus of a wire can be obtained by attaching weights onto the end and hanging the wire vertically alongside a control wire or clamping it horizontally on a tableand hanging the weights off the end
 \ The area is calculated by measuring the diameter of the wire with a micrometer at three points with different orientations
-\ The extension is also measured using a micrometer with a marking at the original length
+\ The extension is also measured using a ruler or Vernier caliper from a marking at the original length, viewed from parallel to reduce parallax error
 \ The wire should be long, at least a metre, to produce appreciable results for the extension, and to reduce the error in the measurements
 3 Measure the gradient of stress by strain for the line below the proportionality limit
 
@@ -534,27 +534,28 @@
 \ Lenz's law: the direction of induced current opposes the change producing it
 3 From Lenz's law, the direction is opposite to the rate of change, so it is more accurately: \\(\varepsilon = -N\frac{\Delta\Phi}{\Delta t}\\)
 \ This is known as back emf
-4 If moving straight conductor has length \\(l\\) and moves a distance \\(s\\) perpendicular to the field, then the change in flux linkage is \\(\Delta\Phi = B\Delta A = Bl\Delta s\\), so the induced emf is
+4 If moving straight conductor has length \\(l\\) and moves a distance \\(s\\) perpendicular to the field, then the change in flux is \\(\Delta\Phi = B\Delta A = Bl\Delta s\\), so the induced emf is
 \ \\[\begin{align}
 \ \varepsilon & = N\frac{\Delta\Phi}{\Delta t}
 \ \\\         & = 1\frac{Bl\Delta s}{\Delta t}
 \ \\\         & = Bl\frac{\Delta s}{\Delta t}
 \ \\\         & = Blv
 \ \end{align}\\]
-5 The flux linkage is \\(N\Phi = BAN\sin\theta = BAN\sin(\omega t)\\) so the induced emf is
+5 The flux linkage is \\(N\Phi = -BAN\cos\theta = -BAN\cos(\omega t)\\) so the induced emf is
 \ \\[\begin{align}
-\ \varepsilon & =\frac{N\Delta\Phi}{\Delta t}
-\ \\\         & = N\frac{\Delta(BA\sin(\omega t))}{\Delta t}
-\ \\\         & = BAN\frac{\Delta(\sin(\omega t))}{\Delta t}
-\ \\\         & = BAN\omega\cos(\omega t)
+\ \varepsilon & = N\frac{\Delta\Phi}{\Delta t}
+\ \\\         & = N\frac{\Delta(-BA\cos(\omega t))}{\Delta t}
+\ \\\         & = BAN\frac{\Delta(-\cos(\omega t))}{\Delta t}
+\ \\\         & = BAN\omega\sin(\omega t)
 \ \end{align}\\]
 6 Where \\(\omega\\ = 2\pi f\\) is the angular frequency, and \\(f\\) is the frequency of rotation in hertz
 7 A transformer transfers energy from one circuit, the primary circuit, to another, the secondary circuit; it consists of two coils wound round a common iron core; an alternating current in the primary coil induces an alternating magnetic field in the core, which in turn induces an alternating current in the secondary coil
 8 Transformer efficiency compares the energy in the circuit after transformation to before
 \ Transformers are almost 100% efficient
-9 Resistance in the wire causes heating equal to \\(I^2R\\)
-\ Eddy currents are induced in the iron core, which is minimised by partitioning the core with insulating layers
-\ Energy is wasted to repeatedly magnetise and demagnetise the iron core due to hysteresis
+9 Resistance in the wire causes heating equal to \\(I^2R\\), especially in the high-current secondary coil, which is minimised by using low resistance wires, by using thick (high surface area) copper wires
+\ Eddy currents are induced in the iron core, due to the continuously-changing magnetic flux, which heats the core, wasting energy; eddy currents are mitigated by partitioning the core with insulating layers so that eddy currents cannot flow through them
+\ Energy is wasted to repeatedly magnetise and demagnetise the iron core due to hysteresis, and can be reduced by using a magnetically soft material, such as iron, which easily magnetises & demagnetises
+\ The transformer loses efficiency if the coils are far apart due to magnetic losses, which can be mitigated by using a better core design that keeps the coils close together, such as winding them on top of each other around the same part of a common core which also surrounds them
 10 Since the power wasted is proportional to current squared and inversely proportional to voltage squared, it is much more efficient energy efficient to transfer electrical power at high voltage
 \ Transformers are used in transmission by stepping-up the voltage before transmission and stepping-down the voltage after transmission
 

@@ -540,7 +540,7 @@
 \ \\[\begin{align}
 \ & I_{in} = I_{out}
 \ \\\ \implies & \frac{V_{1}}{R_{in}} = \frac{V_f}{R_f}
-\ \\\ \implies & V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - (V_{out})
+\ \\\ \implies & V_{in} - V_+ = \frac{R_{in}}{R_f}(V_+ - V_{out})
 \ \\\ \implies & V_{in} = -\frac{R_{in}}{R_f}V_{out}
 \ \end{align}\\]
 \ where the output voltage can be either the positive or negative saturation value, so the trip point has the opposite sign to the current output voltage

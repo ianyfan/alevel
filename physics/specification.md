@@ -315,7 +315,7 @@
 3 Magnitude of induced emf = rate of change of flux linkage = \\(N\frac{\Delta\Phi}{\Delta t}\\)
 4 Applications such as a moving straight conductor
 5 Emf induced in a coil rotating uniformly in a magnetic field
-6 \\(E = BAN\omega\cos\omega t\\)
+6 \\(E = BAN\omega\sin\omega t\\)
 7 The operation of a transformer
 \ The transformer equation = \\(\frac{N_s}{N_p} = \frac{V_s}{V_p}\\)
 8 Transformer efficiency = \\(\frac{I_sV_s}{I_pV_p}\\)

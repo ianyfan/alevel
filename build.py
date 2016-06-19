@@ -119,7 +119,7 @@ for subject in subjects:
         MathJax.Hub.Config({{
             jax: ["input/TeX", "output/CommonHTML", "output/NativeMML"],
             TeX: {{ extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] }},
-            extensions: ["tex2jax.js", "[Contrib]/siunitx/siunitx.js"]
+            extensions: ["tex2jax.js", "mml3.js", "[Contrib]/siunitx/siunitx.js"]
         }});
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>

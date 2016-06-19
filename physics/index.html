@@ -11,7 +11,7 @@
         MathJax.Hub.Config({
             jax: ["input/TeX", "output/CommonHTML", "output/NativeMML"],
             TeX: { extensions: ["AMSmath.js", "AMSsymbols.js", "noErrors.js", "noUndefined.js"] },
-            extensions: ["tex2jax.js", "[Contrib]/siunitx/siunitx.js"]
+            extensions: ["tex2jax.js", "mml3.js", "[Contrib]/siunitx/siunitx.js"]
         });
     </script>
     <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js" async></script>
@@ -1360,7 +1360,7 @@ For a brittle material, the ultimate tensile stress is the breaking point</p></t
             </td>
             <td><p>The Young's modulus of a wire can be obtained by attaching weights onto the end and hanging the wire vertically alongside a control wire or clamping it horizontally on a tableand hanging the weights off the end<br>
 The area is calculated by measuring the diameter of the wire with a micrometer at three points with different orientations<br>
-The extension is also measured using a micrometer with a marking at the original length<br>
+The extension is also measured using a ruler or Vernier caliper from a marking at the original length, viewed from parallel to reduce parallax error<br>
 The wire should be long, at least a metre, to produce appreciable results for the extension, and to reduce the error in the measurements</p></td>
           <tr>
             <td>
@@ -2279,7 +2279,7 @@ This is known as back emf</p></td>
             <td>
 <p>Applications such as a moving straight conductor</p>
             </td>
-            <td><p>If moving straight conductor has length \(l\) and moves a distance \(s\) perpendicular to the field, then the change in flux linkage is \(\Delta\Phi = B\Delta A = Bl\Delta s\), so the induced emf is<br>
+            <td><p>If moving straight conductor has length \(l\) and moves a distance \(s\) perpendicular to the field, then the change in flux is \(\Delta\Phi = B\Delta A = Bl\Delta s\), so the induced emf is<br>
 \[\begin{align}<br>
 \varepsilon &amp; = N\frac{\Delta\Phi}{\Delta t}<br>
 \\         &amp; = 1\frac{Bl\Delta s}{\Delta t}<br>
@@ -2290,16 +2290,16 @@ This is known as back emf</p></td>
             <td>
 <p>Emf induced in a coil rotating uniformly in a magnetic field</p>
             </td>
-            <td><p>The flux linkage is \(N\Phi = BAN\sin\theta = BAN\sin(\omega t)\) so the induced emf is<br>
+            <td><p>The flux linkage is \(N\Phi = -BAN\cos\theta = -BAN\cos(\omega t)\) so the induced emf is<br>
 \[\begin{align}<br>
-\varepsilon &amp; =\frac{N\Delta\Phi}{\Delta t}<br>
-\\         &amp; = N\frac{\Delta(BA\sin(\omega t))}{\Delta t}<br>
-\\         &amp; = BAN\frac{\Delta(\sin(\omega t))}{\Delta t}<br>
-\\         &amp; = BAN\omega\cos(\omega t)<br>
+\varepsilon &amp; = N\frac{\Delta\Phi}{\Delta t}<br>
+\\         &amp; = N\frac{\Delta(-BA\cos(\omega t))}{\Delta t}<br>
+\\         &amp; = BAN\frac{\Delta(-\cos(\omega t))}{\Delta t}<br>
+\\         &amp; = BAN\omega\sin(\omega t)<br>
 \end{align}\]</p></td>
           <tr>
             <td>
-<p>\(E = BAN\omega\cos\omega t\)</p>
+<p>\(E = BAN\omega\sin\omega t\)</p>
             </td>
             <td><p>Where \(\omega\ = 2\pi f\) is the angular frequency, and \(f\) is the frequency of rotation in hertz</p></td>
           <tr>
@@ -2318,9 +2318,10 @@ Transformers are almost 100% efficient</p></td>
             <td>
 <p>Causes of inefficiency of a transformer</p>
             </td>
-            <td><p>Resistance in the wire causes heating equal to \(I^2R\)<br>
-Eddy currents are induced in the iron core, which is minimised by partitioning the core with insulating layers<br>
-Energy is wasted to repeatedly magnetise and demagnetise the iron core due to hysteresis</p></td>
+            <td><p>Resistance in the wire causes heating equal to \(I^2R\), especially in the high-current secondary coil, which is minimised by using low resistance wires, by using thick (high surface area) copper wires<br>
+Eddy currents are induced in the iron core, due to the continuously-changing magnetic flux, which heats the core, wasting energy; eddy currents are mitigated by partitioning the core with insulating layers so that eddy currents cannot flow through them<br>
+Energy is wasted to repeatedly magnetise and demagnetise the iron core due to hysteresis, and can be reduced by using a magnetically soft material, such as iron, which easily magnetises &amp; demagnetises<br>
+The transformer loses efficiency if the coils are far apart due to magnetic losses, which can be mitigated by using a better core design that keeps the coils close together, such as winding them on top of each other around the same part of a common core which also surrounds them</p></td>
           <tr>
             <td>
 <p>Transmission of electrical power at high voltage</p>

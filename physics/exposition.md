@@ -562,7 +562,6 @@
 5.1.1
 1 Rutherford scattering is the observation that when alpha particles are fired through thin gold foil only a few atoms thick, while most passed through hardly deflected, a small proportion, of less than 1 in 8000, are deflected by a large angle of over 90 degrees
 \ This lead to the development of the modern atomic model that it is mostly empty space with a small dense positively-charged nucleus in the centre surrounded by the electrons, superceding the previous plum-pudding model, where the positive charge is spread throughout the atom and would otherwise be unable to exert the large forces observed in the gold foil experiment
-\ Same energy?
 
 5.1.2
 1 The different types of radiation can be identified by its different properties, most simply by their different levels of absorption: alpha radiation is absorbed by a few centimetres of air or a sheet of paper or metal foil; beta radiation is absorbed by a metre or so of air or a few millimetres of metal; gamma radiation is absorbed by several centimetres of lead but not by air
@@ -621,10 +620,9 @@
 \ Technetium-99m is a metastable nuclear isomer, which means it is an unstable excited state of technetium-99, but is much more stable than conventional excited nuclei, and therefore is used as a source of gamma rays in medical uses such as monitoring blood flow or imaging internal organs, since it survives long enough in the body to collect data, but not long enough in order to minimise radiation exposure; the gamma rays it emits are also a similar wavelength to conventional X-ray diagnostic equipment
 
 5.1.5
-1 The radius of a nucleus can be estimated from the closest approach of an alpha particle fired at the nucleus by calculating where the electric potential energy matches the initial kinetic energy
-\ The nuclear radius can be more accurately measured 
-2 \\(A\\) is the nucleon/mass number
-\ \\(r_0\\) ranges from \\(\SI{1.05}{\femto\metre}\\) to \\(\SI{1.45}{\femto\metre}\\)
+1 The radius of a nucleus can be estimated from the closest approach of an alpha particle fired at the nucleus by calculating where the change in electric potential energy matches the initial kinetic energy
+\ The nuclear radius can be more accurately measured using electron diffraction, whereby firing a beam of electrons with the correct de Broglie wavelength causes it to diffract around the nucleus, and the angle of the first minima can be used to calculate the nuclear radius by modelling the nucleus as a sphere and using the equation \\(R = \frac{.61\lambda}{\sin\theta}\\)
+2 \\(r_0\\) is the constant of proportionality between the nuclear radius \\(R\\) and the cube root of \\(A\\) the nucleon/mass number, and ranges from \\(\SI{1.05}{\femto\metre}\\) to \\(\SI{1.45}{\femto\metre}\\)
 3 Nuclear density is constant:
 \ \\[\begin{align}
 \    \rho & = \frac{m}{V}
@@ -820,7 +818,8 @@
 
 6.2.6
 1 The concept of a reversible heat engine as maximum efficiency is that if an engine is 100% percent efficient, the process can be reversed so that the equivalent amount of work put into the system can transfer the same amount of heat from the sink to the source
-\ In the normal process, the engine is acting as a refrigerator
-\ In the reverse process, the engine is acting as a heat pump
-2 The coefficient of performance of a refrigerator is equal to amount of energy 
-3 The coefficient of performance of a heat pump is equal to the output thermal energy produced from the work done
+\ This principle can be applied to the operation of both a refrigerator and a heat pump
+\ The coefficient of performance is equal to the amount of energy transferred per unit of work done by the engine, which is also equal to the difference in energy between the reservoirs
+\ It is called the coefficient of performance rather than the efficiency because it is often greater than one
+2 The relevant energy transfer of a refrigerator is the energy removed from the cold space
+3 The relevant energy transfer of a heat pump is the energy entering the hot space

@@ -458,13 +458,13 @@
 1 Need for an engine to operate between a source and a sink
 2 Efficiency = \\(\frac{W}{Q_{in}} = \frac{Q_{in} - Q_{out}}{Q_{in}}\\)
 3 Maximum theoretical efficiency = \\(\frac{T_H - T_C}{T_H}\\)
-4 ![](/alevel/img/)
-5 Reasons for the lower efficiencies of practical engines
-6 Maximising use of \\(W\\) and \\(Q_{out}\\) in combined heat and power schemes
+\ ![](/alevel/img/heat_engine.svg)
+4 Reasons for the lower efficiencies of practical engines
+5 Maximising use of \\(W\\) and \\(Q_{out}\\) in combined heat and power schemes
 
 6.2.6
 1 Basic principles of heat pumps and refrigerators
 \ A knowledge of practical heat pumps or refrigerator cycles and devices is not required
-2 ![](/alevel/img)
-3 For a refrigerator: \\(COP_{ref} = \frac{Q_{out}}{W} = \frac{Q_{out}}{Q_{in} - Q_{out}}\\)
-4 For a heat pump: \\(COP_{hp} = \frac{Q_{in}}{W} = \frac{Q_{in}}{Q_{in} - Q_{out}}\\)
+\ ![](/alevel/img/reversed_heat_engine.svg)
+2 For a refrigerator: \\(COP_{ref} = \frac{Q_{out}}{W} = \frac{Q_{out}}{Q_{in} - Q_{out}}\\)
+3 For a heat pump: \\(COP_{hp} = \frac{Q_{in}}{W} = \frac{Q_{in}}{Q_{in} - Q_{out}}\\)

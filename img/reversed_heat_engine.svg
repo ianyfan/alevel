@@ -1,0 +1,32 @@
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="64" width="44" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 44.000001 64.000001">
+ <defs>
+  <marker id="a" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="b" refY="0" refX="0" overflow="visible" orient="auto">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="c" refY="0" refX="0" orient="auto" overflow="visible">
+   <path d="m5.77 0-8.65 5v-10l8.65 5z" fill-rule="evenodd" transform="scale(.2)" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 -988.4)">
+  <rect stroke-linejoin="round" height="8" width="24" stroke="#000" stroke-linecap="round" y="1040" x="4" fill="#fff"/>
+  <rect stroke-linejoin="round" height="8" width="24" stroke="#000" stroke-linecap="round" y="992.4" x="4" fill="#fff"/>
+  <g font-size="5px" font-family="&apos;Source Sans Pro&apos;" fill="#000000">
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="997.62964" x="5.8853517"><tspan x="5.8853517" y="997.62964">hot space</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" line-height="125%" y="1045.6296" x="5.0280857" xml:space="preserve"><tspan y="1045.6296" x="5.0280857">cold space</tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="997.50214" x="31.050501"><tspan x="31.050501" y="997.50214">at T<tspan style="baseline-shift:sub" font-size="65%">H</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1045.4827" x="31.087875"><tspan x="31.087875" y="1045.4827">at T<tspan style="baseline-shift:sub" font-size="65%">C</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1009.5322" x="5.0445666"><tspan x="5.0445666" y="1009.5322">Q<tspan style="baseline-shift:sub" font-size="65%">in</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1033.5127" x="3.9138966"><tspan x="3.9138966" y="1033.5127">Q<tspan style="baseline-shift:sub" font-size="65%">out</tspan></tspan></text>
+   <text style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" line-height="125%" y="1022.0021" x="38.037498"><tspan x="38.037498" y="1022.0021">W</tspan></text>
+  </g>
+  <ellipse stroke-linejoin="round" stroke-linecap="round" rx="4" ry="4" stroke="#000" cy="1020" cx="16" fill="#fff"/>
+  <g stroke="#000" stroke-width="1px" fill="none">
+   <path marker-end="url(#c)" d="m16 1016v-14"/>
+   <path marker-end="url(#b)" d="m16 1040v-14"/>
+   <path marker-end="url(#a)" d="m36 1020h-14" stroke-linecap="round"/>
+  </g>
+ </g>
+</svg>

@@ -2373,7 +2373,8 @@ In a magnetic field, due to their respective charges, alpha particles are deflec
 Applications, e.g. to safe handling of radioactive sources</p>
             </td>
             <td><p>The intensity of gamma radiation a distance from its source follows the inverse square law: the intensity is inversely proportional to the square of the distance<br>
-This can be verified experimentally by measuring the intensity of radiation at different distances from the source using a Geiger-Müller tube &amp; counter, and verifying that plotting intensity against the reciprocal of distance squared follows a linear regression, or that the product of intensity with distance squared is constant</p></td>
+This can be verified experimentally by measuring the intensity of radiation at different distances from the source using a Geiger-Müller tube &amp; counter, and verifying that plotting intensity against the reciprocal of distance squared follows a linear regression, or that the product of intensity with distance squared is constant<br>
+Radioactive sources should be kept in lead-lined containers to prevent radiation from being emitted; handlers of open radioactive sources should be as far as possible from the source so that the amount of radiation reaching the body is minimised, most preferrably sources should be handled by remote control using robots</p></td>
           <tr>
             <td>
 <p>Background radiation<br>
@@ -2497,7 +2498,14 @@ Technetium-99m is a metastable nuclear isomer, which means it is an unstable exc
 Knowledge of typical values</p>
             </td>
             <td><p>The radius of a nucleus can be estimated from the closest approach of an alpha particle fired at the nucleus by calculating where the change in electric potential energy matches the initial kinetic energy<br>
-The nuclear radius can be more accurately measured using electron diffraction, whereby firing a beam of electrons with the correct de Broglie wavelength causes it to diffract around the nucleus, and the angle of the first minima can be used to calculate the nuclear radius by modelling the nucleus as a sphere and using the equation \(R = \frac{.61\lambda}{\sin\theta}\)</p></td>
+The nuclear radius can be more accurately measured using electron diffraction, whereby firing a beam of electrons with the correct de Broglie wavelength causes it to diffract around the nucleus, and the angle of the first minima can be used to calculate the nuclear radius by modelling the nucleus as a sphere and using the equation \(R = \frac{0.61\lambda}{\sin\theta}\)<br>
+Electron diffraction is more accurate because:</p>
+<ul>
+<li>the alpha particle causes the nucleus to recoil, which affects the energy calculations</li>
+<li>the alpha particle is affected by the strong nuclear force, whereas electrons are not since they are leptons</li>
+<li>the closest approach only provides an upper limit to the nuclear radius, since the alpha particle can never actually reach it</li>
+</ul>
+<p>However, the speeds required for electron diffraction to occur are relativistic, and these relativistic effects may alter the behaviour</p></td>
           <tr>
             <td>
 <p>Dependence of radius on nucleon number \(R = r_0A^\frac{1}{3}\) derived from experimental data</p>
@@ -2809,7 +2817,12 @@ Since \(k = \frac{R}{N_A}\), \(\frac{3}{2}kT = \frac{3RT}{2N_A}\)</p></td>
             <td>
 <p>Use of flywheels in machines</p>
             </td>
-            <td><p>Flywheels are used to store energy so that injections of energy is smoothed out</p></td>
+            <td><p>Flywheels are used to store energy so that injections of energy is smoothed out, storing rotational kinetic energy when the input energy is greater than the required output energy and releasing it when the input energy is less than the required output energy<br>
+The fluctuation in angular velocity is attenuated by flywheels since they have a high moment of inertia due to being a large size and being made of a dense material with more material further from the axle, and since \(\Delta E_k = \frac{1}{2}I(\Delta\omega)^2\), this means that the change in angular velocity is small<br>
+Flywheels also have low friction to reduce energy losses, by having a smooth outer surface and using magnetic or air bearings<br>
+Flywheels are also needed to overcome the dead centre in a crank, where the torque is zero since the moment is along the line of the axis, since its angular momentum causes the crank to continue rotating<br>
+Flywheels can also be used to deliver a high burst of energy by storing energy from a source and releasing it all at once<br>
+The angular velocity of a flywheel is limited by the tensile strength of the material</p></td>
         </tbody>
       </table>
       <h3 id="6.1.3">6.1.3 Angular displacement, velocity and acceleration</h3>
@@ -3036,6 +3049,7 @@ Processes:</p>
 <li>ignition cannot occur with constant volume since either the pressure &amp; temperature would have to instantly change, or the piston would have to stop, which does not happen</li>
 <li>some of the work is used to overcome friction</li>
 <li>the temperature does not reach its theoretical value since the fuel does not fully combust</li>
+<li>real engines require a pumping loop where the old air is exhausted and new air drawn in, and the work done must be subtracted from the main loop; this also means that two strokes are required per cycle, so the number of cycles per minute is half the revolutions per minute of the engine</li>
 </ul>
 <p>The calorific value of the fuel is expressed in energy per mass \(\si{\joule\per\kilogram}\) and the fuel flow rate is expressed in mass per time \(\si{\kilogram\per\second}\)</p></td>
           <tr>
@@ -3146,7 +3160,8 @@ It is called the coefficient of performance rather than the efficiency because i
             <td>
 <p>For a heat pump: \(COP_{hp} = \frac{Q_{in}}{W} = \frac{Q_{in}}{Q_{in} - Q_{out}}\)</p>
             </td>
-            <td><p>The relevant energy transfer of a heat pump is the energy entering the hot space</p></td>
+            <td><p>The relevant energy transfer of a heat pump is the energy entering the hot space<br>
+\(COP_{hp} = 1 + COP_{ref}\)</p></td>
         </tbody>
       </table>
     </section>

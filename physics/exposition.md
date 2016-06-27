@@ -570,6 +570,7 @@
 \ In a magnetic field, due to their respective charges, alpha particles are deflected towards the negative, beta particles are deflected more strongly to the positive and gamma particles are not deflected
 2 The intensity of gamma radiation a distance from its source follows the inverse square law: the intensity is inversely proportional to the square of the distance
 \ This can be verified experimentally by measuring the intensity of radiation at different distances from the source using a Geiger-Müller tube & counter, and verifying that plotting intensity against the reciprocal of distance squared follows a linear regression, or that the product of intensity with distance squared is constant
+\ Radioactive sources should be kept in lead-lined containers to prevent radiation from being emitted; handlers of open radioactive sources should be as far as possible from the source so that the amount of radiation reaching the body is minimised, most preferrably sources should be handled by remote control using robots
 3 Background radiation is a naturally-occurring radiation and must be subtracted from measurements of radiation
 \ Origins:
 \
@@ -621,7 +622,14 @@
 
 5.1.5
 1 The radius of a nucleus can be estimated from the closest approach of an alpha particle fired at the nucleus by calculating where the change in electric potential energy matches the initial kinetic energy
-\ The nuclear radius can be more accurately measured using electron diffraction, whereby firing a beam of electrons with the correct de Broglie wavelength causes it to diffract around the nucleus, and the angle of the first minima can be used to calculate the nuclear radius by modelling the nucleus as a sphere and using the equation \\(R = \frac{.61\lambda}{\sin\theta}\\)
+\ The nuclear radius can be more accurately measured using electron diffraction, whereby firing a beam of electrons with the correct de Broglie wavelength causes it to diffract around the nucleus, and the angle of the first minima can be used to calculate the nuclear radius by modelling the nucleus as a sphere and using the equation \\(R = \frac{0.61\lambda}{\sin\theta}\\)
+\ Electron diffraction is more accurate because:
+\
+\ * the alpha particle causes the nucleus to recoil, which affects the energy calculations
+\ * the alpha particle is affected by the strong nuclear force, whereas electrons are not since they are leptons
+\ * the closest approach only provides an upper limit to the nuclear radius, since the alpha particle can never actually reach it
+\
+\ However, the speeds required for electron diffraction to occur are relativistic, and these relativistic effects may alter the behaviour
 2 \\(r_0\\) is the constant of proportionality between the nuclear radius \\(R\\) and the cube root of \\(A\\) the nucleon/mass number, and ranges from \\(\SI{1.05}{\femto\metre}\\) to \\(\SI{1.45}{\femto\metre}\\)
 3 Nuclear density is constant:
 \ \\[\begin{align}
@@ -730,7 +738,12 @@
 1 \\(E_k\\) is kinetic energy
 \ \\(\omega\\) is angular velocity
 2 Friction and the viscosity of lubricant reduces the energy stored in a flywheel
-3 Flywheels are used to store energy so that injections of energy is smoothed out
+3 Flywheels are used to store energy so that injections of energy is smoothed out, storing rotational kinetic energy when the input energy is greater than the required output energy and releasing it when the input energy is less than the required output energy
+\ The fluctuation in angular velocity is attenuated by flywheels since they have a high moment of inertia due to being a large size and being made of a dense material with more material further from the axle, and since \\(\Delta E_k = \frac{1}{2}I(\Delta\omega)^2\\), this means that the change in angular velocity is small
+\ Flywheels also have low friction to reduce energy losses, by having a smooth outer surface and using magnetic or air bearings
+\ Flywheels are also needed to overcome the dead centre in a crank, where the torque is zero since the moment is along the line of the axis, since its angular momentum causes the crank to continue rotating
+\ Flywheels can also be used to deliver a high burst of energy by storing energy from a source and releasing it all at once
+\ The angular velocity of a flywheel is limited by the tensile strength of the material
 
 6.1.3
 1 \\(\alpha\\) is angular acceleration
@@ -800,6 +813,7 @@
 \ * ignition cannot occur with constant volume since either the pressure & temperature would have to instantly change, or the piston would have to stop, which does not happen
 \ * some of the work is used to overcome friction
 \ * the temperature does not reach its theoretical value since the fuel does not fully combust
+\ * real engines require a pumping loop where the old air is exhausted and new air drawn in, and the work done must be subtracted from the main loop; this also means that two strokes are required per cycle, so the number of cycles per minute is half the revolutions per minute of the engine
 \
 \ The calorific value of the fuel is expressed in energy per mass \\(\si{\joule\per\kilogram}\\) and the fuel flow rate is expressed in mass per time \\(\si{\kilogram\per\second}\\)
 2 The indicated power is the total amount of work done in a second by every cylinder
@@ -823,3 +837,4 @@
 \ It is called the coefficient of performance rather than the efficiency because it is often greater than one
 2 The relevant energy transfer of a refrigerator is the energy removed from the cold space
 3 The relevant energy transfer of a heat pump is the energy entering the hot space
+\ \\(COP_{hp} = 1 + COP_{ref}\\)
